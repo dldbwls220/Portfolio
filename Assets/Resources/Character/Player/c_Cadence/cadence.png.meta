@@ -1,0 +1,6773 @@
+fileFormatVersion: 2
+guid: 35c759e0c108145419d6101052b34598
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2642555566517974576
+    second: cadence_0
+  - first:
+      213: 7806669086979247603
+    second: cadence_1
+  - first:
+      213: 5952620331608592944
+    second: cadence_2
+  - first:
+      213: -6658034656165531079
+    second: cadence_3
+  - first:
+      213: 8842633845990130251
+    second: cadence_4
+  - first:
+      213: 203132678028773841
+    second: cadence_5
+  - first:
+      213: -6002630337034810621
+    second: cadence_6
+  - first:
+      213: 7104605780068795870
+    second: cadence_7
+  - first:
+      213: -7834519504852012700
+    second: cadence_8
+  - first:
+      213: -6672233952035342014
+    second: cadence_9
+  - first:
+      213: -4674326493121630159
+    second: cadence_10
+  - first:
+      213: -2462783472296555773
+    second: cadence_11
+  - first:
+      213: -4377695282245300738
+    second: cadence_12
+  - first:
+      213: 1275619682623682648
+    second: cadence_13
+  - first:
+      213: -8716144779825747285
+    second: cadence_14
+  - first:
+      213: -2230156121772864475
+    second: cadence_15
+  - first:
+      213: -7010219592327535061
+    second: cadence_16
+  - first:
+      213: -1927459063267974851
+    second: cadence_17
+  - first:
+      213: 1490117067180056755
+    second: cadence_18
+  - first:
+      213: 5356526370424017458
+    second: cadence_19
+  - first:
+      213: -8123248449015444138
+    second: cadence_20
+  - first:
+      213: -2713347023570264646
+    second: cadence_21
+  - first:
+      213: -8060961427408661319
+    second: cadence_22
+  - first:
+      213: 5998953020530392777
+    second: cadence_23
+  - first:
+      213: -8003019513736577950
+    second: cadence_24
+  - first:
+      213: 7726135217174875268
+    second: cadence_25
+  - first:
+      213: 8322778348359343008
+    second: cadence_26
+  - first:
+      213: 7780307432966385243
+    second: cadence_27
+  - first:
+      213: 3077883131687027620
+    second: cadence_28
+  - first:
+      213: 4491873327917325346
+    second: cadence_29
+  - first:
+      213: 4604898176183892577
+    second: cadence_30
+  - first:
+      213: -6607821480522644083
+    second: cadence_31
+  - first:
+      213: 3941755903977717179
+    second: cadence_32
+  - first:
+      213: -4376085937840842158
+    second: cadence_33
+  - first:
+      213: -8762393218450700790
+    second: cadence_34
+  - first:
+      213: -5177898565036726769
+    second: cadence_35
+  - first:
+      213: -5785562458839205388
+    second: cadence_36
+  - first:
+      213: -933250036034816274
+    second: cadence_37
+  - first:
+      213: 1318060235730886417
+    second: cadence_38
+  - first:
+      213: -180669372991350623
+    second: cadence_39
+  - first:
+      213: -1084599732512215021
+    second: cadence_40
+  - first:
+      213: -7431631931239963191
+    second: cadence_41
+  - first:
+      213: -6717234674129855600
+    second: cadence_42
+  - first:
+      213: -3833477824670264159
+    second: cadence_43
+  - first:
+      213: -7569714231517976367
+    second: cadence_44
+  - first:
+      213: 7785349628734206181
+    second: cadence_45
+  - first:
+      213: 5414311502702506827
+    second: cadence_46
+  - first:
+      213: 8226612035396281021
+    second: cadence_47
+  - first:
+      213: -6030535115430077774
+    second: cadence_48
+  - first:
+      213: -6838496865423094559
+    second: cadence_49
+  - first:
+      213: 8636127605715952009
+    second: cadence_50
+  - first:
+      213: 3446204386775612156
+    second: cadence_51
+  - first:
+      213: 651130618302475329
+    second: cadence_52
+  - first:
+      213: 4731623492195731010
+    second: cadence_53
+  - first:
+      213: -5657058912320021034
+    second: cadence_54
+  - first:
+      213: -2458210185403263378
+    second: cadence_55
+  - first:
+      213: 5805114112782676029
+    second: cadence_56
+  - first:
+      213: 3185799962350975763
+    second: cadence_57
+  - first:
+      213: -8063723825140166716
+    second: cadence_58
+  - first:
+      213: -2518098406955795615
+    second: cadence_59
+  - first:
+      213: 7468854614748837619
+    second: cadence_60
+  - first:
+      213: -2599537837545951391
+    second: cadence_61
+  - first:
+      213: 770357458811286864
+    second: cadence_62
+  - first:
+      213: -4160122790775361308
+    second: cadence_63
+  - first:
+      213: 1268566937930539281
+    second: cadence_64
+  - first:
+      213: -1362563511405708215
+    second: cadence_65
+  - first:
+      213: -178075660197516438
+    second: cadence_66
+  - first:
+      213: 8570532996973834718
+    second: cadence_67
+  - first:
+      213: -8963827508300040164
+    second: cadence_68
+  - first:
+      213: 9060008492920164483
+    second: cadence_69
+  - first:
+      213: 3097480471515171938
+    second: cadence_70
+  - first:
+      213: -9162926322766125766
+    second: cadence_71
+  - first:
+      213: -812736546334270369
+    second: cadence_72
+  - first:
+      213: 4735760003364872105
+    second: cadence_73
+  - first:
+      213: 6974188632400660355
+    second: cadence_74
+  - first:
+      213: 3698036523928424704
+    second: cadence_75
+  - first:
+      213: 8042260178404157461
+    second: cadence_76
+  - first:
+      213: 2097565511005557634
+    second: cadence_77
+  - first:
+      213: -6837525529903653423
+    second: cadence_78
+  - first:
+      213: -4552830160330081620
+    second: cadence_79
+  - first:
+      213: -3055145057196162553
+    second: cadence_80
+  - first:
+      213: -6921867142445706320
+    second: cadence_81
+  - first:
+      213: 3086443288649832190
+    second: cadence_82
+  - first:
+      213: 1892272288396326604
+    second: cadence_83
+  - first:
+      213: 6264946526874707797
+    second: cadence_84
+  - first:
+      213: -6590288048539204225
+    second: cadence_85
+  - first:
+      213: -3767292520809568957
+    second: cadence_86
+  - first:
+      213: 693363920418587277
+    second: cadence_87
+  - first:
+      213: -2955492734609516824
+    second: cadence_88
+  - first:
+      213: -7374245277896032411
+    second: cadence_89
+  - first:
+      213: 1885537938945618257
+    second: cadence_90
+  - first:
+      213: -2186925108399584234
+    second: cadence_91
+  - first:
+      213: -7210424783922327376
+    second: cadence_92
+  - first:
+      213: 5440257662836556021
+    second: cadence_93
+  - first:
+      213: 3643991472921906702
+    second: cadence_94
+  - first:
+      213: -4802738124108236162
+    second: cadence_95
+  - first:
+      213: 4806511758008487032
+    second: cadence_96
+  - first:
+      213: -7297956164661033161
+    second: cadence_97
+  - first:
+      213: 4841995137485664916
+    second: cadence_98
+  - first:
+      213: -1286038336156298275
+    second: cadence_99
+  - first:
+      213: -2889610448676154516
+    second: cadence_100
+  - first:
+      213: 3492944662875859314
+    second: cadence_101
+  - first:
+      213: 2038441880463766359
+    second: cadence_102
+  - first:
+      213: -5323317294101398695
+    second: cadence_103
+  - first:
+      213: 4993170387375050984
+    second: cadence_104
+  - first:
+      213: -7701493033267631053
+    second: cadence_105
+  - first:
+      213: 7890355333057275798
+    second: cadence_106
+  - first:
+      213: 6271399938445863035
+    second: cadence_107
+  - first:
+      213: 8152313527540072181
+    second: cadence_108
+  - first:
+      213: 971099669841634545
+    second: cadence_109
+  - first:
+      213: -696405956507208109
+    second: cadence_110
+  - first:
+      213: -4928927707654911362
+    second: cadence_111
+  - first:
+      213: 1094737980579049428
+    second: cadence_112
+  - first:
+      213: -7538409047089725846
+    second: cadence_113
+  - first:
+      213: -4562402083744269160
+    second: cadence_114
+  - first:
+      213: 6101474802371858705
+    second: cadence_115
+  - first:
+      213: -8318384560748591319
+    second: cadence_116
+  - first:
+      213: 2803916365867791042
+    second: cadence_117
+  - first:
+      213: -1309197838266213052
+    second: cadence_118
+  - first:
+      213: -1247987998979221447
+    second: cadence_119
+  - first:
+      213: -6917005707563205538
+    second: cadence_120
+  - first:
+      213: 2635213900421423194
+    second: cadence_121
+  - first:
+      213: -8668525905555874082
+    second: cadence_122
+  - first:
+      213: 8484325480372742933
+    second: cadence_123
+  - first:
+      213: 8591858317656742210
+    second: cadence_124
+  - first:
+      213: -2554674448011259602
+    second: cadence_125
+  - first:
+      213: -2582396801171381064
+    second: cadence_126
+  - first:
+      213: -1771259178186991773
+    second: cadence_127
+  - first:
+      213: -7132464883705086335
+    second: cadence_128
+  - first:
+      213: -7182123505469907286
+    second: cadence_129
+  - first:
+      213: 5374015173642420413
+    second: cadence_130
+  - first:
+      213: -3718009968761329155
+    second: cadence_131
+  - first:
+      213: 9204057621808135426
+    second: cadence_132
+  - first:
+      213: 443361507764773327
+    second: cadence_133
+  - first:
+      213: -5900706448227805243
+    second: cadence_134
+  - first:
+      213: 1735936096334066764
+    second: cadence_135
+  - first:
+      213: 1390930112867552836
+    second: cadence_136
+  - first:
+      213: -7890884985543806371
+    second: cadence_137
+  - first:
+      213: -3519679552562416744
+    second: cadence_138
+  - first:
+      213: 572389007127536872
+    second: cadence_139
+  - first:
+      213: -256403171677662508
+    second: cadence_140
+  - first:
+      213: 6557107614980418299
+    second: cadence_141
+  - first:
+      213: -8398180562199314520
+    second: cadence_142
+  - first:
+      213: -8172238272788471609
+    second: cadence_143
+  - first:
+      213: 1839370846847812392
+    second: cadence_144
+  - first:
+      213: -3081388803041827177
+    second: cadence_145
+  - first:
+      213: 2157387977651090794
+    second: cadence_146
+  - first:
+      213: 729982305643650668
+    second: cadence_147
+  - first:
+      213: 1012501158973335050
+    second: cadence_148
+  - first:
+      213: -2112864909327022149
+    second: cadence_149
+  - first:
+      213: -4716529375937276604
+    second: cadence_150
+  - first:
+      213: 8923442947574142616
+    second: cadence_151
+  - first:
+      213: 4671011034939109885
+    second: cadence_152
+  - first:
+      213: 6495038099810847822
+    second: cadence_153
+  - first:
+      213: 6486225374416539999
+    second: cadence_154
+  - first:
+      213: 3069910953462598753
+    second: cadence_155
+  - first:
+      213: 4196172726071694394
+    second: cadence_156
+  - first:
+      213: 5644610624606840927
+    second: cadence_157
+  - first:
+      213: -857883563976152725
+    second: cadence_158
+  - first:
+      213: 6360016512134585335
+    second: cadence_159
+  - first:
+      213: 3991689741144542269
+    second: cadence_160
+  - first:
+      213: 8451329539486964090
+    second: cadence_161
+  - first:
+      213: -364913033002114291
+    second: cadence_162
+  - first:
+      213: 8058731982518301701
+    second: cadence_163
+  - first:
+      213: -4514464048437079621
+    second: cadence_164
+  - first:
+      213: -5898886136092798354
+    second: cadence_165
+  - first:
+      213: -4494794780312778285
+    second: cadence_166
+  - first:
+      213: -4007056428336561011
+    second: cadence_167
+  - first:
+      213: 4289515251202774970
+    second: cadence_168
+  - first:
+      213: 4287539479503249763
+    second: cadence_169
+  - first:
+      213: 2504977082314520095
+    second: cadence_170
+  - first:
+      213: 360345232725521517
+    second: cadence_171
+  - first:
+      213: -8894388975992015672
+    second: cadence_172
+  - first:
+      213: -2740081002866940042
+    second: cadence_173
+  - first:
+      213: -5729283904367194427
+    second: cadence_174
+  - first:
+      213: -741189487405044522
+    second: cadence_175
+  - first:
+      213: 7507657241154009706
+    second: cadence_176
+  - first:
+      213: 2324067045125298750
+    second: cadence_177
+  - first:
+      213: -8006832407213258593
+    second: cadence_178
+  - first:
+      213: -5265616587512554961
+    second: cadence_179
+  - first:
+      213: -2064296896146837153
+    second: cadence_180
+  - first:
+      213: 7251817959613149932
+    second: cadence_181
+  - first:
+      213: -1953798343129744013
+    second: cadence_182
+  - first:
+      213: 7097783036088255388
+    second: cadence_183
+  - first:
+      213: -9128513969738449688
+    second: cadence_184
+  - first:
+      213: -7501491591918074689
+    second: cadence_185
+  - first:
+      213: 5578871354532903381
+    second: cadence_186
+  - first:
+      213: 2609868076338888361
+    second: cadence_187
+  - first:
+      213: -1450351426694479497
+    second: cadence_188
+  - first:
+      213: 3276706783284205931
+    second: cadence_189
+  - first:
+      213: 3264056704668123521
+    second: cadence_190
+  - first:
+      213: 5253435983072766067
+    second: cadence_191
+  - first:
+      213: -5210901481269383839
+    second: cadence_192
+  - first:
+      213: 7438892304193007755
+    second: cadence_193
+  - first:
+      213: 5529789250487516794
+    second: cadence_194
+  - first:
+      213: -2869855782630326432
+    second: cadence_195
+  - first:
+      213: 6095433074778357230
+    second: cadence_196
+  - first:
+      213: 6045105501494343791
+    second: cadence_197
+  - first:
+      213: 4198792866333281266
+    second: cadence_198
+  - first:
+      213: 8540824547835419546
+    second: cadence_199
+  - first:
+      213: 1117826257696811935
+    second: cadence_200
+  - first:
+      213: -1886923501904391713
+    second: cadence_201
+  - first:
+      213: -8209327725002336126
+    second: cadence_202
+  - first:
+      213: 2883655750398194611
+    second: cadence_203
+  - first:
+      213: 4627962669250963700
+    second: cadence_204
+  - first:
+      213: 3889793415789404758
+    second: cadence_205
+  - first:
+      213: -4643492005961714149
+    second: cadence_206
+  - first:
+      213: 3953738876478890177
+    second: cadence_207
+  - first:
+      213: 8605698372632144004
+    second: cadence_208
+  - first:
+      213: -474319664536774388
+    second: cadence_209
+  - first:
+      213: 9167741052338036692
+    second: cadence_210
+  - first:
+      213: -7426053764862562297
+    second: cadence_211
+  - first:
+      213: 6309963514571466097
+    second: cadence_212
+  - first:
+      213: 4875267793245949449
+    second: cadence_213
+  - first:
+      213: -892721486648384159
+    second: cadence_214
+  - first:
+      213: 3647942953970570868
+    second: cadence_215
+  - first:
+      213: 7787337233142946480
+    second: cadence_216
+  - first:
+      213: -8402263470447252816
+    second: cadence_217
+  - first:
+      213: 452698627620924869
+    second: cadence_218
+  - first:
+      213: -4183629894254763755
+    second: cadence_219
+  - first:
+      213: 983183849259585591
+    second: cadence_220
+  - first:
+      213: -4617381279352832538
+    second: cadence_221
+  - first:
+      213: 4378280987036045220
+    second: cadence_222
+  - first:
+      213: 1723497147346466361
+    second: cadence_223
+  - first:
+      213: 2816387998561311756
+    second: cadence_224
+  - first:
+      213: 3102478761886572428
+    second: cadence_225
+  - first:
+      213: -2854845067972516561
+    second: cadence_226
+  - first:
+      213: -6900560194763456810
+    second: cadence_227
+  - first:
+      213: 3798646293024515898
+    second: cadence_228
+  - first:
+      213: 43208744240616050
+    second: cadence_229
+  - first:
+      213: 373291209517246606
+    second: cadence_230
+  - first:
+      213: 6364344105558480004
+    second: cadence_231
+  - first:
+      213: -5308109988733118954
+    second: cadence_232
+  - first:
+      213: 7745488003160603471
+    second: cadence_233
+  - first:
+      213: -3756395352204855583
+    second: cadence_234
+  - first:
+      213: 5914024206575525222
+    second: cadence_235
+  - first:
+      213: -3581672014941057179
+    second: cadence_236
+  - first:
+      213: -4504177165407054946
+    second: cadence_237
+  - first:
+      213: -3184341739061773018
+    second: cadence_238
+  - first:
+      213: 866653680468247009
+    second: cadence_239
+  - first:
+      213: -1946142396996349059
+    second: cadence_240
+  - first:
+      213: -729501258191581580
+    second: cadence_241
+  - first:
+      213: 6438400373873173996
+    second: cadence_242
+  - first:
+      213: 2499548897247606834
+    second: cadence_243
+  - first:
+      213: 7617758809432562961
+    second: cadence_244
+  - first:
+      213: -7229105319297147930
+    second: cadence_245
+  - first:
+      213: 8045456730520289073
+    second: cadence_246
+  - first:
+      213: 2855346956273878047
+    second: cadence_247
+  - first:
+      213: 1792611912122174858
+    second: cadence_248
+  - first:
+      213: 5669190851675467482
+    second: cadence_249
+  - first:
+      213: 1033748561085501998
+    second: cadence_250
+  - first:
+      213: -4884726006525549798
+    second: cadence_251
+  - first:
+      213: 3264714784205900797
+    second: cadence_252
+  - first:
+      213: 4520738343094576028
+    second: cadence_253
+  - first:
+      213: -4363993344548671227
+    second: cadence_254
+  - first:
+      213: -6322624466044039461
+    second: cadence_255
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cadence_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 371
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036f881794e3ca420800000000000000
+      internalID: 2642555566517974576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 372
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fdcb605c2cd65c60800000000000000
+      internalID: 7806669086979247603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 372
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0325c4c37a4fb9250800000000000000
+      internalID: 5952620331608592944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_3
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 372
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932730981c8e993a0800000000000000
+      internalID: -6658034656165531079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_4
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 371
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b428615f1a857ba70800000000000000
+      internalID: 8842633845990130251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 372
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9cd2c281ca1d200800000000000000
+      internalID: 203132678028773841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_6
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 372
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b8e03038f52bca0800000000000000
+      internalID: -6002630337034810621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_7
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 372
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed5003ea051a89260800000000000000
+      internalID: 7104605780068795870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_8
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 371
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4613d67f402364390800000000000000
+      internalID: -7834519504852012700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_9
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 372
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249f1a652967763a0800000000000000
+      internalID: -6672233952035342014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_10
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 372
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130b945f1d4712fb0800000000000000
+      internalID: -4674326493121630159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_11
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 372
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b8f07fa7f62ddd0800000000000000
+      internalID: -2462783472296555773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_12
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 371
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd8dd6b55d4f33c0800000000000000
+      internalID: -4377695282245300738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_13
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 372
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 858f743c759e3b110800000000000000
+      internalID: 1275619682623682648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_14
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 372
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa6c9bb0880a0780800000000000000
+      internalID: -8716144779825747285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_15
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 372
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52cc018b2d4ec01e0800000000000000
+      internalID: -2230156121772864475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 347
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2665d92c62b6be90800000000000000
+      internalID: -7010219592327535061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_17
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 348
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d312ecea13a4045e0800000000000000
+      internalID: -1927459063267974851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_18
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 349
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0a30fd395fda410800000000000000
+      internalID: 1490117067180056755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_19
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 348
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232d2239a54365a40800000000000000
+      internalID: 5356526370424017458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_20
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 347
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d013e039c644f80800000000000000
+      internalID: -8123248449015444138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_21
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 348
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd1bbb0241485ad0800000000000000
+      internalID: -2713347023570264646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_22
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 349
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b45e236a46b12090800000000000000
+      internalID: -8060961427408661319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_23
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 348
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce78f40dff804350800000000000000
+      internalID: 5998953020530392777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_24
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 347
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c363177209fe090800000000000000
+      internalID: -8003019513736577950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_25
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 348
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c08529b0fb83b60800000000000000
+      internalID: 7726135217174875268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_26
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 349
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab5546dfc2708370800000000000000
+      internalID: 8322778348359343008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_27
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 348
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5eea41736439fb60800000000000000
+      internalID: 7780307432966385243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_28
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 347
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a34f54a666d6ba20800000000000000
+      internalID: 3077883131687027620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_29
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 348
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c50962ef6565e30800000000000000
+      internalID: 4491873327917325346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_30
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 349
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16af8425e72e7ef30800000000000000
+      internalID: 4604898176183892577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_31
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 348
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85804a8f5d4c44a0800000000000000
+      internalID: -6607821480522644083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 312
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbdf3ef3c1ee3b630800000000000000
+      internalID: 3941755903977717179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_33
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 312
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a1a6866050543c0800000000000000
+      internalID: -4376085937840842158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_34
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 312
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0644fffac9b56680800000000000000
+      internalID: -8762393218450700790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_35
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 312
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f062bf350b86428b0800000000000000
+      internalID: -5177898565036726769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_36
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 312
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9bd0fc89d85bfa0800000000000000
+      internalID: -5785562458839205388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_37
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 312
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6368b690e6c03f0800000000000000
+      internalID: -933250036034816274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_38
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 312
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f9e4f0dc0ba4210800000000000000
+      internalID: 1318060235730886417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_39
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 312
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8de0999222e7df0800000000000000
+      internalID: -180669372991350623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_40
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 312
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310302c2a4ab2f0f0800000000000000
+      internalID: -1084599732512215021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_41
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 312
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c5edfc022a8dd890800000000000000
+      internalID: -7431631931239963191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_42
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 312
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b9d8f37a697c2a0800000000000000
+      internalID: -6717234674129855600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_43
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 312
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a41136aa30cccac0800000000000000
+      internalID: -3833477824670264159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_44
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 312
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8e6233309f2f690800000000000000
+      internalID: -7569714231517976367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_45
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 312
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e0fbe02d3e1b0c60800000000000000
+      internalID: 7785349628734206181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_46
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 312
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43f4ed10af732b40800000000000000
+      internalID: 5414311502702506827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_47
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 312
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2afba4f0cca2270800000000000000
+      internalID: 8226612035396281021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_48
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 288
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba554f734c3f4ca0800000000000000
+      internalID: -6030535115430077774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_49
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 288
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec85d23557c811a0800000000000000
+      internalID: -6838496865423094559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_50
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 288
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981e4ad1d40b9d770800000000000000
+      internalID: 8636127605715952009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_51
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 288
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa372981a063df20800000000000000
+      internalID: 3446204386775612156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_52
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 288
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14cac46f8d7490900800000000000000
+      internalID: 651130618302475329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_53
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 288
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24648373f7a1aa140800000000000000
+      internalID: 4731623492195731010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_54
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 288
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd15b144e61e71b0800000000000000
+      internalID: -5657058912320021034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_55
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 288
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e669acb4cdea2edd0800000000000000
+      internalID: -2458210185403263378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_56
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 288
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30b40d5788ef8050800000000000000
+      internalID: 5805114112782676029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_57
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 288
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31bf169cf2c363c20800000000000000
+      internalID: 3185799962350975763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_58
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 288
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf8aab87e5e71090800000000000000
+      internalID: -8063723825140166716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_59
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 288
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b3cef17daed0dd0800000000000000
+      internalID: -2518098406955795615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_60
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 288
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6342f43b3b6a760800000000000000
+      internalID: 7468854614748837619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_61
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 288
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16fe2e41c169cebd0800000000000000
+      internalID: -2599537837545951391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_62
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 288
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055f48af60cd0ba00800000000000000
+      internalID: 770357458811286864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_63
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 288
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0f3d1fc564446c0800000000000000
+      internalID: -4160122790775361308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_64
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 264
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111a72da8eada9110800000000000000
+      internalID: 1268566937930539281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_65
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94cf0ce94b3371de0800000000000000
+      internalID: -1362563511405708215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_66
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ba8ca6129578df0800000000000000
+      internalID: -178075660197516438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_67
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 264
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1b3642a56a0f670800000000000000
+      internalID: 8570532996973834718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_68
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 264
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18b6e3af561a9380800000000000000
+      internalID: -8963827508300040164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_69
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380578ae8bd9bbd70800000000000000
+      internalID: 9060008492920164483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_70
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c0f53e3167cfa20800000000000000
+      internalID: 3097480471515171938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_71
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 264
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35e2748e0fb6d080800000000000000
+      internalID: -9162926322766125766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_72
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 264
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c94cbca6498b4f0800000000000000
+      internalID: -812736546334270369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_73
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afd016c1acc8b140800000000000000
+      internalID: 4735760003364872105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_74
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3870fce3c9b49c060800000000000000
+      internalID: 6974188632400660355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_75
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 264
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0019c2f10a0125330800000000000000
+      internalID: 3698036523928424704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_76
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 264
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 518ac05c509db9f60800000000000000
+      internalID: 8042260178404157461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_77
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283d89808bc0c1d10800000000000000
+      internalID: 2097565511005557634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_78
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd9d6fd1ca3c11a0800000000000000
+      internalID: -6837525529903653423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_79
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 264
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa37d2571911d0c0800000000000000
+      internalID: -4552830160330081620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_80
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 240
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7024880e1c1f995d0800000000000000
+      internalID: -3055145057196162553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_81
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 240
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b35310f18690ff90800000000000000
+      internalID: -6921867142445706320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_82
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 240
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef69c5f71df35da20800000000000000
+      internalID: 3086443288649832190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_83
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 240
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc6bd20ee93b24a10800000000000000
+      internalID: 1892272288396326604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_84
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 240
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5572f2f4caf81f650800000000000000
+      internalID: 6264946526874707797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_85
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 240
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75815bcfe79a84a0800000000000000
+      internalID: -6590288048539204225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_86
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 240
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345e82c8963e7bbc0800000000000000
+      internalID: -3767292520809568957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_87
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 240
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d824f90efc25f9900800000000000000
+      internalID: 693363920418587277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_88
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 240
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e61a59440bfbf6d0800000000000000
+      internalID: -2955492734609516824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_89
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 240
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56fb76c7dfa69a990800000000000000
+      internalID: -7374245277896032411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_90
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 240
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1513065f3c6ca2a10800000000000000
+      internalID: 1885537938945618257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_91
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 240
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61cc573633b76a1e0800000000000000
+      internalID: -2186925108399584234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_92
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 240
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b013aa8cdc6feb90800000000000000
+      internalID: -7210424783922327376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_93
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 240
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f048f7458daf7b40800000000000000
+      internalID: 5440257662836556021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_94
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 240
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e001c10fe029230800000000000000
+      internalID: 3643991472921906702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_95
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 240
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a7d434f1f395db0800000000000000
+      internalID: -4802738124108236162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_96
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 216
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c85d85af824b240800000000000000
+      internalID: 4806511758008487032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_97
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 216
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737c103d88378ba90800000000000000
+      internalID: -7297956164661033161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_98
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 216
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492700e6ce8323340800000000000000
+      internalID: 4841995137485664916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_99
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 216
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd39edd62f2172ee0800000000000000
+      internalID: -1286038336156298275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_100
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 216
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6396635b9a06e7d0800000000000000
+      internalID: -2889610448676154516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_101
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 216
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279efca1aae697030800000000000000
+      internalID: 3492944662875859314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_102
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 216
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753725417100a4c10800000000000000
+      internalID: 2038441880463766359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_103
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 216
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b746a0027cf16b0800000000000000
+      internalID: -5323317294101398695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_104
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 216
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e05d7a230e4b4540800000000000000
+      internalID: 4993170387375050984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_105
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 216
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33cefe7f3ecce1590800000000000000
+      internalID: -7701493033267631053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_106
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 216
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697ec7ade5c208d60800000000000000
+      internalID: 7890355333057275798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_107
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 216
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b78e877440d780750800000000000000
+      internalID: 6271399938445863035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_108
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 216
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe33a2e5f5d22170800000000000000
+      internalID: 8152313527540072181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_109
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 216
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4e86e210a0a7d00800000000000000
+      internalID: 971099669841634545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_110
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 216
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356fbe6e87ed556f0800000000000000
+      internalID: -696405956507208109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_111
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 216
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a06ad4d5ee89bb0800000000000000
+      internalID: -4928927707654911362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_112
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 192
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dfea86a46a413f00800000000000000
+      internalID: 1094737980579049428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_113
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 192
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e30a079e0326790800000000000000
+      internalID: -7538409047089725846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_114
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 192
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89cbbeb3a771fa0c0800000000000000
+      internalID: -4562402083744269160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_115
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 192
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1111f59710bcca450800000000000000
+      internalID: 6101474802371858705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_116
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 192
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9278c7f80592f8c80800000000000000
+      internalID: -8318384560748591319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_117
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 192
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c23477341389e620800000000000000
+      internalID: 2803916365867791042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_118
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 192
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44dde65a08bc4dde0800000000000000
+      internalID: -1309197838266213052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_119
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 192
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93894ece6814eaee0800000000000000
+      internalID: -1247987998979221447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_120
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 192
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c7853f4fbd100a0800000000000000
+      internalID: -6917005707563205538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_121
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 192
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a506ac99419229420800000000000000
+      internalID: 2635213900421423194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_122
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 192
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede1211ed9533b780800000000000000
+      internalID: -8668525905555874082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_123
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 192
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ba96092116eb570800000000000000
+      internalID: 8484325480372742933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_124
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 192
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2495a684e996c3770800000000000000
+      internalID: 8591858317656742210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_125
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 192
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e219581ff19fb8cd0800000000000000
+      internalID: -2554674448011259602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_126
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 192
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4231d9acb792cd0800000000000000
+      internalID: -2582396801171381064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_127
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 192
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367930779293b67e0800000000000000
+      internalID: -1771259178186991773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_128
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 168
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e7fc94af4640d90800000000000000
+      internalID: -7132464883705086335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_129
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 168
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae9b7b69b8f35c90800000000000000
+      internalID: -7182123505469907286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_130
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 168
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db00482e356549a40800000000000000
+      internalID: 5374015173642420413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_131
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 168
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9ae9cd1a9f66cc0800000000000000
+      internalID: -3718009968761329155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_132
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 168
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20db91054a16bbf70800000000000000
+      internalID: 9204057621808135426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_133
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 168
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1a66931f2272600800000000000000
+      internalID: 443361507764773327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_134
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 168
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c75685afba7c1ea0800000000000000
+      internalID: -5900706448227805243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_135
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 168
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4435c6aea8471810800000000000000
+      internalID: 1735936096334066764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_136
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 168
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e4dd471939d4310800000000000000
+      internalID: 1390930112867552836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_137
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 168
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d52b231d9e1fd7290800000000000000
+      internalID: -7890884985543806371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_138
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 168
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893bf425816972fc0800000000000000
+      internalID: -3519679552562416744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_139
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 168
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4ec23f4c881f700800000000000000
+      internalID: 572389007127536872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_140
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 168
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d29ed08ca2117cf0800000000000000
+      internalID: -256403171677662508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_141
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 168
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfaaae082a68ffa50800000000000000
+      internalID: 6557107614980418299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_142
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 168
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aff48e264ba37b80800000000000000
+      internalID: -8398180562199314520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_143
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 168
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c0679ad690669e80800000000000000
+      internalID: -8172238272788471609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_144
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 144
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823c2903a02c68910800000000000000
+      internalID: 1839370846847812392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_145
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 144
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79663d3a535bc35d0800000000000000
+      internalID: -3081388803041827177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_146
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 144
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6577927fe490fd10800000000000000
+      internalID: 2157387977651090794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_147
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 144
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ed5341a0b612a00800000000000000
+      internalID: 729982305643650668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_148
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 144
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06e64b80702d0e00800000000000000
+      internalID: 1012501158973335050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_149
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 144
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7cc253f889da2e0800000000000000
+      internalID: -2112864909327022149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_150
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 144
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445509695858b8eb0800000000000000
+      internalID: -4716529375937276604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_151
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 144
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8961f97151076db70800000000000000
+      internalID: 8923442947574142616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_152
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 144
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df1b977c9c3c2d040800000000000000
+      internalID: 4671011034939109885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_153
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 144
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c8ad55db2032a50800000000000000
+      internalID: 6495038099810847822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_154
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 144
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51193fcc93b30a50800000000000000
+      internalID: 6486225374416539999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_155
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 144
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c08314fb38a9a20800000000000000
+      internalID: 3069910953462598753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_156
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 144
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a349fa1bcdccb3a30800000000000000
+      internalID: 4196172726071694394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_157
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 144
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f582617e47fa55e40800000000000000
+      internalID: 5644610624606840927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_158
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 144
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b692e8e917f2814f0800000000000000
+      internalID: -857883563976152725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_159
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 144
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb966b2251534850800000000000000
+      internalID: 6360016512134585335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_160
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 120
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ccd72bba4556730800000000000000
+      internalID: 3991689741144542269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_161
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 120
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a79d2e86077294570800000000000000
+      internalID: 8451329539486964090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_162
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 120
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03aff5a7819feaf0800000000000000
+      internalID: -364913033002114291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_163
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 120
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50435168a0e56df60800000000000000
+      internalID: 8058731982518301701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_164
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 120
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1d2a9ddd66951c0800000000000000
+      internalID: -4514464048437079621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_165
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 120
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6256b71052f22ea0800000000000000
+      internalID: -5898886136092798354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_166
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 120
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d94d2536f74f91c0800000000000000
+      internalID: -4494794780312778285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_167
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 120
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84cd02a8631468c0800000000000000
+      internalID: -4007056428336561011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_168
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 120
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7df86e46b678b30800000000000000
+      internalID: 4289515251202774970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_169
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 120
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3612144b076608b30800000000000000
+      internalID: 4287539479503249763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_170
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 120
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16f9d9626773c220800000000000000
+      internalID: 2504977082314520095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_171
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 120
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d643c197414300500800000000000000
+      internalID: 360345232725521517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_172
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 120
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c478dfc958c09480800000000000000
+      internalID: -8894388975992015672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_173
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 120
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 677e15078d649f9d0800000000000000
+      internalID: -2740081002866940042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_174
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 120
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce84ded4ae7d70b0800000000000000
+      internalID: -5729283904367194427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_175
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 120
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dce7f39614c6b5f0800000000000000
+      internalID: -741189487405044522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_176
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 96
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6abf5acb7e803860800000000000000
+      internalID: 7507657241154009706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_177
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 96
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a92e20aaeb04020800000000000000
+      internalID: 2324067045125298750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_178
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 96
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98c7fff85402e090800000000000000
+      internalID: -8006832407213258593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_179
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 96
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ad8e1bc95cce6b0800000000000000
+      internalID: -5265616587512554961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_180
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 96
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51f93af8e42a53e0800000000000000
+      internalID: -2064296896146837153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_181
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 96
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce23a823302a3a460800000000000000
+      internalID: 7251817959613149932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_182
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 96
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d310332c6b2e4e0800000000000000
+      internalID: -1953798343129744013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_183
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 96
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9385dec014608260800000000000000
+      internalID: 7097783036088255388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_184
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 96
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec7c82d8e0015180800000000000000
+      internalID: -9128513969738449688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_185
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 96
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4c42a442955e790800000000000000
+      internalID: -7501491591918074689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_186
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 96
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9398650f12c6d40800000000000000
+      internalID: 5578871354532903381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_187
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 96
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aebfc0103d183420800000000000000
+      internalID: 2609868076338888361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_188
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 96
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771056ccf015fdbe0800000000000000
+      internalID: -1450351426694479497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_189
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 96
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6994ca6573397d20800000000000000
+      internalID: 3276706783284205931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_190
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 96
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181c97877424c4d20800000000000000
+      internalID: 3264056704668123521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_191
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 96
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378ae455134f7e840800000000000000
+      internalID: 5253435983072766067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_192
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 72
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16da16916b82fa7b0800000000000000
+      internalID: -5210901481269383839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_193
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 72
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b80bfc143214c3760800000000000000
+      internalID: 7438892304193007755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_194
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 72
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ef4167602cdbc40800000000000000
+      internalID: 5529789250487516794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_195
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 72
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06ff7bfee593c28d0800000000000000
+      internalID: -2869855782630326432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_196
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 72
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eedb4562614579450800000000000000
+      internalID: 6095433074778357230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_197
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 72
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68745edc6784e350800000000000000
+      internalID: 6045105501494343791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_198
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 72
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb4d33addb154a30800000000000000
+      internalID: 4198792866333281266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_199
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 72
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b9aaeccaa178670800000000000000
+      internalID: 8540824547835419546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_200
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 72
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b6f921f01538f00800000000000000
+      internalID: 1117826257696811935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_201
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 72
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd117a6821d40d5e0800000000000000
+      internalID: -1886923501904391713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_202
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 72
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2885872ddeb921e80800000000000000
+      internalID: -8209327725002336126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_203
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 72
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b33ff070adc40820800000000000000
+      internalID: 2883655750398194611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_204
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 72
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f8e8761783d93040800000000000000
+      internalID: 4627962669250963700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_205
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 72
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652e7cda0825bf530800000000000000
+      internalID: 3889793415789404758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_206
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 72
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1639437f900f8fb0800000000000000
+      internalID: -4643492005961714149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_207
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 72
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c02d237f808ed630800000000000000
+      internalID: 3953738876478890177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_208
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 48
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48865e033159d6770800000000000000
+      internalID: 8605698372632144004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_209
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 48
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c099d4537c0ea69f0800000000000000
+      internalID: -474319664536774388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_210
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 48
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dfdf511aeb5a3f70800000000000000
+      internalID: 9167741052338036692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_211
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 48
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7003a6e127b51f890800000000000000
+      internalID: -7426053764862562297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_212
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 48
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17525b7826e719750800000000000000
+      internalID: 6309963514571466097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_213
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 48
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ec3594a3e68a340800000000000000
+      internalID: 4875267793245949449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_214
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 48
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165e6f8a98a6c93f0800000000000000
+      internalID: -892721486648384159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_215
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 48
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4761e4cf9c810a230800000000000000
+      internalID: 3647942953970570868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_216
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 48
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba98a754fd221c60800000000000000
+      internalID: 7787337233142946480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_217
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 48
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba20c604e9256b80800000000000000
+      internalID: -8402263470447252816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_218
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 48
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cde6a9d00f484600800000000000000
+      internalID: 452698627620924869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_219
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 48
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5116d39e6c2c0f5c0800000000000000
+      internalID: -4183629894254763755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_220
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 48
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730d4047088f4ad00800000000000000
+      internalID: 983183849259585591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_221
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 48
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6edb2abb034cbefb0800000000000000
+      internalID: -4617381279352832538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_222
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 48
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af412f4c57c2cc30800000000000000
+      internalID: 4378280987036045220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_223
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 48
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9363cf626871be710800000000000000
+      internalID: 1723497147346466361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_224
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 24
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c9beb76f1d51720800000000000000
+      internalID: 2816387998561311756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_225
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 24
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f517d0ff73e0b20800000000000000
+      internalID: 3102478761886572428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_226
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 24
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25e8ba498d8168d0800000000000000
+      internalID: -2854845067972516561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_227
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 24
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de7ce740194c30a0800000000000000
+      internalID: -6900560194763456810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_228
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 24
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37a41b6da087b430800000000000000
+      internalID: 3798646293024515898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_229
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 24
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27217abbf12899000800000000000000
+      internalID: 43208744240616050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_230
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 24
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e882d0590623e2500800000000000000
+      internalID: 373291209517246606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_231
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 24
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4841a288e31b25850800000000000000
+      internalID: 6364344105558480004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_232
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 24
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6161cdcb61ec556b0800000000000000
+      internalID: -5308109988733118954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_233
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 24
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4bff603d408d7b60800000000000000
+      internalID: 7745488003160603471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_234
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 24
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6b6e3545a9edbc0800000000000000
+      internalID: -3756395352204855583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_235
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 24
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ddef99ea5d21250800000000000000
+      internalID: 5914024206575525222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_236
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 24
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f0b7767485b4ec0800000000000000
+      internalID: -3581672014941057179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_237
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 24
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e939c727bb2fd71c0800000000000000
+      internalID: -4504177165407054946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_238
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 24
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62df5c74f02fec3d0800000000000000
+      internalID: -3184341739061773018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_239
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 24
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e1489f3ee8f60c00800000000000000
+      internalID: 866653680468247009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_240
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7394b01dc9edf4e0800000000000000
+      internalID: -1946142396996349059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_241
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e4a42887a40e5f0800000000000000
+      internalID: -729501258191581580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_242
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5e376270bc95950800000000000000
+      internalID: 6438400373873173996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_243
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238b9279a7e20b220800000000000000
+      internalID: 2499548897247606834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_244
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 0
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d94dcc647b7b960800000000000000
+      internalID: 7617758809432562961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_245
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb1867730f0dab90800000000000000
+      internalID: -7229105319297147930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_246
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13fff6e054437af60800000000000000
+      internalID: 8045456730520289073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_247
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14823fadea30a720800000000000000
+      internalID: 2855346956273878047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_248
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d0d225903a0e810800000000000000
+      internalID: 1792611912122174858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_249
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adea20efa030dae40800000000000000
+      internalID: 5669190851675467482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_250
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22929ad6dc985e00800000000000000
+      internalID: 1033748561085501998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_251
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13aee3d397f53cb0800000000000000
+      internalID: -4884726006525549798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_252
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb0f8d8cc89e4d20800000000000000
+      internalID: 3264714784205900797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_253
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93e3a63293ecbe30800000000000000
+      internalID: 4520738343094576028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_254
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501f100bc2bff63c0800000000000000
+      internalID: -4363993344548671227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadence_255
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bde404dfb868148a0800000000000000
+      internalID: -6322624466044039461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cadence_0: 2642555566517974576
+      cadence_1: 7806669086979247603
+      cadence_10: -4674326493121630159
+      cadence_100: -2889610448676154516
+      cadence_101: 3492944662875859314
+      cadence_102: 2038441880463766359
+      cadence_103: -5323317294101398695
+      cadence_104: 4993170387375050984
+      cadence_105: -7701493033267631053
+      cadence_106: 7890355333057275798
+      cadence_107: 6271399938445863035
+      cadence_108: 8152313527540072181
+      cadence_109: 971099669841634545
+      cadence_11: -2462783472296555773
+      cadence_110: -696405956507208109
+      cadence_111: -4928927707654911362
+      cadence_112: 1094737980579049428
+      cadence_113: -7538409047089725846
+      cadence_114: -4562402083744269160
+      cadence_115: 6101474802371858705
+      cadence_116: -8318384560748591319
+      cadence_117: 2803916365867791042
+      cadence_118: -1309197838266213052
+      cadence_119: -1247987998979221447
+      cadence_12: -4377695282245300738
+      cadence_120: -6917005707563205538
+      cadence_121: 2635213900421423194
+      cadence_122: -8668525905555874082
+      cadence_123: 8484325480372742933
+      cadence_124: 8591858317656742210
+      cadence_125: -2554674448011259602
+      cadence_126: -2582396801171381064
+      cadence_127: -1771259178186991773
+      cadence_128: -7132464883705086335
+      cadence_129: -7182123505469907286
+      cadence_13: 1275619682623682648
+      cadence_130: 5374015173642420413
+      cadence_131: -3718009968761329155
+      cadence_132: 9204057621808135426
+      cadence_133: 443361507764773327
+      cadence_134: -5900706448227805243
+      cadence_135: 1735936096334066764
+      cadence_136: 1390930112867552836
+      cadence_137: -7890884985543806371
+      cadence_138: -3519679552562416744
+      cadence_139: 572389007127536872
+      cadence_14: -8716144779825747285
+      cadence_140: -256403171677662508
+      cadence_141: 6557107614980418299
+      cadence_142: -8398180562199314520
+      cadence_143: -8172238272788471609
+      cadence_144: 1839370846847812392
+      cadence_145: -3081388803041827177
+      cadence_146: 2157387977651090794
+      cadence_147: 729982305643650668
+      cadence_148: 1012501158973335050
+      cadence_149: -2112864909327022149
+      cadence_15: -2230156121772864475
+      cadence_150: -4716529375937276604
+      cadence_151: 8923442947574142616
+      cadence_152: 4671011034939109885
+      cadence_153: 6495038099810847822
+      cadence_154: 6486225374416539999
+      cadence_155: 3069910953462598753
+      cadence_156: 4196172726071694394
+      cadence_157: 5644610624606840927
+      cadence_158: -857883563976152725
+      cadence_159: 6360016512134585335
+      cadence_16: -7010219592327535061
+      cadence_160: 3991689741144542269
+      cadence_161: 8451329539486964090
+      cadence_162: -364913033002114291
+      cadence_163: 8058731982518301701
+      cadence_164: -4514464048437079621
+      cadence_165: -5898886136092798354
+      cadence_166: -4494794780312778285
+      cadence_167: -4007056428336561011
+      cadence_168: 4289515251202774970
+      cadence_169: 4287539479503249763
+      cadence_17: -1927459063267974851
+      cadence_170: 2504977082314520095
+      cadence_171: 360345232725521517
+      cadence_172: -8894388975992015672
+      cadence_173: -2740081002866940042
+      cadence_174: -5729283904367194427
+      cadence_175: -741189487405044522
+      cadence_176: 7507657241154009706
+      cadence_177: 2324067045125298750
+      cadence_178: -8006832407213258593
+      cadence_179: -5265616587512554961
+      cadence_18: 1490117067180056755
+      cadence_180: -2064296896146837153
+      cadence_181: 7251817959613149932
+      cadence_182: -1953798343129744013
+      cadence_183: 7097783036088255388
+      cadence_184: -9128513969738449688
+      cadence_185: -7501491591918074689
+      cadence_186: 5578871354532903381
+      cadence_187: 2609868076338888361
+      cadence_188: -1450351426694479497
+      cadence_189: 3276706783284205931
+      cadence_19: 5356526370424017458
+      cadence_190: 3264056704668123521
+      cadence_191: 5253435983072766067
+      cadence_192: -5210901481269383839
+      cadence_193: 7438892304193007755
+      cadence_194: 5529789250487516794
+      cadence_195: -2869855782630326432
+      cadence_196: 6095433074778357230
+      cadence_197: 6045105501494343791
+      cadence_198: 4198792866333281266
+      cadence_199: 8540824547835419546
+      cadence_2: 5952620331608592944
+      cadence_20: -8123248449015444138
+      cadence_200: 1117826257696811935
+      cadence_201: -1886923501904391713
+      cadence_202: -8209327725002336126
+      cadence_203: 2883655750398194611
+      cadence_204: 4627962669250963700
+      cadence_205: 3889793415789404758
+      cadence_206: -4643492005961714149
+      cadence_207: 3953738876478890177
+      cadence_208: 8605698372632144004
+      cadence_209: -474319664536774388
+      cadence_21: -2713347023570264646
+      cadence_210: 9167741052338036692
+      cadence_211: -7426053764862562297
+      cadence_212: 6309963514571466097
+      cadence_213: 4875267793245949449
+      cadence_214: -892721486648384159
+      cadence_215: 3647942953970570868
+      cadence_216: 7787337233142946480
+      cadence_217: -8402263470447252816
+      cadence_218: 452698627620924869
+      cadence_219: -4183629894254763755
+      cadence_22: -8060961427408661319
+      cadence_220: 983183849259585591
+      cadence_221: -4617381279352832538
+      cadence_222: 4378280987036045220
+      cadence_223: 1723497147346466361
+      cadence_224: 2816387998561311756
+      cadence_225: 3102478761886572428
+      cadence_226: -2854845067972516561
+      cadence_227: -6900560194763456810
+      cadence_228: 3798646293024515898
+      cadence_229: 43208744240616050
+      cadence_23: 5998953020530392777
+      cadence_230: 373291209517246606
+      cadence_231: 6364344105558480004
+      cadence_232: -5308109988733118954
+      cadence_233: 7745488003160603471
+      cadence_234: -3756395352204855583
+      cadence_235: 5914024206575525222
+      cadence_236: -3581672014941057179
+      cadence_237: -4504177165407054946
+      cadence_238: -3184341739061773018
+      cadence_239: 866653680468247009
+      cadence_24: -8003019513736577950
+      cadence_240: -1946142396996349059
+      cadence_241: -729501258191581580
+      cadence_242: 6438400373873173996
+      cadence_243: 2499548897247606834
+      cadence_244: 7617758809432562961
+      cadence_245: -7229105319297147930
+      cadence_246: 8045456730520289073
+      cadence_247: 2855346956273878047
+      cadence_248: 1792611912122174858
+      cadence_249: 5669190851675467482
+      cadence_25: 7726135217174875268
+      cadence_250: 1033748561085501998
+      cadence_251: -4884726006525549798
+      cadence_252: 3264714784205900797
+      cadence_253: 4520738343094576028
+      cadence_254: -4363993344548671227
+      cadence_255: -6322624466044039461
+      cadence_26: 8322778348359343008
+      cadence_27: 7780307432966385243
+      cadence_28: 3077883131687027620
+      cadence_29: 4491873327917325346
+      cadence_3: -6658034656165531079
+      cadence_30: 4604898176183892577
+      cadence_31: -6607821480522644083
+      cadence_32: 3941755903977717179
+      cadence_33: -4376085937840842158
+      cadence_34: -8762393218450700790
+      cadence_35: -5177898565036726769
+      cadence_36: -5785562458839205388
+      cadence_37: -933250036034816274
+      cadence_38: 1318060235730886417
+      cadence_39: -180669372991350623
+      cadence_4: 8842633845990130251
+      cadence_40: -1084599732512215021
+      cadence_41: -7431631931239963191
+      cadence_42: -6717234674129855600
+      cadence_43: -3833477824670264159
+      cadence_44: -7569714231517976367
+      cadence_45: 7785349628734206181
+      cadence_46: 5414311502702506827
+      cadence_47: 8226612035396281021
+      cadence_48: -6030535115430077774
+      cadence_49: -6838496865423094559
+      cadence_5: 203132678028773841
+      cadence_50: 8636127605715952009
+      cadence_51: 3446204386775612156
+      cadence_52: 651130618302475329
+      cadence_53: 4731623492195731010
+      cadence_54: -5657058912320021034
+      cadence_55: -2458210185403263378
+      cadence_56: 5805114112782676029
+      cadence_57: 3185799962350975763
+      cadence_58: -8063723825140166716
+      cadence_59: -2518098406955795615
+      cadence_6: -6002630337034810621
+      cadence_60: 7468854614748837619
+      cadence_61: -2599537837545951391
+      cadence_62: 770357458811286864
+      cadence_63: -4160122790775361308
+      cadence_64: 1268566937930539281
+      cadence_65: -1362563511405708215
+      cadence_66: -178075660197516438
+      cadence_67: 8570532996973834718
+      cadence_68: -8963827508300040164
+      cadence_69: 9060008492920164483
+      cadence_7: 7104605780068795870
+      cadence_70: 3097480471515171938
+      cadence_71: -9162926322766125766
+      cadence_72: -812736546334270369
+      cadence_73: 4735760003364872105
+      cadence_74: 6974188632400660355
+      cadence_75: 3698036523928424704
+      cadence_76: 8042260178404157461
+      cadence_77: 2097565511005557634
+      cadence_78: -6837525529903653423
+      cadence_79: -4552830160330081620
+      cadence_8: -7834519504852012700
+      cadence_80: -3055145057196162553
+      cadence_81: -6921867142445706320
+      cadence_82: 3086443288649832190
+      cadence_83: 1892272288396326604
+      cadence_84: 6264946526874707797
+      cadence_85: -6590288048539204225
+      cadence_86: -3767292520809568957
+      cadence_87: 693363920418587277
+      cadence_88: -2955492734609516824
+      cadence_89: -7374245277896032411
+      cadence_9: -6672233952035342014
+      cadence_90: 1885537938945618257
+      cadence_91: -2186925108399584234
+      cadence_92: -7210424783922327376
+      cadence_93: 5440257662836556021
+      cadence_94: 3643991472921906702
+      cadence_95: -4802738124108236162
+      cadence_96: 4806511758008487032
+      cadence_97: -7297956164661033161
+      cadence_98: 4841995137485664916
+      cadence_99: -1286038336156298275
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

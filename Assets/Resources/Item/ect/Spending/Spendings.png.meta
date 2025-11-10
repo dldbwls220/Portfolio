@@ -1,0 +1,3419 @@
+fileFormatVersion: 2
+guid: 4895be74a75d664499bf14f829296839
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4613758592743318979
+    second: Spendings_0
+  - first:
+      213: 6841697918644010305
+    second: Spendings_1
+  - first:
+      213: -1123122534045850599
+    second: Spendings_2
+  - first:
+      213: -4727018228471607065
+    second: Spendings_3
+  - first:
+      213: -7505329941878465487
+    second: Spendings_4
+  - first:
+      213: -1217646843694906322
+    second: Spendings_5
+  - first:
+      213: 5128394069854199567
+    second: Spendings_6
+  - first:
+      213: -7129705066632005230
+    second: Spendings_7
+  - first:
+      213: 6296122199973223629
+    second: Spendings_8
+  - first:
+      213: -4281289926709270190
+    second: Spendings_9
+  - first:
+      213: 7041239606119140872
+    second: Spendings_10
+  - first:
+      213: 5902092004722427773
+    second: Spendings_11
+  - first:
+      213: 4636482201566901816
+    second: Spendings_12
+  - first:
+      213: 5271370113038189714
+    second: Spendings_13
+  - first:
+      213: 6724574631225732184
+    second: Spendings_14
+  - first:
+      213: -6676836235324017178
+    second: Spendings_15
+  - first:
+      213: -2697573868450441420
+    second: Spendings_16
+  - first:
+      213: -7558232830293506082
+    second: Spendings_17
+  - first:
+      213: 8507459447755857697
+    second: Spendings_18
+  - first:
+      213: 2419693003722669649
+    second: Spendings_19
+  - first:
+      213: 1755650800524971366
+    second: Spendings_20
+  - first:
+      213: 1116592821369491559
+    second: Spendings_21
+  - first:
+      213: 5129476586924661626
+    second: Spendings_22
+  - first:
+      213: -1227595878952884794
+    second: Spendings_23
+  - first:
+      213: -2852220955337666921
+    second: Spendings_24
+  - first:
+      213: 7819878169416144142
+    second: Spendings_25
+  - first:
+      213: -193006827631322570
+    second: Spendings_26
+  - first:
+      213: -2428776979435452950
+    second: Spendings_27
+  - first:
+      213: 2873530232611293848
+    second: Spendings_28
+  - first:
+      213: 1515781323427723397
+    second: Spendings_29
+  - first:
+      213: -938849366243270503
+    second: Spendings_30
+  - first:
+      213: 1876408996307226351
+    second: Spendings_31
+  - first:
+      213: 4312307497278537441
+    second: Spendings_32
+  - first:
+      213: -2039085418186234820
+    second: Spendings_33
+  - first:
+      213: -963249953497199480
+    second: Spendings_34
+  - first:
+      213: 2357019981245858787
+    second: Spendings_35
+  - first:
+      213: 1693147345207562889
+    second: Spendings_36
+  - first:
+      213: 3797823481987837559
+    second: Spendings_37
+  - first:
+      213: -8794994084303121021
+    second: Spendings_38
+  - first:
+      213: -862486816941738869
+    second: Spendings_39
+  - first:
+      213: -4730183460992702933
+    second: Spendings_40
+  - first:
+      213: -3298082358517543601
+    second: Spendings_41
+  - first:
+      213: -6476130653003972669
+    second: Spendings_42
+  - first:
+      213: -5933753845586099322
+    second: Spendings_43
+  - first:
+      213: -4216879669918374031
+    second: Spendings_44
+  - first:
+      213: -661832993988512012
+    second: Spendings_45
+  - first:
+      213: -3579603963994536899
+    second: Spendings_46
+  - first:
+      213: 2252942415424870073
+    second: Spendings_47
+  - first:
+      213: -7613561973947259612
+    second: Spendings_48
+  - first:
+      213: 770917833253841969
+    second: Spendings_49
+  - first:
+      213: -1630845625429760629
+    second: Spendings_50
+  - first:
+      213: 4900768657613692434
+    second: Spendings_51
+  - first:
+      213: -1576614258792700896
+    second: Spendings_52
+  - first:
+      213: 4432895433522245623
+    second: Spendings_53
+  - first:
+      213: -6842888201196724261
+    second: Spendings_54
+  - first:
+      213: 5753785104383917656
+    second: Spendings_55
+  - first:
+      213: 2186010427102958378
+    second: Spendings_56
+  - first:
+      213: -3745522289954680877
+    second: Spendings_57
+  - first:
+      213: 6451863490692501848
+    second: Spendings_58
+  - first:
+      213: -7544812010563328660
+    second: Spendings_59
+  - first:
+      213: -8386588513223787783
+    second: Spendings_60
+  - first:
+      213: -2556563407429993589
+    second: Spendings_61
+  - first:
+      213: -3185203418951492869
+    second: Spendings_62
+  - first:
+      213: -4665773734727928334
+    second: Spendings_63
+  - first:
+      213: 5233637534564298656
+    second: Spendings_64
+  - first:
+      213: 9189306641170493316
+    second: Spendings_65
+  - first:
+      213: -2363516795362400596
+    second: Spendings_66
+  - first:
+      213: -4517663563542564592
+    second: Spendings_67
+  - first:
+      213: -8318356112582690634
+    second: Spendings_68
+  - first:
+      213: 1936630065641465033
+    second: Spendings_69
+  - first:
+      213: 6720550520478041326
+    second: Spendings_70
+  - first:
+      213: -659188456581345208
+    second: Spendings_71
+  - first:
+      213: -2379361154328610575
+    second: Spendings_72
+  - first:
+      213: -1198158612980461442
+    second: Spendings_73
+  - first:
+      213: -7740892618152881539
+    second: Spendings_74
+  - first:
+      213: 5906049917086215433
+    second: Spendings_75
+  - first:
+      213: -3438813983665309284
+    second: Spendings_76
+  - first:
+      213: 3267218366912556947
+    second: Spendings_77
+  - first:
+      213: -8445457019316870862
+    second: Spendings_78
+  - first:
+      213: 4413340820326668493
+    second: Spendings_79
+  - first:
+      213: -9156712739542193330
+    second: Spendings_80
+  - first:
+      213: 8554742461216387425
+    second: Spendings_81
+  - first:
+      213: 7417614403659823969
+    second: Spendings_82
+  - first:
+      213: -4459219159248435188
+    second: Spendings_83
+  - first:
+      213: 9203995728416057458
+    second: Spendings_84
+  - first:
+      213: 6530050457488691602
+    second: Spendings_85
+  - first:
+      213: -7500119683882258933
+    second: Spendings_86
+  - first:
+      213: -157263873596636922
+    second: Spendings_87
+  - first:
+      213: 5862585912595658694
+    second: Spendings_88
+  - first:
+      213: -808684511165241193
+    second: Spendings_89
+  - first:
+      213: 8503654453328656809
+    second: Spendings_90
+  - first:
+      213: 4801558438456048081
+    second: Spendings_91
+  - first:
+      213: 7995000261159663501
+    second: Spendings_92
+  - first:
+      213: 2691678428934075005
+    second: Spendings_93
+  - first:
+      213: 4502778802940515256
+    second: Spendings_94
+  - first:
+      213: 227483524685476035
+    second: Spendings_95
+  - first:
+      213: 4538576097277712825
+    second: Spendings_96
+  - first:
+      213: 760430540717972203
+    second: Spendings_97
+  - first:
+      213: -5327060051316197936
+    second: Spendings_98
+  - first:
+      213: 4659157144491442218
+    second: Spendings_99
+  - first:
+      213: 7400715788035230250
+    second: Spendings_100
+  - first:
+      213: 7673214973289138874
+    second: Spendings_101
+  - first:
+      213: 8876421903871342101
+    second: Spendings_102
+  - first:
+      213: -3050753501775238460
+    second: Spendings_103
+  - first:
+      213: -8710160157682459549
+    second: Spendings_104
+  - first:
+      213: -3636582955462296215
+    second: Spendings_105
+  - first:
+      213: 5841166862722122203
+    second: Spendings_106
+  - first:
+      213: 7553618055706279554
+    second: Spendings_107
+  - first:
+      213: -215127535782455970
+    second: Spendings_108
+  - first:
+      213: 1533021066295345245
+    second: Spendings_109
+  - first:
+      213: -5891875078572520742
+    second: Spendings_110
+  - first:
+      213: 6280784826725902668
+    second: Spendings_111
+  - first:
+      213: -4159619587487648645
+    second: Spendings_112
+  - first:
+      213: 2194949889830090802
+    second: Spendings_113
+  - first:
+      213: 7725680996065623237
+    second: Spendings_114
+  - first:
+      213: 7095659463258860921
+    second: Spendings_115
+  - first:
+      213: 8937353387446337016
+    second: Spendings_116
+  - first:
+      213: -5989907580270121562
+    second: Spendings_117
+  - first:
+      213: 3155483109720620300
+    second: Spendings_118
+  - first:
+      213: -2546435730654418154
+    second: Spendings_119
+  - first:
+      213: 2667124499723202443
+    second: Spendings_120
+  - first:
+      213: 7760905585753903168
+    second: Spendings_121
+  - first:
+      213: 417861903185570148
+    second: Spendings_122
+  - first:
+      213: 1045440823586574259
+    second: Spendings_123
+  - first:
+      213: -8917479906250623514
+    second: Spendings_124
+  - first:
+      213: 5604002866287329025
+    second: Spendings_125
+  - first:
+      213: 5963606571154863888
+    second: Spendings_126
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spendings_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 90
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c52fdfcefc570040800000000000000
+      internalID: 4613758592743318979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 90
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d3e45120892fe50800000000000000
+      internalID: 6841697918644010305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 89
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914e5fe710ed960f0800000000000000
+      internalID: -1123122534045850599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 88
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0572d47f1466eb0800000000000000
+      internalID: -4727018228471607065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_4
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 88
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c1b3cce26b7d790800000000000000
+      internalID: -7505329941878465487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_5
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 88
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2480b3a5ac0a1fe0800000000000000
+      internalID: -1217646843694906322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_6
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 89
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f11e13c37bb2740800000000000000
+      internalID: 5128394069854199567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_7
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 92
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 299b81644033e0d90800000000000000
+      internalID: -7129705066632005230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_8
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 87
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccdad758c1506750800000000000000
+      internalID: 6296122199973223629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_9
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 88
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2592902be7dc594c0800000000000000
+      internalID: -4281289926709270190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_10
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 91
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e842d9d1287b160800000000000000
+      internalID: 7041239606119140872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_11
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 88
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77472d586178e150800000000000000
+      internalID: 5902092004722427773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_12
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 89
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836f0d74ff7185040800000000000000
+      internalID: 4636482201566901816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_13
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 92
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294804b503ba72940800000000000000
+      internalID: 5271370113038189714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_14
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 85
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c20dfaffc725d50800000000000000
+      internalID: 6724574631225732184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_15
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 93
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e53e02c1dc1753a0800000000000000
+      internalID: -6676836235324017178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_16
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 85
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43792a7ebda409ad0800000000000000
+      internalID: -2697573868450441420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_17
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 93
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed709ac3943cb1790800000000000000
+      internalID: -7558232830293506082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_18
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 89
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f57841b41901670800000000000000
+      internalID: 8507459447755857697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_19
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 79
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e336087f9749120800000000000000
+      internalID: 2419693003722669649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_20
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 79
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66dcbeae9135d5810800000000000000
+      internalID: 1755650800524971366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_21
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 76
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760da7c414fee7f00800000000000000
+      internalID: 1116592821369491559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_22
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 84
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7bd35757cf8f2740800000000000000
+      internalID: 5129476586924661626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_23
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 83
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c5a74b5d04b6fee0800000000000000
+      internalID: -1227595878952884794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_24
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 84
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e4c202720ea68d0800000000000000
+      internalID: -2852220955337666921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_25
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 85
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0591ea73c9c58c60800000000000000
+      internalID: 7819878169416144142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_26
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 84
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a5fc7105d425df0800000000000000
+      internalID: -193006827631322570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_27
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 80
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae58a1694304b4ed0800000000000000
+      internalID: -2428776979435452950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_28
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 84
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a442e9584d0e720800000000000000
+      internalID: 2873530232611293848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_29
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 82
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588b41c2513290510800000000000000
+      internalID: 1515781323427723397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 83
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9902873c97988f2f0800000000000000
+      internalID: -938849366243270503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_31
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 81
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee4d3e5a085a0a10800000000000000
+      internalID: 1876408996307226351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_32
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 83
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee7a8932d468db30800000000000000
+      internalID: 4312307497278537441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_33
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 81
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34a45e9d96b3b3e0800000000000000
+      internalID: -2039085418186234820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_34
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 84
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c43e35549d1a2f0800000000000000
+      internalID: -963249953497199480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_35
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 81
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e348a65f21d5b020800000000000000
+      internalID: 2357019981245858787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_36
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 83
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9821e7f2a844f7710800000000000000
+      internalID: 1693147345207562889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_37
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 80
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ea58bc55494b430800000000000000
+      internalID: 3797823481987837559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_38
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 385537b6a77e1f580800000000000000
+      internalID: -8794994084303121021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_39
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 83
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84fab44fc4d704f0800000000000000
+      internalID: -862486816941738869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_40
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 84
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b262a1d24330b5eb0800000000000000
+      internalID: -4730183460992702933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_41
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 79
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d4494a19bda32d0800000000000000
+      internalID: -3298082358517543601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_42
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 82
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cffdacab792026a0800000000000000
+      internalID: -6476130653003972669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_43
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 85
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6838b39d05217ada0800000000000000
+      internalID: -5933753845586099322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_44
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 79
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 177e2fd3842aa75c0800000000000000
+      internalID: -4216879669918374031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_45
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 84
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f67ea40662b0d6f0800000000000000
+      internalID: -661832993988512012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_46
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 79
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3486890921b25ec0800000000000000
+      internalID: -3579603963994536899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_47
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 79
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b65fc2b03f044f10800000000000000
+      internalID: 2252942415424870073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_48
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 84
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425a37b19b1375690800000000000000
+      internalID: -7613561973947259612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_49
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 83
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ceb125fa9d2ba00800000000000000
+      internalID: 770917833253841969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_50
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 78
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8562c45b821e59e0800000000000000
+      internalID: -1630845625429760629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_51
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 78
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e9e63f027030440800000000000000
+      internalID: 4900768657613692434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_52
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 78
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02468d45fadbe1ae0800000000000000
+      internalID: -1576614258792700896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_53
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 78
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff6b8909eec48d30800000000000000
+      internalID: 4432895433522245623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_54
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 78
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf15f9af6d2901a0800000000000000
+      internalID: -6842888201196724261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_55
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 66
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ebcbc411d89df40800000000000000
+      internalID: 5753785104383917656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_56
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 66
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2395c6c6e4465e10800000000000000
+      internalID: 2186010427102958378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_57
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 65
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df81f8625b350cc0800000000000000
+      internalID: -3745522289954680877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_58
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 64
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851d90e49af998950800000000000000
+      internalID: 6451863490692501848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_59
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 64
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65a54553717b4790800000000000000
+      internalID: -7544812010563328660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_60
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 64
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fabce76e2adc9b80800000000000000
+      internalID: -8386588513223787783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_61
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 65
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b7f5e4023458cd0800000000000000
+      internalID: -2556563407429993589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_62
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 68
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfa590ccd52ebc3d0800000000000000
+      internalID: -3185203418951492869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_63
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 63
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5b1333287df3fb0800000000000000
+      internalID: -4665773734727928334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_64
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 64
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af2bd2db9d91a840800000000000000
+      internalID: 5233637534564298656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_65
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 67
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48fea1ff3b9f68f70800000000000000
+      internalID: 9189306641170493316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_66
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 64
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca621cf3ff9133fd0800000000000000
+      internalID: -2363516795362400596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_67
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 65
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011f150bce80e41c0800000000000000
+      internalID: -4517663563542564592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_68
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 68
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b83f4a20334f8c80800000000000000
+      internalID: -8318356112582690634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_69
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 61
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4a6e3b8ca40ea10800000000000000
+      internalID: 1936630065641465033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_70
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 69
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee409246711344d50800000000000000
+      internalID: 6720550520478041326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_71
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 61
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8405e6d57971ad6f0800000000000000
+      internalID: -659188456581345208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_72
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 69
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f831e3f2afcafed0800000000000000
+      internalID: -2379361154328610575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_73
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 65
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7099b0f6194f5fe0800000000000000
+      internalID: -1198158612980461442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_74
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 55
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72dd824d23d29490800000000000000
+      internalID: -7740892618152881539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_75
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 55
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d26a5ab1186f150800000000000000
+      internalID: 5906049917086215433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_76
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 57
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99bbf6c6e0e640d0800000000000000
+      internalID: -3438813983665309284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_77
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 60
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39f64735bcd775d20800000000000000
+      internalID: 3267218366912556947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_78
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 59
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231e9cd3695bbca80800000000000000
+      internalID: -8445457019316870862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_79
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 60
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc85d4cd7165f3d30800000000000000
+      internalID: 4413340820326668493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_80
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 61
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b2b491742dce080800000000000000
+      internalID: -9156712739542193330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_81
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 60
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161f0c981fc88b670800000000000000
+      internalID: 8554742461216387425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_82
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 56
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16bf6fafff8a0f660800000000000000
+      internalID: 7417614403659823969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_83
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 60
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c088165fccbad12c0800000000000000
+      internalID: -4459219159248435188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_84
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 58
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278a372a9592bbf70800000000000000
+      internalID: 9203995728416057458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_85
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 59
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2919dfb1b466f9a50800000000000000
+      internalID: 6530050457488691602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_86
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 57
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e684582e83ae790800000000000000
+      internalID: -7500119683882258933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_87
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 59
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6014546175941ddf0800000000000000
+      internalID: -157263873596636922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_88
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 57
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7397183d61c5150800000000000000
+      internalID: 5862585912595658694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_89
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 60
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 798a2a0c8b9f6c4f0800000000000000
+      internalID: -808684511165241193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_90
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 57
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9b257cbac030670800000000000000
+      internalID: 8503654453328656809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_91
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 59
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9b374c5ff82a240800000000000000
+      internalID: 4801558438456048081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_92
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 56
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d87b391d062f3fe60800000000000000
+      internalID: 7995000261159663501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_93
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 56
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72723e1543ca5520800000000000000
+      internalID: 2691678428934075005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_94
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 59
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b39d6be6751d7e30800000000000000
+      internalID: 4502778802940515256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_95
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 60
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0b1297f0f282300800000000000000
+      internalID: 227483524685476035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_96
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 55
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b911500ae24cfe30800000000000000
+      internalID: 4538576097277712825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_97
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 58
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea5adf3c879d8a00800000000000000
+      internalID: 760430540717972203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_98
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 61
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5bf187b1b7216b0800000000000000
+      internalID: -5327060051316197936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_99
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 55
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20c226dcb6a8a040800000000000000
+      internalID: 4659157144491442218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_100
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 60
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a077d6ccf94b660800000000000000
+      internalID: 7400715788035230250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_101
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 55
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba8b102d5cbc7a60800000000000000
+      internalID: 7673214973289138874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_102
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 55
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5167fb831b26f2b70800000000000000
+      internalID: 8876421903871342101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_103
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 60
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca686d8adb89a5d0800000000000000
+      internalID: -3050753501775238460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_104
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 59
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c93982c7b4f1780800000000000000
+      internalID: -8710160157682459549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_105
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 54
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96dfd67c113488dc0800000000000000
+      internalID: -3636582955462296215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_106
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 54
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1c556505eff0150800000000000000
+      internalID: 5841166862722122203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_107
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 54
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e7953d997d3d860800000000000000
+      internalID: 7553618055706279554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_108
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 54
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55184065a6b30df0800000000000000
+      internalID: -215127535782455970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_109
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 54
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5089b99982664510800000000000000
+      internalID: 1533021066295345245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada45b025dadb3ea0800000000000000
+      internalID: -5891875078572520742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_111
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 27
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4929abd584d92750800000000000000
+      internalID: 6280784826725902668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_112
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 25
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74ba0716001646c0800000000000000
+      internalID: -4159619587487648645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_113
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238fa13ab47067e10800000000000000
+      internalID: 2194949889830090802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_114
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 25
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc3a7afee1273b60800000000000000
+      internalID: 7725680996065623237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_115
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 25
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97deeaaffa8d87260800000000000000
+      internalID: 7095659463258860921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_116
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 24
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd7fd2cd8bd70c70800000000000000
+      internalID: 8937353387446337016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_117
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 24
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad6498aac29fdca0800000000000000
+      internalID: -5989907580270121562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_118
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 24
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d74a97b278acb20800000000000000
+      internalID: 3155483109720620300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b2bfec13e39acd0800000000000000
+      internalID: -2546435730654418154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_120
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 3
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f2eb9f997830520800000000000000
+      internalID: 2667124499723202443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_121
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 040d43ed28644bb60800000000000000
+      internalID: 7760905585753903168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_122
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4696b80ef2b8cc500800000000000000
+      internalID: 417861903185570148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_123
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bfc19bd3e6228e00800000000000000
+      internalID: 1045440823586574259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_124
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 0
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e57f38a54fbe3480800000000000000
+      internalID: -8917479906250623514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_125
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10fb3556aea65cd40800000000000000
+      internalID: 5604002866287329025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spendings_126
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017fed5749cf2c250800000000000000
+      internalID: 5963606571154863888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Spendings_0: 4613758592743318979
+      Spendings_1: 6841697918644010305
+      Spendings_10: 7041239606119140872
+      Spendings_100: 7400715788035230250
+      Spendings_101: 7673214973289138874
+      Spendings_102: 8876421903871342101
+      Spendings_103: -3050753501775238460
+      Spendings_104: -8710160157682459549
+      Spendings_105: -3636582955462296215
+      Spendings_106: 5841166862722122203
+      Spendings_107: 7553618055706279554
+      Spendings_108: -215127535782455970
+      Spendings_109: 1533021066295345245
+      Spendings_11: 5902092004722427773
+      Spendings_110: -5891875078572520742
+      Spendings_111: 6280784826725902668
+      Spendings_112: -4159619587487648645
+      Spendings_113: 2194949889830090802
+      Spendings_114: 7725680996065623237
+      Spendings_115: 7095659463258860921
+      Spendings_116: 8937353387446337016
+      Spendings_117: -5989907580270121562
+      Spendings_118: 3155483109720620300
+      Spendings_119: -2546435730654418154
+      Spendings_12: 4636482201566901816
+      Spendings_120: 2667124499723202443
+      Spendings_121: 7760905585753903168
+      Spendings_122: 417861903185570148
+      Spendings_123: 1045440823586574259
+      Spendings_124: -8917479906250623514
+      Spendings_125: 5604002866287329025
+      Spendings_126: 5963606571154863888
+      Spendings_13: 5271370113038189714
+      Spendings_14: 6724574631225732184
+      Spendings_15: -6676836235324017178
+      Spendings_16: -2697573868450441420
+      Spendings_17: -7558232830293506082
+      Spendings_18: 8507459447755857697
+      Spendings_19: 2419693003722669649
+      Spendings_2: -1123122534045850599
+      Spendings_20: 1755650800524971366
+      Spendings_21: 1116592821369491559
+      Spendings_22: 5129476586924661626
+      Spendings_23: -1227595878952884794
+      Spendings_24: -2852220955337666921
+      Spendings_25: 7819878169416144142
+      Spendings_26: -193006827631322570
+      Spendings_27: -2428776979435452950
+      Spendings_28: 2873530232611293848
+      Spendings_29: 1515781323427723397
+      Spendings_3: -4727018228471607065
+      Spendings_30: -938849366243270503
+      Spendings_31: 1876408996307226351
+      Spendings_32: 4312307497278537441
+      Spendings_33: -2039085418186234820
+      Spendings_34: -963249953497199480
+      Spendings_35: 2357019981245858787
+      Spendings_36: 1693147345207562889
+      Spendings_37: 3797823481987837559
+      Spendings_38: -8794994084303121021
+      Spendings_39: -862486816941738869
+      Spendings_4: -7505329941878465487
+      Spendings_40: -4730183460992702933
+      Spendings_41: -3298082358517543601
+      Spendings_42: -6476130653003972669
+      Spendings_43: -5933753845586099322
+      Spendings_44: -4216879669918374031
+      Spendings_45: -661832993988512012
+      Spendings_46: -3579603963994536899
+      Spendings_47: 2252942415424870073
+      Spendings_48: -7613561973947259612
+      Spendings_49: 770917833253841969
+      Spendings_5: -1217646843694906322
+      Spendings_50: -1630845625429760629
+      Spendings_51: 4900768657613692434
+      Spendings_52: -1576614258792700896
+      Spendings_53: 4432895433522245623
+      Spendings_54: -6842888201196724261
+      Spendings_55: 5753785104383917656
+      Spendings_56: 2186010427102958378
+      Spendings_57: -3745522289954680877
+      Spendings_58: 6451863490692501848
+      Spendings_59: -7544812010563328660
+      Spendings_6: 5128394069854199567
+      Spendings_60: -8386588513223787783
+      Spendings_61: -2556563407429993589
+      Spendings_62: -3185203418951492869
+      Spendings_63: -4665773734727928334
+      Spendings_64: 5233637534564298656
+      Spendings_65: 9189306641170493316
+      Spendings_66: -2363516795362400596
+      Spendings_67: -4517663563542564592
+      Spendings_68: -8318356112582690634
+      Spendings_69: 1936630065641465033
+      Spendings_7: -7129705066632005230
+      Spendings_70: 6720550520478041326
+      Spendings_71: -659188456581345208
+      Spendings_72: -2379361154328610575
+      Spendings_73: -1198158612980461442
+      Spendings_74: -7740892618152881539
+      Spendings_75: 5906049917086215433
+      Spendings_76: -3438813983665309284
+      Spendings_77: 3267218366912556947
+      Spendings_78: -8445457019316870862
+      Spendings_79: 4413340820326668493
+      Spendings_8: 6296122199973223629
+      Spendings_80: -9156712739542193330
+      Spendings_81: 8554742461216387425
+      Spendings_82: 7417614403659823969
+      Spendings_83: -4459219159248435188
+      Spendings_84: 9203995728416057458
+      Spendings_85: 6530050457488691602
+      Spendings_86: -7500119683882258933
+      Spendings_87: -157263873596636922
+      Spendings_88: 5862585912595658694
+      Spendings_89: -808684511165241193
+      Spendings_9: -4281289926709270190
+      Spendings_90: 8503654453328656809
+      Spendings_91: 4801558438456048081
+      Spendings_92: 7995000261159663501
+      Spendings_93: 2691678428934075005
+      Spendings_94: 4502778802940515256
+      Spendings_95: 227483524685476035
+      Spendings_96: 4538576097277712825
+      Spendings_97: 760430540717972203
+      Spendings_98: -5327060051316197936
+      Spendings_99: 4659157144491442218
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

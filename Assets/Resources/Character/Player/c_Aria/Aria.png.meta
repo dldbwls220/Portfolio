@@ -1,0 +1,6773 @@
+fileFormatVersion: 2
+guid: ff20b11399097264cab1b1bc1bb9179c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5712699686170337208
+    second: Aria_0
+  - first:
+      213: -6760889567142437508
+    second: Aria_1
+  - first:
+      213: -1079668474520105691
+    second: Aria_2
+  - first:
+      213: 7496078259108505274
+    second: Aria_3
+  - first:
+      213: -8124471415614930988
+    second: Aria_4
+  - first:
+      213: 943804604701414460
+    second: Aria_5
+  - first:
+      213: 6724491188950251810
+    second: Aria_6
+  - first:
+      213: 2635324872694558283
+    second: Aria_7
+  - first:
+      213: -6716907390528370122
+    second: Aria_8
+  - first:
+      213: 8585645822615371880
+    second: Aria_9
+  - first:
+      213: -7444653136115262545
+    second: Aria_10
+  - first:
+      213: 1878650918113233843
+    second: Aria_11
+  - first:
+      213: 1954427054335216142
+    second: Aria_12
+  - first:
+      213: 1400319125958829793
+    second: Aria_13
+  - first:
+      213: -6695359695809700220
+    second: Aria_14
+  - first:
+      213: 1567438016235665927
+    second: Aria_15
+  - first:
+      213: 7976715549462057788
+    second: Aria_16
+  - first:
+      213: -1699537433047014879
+    second: Aria_17
+  - first:
+      213: 1307121164440725232
+    second: Aria_18
+  - first:
+      213: 7808397459324886616
+    second: Aria_19
+  - first:
+      213: -4669627943767620391
+    second: Aria_20
+  - first:
+      213: 3794654423386771724
+    second: Aria_21
+  - first:
+      213: 1126031439661219646
+    second: Aria_22
+  - first:
+      213: -6363908136239109314
+    second: Aria_23
+  - first:
+      213: 1918972640123252637
+    second: Aria_24
+  - first:
+      213: -3586581628959503343
+    second: Aria_25
+  - first:
+      213: -3339768518378527719
+    second: Aria_26
+  - first:
+      213: 135780112422753641
+    second: Aria_27
+  - first:
+      213: 1199998043015808060
+    second: Aria_28
+  - first:
+      213: 6006527429186160090
+    second: Aria_29
+  - first:
+      213: -6909559935071778707
+    second: Aria_30
+  - first:
+      213: -8849785387411401982
+    second: Aria_31
+  - first:
+      213: 5815706628532433909
+    second: Aria_32
+  - first:
+      213: 3480141222881609331
+    second: Aria_33
+  - first:
+      213: -4375794920082049174
+    second: Aria_34
+  - first:
+      213: -4262541195707184219
+    second: Aria_35
+  - first:
+      213: -7598992108719279253
+    second: Aria_36
+  - first:
+      213: -2583122265330797147
+    second: Aria_37
+  - first:
+      213: -6873995378387325746
+    second: Aria_38
+  - first:
+      213: -4703058643663598605
+    second: Aria_39
+  - first:
+      213: -7321204560648204656
+    second: Aria_40
+  - first:
+      213: 1781530201243872218
+    second: Aria_41
+  - first:
+      213: -7641508621391410219
+    second: Aria_42
+  - first:
+      213: -5195192962057259135
+    second: Aria_43
+  - first:
+      213: 4404914049256922417
+    second: Aria_44
+  - first:
+      213: 4922850638027478562
+    second: Aria_45
+  - first:
+      213: 7136064782387344840
+    second: Aria_46
+  - first:
+      213: -5789078060128108087
+    second: Aria_47
+  - first:
+      213: -8551239872697881243
+    second: Aria_48
+  - first:
+      213: -5815122496312415174
+    second: Aria_49
+  - first:
+      213: 6717108393460847550
+    second: Aria_50
+  - first:
+      213: 3648982998844912385
+    second: Aria_51
+  - first:
+      213: 4626279939958037621
+    second: Aria_52
+  - first:
+      213: 4117968628058455956
+    second: Aria_53
+  - first:
+      213: 4640225500071039794
+    second: Aria_54
+  - first:
+      213: 6275985875492102660
+    second: Aria_55
+  - first:
+      213: 5152067511342290534
+    second: Aria_56
+  - first:
+      213: 7499560710606862509
+    second: Aria_57
+  - first:
+      213: 4784083314753515923
+    second: Aria_58
+  - first:
+      213: 8414305931790559454
+    second: Aria_59
+  - first:
+      213: 5608763816058127832
+    second: Aria_60
+  - first:
+      213: -771179231196465743
+    second: Aria_61
+  - first:
+      213: -8007376179032554781
+    second: Aria_62
+  - first:
+      213: 8038699943150154499
+    second: Aria_63
+  - first:
+      213: 6484030402380032928
+    second: Aria_64
+  - first:
+      213: -4533502101834521991
+    second: Aria_65
+  - first:
+      213: -4442353099240555432
+    second: Aria_66
+  - first:
+      213: 986534494119718726
+    second: Aria_67
+  - first:
+      213: 4626323741281203552
+    second: Aria_68
+  - first:
+      213: -5233888867336216517
+    second: Aria_69
+  - first:
+      213: -2858986413569883606
+    second: Aria_70
+  - first:
+      213: 6675808032080376104
+    second: Aria_71
+  - first:
+      213: -2736163889506262529
+    second: Aria_72
+  - first:
+      213: -3099088034763683547
+    second: Aria_73
+  - first:
+      213: -724325378154488282
+    second: Aria_74
+  - first:
+      213: -7633718469154018246
+    second: Aria_75
+  - first:
+      213: -4366013864660087086
+    second: Aria_76
+  - first:
+      213: 4722572702580902396
+    second: Aria_77
+  - first:
+      213: 1588052697773365079
+    second: Aria_78
+  - first:
+      213: 4356033761388668662
+    second: Aria_79
+  - first:
+      213: 8506219681300835257
+    second: Aria_80
+  - first:
+      213: 8331748095626546199
+    second: Aria_81
+  - first:
+      213: 3031694181642550326
+    second: Aria_82
+  - first:
+      213: -4929150788402217015
+    second: Aria_83
+  - first:
+      213: -7771894015563041461
+    second: Aria_84
+  - first:
+      213: -5857160523735300688
+    second: Aria_85
+  - first:
+      213: -6419063258577925016
+    second: Aria_86
+  - first:
+      213: 2040967041918014669
+    second: Aria_87
+  - first:
+      213: 3018798509903306900
+    second: Aria_88
+  - first:
+      213: 1778698076423163849
+    second: Aria_89
+  - first:
+      213: -206230954947908693
+    second: Aria_90
+  - first:
+      213: -7036872728406121944
+    second: Aria_91
+  - first:
+      213: -1533927328034974284
+    second: Aria_92
+  - first:
+      213: -7964068454276413977
+    second: Aria_93
+  - first:
+      213: -4688514489558622928
+    second: Aria_94
+  - first:
+      213: 3746109479717001003
+    second: Aria_95
+  - first:
+      213: 5620151302371903087
+    second: Aria_96
+  - first:
+      213: 8887379907181099020
+    second: Aria_97
+  - first:
+      213: 2784915293003677624
+    second: Aria_98
+  - first:
+      213: -6592827277465224372
+    second: Aria_99
+  - first:
+      213: -2009617905660384839
+    second: Aria_100
+  - first:
+      213: -6434641617110751646
+    second: Aria_101
+  - first:
+      213: -7032590853596486447
+    second: Aria_102
+  - first:
+      213: -9078146197702328203
+    second: Aria_103
+  - first:
+      213: 7381481604266084799
+    second: Aria_104
+  - first:
+      213: -1756000776689511645
+    second: Aria_105
+  - first:
+      213: -4713717983233389520
+    second: Aria_106
+  - first:
+      213: -4763838486647178904
+    second: Aria_107
+  - first:
+      213: 84840118162630489
+    second: Aria_108
+  - first:
+      213: 9192905135824040234
+    second: Aria_109
+  - first:
+      213: -4088569218412050197
+    second: Aria_110
+  - first:
+      213: 2979727618717234427
+    second: Aria_111
+  - first:
+      213: -2298532588653009434
+    second: Aria_112
+  - first:
+      213: 4268506768192333512
+    second: Aria_113
+  - first:
+      213: 3108381165456093429
+    second: Aria_114
+  - first:
+      213: -6568978868377159781
+    second: Aria_115
+  - first:
+      213: -8609248888716704808
+    second: Aria_116
+  - first:
+      213: -794479283224503367
+    second: Aria_117
+  - first:
+      213: 6054403739496983213
+    second: Aria_118
+  - first:
+      213: 8097392493535014012
+    second: Aria_119
+  - first:
+      213: 3297366294342558210
+    second: Aria_120
+  - first:
+      213: 7575282233913830596
+    second: Aria_121
+  - first:
+      213: 2035469706345212818
+    second: Aria_122
+  - first:
+      213: -3713252037941845360
+    second: Aria_123
+  - first:
+      213: 6313043589574396522
+    second: Aria_124
+  - first:
+      213: -3009763054686802249
+    second: Aria_125
+  - first:
+      213: 1257391322431412172
+    second: Aria_126
+  - first:
+      213: -6810617311484456711
+    second: Aria_127
+  - first:
+      213: -7914765835791462440
+    second: Aria_128
+  - first:
+      213: 235656690697298242
+    second: Aria_129
+  - first:
+      213: -3814232136228574732
+    second: Aria_130
+  - first:
+      213: -589061111160979607
+    second: Aria_131
+  - first:
+      213: 8966989728405486786
+    second: Aria_132
+  - first:
+      213: -8831542771279874531
+    second: Aria_133
+  - first:
+      213: 780053037786577798
+    second: Aria_134
+  - first:
+      213: -3307678052144172872
+    second: Aria_135
+  - first:
+      213: 5230817225501189498
+    second: Aria_136
+  - first:
+      213: -1008239676484572348
+    second: Aria_137
+  - first:
+      213: -7578720413099592552
+    second: Aria_138
+  - first:
+      213: 1964203725310845020
+    second: Aria_139
+  - first:
+      213: -1895887616554169124
+    second: Aria_140
+  - first:
+      213: 2632631781408128594
+    second: Aria_141
+  - first:
+      213: 2780181684050538725
+    second: Aria_142
+  - first:
+      213: -4738109067578020862
+    second: Aria_143
+  - first:
+      213: -7681852357126204080
+    second: Aria_144
+  - first:
+      213: 8129061940678054186
+    second: Aria_145
+  - first:
+      213: -7746696548700799873
+    second: Aria_146
+  - first:
+      213: 6607588487051939733
+    second: Aria_147
+  - first:
+      213: -373376790538688094
+    second: Aria_148
+  - first:
+      213: 2083868858258674035
+    second: Aria_149
+  - first:
+      213: 7160545672428388226
+    second: Aria_150
+  - first:
+      213: -4382974644573022103
+    second: Aria_151
+  - first:
+      213: 743364107321981297
+    second: Aria_152
+  - first:
+      213: 222024920045538869
+    second: Aria_153
+  - first:
+      213: -8938883327631982913
+    second: Aria_154
+  - first:
+      213: 1966719842503659108
+    second: Aria_155
+  - first:
+      213: -2864832901348675225
+    second: Aria_156
+  - first:
+      213: -8219984142781550452
+    second: Aria_157
+  - first:
+      213: -8219333430100783294
+    second: Aria_158
+  - first:
+      213: -8539117892287941936
+    second: Aria_159
+  - first:
+      213: 4774142398998186223
+    second: Aria_160
+  - first:
+      213: -2152897479177068610
+    second: Aria_161
+  - first:
+      213: 161088615624192185
+    second: Aria_162
+  - first:
+      213: -5455406377351195619
+    second: Aria_163
+  - first:
+      213: -3105543547864299765
+    second: Aria_164
+  - first:
+      213: 3904662962345467181
+    second: Aria_165
+  - first:
+      213: 2557329301823447435
+    second: Aria_166
+  - first:
+      213: 3990787121969488973
+    second: Aria_167
+  - first:
+      213: 6239423216326418416
+    second: Aria_168
+  - first:
+      213: -190403097004008794
+    second: Aria_169
+  - first:
+      213: -7897223959886532800
+    second: Aria_170
+  - first:
+      213: -5828441984993177566
+    second: Aria_171
+  - first:
+      213: 3299387784058260938
+    second: Aria_172
+  - first:
+      213: -859248893206003813
+    second: Aria_173
+  - first:
+      213: -8173675947823902016
+    second: Aria_174
+  - first:
+      213: -8488458931525899432
+    second: Aria_175
+  - first:
+      213: -2057280262414892872
+    second: Aria_176
+  - first:
+      213: 263831599494033190
+    second: Aria_177
+  - first:
+      213: -9211775167660063188
+    second: Aria_178
+  - first:
+      213: -508651288097233465
+    second: Aria_179
+  - first:
+      213: 2624790763529261089
+    second: Aria_180
+  - first:
+      213: 4291274105509440016
+    second: Aria_181
+  - first:
+      213: -8561841504985270466
+    second: Aria_182
+  - first:
+      213: 5215644348118078737
+    second: Aria_183
+  - first:
+      213: -3013186840177774048
+    second: Aria_184
+  - first:
+      213: 8488304749196966664
+    second: Aria_185
+  - first:
+      213: 2741381573861050469
+    second: Aria_186
+  - first:
+      213: 7166519898506156055
+    second: Aria_187
+  - first:
+      213: -9011179279898437830
+    second: Aria_188
+  - first:
+      213: 7112835812904415608
+    second: Aria_189
+  - first:
+      213: 8848520740602453289
+    second: Aria_190
+  - first:
+      213: -8260794631960122037
+    second: Aria_191
+  - first:
+      213: -7781254044201876210
+    second: Aria_192
+  - first:
+      213: 3842663693178475656
+    second: Aria_193
+  - first:
+      213: 7904822989537670114
+    second: Aria_194
+  - first:
+      213: -8844847821845147886
+    second: Aria_195
+  - first:
+      213: -2069747841961135258
+    second: Aria_196
+  - first:
+      213: 2374470739419055079
+    second: Aria_197
+  - first:
+      213: 3621598523398303288
+    second: Aria_198
+  - first:
+      213: -8236837889478355292
+    second: Aria_199
+  - first:
+      213: 2515701936521051848
+    second: Aria_200
+  - first:
+      213: -549372452013522695
+    second: Aria_201
+  - first:
+      213: -4962417745460183647
+    second: Aria_202
+  - first:
+      213: 6175443875385556691
+    second: Aria_203
+  - first:
+      213: -4074058730722054204
+    second: Aria_204
+  - first:
+      213: -8025263483240314640
+    second: Aria_205
+  - first:
+      213: -3964361171025137099
+    second: Aria_206
+  - first:
+      213: 6344519582864800790
+    second: Aria_207
+  - first:
+      213: -7908143708025111345
+    second: Aria_208
+  - first:
+      213: 8408486314756403537
+    second: Aria_209
+  - first:
+      213: 4662394331052404358
+    second: Aria_210
+  - first:
+      213: -8675969699800229774
+    second: Aria_211
+  - first:
+      213: 6915381212383442971
+    second: Aria_212
+  - first:
+      213: 1106501743542809998
+    second: Aria_213
+  - first:
+      213: -3327870917957300155
+    second: Aria_214
+  - first:
+      213: 6871818434815276692
+    second: Aria_215
+  - first:
+      213: 1958268835709029118
+    second: Aria_216
+  - first:
+      213: 2954465697734030653
+    second: Aria_217
+  - first:
+      213: 6754778712535396798
+    second: Aria_218
+  - first:
+      213: 357735820313328357
+    second: Aria_219
+  - first:
+      213: 8448091686123161311
+    second: Aria_220
+  - first:
+      213: 1201726703633372737
+    second: Aria_221
+  - first:
+      213: -7060589910483271601
+    second: Aria_222
+  - first:
+      213: -6598228464216308773
+    second: Aria_223
+  - first:
+      213: 4962655822064976058
+    second: Aria_224
+  - first:
+      213: 4767336539354222181
+    second: Aria_225
+  - first:
+      213: -3924831659935218831
+    second: Aria_226
+  - first:
+      213: -1468722505060245619
+    second: Aria_227
+  - first:
+      213: 3193654667204011940
+    second: Aria_228
+  - first:
+      213: 385914335652962886
+    second: Aria_229
+  - first:
+      213: 6824973136723492321
+    second: Aria_230
+  - first:
+      213: 1194208213708692325
+    second: Aria_231
+  - first:
+      213: -5324750543145459884
+    second: Aria_232
+  - first:
+      213: 649801753274421310
+    second: Aria_233
+  - first:
+      213: -5907582836108321444
+    second: Aria_234
+  - first:
+      213: -2639653117331375785
+    second: Aria_235
+  - first:
+      213: -2672544013559702286
+    second: Aria_236
+  - first:
+      213: -3985163015619154738
+    second: Aria_237
+  - first:
+      213: -329368650659032746
+    second: Aria_238
+  - first:
+      213: 5099342513844250165
+    second: Aria_239
+  - first:
+      213: -4253751467285492214
+    second: Aria_240
+  - first:
+      213: -647711994930941495
+    second: Aria_241
+  - first:
+      213: 2117180108353517772
+    second: Aria_242
+  - first:
+      213: 6515817148422746176
+    second: Aria_243
+  - first:
+      213: -3759499093707450087
+    second: Aria_244
+  - first:
+      213: -2710376170633210047
+    second: Aria_245
+  - first:
+      213: -147943665024535406
+    second: Aria_246
+  - first:
+      213: 7276866131844456479
+    second: Aria_247
+  - first:
+      213: -3652033372353669927
+    second: Aria_248
+  - first:
+      213: -2540632187280633187
+    second: Aria_249
+  - first:
+      213: 3711598640934183509
+    second: Aria_250
+  - first:
+      213: 7126207057429058263
+    second: Aria_251
+  - first:
+      213: 6684356751768624448
+    second: Aria_252
+  - first:
+      213: -734665484301186339
+    second: Aria_253
+  - first:
+      213: 8905132835017077003
+    second: Aria_254
+  - first:
+      213: -2668790425285844021
+    second: Aria_255
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Aria_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 371
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf1baee816974f40800000000000000
+      internalID: 5712699686170337208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 372
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d94d862ce7c22a0800000000000000
+      internalID: -6760889567142437508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 373
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d8a052e3f3401f0800000000000000
+      internalID: -1079668474520105691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_3
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 372
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6e0b2f57b670860800000000000000
+      internalID: 7496078259108505274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 371
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dff474fa44104f80800000000000000
+      internalID: -8124471415614930988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_5
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 372
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c341b989941191d00800000000000000
+      internalID: 943804604701414460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_6
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 373
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229bf94cb11325d50800000000000000
+      internalID: 6724491188950251810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_7
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 372
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ee5b8520e829420800000000000000
+      internalID: 2635324872694558283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_8
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 371
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a4c56e050c8c2a0800000000000000
+      internalID: -6716907390528370122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_9
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 372
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8604e401367562770800000000000000
+      internalID: 8585645822615371880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_10
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 373
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab1ad98a674fa890800000000000000
+      internalID: -7444653136115262545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_11
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 372
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bbc9177e0f421a10800000000000000
+      internalID: 1878650918113233843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_12
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 371
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a40190d058f1b10800000000000000
+      internalID: 1954427054335216142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_13
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 372
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e626fa63deee6310800000000000000
+      internalID: 1400319125958829793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_14
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 373
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e9bc784dd4513a0800000000000000
+      internalID: -6695359695809700220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_15
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 372
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a7b253298a0c510800000000000000
+      internalID: 1567438016235665927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 347
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c335500a78cf2be60800000000000000
+      internalID: 7976715549462057788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_17
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 348
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122e0cc85b70a68e0800000000000000
+      internalID: -1699537433047014879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_18
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 349
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f662ec06c3d32210800000000000000
+      internalID: 1307121164440725232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_19
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 348
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e5f1c5e100d5c60800000000000000
+      internalID: 7808397459324886616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 347
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d44e7a3026223fb0800000000000000
+      internalID: -4669627943767620391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_21
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 348
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c015557d71259a430800000000000000
+      internalID: 3794654423386771724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_22
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 349
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3fbdeed0a770af00800000000000000
+      internalID: 1126031439661219646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_23
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 348
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3bef3c744bdea7a0800000000000000
+      internalID: -6363908136239109314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_24
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 347
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f6d34f27f81aa10800000000000000
+      internalID: 1918972640123252637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_25
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 348
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c4defc207e93ec0800000000000000
+      internalID: -3586581628959503343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_26
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 349
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914e3063a32c6a1d0800000000000000
+      internalID: -3339768518378527719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_27
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 348
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9655588fa4362e100800000000000000
+      internalID: 135780112422753641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_28
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 347
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c340f1dbcdf37a010800000000000000
+      internalID: 1199998043015808060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_29
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 348
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad508467fd87b5350800000000000000
+      internalID: 6006527429186160090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_30
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 349
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6886c3f8df4c10a0800000000000000
+      internalID: -6909559935071778707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_31
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 348
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20396ec041f3f2580800000000000000
+      internalID: -8849785387411401982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 312
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f37f8f9d5a85b050800000000000000
+      internalID: 5815706628532433909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_33
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 312
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3764d0ee002fb4030800000000000000
+      internalID: 3480141222881609331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_34
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 312
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67fc8244bd0643c0800000000000000
+      internalID: -4375794920082049174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_35
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 312
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab876dcd5968d4c0800000000000000
+      internalID: -4262541195707184219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_36
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 312
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b637ac430f4fa8690800000000000000
+      internalID: -7598992108719279253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_37
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 312
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a53e835cf7e62cd0800000000000000
+      internalID: -2583122265330797147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_38
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 312
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecceb839f99aa90a0800000000000000
+      internalID: -6873995378387325746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_39
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 312
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fbc99ad4116bbeb0800000000000000
+      internalID: -4703058643663598605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_40
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 312
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e0892dd3bd56a90800000000000000
+      internalID: -7321204560648204656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_41
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 312
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb65c1774449b810800000000000000
+      internalID: 1781530201243872218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_42
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 312
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db41e13568e3f590800000000000000
+      internalID: -7641508621391410219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_43
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 312
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187b7fcb687f6e7b0800000000000000
+      internalID: -5195192962057259135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_44
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 312
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d16145df5612d30800000000000000
+      internalID: 4404914049256922417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_45
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 312
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226dee9a29a715440800000000000000
+      internalID: 4922850638027478562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_46
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 312
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c57f507c15680360800000000000000
+      internalID: 7136064782387344840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_47
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 312
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c18e091d2019afa0800000000000000
+      internalID: -5789078060128108087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_48
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 288
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56dafa664a4e35980800000000000000
+      internalID: -8551239872697881243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_49
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 288
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c6ae146e88c4fa0800000000000000
+      internalID: -5815122496312415174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_50
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 288
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3570ebe76f73d50800000000000000
+      internalID: 6717108393460847550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_51
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 288
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103379d44bac3a230800000000000000
+      internalID: 3648982998844912385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_52
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 288
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57cd6b42819d33040800000000000000
+      internalID: 4626279939958037621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_53
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 288
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f70a736a6f52930800000000000000
+      internalID: 4117968628058455956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_54
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 288
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2339171e184656040800000000000000
+      internalID: 4640225500071039794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_55
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 288
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4026314f6e7c81750800000000000000
+      internalID: 6275985875492102660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_56
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 288
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6665360da12df7740800000000000000
+      internalID: 5152067511342290534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_57
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 288
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8b23f5bbac31860800000000000000
+      internalID: 7499560710606862509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_58
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 288
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391b1c77d6a746240800000000000000
+      internalID: 4784083314753515923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_59
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 288
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8a6dff9ae95c470800000000000000
+      internalID: 8414305931790559454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_60
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 288
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d5853569f456dd40800000000000000
+      internalID: 5608763816058127832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_61
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 288
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5306a33983c45f0800000000000000
+      internalID: -771179231196465743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_62
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 288
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e207d14ac510e090800000000000000
+      internalID: -8007376179032554781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_63
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 288
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 303fa67e1033f8f60800000000000000
+      internalID: 8038699943150154499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_64
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 264
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0abe1be0c47ebf950800000000000000
+      internalID: 6484030402380032928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_65
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972aaaf9bd3c511c0800000000000000
+      internalID: -4533502101834521991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_66
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c39e094679952c0800000000000000
+      internalID: -4442353099240555432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_67
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 264
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64feca045efd0bd00800000000000000
+      internalID: 986534494119718726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_68
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 264
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065b50f6ee0043040800000000000000
+      internalID: 4626323741281203552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_69
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30ad843ecd7d57b0800000000000000
+      internalID: -5233888867336216517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_70
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22cf712107d258d0800000000000000
+      internalID: -2858986413569883606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_71
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 264
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 821b9d4090c35ac50800000000000000
+      internalID: 6675808032080376104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_72
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 264
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff16ab67071370ad0800000000000000
+      internalID: -2736163889506262529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_73
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5294f302ad3ddf4d0800000000000000
+      internalID: -3099088034763683547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_74
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e1d4df7eda2f5f0800000000000000
+      internalID: -724325378154488282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_75
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 264
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c6cba5f759f0690800000000000000
+      internalID: -7633718469154018246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_76
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 264
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de4180b58dc863c0800000000000000
+      internalID: -4366013864660087086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_77
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf98a4b0ad2f98140800000000000000
+      internalID: 4722572702580902396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_78
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 264
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757d167c385e90610800000000000000
+      internalID: 1588052697773365079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_79
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 264
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f62e2170adb37c30800000000000000
+      internalID: 4356033761388668662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_80
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 240
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb6f557bb92c0670800000000000000
+      internalID: 8506219681300835257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_81
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 240
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c8bdddfb050a370800000000000000
+      internalID: 8331748095626546199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_82
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 240
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c3c6cabcdb21a20800000000000000
+      internalID: 3031694181642550326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_83
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 240
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cff2f44973289bb0800000000000000
+      internalID: -4929150788402217015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_84
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 240
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b457162f19fa42490800000000000000
+      internalID: -7771894015563041461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_85
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 240
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b50156498f27bea0800000000000000
+      internalID: -5857160523735300688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_86
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 240
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c83b9d9f7eae6a0800000000000000
+      internalID: -6419063258577925016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_87
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 240
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc49dcb06b8f25c10800000000000000
+      internalID: 2040967041918014669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_88
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 240
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490e34f104de4e920800000000000000
+      internalID: 3018798509903306900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_89
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 240
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf8fdff9743fa810800000000000000
+      internalID: 1778698076423163849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_90
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 240
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: babe3a40a02532df0800000000000000
+      internalID: -206230954947908693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_91
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 240
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82228b55981085e90800000000000000
+      internalID: -7036872728406121944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_92
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 240
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b51635e83566bae0800000000000000
+      internalID: -1533927328034974284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_93
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 240
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e5c5ffafe1f97190800000000000000
+      internalID: -7964068454276413977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_94
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 240
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d169d99ec0feeb0800000000000000
+      internalID: -4688514489558622928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_95
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 240
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27514c59badcf330800000000000000
+      internalID: 3746109479717001003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_96
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 216
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6683d925d9cefd40800000000000000
+      internalID: 5620151302371903087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_97
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 216
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c08397f20f0565b70800000000000000
+      internalID: 8887379907181099020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_98
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 216
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf790134b106a620800000000000000
+      internalID: 2784915293003677624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_99
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 216
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4bfd2d75829184a0800000000000000
+      internalID: -6592827277465224372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_100
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 216
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b929d689276c14e0800000000000000
+      internalID: -2009617905660384839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_101
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 216
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2662b2b9a8f83b6a0800000000000000
+      internalID: -6434641617110751646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_102
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 216
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d468b001e7376e90800000000000000
+      internalID: -7032590853596486447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_103
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 216
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570c3ea9122f30280800000000000000
+      internalID: -9078146197702328203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_104
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 216
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb94c5a096a407660800000000000000
+      internalID: 7381481604266084799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_105
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 216
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3239c18e89e61a7e0800000000000000
+      internalID: -1756000776689511645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_106
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 216
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03cc006f772859eb0800000000000000
+      internalID: -4713717983233389520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_107
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 216
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8697f04e22273edb0800000000000000
+      internalID: -4763838486647178904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_108
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 216
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95729c153a96d2100800000000000000
+      internalID: 84840118162630489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_109
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 216
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a21f7a2d382c39f70800000000000000
+      internalID: 9192905135824040234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_110
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 216
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be804f045fb7247c0800000000000000
+      internalID: -4088569218412050197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_111
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 216
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4bf016b7e1a5920800000000000000
+      internalID: 2979727618717234427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_112
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 192
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5adace9c8f910e0800000000000000
+      internalID: -2298532588653009434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_113
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 192
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c664774a48cc3b30800000000000000
+      internalID: 4268506768192333512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_114
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 192
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f076897330332b20800000000000000
+      internalID: 3108381165456093429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_115
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 192
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b97f45de58c46d4a0800000000000000
+      internalID: -6568978868377159781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_116
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 192
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d34d1ddfbdc58880800000000000000
+      internalID: -8609248888716704808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_117
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 192
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb1ffd1d4179f4f0800000000000000
+      internalID: -794479283224503367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_118
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 192
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daaa38b9f10950450800000000000000
+      internalID: 6054403739496983213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_119
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 192
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ca1103297bf5070800000000000000
+      internalID: 8097392493535014012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_120
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 192
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20262acac2992cd20800000000000000
+      internalID: 3297366294342558210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_121
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 192
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cce2c16e0fc02960800000000000000
+      internalID: 7575282233913830596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_122
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 192
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b66cdd9e07f3c10800000000000000
+      internalID: 2035469706345212818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_123
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 192
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0922bf4f1f0e77cc0800000000000000
+      internalID: -3713252037941845360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_124
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 192
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a832062bf6c9750800000000000000
+      internalID: 6313043589574396522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_125
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 192
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be6c4bb27c2b36d0800000000000000
+      internalID: -3009763054686802249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_126
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 192
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7de2deeb6237110800000000000000
+      internalID: 1257391322431412172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_127
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 192
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0d7dfa3a3db71a0800000000000000
+      internalID: -6810617311484456711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_128
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 168
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df8045186a192290800000000000000
+      internalID: -7914765835791462440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_129
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 168
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 241e4f9f288354300800000000000000
+      internalID: 235656690697298242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_130
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 168
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9673da410211bc0800000000000000
+      internalID: -3814232136228574732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_131
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 168
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fb0465a0c33d7f0800000000000000
+      internalID: -589061111160979607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_132
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 168
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc7f2a16a5217c70800000000000000
+      internalID: 8966989728405486786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_133
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 168
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16b13b14ae007580800000000000000
+      internalID: -8831542771279874531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_134
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 168
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68bbb3fda1e43da00800000000000000
+      internalID: 780053037786577798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_135
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 168
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0379e1654c812d0800000000000000
+      internalID: -3307678052144172872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_136
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 168
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a752ef27d88979840800000000000000
+      internalID: 5230817225501189498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_137
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 168
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44baeaa2b530202f0800000000000000
+      internalID: -1008239676484572348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_138
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 168
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 894723520f9f2d690800000000000000
+      internalID: -7578720413099592552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_139
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 168
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50e6a1a1e0424b10800000000000000
+      internalID: 1964203725310845020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_140
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 168
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc0a31f14470b5e0800000000000000
+      internalID: -1895887616554169124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_141
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 168
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e3c3b28acf88420800000000000000
+      internalID: 2632631781408128594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_142
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 168
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e031e8f280359620800000000000000
+      internalID: 2780181684050538725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_143
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 168
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c64f718eade3eb0800000000000000
+      internalID: -4738109067578020862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_144
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 144
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055de7c3bf3946590800000000000000
+      internalID: -7681852357126204080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_145
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 144
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a215343f3ca30d070800000000000000
+      internalID: 8129061940678054186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_146
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 144
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7cb1ff58843e7490800000000000000
+      internalID: -7746696548700799873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_147
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 144
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f01b078bed2bb50800000000000000
+      internalID: 6607588487051939733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_148
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 144
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a9e09889cf71daf0800000000000000
+      internalID: -373376790538688094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_149
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 144
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371d10f8fa36bec10800000000000000
+      internalID: 2083868858258674035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_150
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 144
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ffd03d95e5f5360800000000000000
+      internalID: 7160545672428388226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_151
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 144
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9685ea268cb8c23c0800000000000000
+      internalID: -4382974644573022103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_152
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 144
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179b3b397b5f05a00800000000000000
+      internalID: 743364107321981297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_153
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 144
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e499a0d7ac41300800000000000000
+      internalID: 222024920045538869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_154
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 144
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe75d749f4b2f380800000000000000
+      internalID: -8938883327631982913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_155
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 144
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e8421d6413b4b10800000000000000
+      internalID: 1966719842503659108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_156
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 144
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761b24e97a11e38d0800000000000000
+      internalID: -2864832901348675225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_157
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 144
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80792639ffbced80800000000000000
+      internalID: -8219984142781550452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_158
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 144
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f89501bcf0fed80800000000000000
+      internalID: -8219333430100783294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_159
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 144
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2bef6e485fe7980800000000000000
+      internalID: -8539117892287941936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_160
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 120
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe80b67a739214240800000000000000
+      internalID: 4774142398998186223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_161
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 120
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf11d3362f5f12e0800000000000000
+      internalID: -2152897479177068610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_162
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 120
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0b3af0e3d4c3200800000000000000
+      internalID: 161088615624192185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_163
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 120
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14d494cdc08a44b0800000000000000
+      internalID: -5455406377351195619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_164
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 120
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07ca0bd894e6e4d0800000000000000
+      internalID: -3105543547864299765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_165
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 120
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2dd936c646203630800000000000000
+      internalID: 3904662962345467181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_166
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 120
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8162e063757d7320800000000000000
+      internalID: 2557329301823447435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_167
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 120
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d44e13b4ebf126730800000000000000
+      internalID: 3990787121969488973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_168
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 120
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff167c7b52e69650800000000000000
+      internalID: 6239423216326418416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_169
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 120
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa11fe546d8b5df0800000000000000
+      internalID: -190403097004008794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_170
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 120
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f624756ac676290800000000000000
+      internalID: -7897223959886532800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_171
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 120
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220528225e63d1fa0800000000000000
+      internalID: -5828441984993177566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_172
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 120
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd4e0d65b7c9cd20800000000000000
+      internalID: 3299387784058260938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_173
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 120
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ffec22fa55314f0800000000000000
+      internalID: -859248893206003813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_174
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 120
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c25dcc0805419e80800000000000000
+      internalID: -8173675947823902016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_175
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 120
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b28e7539fe23a80800000000000000
+      internalID: -8488458931525899432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_176
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 96
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0865350821373e0800000000000000
+      internalID: -2057280262414892872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_177
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 96
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f6d50217159a300800000000000000
+      internalID: 263831599494033190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_178
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 96
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c268bd48a43392080800000000000000
+      internalID: -9211775167660063188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_179
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 96
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c56b623958e0f8f0800000000000000
+      internalID: -508651288097233465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_180
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 96
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12053edea412d6420800000000000000
+      internalID: 2624790763529261089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_181
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 96
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ae8b4101bad8b30800000000000000
+      internalID: 4291274105509440016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_182
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 96
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e373828838a3e2980800000000000000
+      internalID: -8561841504985270466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_183
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 96
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1151a54a6e0b16840800000000000000
+      internalID: 5215644348118078737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_184
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 96
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022725d88820f26d0800000000000000
+      internalID: -3013186840177774048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_185
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 96
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b752942348cc570800000000000000
+      internalID: 8488304749196966664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_186
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 96
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5680ac754085b0620800000000000000
+      internalID: 2741381573861050469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_187
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 96
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7185a3ab0e7947360800000000000000
+      internalID: 7166519898506156055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_188
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 96
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a371b4e203cd1f280800000000000000
+      internalID: -9011179279898437830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_189
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 96
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87138d58c7ed5b260800000000000000
+      internalID: 7112835812904415608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_190
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 96
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d194b6bb24cca70800000000000000
+      internalID: 8848520740602453289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_191
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 96
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4d209fbc03cb5d80800000000000000
+      internalID: -8260794631960122037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_192
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 72
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0586447cae630490800000000000000
+      internalID: -7781254044201876210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_193
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 72
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88491370542e35530800000000000000
+      internalID: 3842663693178475656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_194
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 72
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3fbbf90a293bd60800000000000000
+      internalID: 7904822989537670114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_195
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 72
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f488e94c9c04580800000000000000
+      internalID: -8844847821845147886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_196
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 72
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6637641cd47c643e0800000000000000
+      internalID: -2069747841961135258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_197
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 72
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3c1a89e80d3f020800000000000000
+      internalID: 2374470739419055079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_198
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 72
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e2c324ba0824230800000000000000
+      internalID: 3621598523398303288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_199
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 72
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a61a25849fd0bd80800000000000000
+      internalID: -8236837889478355292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_200
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 72
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce791f159199e220800000000000000
+      internalID: 2515701936521051848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_201
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 72
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f049546aac3068f0800000000000000
+      internalID: -549372452013522695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_202
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 72
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad30ce3a53f12bb0800000000000000
+      internalID: -4962417745460183647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_203
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 72
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3deb7ba5c7593b550800000000000000
+      internalID: 6175443875385556691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_204
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 72
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cfab317b290677c0800000000000000
+      internalID: -4074058730722054204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_205
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 72
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f80c84b16980a090800000000000000
+      internalID: -8025263483240314640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_206
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 72
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532f1bfd482cbf8c0800000000000000
+      internalID: -3964361171025137099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_207
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 72
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c7a2722f24c0850800000000000000
+      internalID: 6344519582864800790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_208
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 48
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcc3c6a5231a04290800000000000000
+      internalID: -7908143708025111345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_209
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 48
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151f9c1d0c1f0b470800000000000000
+      internalID: 8408486314756403537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_210
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 48
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e6c2111f624b040800000000000000
+      internalID: 4662394331052404358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_211
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 48
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278da597683c89780800000000000000
+      internalID: -8675969699800229774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_212
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 48
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b18768ac29e58ff50800000000000000
+      internalID: 6915381212383442971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_213
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 48
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85383729751b5f00800000000000000
+      internalID: 1106501743542809998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_214
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 48
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5405dcc280701d1d0800000000000000
+      internalID: -3327870917957300155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_215
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 48
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4963520457a9d5f50800000000000000
+      internalID: 6871818434815276692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_216
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 48
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa8727712b2d2b10800000000000000
+      internalID: 1958268835709029118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_217
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 48
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35738e06ee500920800000000000000
+      internalID: 2954465697734030653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_218
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 48
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1fa01637bcdbd50800000000000000
+      internalID: 6754778712535396798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_219
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 48
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea753d45dee6f400800000000000000
+      internalID: 357735820313328357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_220
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 48
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd64d4de0a6ad3570800000000000000
+      internalID: 8448091686123161311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_221
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 48
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1461b27e1146da010800000000000000
+      internalID: 1201726703633372737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_222
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 48
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4000f092eeb30e90800000000000000
+      internalID: -7060589910483271601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_223
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 48
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd30483bb226e64a0800000000000000
+      internalID: -6598228464216308773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_224
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 24
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab005b84d25eed440800000000000000
+      internalID: 4962655822064976058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_225
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 24
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ec2f8f25bf82240800000000000000
+      internalID: 4767336539354222181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_226
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 24
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173ca5266623889c0800000000000000
+      internalID: -3924831659935218831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_227
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 24
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f134cc9ac0e9be0800000000000000
+      internalID: -1468722505060245619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_228
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 24
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7a6f5cff3225c20800000000000000
+      internalID: 3193654667204011940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_229
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 24
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642635a2b0b0b5500800000000000000
+      internalID: 385914335652962886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_230
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 24
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1edbcf758ec27be50800000000000000
+      internalID: 6824973136723492321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_231
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 24
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bd5fd0b0ea29010800000000000000
+      internalID: 1194208213708692325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_232
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 24
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f1f3eb79faa16b0800000000000000
+      internalID: -5324750543145459884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_233
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 24
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e301956704f840900800000000000000
+      internalID: 649801753274421310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_234
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 24
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d9194d5bc040ea0800000000000000
+      internalID: -5907582836108321444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_235
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 24
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759f53ba9711e5bd0800000000000000
+      internalID: -2639653117331375785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_236
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 24
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc5d21216739ead0800000000000000
+      internalID: -2672544013559702286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_237
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 24
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecceef10a5bd1b8c0800000000000000
+      internalID: -3985163015619154738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_238
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 24
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651915115f8dd6bf0800000000000000
+      internalID: -329368650659032746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_239
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 24
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536ebb5bff084c640800000000000000
+      internalID: 5099342513844250165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_240
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ec6ade393a7f4c0800000000000000
+      internalID: -4253751467285492214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_241
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c1b1615f5dd207f0800000000000000
+      internalID: -647711994930941495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_242
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc83feb571cb16d10800000000000000
+      internalID: 2117180108353517772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_243
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 040f2299c25dc6a50800000000000000
+      internalID: 6515817148422746176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_244
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 0
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9191a223e7393dbc0800000000000000
+      internalID: -3759499093707450087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_245
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14759b5ab3fc26ad0800000000000000
+      internalID: -2710376170633210047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_246
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294717f350662fdf0800000000000000
+      internalID: -147943665024535406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_247
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10e8a2413f9cf460800000000000000
+      internalID: 7276866131844456479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_248
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4dcf44ffe515dc0800000000000000
+      internalID: -3652033372353669927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_249
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92d63c8c7cddbcd0800000000000000
+      internalID: -2540632187280633187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_250
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55264bd8c4f328330800000000000000
+      internalID: 3711598640934183509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_251
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2d0fdff8f55e260800000000000000
+      internalID: 7126207057429058263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_252
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d172dec0b93cc50800000000000000
+      internalID: 6684356751768624448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_253
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddacc7b62a1fdc5f0800000000000000
+      internalID: -734665484301186339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_254
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b013cdcc123659b70800000000000000
+      internalID: 8905132835017077003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria_255
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3afd08f3d86fad0800000000000000
+      internalID: -2668790425285844021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Aria_0: 5712699686170337208
+      Aria_1: -6760889567142437508
+      Aria_10: -7444653136115262545
+      Aria_100: -2009617905660384839
+      Aria_101: -6434641617110751646
+      Aria_102: -7032590853596486447
+      Aria_103: -9078146197702328203
+      Aria_104: 7381481604266084799
+      Aria_105: -1756000776689511645
+      Aria_106: -4713717983233389520
+      Aria_107: -4763838486647178904
+      Aria_108: 84840118162630489
+      Aria_109: 9192905135824040234
+      Aria_11: 1878650918113233843
+      Aria_110: -4088569218412050197
+      Aria_111: 2979727618717234427
+      Aria_112: -2298532588653009434
+      Aria_113: 4268506768192333512
+      Aria_114: 3108381165456093429
+      Aria_115: -6568978868377159781
+      Aria_116: -8609248888716704808
+      Aria_117: -794479283224503367
+      Aria_118: 6054403739496983213
+      Aria_119: 8097392493535014012
+      Aria_12: 1954427054335216142
+      Aria_120: 3297366294342558210
+      Aria_121: 7575282233913830596
+      Aria_122: 2035469706345212818
+      Aria_123: -3713252037941845360
+      Aria_124: 6313043589574396522
+      Aria_125: -3009763054686802249
+      Aria_126: 1257391322431412172
+      Aria_127: -6810617311484456711
+      Aria_128: -7914765835791462440
+      Aria_129: 235656690697298242
+      Aria_13: 1400319125958829793
+      Aria_130: -3814232136228574732
+      Aria_131: -589061111160979607
+      Aria_132: 8966989728405486786
+      Aria_133: -8831542771279874531
+      Aria_134: 780053037786577798
+      Aria_135: -3307678052144172872
+      Aria_136: 5230817225501189498
+      Aria_137: -1008239676484572348
+      Aria_138: -7578720413099592552
+      Aria_139: 1964203725310845020
+      Aria_14: -6695359695809700220
+      Aria_140: -1895887616554169124
+      Aria_141: 2632631781408128594
+      Aria_142: 2780181684050538725
+      Aria_143: -4738109067578020862
+      Aria_144: -7681852357126204080
+      Aria_145: 8129061940678054186
+      Aria_146: -7746696548700799873
+      Aria_147: 6607588487051939733
+      Aria_148: -373376790538688094
+      Aria_149: 2083868858258674035
+      Aria_15: 1567438016235665927
+      Aria_150: 7160545672428388226
+      Aria_151: -4382974644573022103
+      Aria_152: 743364107321981297
+      Aria_153: 222024920045538869
+      Aria_154: -8938883327631982913
+      Aria_155: 1966719842503659108
+      Aria_156: -2864832901348675225
+      Aria_157: -8219984142781550452
+      Aria_158: -8219333430100783294
+      Aria_159: -8539117892287941936
+      Aria_16: 7976715549462057788
+      Aria_160: 4774142398998186223
+      Aria_161: -2152897479177068610
+      Aria_162: 161088615624192185
+      Aria_163: -5455406377351195619
+      Aria_164: -3105543547864299765
+      Aria_165: 3904662962345467181
+      Aria_166: 2557329301823447435
+      Aria_167: 3990787121969488973
+      Aria_168: 6239423216326418416
+      Aria_169: -190403097004008794
+      Aria_17: -1699537433047014879
+      Aria_170: -7897223959886532800
+      Aria_171: -5828441984993177566
+      Aria_172: 3299387784058260938
+      Aria_173: -859248893206003813
+      Aria_174: -8173675947823902016
+      Aria_175: -8488458931525899432
+      Aria_176: -2057280262414892872
+      Aria_177: 263831599494033190
+      Aria_178: -9211775167660063188
+      Aria_179: -508651288097233465
+      Aria_18: 1307121164440725232
+      Aria_180: 2624790763529261089
+      Aria_181: 4291274105509440016
+      Aria_182: -8561841504985270466
+      Aria_183: 5215644348118078737
+      Aria_184: -3013186840177774048
+      Aria_185: 8488304749196966664
+      Aria_186: 2741381573861050469
+      Aria_187: 7166519898506156055
+      Aria_188: -9011179279898437830
+      Aria_189: 7112835812904415608
+      Aria_19: 7808397459324886616
+      Aria_190: 8848520740602453289
+      Aria_191: -8260794631960122037
+      Aria_192: -7781254044201876210
+      Aria_193: 3842663693178475656
+      Aria_194: 7904822989537670114
+      Aria_195: -8844847821845147886
+      Aria_196: -2069747841961135258
+      Aria_197: 2374470739419055079
+      Aria_198: 3621598523398303288
+      Aria_199: -8236837889478355292
+      Aria_2: -1079668474520105691
+      Aria_20: -4669627943767620391
+      Aria_200: 2515701936521051848
+      Aria_201: -549372452013522695
+      Aria_202: -4962417745460183647
+      Aria_203: 6175443875385556691
+      Aria_204: -4074058730722054204
+      Aria_205: -8025263483240314640
+      Aria_206: -3964361171025137099
+      Aria_207: 6344519582864800790
+      Aria_208: -7908143708025111345
+      Aria_209: 8408486314756403537
+      Aria_21: 3794654423386771724
+      Aria_210: 4662394331052404358
+      Aria_211: -8675969699800229774
+      Aria_212: 6915381212383442971
+      Aria_213: 1106501743542809998
+      Aria_214: -3327870917957300155
+      Aria_215: 6871818434815276692
+      Aria_216: 1958268835709029118
+      Aria_217: 2954465697734030653
+      Aria_218: 6754778712535396798
+      Aria_219: 357735820313328357
+      Aria_22: 1126031439661219646
+      Aria_220: 8448091686123161311
+      Aria_221: 1201726703633372737
+      Aria_222: -7060589910483271601
+      Aria_223: -6598228464216308773
+      Aria_224: 4962655822064976058
+      Aria_225: 4767336539354222181
+      Aria_226: -3924831659935218831
+      Aria_227: -1468722505060245619
+      Aria_228: 3193654667204011940
+      Aria_229: 385914335652962886
+      Aria_23: -6363908136239109314
+      Aria_230: 6824973136723492321
+      Aria_231: 1194208213708692325
+      Aria_232: -5324750543145459884
+      Aria_233: 649801753274421310
+      Aria_234: -5907582836108321444
+      Aria_235: -2639653117331375785
+      Aria_236: -2672544013559702286
+      Aria_237: -3985163015619154738
+      Aria_238: -329368650659032746
+      Aria_239: 5099342513844250165
+      Aria_24: 1918972640123252637
+      Aria_240: -4253751467285492214
+      Aria_241: -647711994930941495
+      Aria_242: 2117180108353517772
+      Aria_243: 6515817148422746176
+      Aria_244: -3759499093707450087
+      Aria_245: -2710376170633210047
+      Aria_246: -147943665024535406
+      Aria_247: 7276866131844456479
+      Aria_248: -3652033372353669927
+      Aria_249: -2540632187280633187
+      Aria_25: -3586581628959503343
+      Aria_250: 3711598640934183509
+      Aria_251: 7126207057429058263
+      Aria_252: 6684356751768624448
+      Aria_253: -734665484301186339
+      Aria_254: 8905132835017077003
+      Aria_255: -2668790425285844021
+      Aria_26: -3339768518378527719
+      Aria_27: 135780112422753641
+      Aria_28: 1199998043015808060
+      Aria_29: 6006527429186160090
+      Aria_3: 7496078259108505274
+      Aria_30: -6909559935071778707
+      Aria_31: -8849785387411401982
+      Aria_32: 5815706628532433909
+      Aria_33: 3480141222881609331
+      Aria_34: -4375794920082049174
+      Aria_35: -4262541195707184219
+      Aria_36: -7598992108719279253
+      Aria_37: -2583122265330797147
+      Aria_38: -6873995378387325746
+      Aria_39: -4703058643663598605
+      Aria_4: -8124471415614930988
+      Aria_40: -7321204560648204656
+      Aria_41: 1781530201243872218
+      Aria_42: -7641508621391410219
+      Aria_43: -5195192962057259135
+      Aria_44: 4404914049256922417
+      Aria_45: 4922850638027478562
+      Aria_46: 7136064782387344840
+      Aria_47: -5789078060128108087
+      Aria_48: -8551239872697881243
+      Aria_49: -5815122496312415174
+      Aria_5: 943804604701414460
+      Aria_50: 6717108393460847550
+      Aria_51: 3648982998844912385
+      Aria_52: 4626279939958037621
+      Aria_53: 4117968628058455956
+      Aria_54: 4640225500071039794
+      Aria_55: 6275985875492102660
+      Aria_56: 5152067511342290534
+      Aria_57: 7499560710606862509
+      Aria_58: 4784083314753515923
+      Aria_59: 8414305931790559454
+      Aria_6: 6724491188950251810
+      Aria_60: 5608763816058127832
+      Aria_61: -771179231196465743
+      Aria_62: -8007376179032554781
+      Aria_63: 8038699943150154499
+      Aria_64: 6484030402380032928
+      Aria_65: -4533502101834521991
+      Aria_66: -4442353099240555432
+      Aria_67: 986534494119718726
+      Aria_68: 4626323741281203552
+      Aria_69: -5233888867336216517
+      Aria_7: 2635324872694558283
+      Aria_70: -2858986413569883606
+      Aria_71: 6675808032080376104
+      Aria_72: -2736163889506262529
+      Aria_73: -3099088034763683547
+      Aria_74: -724325378154488282
+      Aria_75: -7633718469154018246
+      Aria_76: -4366013864660087086
+      Aria_77: 4722572702580902396
+      Aria_78: 1588052697773365079
+      Aria_79: 4356033761388668662
+      Aria_8: -6716907390528370122
+      Aria_80: 8506219681300835257
+      Aria_81: 8331748095626546199
+      Aria_82: 3031694181642550326
+      Aria_83: -4929150788402217015
+      Aria_84: -7771894015563041461
+      Aria_85: -5857160523735300688
+      Aria_86: -6419063258577925016
+      Aria_87: 2040967041918014669
+      Aria_88: 3018798509903306900
+      Aria_89: 1778698076423163849
+      Aria_9: 8585645822615371880
+      Aria_90: -206230954947908693
+      Aria_91: -7036872728406121944
+      Aria_92: -1533927328034974284
+      Aria_93: -7964068454276413977
+      Aria_94: -4688514489558622928
+      Aria_95: 3746109479717001003
+      Aria_96: 5620151302371903087
+      Aria_97: 8887379907181099020
+      Aria_98: 2784915293003677624
+      Aria_99: -6592827277465224372
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,3294 @@
+fileFormatVersion: 2
+guid: 41d305cd314034846be5020c5de549a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9121377512304577974
+    second: PC _ Computer - Crypt of the NecroDancer - Stage Elements - Floors_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 391
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd8430aae23be74dbcdeb4ffcc176c6
+      internalID: -1123820467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 391
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26738ff07ba6a2e46ab92f2aea4a320b
+      internalID: -1891724883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 391
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d32e52f7ab3e04ebef01ff9e847e8c
+      internalID: 225763639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 391
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ce7eae551c83c408841ea94a559335
+      internalID: -1574901320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 391
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0960974686918e43a3b67465733d146
+      internalID: 568352968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 391
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3853d3ca4c7aa2e4796e368312411e0e
+      internalID: -374919055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 391
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47eebc9ecab1f7e458a6e2df682660bf
+      internalID: -1927545265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_7
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 391
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae3ee090ec7ef74fa354fad25ae495e
+      internalID: -1375763467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 365
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63837e617fc7e8e4dbc99f6385b58080
+      internalID: 665110960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_9
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 365
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83614f6061027544fad2584d99759b35
+      internalID: 231305500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_10
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 365
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc2f3906345a9b48b7629a0521e5420
+      internalID: 734809830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_11
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 365
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ed3a5353c5d9941819bef838d3e8ff
+      internalID: -1635845466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_12
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 365
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ae88ce7cf34484aae2127b168707b4
+      internalID: -1274885476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_13
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 365
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5651c63380777bd4b99ac3631b3f0d67
+      internalID: 1315318407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_14
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 365
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4c812024c0bad43beedc03ee1d27f1
+      internalID: -522577434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_15
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 365
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066bb149c7f1f2043aa20fb7ea63f37e
+      internalID: 1078959149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 339
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94b5f22526e8ef48b6f84d0d0c90ce6
+      internalID: 1927611331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_17
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 339
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4cf80e04162c984784082d249b6f40b
+      internalID: 494660392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_18
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 339
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dbc80e4db947b4b8776344d9c9a581
+      internalID: -91810323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_19
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 339
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5e0f86b184b7c4abe1c0b8de7c7145
+      internalID: 122940896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_20
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 339
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accfd4a49dd7f394faa55d857b2c5171
+      internalID: 1912691847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_21
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 339
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e758fd8ec5bb3594aaa9af1fc11b6494
+      internalID: -42789020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_22
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 339
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac8d31fbd0ec754e8dcdc3abaf7e075
+      internalID: -340769748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_23
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 339
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7087214a25fc806448e831d34fe36234
+      internalID: 786272841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_24
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 339
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f65760fda807a74f8a972602534e8f6
+      internalID: -1728854081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 313
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca000db50215f4b4db87f09fc11288aa
+      internalID: -775363455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_26
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 313
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbf71be2541d1c4d98feaa96d579949
+      internalID: -1517892427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_27
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 313
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344ebfcd8d3283a4393bcfd3fe5c1ced
+      internalID: 7067215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_28
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 313
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24444fe4195064946af52a905c76b727
+      internalID: 1717349136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_29
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 313
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85361efbe321c643a1c7681784354fc
+      internalID: 1111195129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_30
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 313
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb78708a583f36c4aaddd29777591b44
+      internalID: 1518842319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_31
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 313
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa35bfdb3e3a0874ea9d68d64f5974dd
+      internalID: 1937496179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_32
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 313
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4275c1914d9f9354db1ce41552584ad3
+      internalID: -74092996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8c663399651664e8ea3186bf52f55a
+      internalID: -316206592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_34
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 287
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaea890794f64ce458da5b076183d0a0
+      internalID: 351825160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_35
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 287
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cf9f02171bd4a449ea2fb67198d96f
+      internalID: -1755849045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_36
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 287
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200c99e66bf6eed42938e05f9f4c5d29
+      internalID: -780563281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_37
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 287
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2372ffdeb7898824d948ad18dcb5cb3c
+      internalID: -804788883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_38
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 287
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b347120af822ccd45a63dd5518355382
+      internalID: 1871009168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_39
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 287
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e12075c488afa4c9f4f8d450c929f0
+      internalID: -1555625486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_40
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 287
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5450a3578870ae4bbb6fd59ba1b62cd
+      internalID: 1151340626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_41
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 287
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032c869100a5f9248a20643840401bfc
+      internalID: 298550844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 261
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcaf08479d604934aabe42091dde4443
+      internalID: 1600838595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_43
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 261
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076b10eb055a6214595f5008515a1cf7
+      internalID: 1012427492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_44
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 261
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f7c6e2b512d7e4aa4e53f463c85f72
+      internalID: 847914943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_45
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 261
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb033be19f5a4f042963948bdb2dcf1f
+      internalID: 117048365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_46
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 261
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2a40af3f6e98b41b5c3aa65485f749
+      internalID: -1661249335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_47
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 261
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bdaae24db3e1b4da9bb8eb3bf04b95
+      internalID: 2121511617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_48
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 261
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3fdbb79c7615f4ea23c605305eb98f
+      internalID: 1238066916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_49
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 261
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc401a7bbfd9844cba940ef8d9a174b
+      internalID: 203309148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_50
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 261
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667f3779dc970f6488d666cc5372f9b3
+      internalID: 1681945078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 235
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ccd322143fd034d90c24cb9c092d27
+      internalID: 828474515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_52
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 235
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb17b522c291754b9196d9feb0ac9b5
+      internalID: -1882585830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_53
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 235
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65839c9f640e1f44e9ccc3cd2f96b228
+      internalID: 1408836252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_54
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 235
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89788e59763a6c4a967ab8de3e52935
+      internalID: 549807099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_55
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 235
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b3617e90ac58540976427735bb8ffa
+      internalID: -2135000122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_56
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 235
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c472e44f4d6f634cafd5351d5d365a3
+      internalID: -151393949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_57
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 235
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf35b312345a144e9faf764aa83ff33
+      internalID: -1542705065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_58
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 235
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb07f4e2ad311814ca1fda5e98a54312
+      internalID: 1283190112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_59
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 235
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627984a8fa594784d8d9e6efeff5cb9d
+      internalID: 978716606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 209
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c454b3205ea3a346bf523b1fd52c740
+      internalID: 1403682036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_61
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 209
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffabe295e4800c04080dc4834198b2a0
+      internalID: 1915629777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_62
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 209
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2d82bfacaac8d4d8cc99814a2ac6a9
+      internalID: 94154533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_63
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 209
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92fe9a80dc556684e9db8dab387d7a75
+      internalID: -1691833043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_64
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 209
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eebea84ba26670429db30ce762b22f6
+      internalID: -1794890621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_65
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 209
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2c812c329f620498e3906cc3f00f91
+      internalID: -910590408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_66
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 209
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf61e2df5cd74f74da6607c30357b814
+      internalID: 559080995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_67
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 209
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1e1b5dce1fda94ba7a97b275e549ae
+      internalID: -1589821768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_68
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 209
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34833ccb61598a4d8840dc20cdce9ca
+      internalID: -1023182159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 183
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24458d0808e395b46b90f36e5597125f
+      internalID: -1285183487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_70
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 183
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b283f9a7dbd2b48a334e16da217742
+      internalID: 775126997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_71
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 183
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a58cfd87725434cafabecd12cc7e68
+      internalID: 1620002959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_72
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 183
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2722f8c47f1c84baa9cd1c18bdcf51
+      internalID: -678735957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_73
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 183
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70355cba43882e944b141cb0ff2ab70f
+      internalID: 1439134548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_74
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 183
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e21fd2dafbcae48afb48bd8daf9210
+      internalID: 1541469755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_75
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 183
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdddbbf414b6f244d9894545fda7a1a0
+      internalID: 875165019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_76
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 183
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fac3bfeb6f594a4cb204fb88e89d8ec
+      internalID: -8592377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_77
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 183
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94745257b6ff3fe4db759171506ac662
+      internalID: -1806739526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046fc1c4a5a08c94c830c50b38d7c48e
+      internalID: 1194041797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_79
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7407fa429218fd74080001af9aa71fe4
+      internalID: 1414927659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_80
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e91197d4cd05414bbbb481514367516
+      internalID: 1536258921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_81
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450fc336780188b47bb5bced219d5414
+      internalID: -369721214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_82
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6812de523f6280f4cbe7012a9cad606a
+      internalID: 893728168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_83
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fffa0faae3332439dc54dc7f40a2ef
+      internalID: 549691054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_84
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c256291d696ef584086af7b7ec93eba1
+      internalID: -255613580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_85
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15117e0a78b3ea048a7c7d9036721c0b
+      internalID: 1582762705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_86
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9797e55599cb0fa429316f17ce559a9b
+      internalID: -1846701334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_87
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7b03b565a26bb41869adb5ddb56388
+      internalID: 1853958870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_88
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 131
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b243f7a5dcc56743a13cf74a74327cd
+      internalID: 1182750204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_89
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 131
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca211328bb29e94c9bc2f37bd5b7466
+      internalID: -1359780685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_90
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 131
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9469f11f3a354634fa6cb07ae41942c6
+      internalID: 2071979187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_91
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 131
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db738e636841de4b9d11c6c41e5f12c
+      internalID: -583819890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_92
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 131
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc54ed8002cbde42b2a85ec3b297823
+      internalID: -1066600136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_93
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 131
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73209e5e4a4fa244e80c3c027c511d12
+      internalID: -1260144882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_94
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 131
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9784e5d2a8843224abe719c7f7e00930
+      internalID: -1346440838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_95
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 131
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96720b0ae4de7764f99da94eb27db218
+      internalID: 1104648683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3556999fc03ab2143999f0d77b53be26
+      internalID: 1963873483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_97
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 105
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faeeeda676f2f534eb5259f2f70cef44
+      internalID: 857661309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_98
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 105
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42fd43cdc4470f49a0afa5fd377f01e
+      internalID: -1205422109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_99
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 105
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474240b404845b04da032ef93912342d
+      internalID: -1058185546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_100
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 105
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8780cbda0ada0749adcf328cfdb1e8c
+      internalID: 589941392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_101
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 105
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5183a74d41d7d14586a6189bf88edd9
+      internalID: -1945721962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_102
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 105
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c9cf0519de4c849bb8dc57bf475114
+      internalID: 25121046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_103
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 105
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01cb718eb6e3794e88d05a77502a337
+      internalID: 1187626233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_104
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 105
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb2cf1841b0d5843b7cfb3d378a7154
+      internalID: 2126869239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 79
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf57930186a0304fb86af77a23135b4
+      internalID: -401217761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_106
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 79
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be3e1a85392bc44bb0a84f9144a1884
+      internalID: -1591824657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_107
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 79
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3c28eb92ac8314fac26f8c264acfb7
+      internalID: -808968342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_108
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 79
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4430f56d47020154f81cf69fd823a94d
+      internalID: 35022926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_109
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 79
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c6e5ef4de997a47ac35d21a6e92939
+      internalID: -1936260346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_110
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 79
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722c4113bb0776b4a983573337941668
+      internalID: -436869151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_111
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 79
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d38ce6e6fea6345a9891556f2231f7
+      internalID: 1956506646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_112
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 79
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e74065b63e2ba41a80ae7a208ffb47
+      internalID: -805560883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_113
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 79
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479e91c2f02ec7c44939f449d21020b8
+      internalID: -1512685806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_114
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19b171433abcc6468ce1acba285a5db
+      internalID: -2110927336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_115
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 53
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568a79c2949de014584907f326584d32
+      internalID: 1770077707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_116
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 53
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eaee8ceb87496e42b28b9e92e995657
+      internalID: -958651691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_117
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 53
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca16a29c5d3bdb4b8d0082d8dd6f792
+      internalID: 1692559186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_118
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 53
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0863b11ee44aab4f9f93e90c5993c26
+      internalID: 1601959003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_119
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 53
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba61cfa5b36c17645a75134708840ac5
+      internalID: -82292691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_120
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 53
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c7afa09ffc6554487f0676b50daf96
+      internalID: -1453932322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_121
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 53
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffa695ba09cdeb48bc368ff550cabcf
+      internalID: 98070787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_122
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 53
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169aab608c5c529459292345e7bf87ba
+      internalID: -963545702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_123
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b947dbf3f972b7246afe8f3f8a7e7a91
+      internalID: -216750458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_124
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 27
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8c8da83496714468ba31629d6d691a
+      internalID: -167004884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_125
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 27
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fac25baf04b0b249bf6a3adc51de404
+      internalID: -1660279037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_126
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 27
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ca8368aa7a0a9438e9e8677b50696d
+      internalID: -2125171215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_127
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 27
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6267a8b5838f754087934cd501852fe
+      internalID: 1466085348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_128
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 27
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b277be9d001e239478e8112fe4cdf766
+      internalID: -659407142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_129
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 27
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27664987ee858f545a1d9a08db37bf7d
+      internalID: 1164116096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_130
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 27
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5e50e5e85a28240b5a1f84a18b9ceb
+      internalID: 2115663037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_131
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 27
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fabd501f9866a4c9a95ca3468df684
+      internalID: -1039433068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c5fec6dec3a1c419d05bb9599b3c4d
+      internalID: 1551471208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_133
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269038425735c2941bafb42120d2c23d
+      internalID: 1436245960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_134
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82826824f0a2a74f90e551bdf2d5a0e
+      internalID: -998770797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_135
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc02530fba5aab94fa94a38ff646fc58
+      internalID: 590010512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_136
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be5100c87e5db84d92c5b25dfa9d68b
+      internalID: 1742578513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Crypt of the NecroDanceFloors_137
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdd7ae0c0cf08049b9837e0a72cf96a
+      internalID: -1634317123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9c264c81c5d80af4c9eed07b88fc8e0b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PC _ Computer - Crypt of the NecroDanceFloors_0: -1123820467
+      PC _ Computer - Crypt of the NecroDanceFloors_1: -1891724883
+      PC _ Computer - Crypt of the NecroDanceFloors_10: 734809830
+      PC _ Computer - Crypt of the NecroDanceFloors_100: 589941392
+      PC _ Computer - Crypt of the NecroDanceFloors_101: -1945721962
+      PC _ Computer - Crypt of the NecroDanceFloors_102: 25121046
+      PC _ Computer - Crypt of the NecroDanceFloors_103: 1187626233
+      PC _ Computer - Crypt of the NecroDanceFloors_104: 2126869239
+      PC _ Computer - Crypt of the NecroDanceFloors_105: -401217761
+      PC _ Computer - Crypt of the NecroDanceFloors_106: -1591824657
+      PC _ Computer - Crypt of the NecroDanceFloors_107: -808968342
+      PC _ Computer - Crypt of the NecroDanceFloors_108: 35022926
+      PC _ Computer - Crypt of the NecroDanceFloors_109: -1936260346
+      PC _ Computer - Crypt of the NecroDanceFloors_11: -1635845466
+      PC _ Computer - Crypt of the NecroDanceFloors_110: -436869151
+      PC _ Computer - Crypt of the NecroDanceFloors_111: 1956506646
+      PC _ Computer - Crypt of the NecroDanceFloors_112: -805560883
+      PC _ Computer - Crypt of the NecroDanceFloors_113: -1512685806
+      PC _ Computer - Crypt of the NecroDanceFloors_114: -2110927336
+      PC _ Computer - Crypt of the NecroDanceFloors_115: 1770077707
+      PC _ Computer - Crypt of the NecroDanceFloors_116: -958651691
+      PC _ Computer - Crypt of the NecroDanceFloors_117: 1692559186
+      PC _ Computer - Crypt of the NecroDanceFloors_118: 1601959003
+      PC _ Computer - Crypt of the NecroDanceFloors_119: -82292691
+      PC _ Computer - Crypt of the NecroDanceFloors_12: -1274885476
+      PC _ Computer - Crypt of the NecroDanceFloors_120: -1453932322
+      PC _ Computer - Crypt of the NecroDanceFloors_121: 98070787
+      PC _ Computer - Crypt of the NecroDanceFloors_122: -963545702
+      PC _ Computer - Crypt of the NecroDanceFloors_123: -216750458
+      PC _ Computer - Crypt of the NecroDanceFloors_124: -167004884
+      PC _ Computer - Crypt of the NecroDanceFloors_125: -1660279037
+      PC _ Computer - Crypt of the NecroDanceFloors_126: -2125171215
+      PC _ Computer - Crypt of the NecroDanceFloors_127: 1466085348
+      PC _ Computer - Crypt of the NecroDanceFloors_128: -659407142
+      PC _ Computer - Crypt of the NecroDanceFloors_129: 1164116096
+      PC _ Computer - Crypt of the NecroDanceFloors_13: 1315318407
+      PC _ Computer - Crypt of the NecroDanceFloors_130: 2115663037
+      PC _ Computer - Crypt of the NecroDanceFloors_131: -1039433068
+      PC _ Computer - Crypt of the NecroDanceFloors_132: 1551471208
+      PC _ Computer - Crypt of the NecroDanceFloors_133: 1436245960
+      PC _ Computer - Crypt of the NecroDanceFloors_134: -998770797
+      PC _ Computer - Crypt of the NecroDanceFloors_135: 590010512
+      PC _ Computer - Crypt of the NecroDanceFloors_136: 1742578513
+      PC _ Computer - Crypt of the NecroDanceFloors_137: -1634317123
+      PC _ Computer - Crypt of the NecroDanceFloors_14: -522577434
+      PC _ Computer - Crypt of the NecroDanceFloors_15: 1078959149
+      PC _ Computer - Crypt of the NecroDanceFloors_16: 1927611331
+      PC _ Computer - Crypt of the NecroDanceFloors_17: 494660392
+      PC _ Computer - Crypt of the NecroDanceFloors_18: -91810323
+      PC _ Computer - Crypt of the NecroDanceFloors_19: 122940896
+      PC _ Computer - Crypt of the NecroDanceFloors_2: 225763639
+      PC _ Computer - Crypt of the NecroDanceFloors_20: 1912691847
+      PC _ Computer - Crypt of the NecroDanceFloors_21: -42789020
+      PC _ Computer - Crypt of the NecroDanceFloors_22: -340769748
+      PC _ Computer - Crypt of the NecroDanceFloors_23: 786272841
+      PC _ Computer - Crypt of the NecroDanceFloors_24: -1728854081
+      PC _ Computer - Crypt of the NecroDanceFloors_25: -775363455
+      PC _ Computer - Crypt of the NecroDanceFloors_26: -1517892427
+      PC _ Computer - Crypt of the NecroDanceFloors_27: 7067215
+      PC _ Computer - Crypt of the NecroDanceFloors_28: 1717349136
+      PC _ Computer - Crypt of the NecroDanceFloors_29: 1111195129
+      PC _ Computer - Crypt of the NecroDanceFloors_3: -1574901320
+      PC _ Computer - Crypt of the NecroDanceFloors_30: 1518842319
+      PC _ Computer - Crypt of the NecroDanceFloors_31: 1937496179
+      PC _ Computer - Crypt of the NecroDanceFloors_32: -74092996
+      PC _ Computer - Crypt of the NecroDanceFloors_33: -316206592
+      PC _ Computer - Crypt of the NecroDanceFloors_34: 351825160
+      PC _ Computer - Crypt of the NecroDanceFloors_35: -1755849045
+      PC _ Computer - Crypt of the NecroDanceFloors_36: -780563281
+      PC _ Computer - Crypt of the NecroDanceFloors_37: -804788883
+      PC _ Computer - Crypt of the NecroDanceFloors_38: 1871009168
+      PC _ Computer - Crypt of the NecroDanceFloors_39: -1555625486
+      PC _ Computer - Crypt of the NecroDanceFloors_4: 568352968
+      PC _ Computer - Crypt of the NecroDanceFloors_40: 1151340626
+      PC _ Computer - Crypt of the NecroDanceFloors_41: 298550844
+      PC _ Computer - Crypt of the NecroDanceFloors_42: 1600838595
+      PC _ Computer - Crypt of the NecroDanceFloors_43: 1012427492
+      PC _ Computer - Crypt of the NecroDanceFloors_44: 847914943
+      PC _ Computer - Crypt of the NecroDanceFloors_45: 117048365
+      PC _ Computer - Crypt of the NecroDanceFloors_46: -1661249335
+      PC _ Computer - Crypt of the NecroDanceFloors_47: 2121511617
+      PC _ Computer - Crypt of the NecroDanceFloors_48: 1238066916
+      PC _ Computer - Crypt of the NecroDanceFloors_49: 203309148
+      PC _ Computer - Crypt of the NecroDanceFloors_5: -374919055
+      PC _ Computer - Crypt of the NecroDanceFloors_50: 1681945078
+      PC _ Computer - Crypt of the NecroDanceFloors_51: 828474515
+      PC _ Computer - Crypt of the NecroDanceFloors_52: -1882585830
+      PC _ Computer - Crypt of the NecroDanceFloors_53: 1408836252
+      PC _ Computer - Crypt of the NecroDanceFloors_54: 549807099
+      PC _ Computer - Crypt of the NecroDanceFloors_55: -2135000122
+      PC _ Computer - Crypt of the NecroDanceFloors_56: -151393949
+      PC _ Computer - Crypt of the NecroDanceFloors_57: -1542705065
+      PC _ Computer - Crypt of the NecroDanceFloors_58: 1283190112
+      PC _ Computer - Crypt of the NecroDanceFloors_59: 978716606
+      PC _ Computer - Crypt of the NecroDanceFloors_6: -1927545265
+      PC _ Computer - Crypt of the NecroDanceFloors_60: 1403682036
+      PC _ Computer - Crypt of the NecroDanceFloors_61: 1915629777
+      PC _ Computer - Crypt of the NecroDanceFloors_62: 94154533
+      PC _ Computer - Crypt of the NecroDanceFloors_63: -1691833043
+      PC _ Computer - Crypt of the NecroDanceFloors_64: -1794890621
+      PC _ Computer - Crypt of the NecroDanceFloors_65: -910590408
+      PC _ Computer - Crypt of the NecroDanceFloors_66: 559080995
+      PC _ Computer - Crypt of the NecroDanceFloors_67: -1589821768
+      PC _ Computer - Crypt of the NecroDanceFloors_68: -1023182159
+      PC _ Computer - Crypt of the NecroDanceFloors_69: -1285183487
+      PC _ Computer - Crypt of the NecroDanceFloors_7: -1375763467
+      PC _ Computer - Crypt of the NecroDanceFloors_70: 775126997
+      PC _ Computer - Crypt of the NecroDanceFloors_71: 1620002959
+      PC _ Computer - Crypt of the NecroDanceFloors_72: -678735957
+      PC _ Computer - Crypt of the NecroDanceFloors_73: 1439134548
+      PC _ Computer - Crypt of the NecroDanceFloors_74: 1541469755
+      PC _ Computer - Crypt of the NecroDanceFloors_75: 875165019
+      PC _ Computer - Crypt of the NecroDanceFloors_76: -8592377
+      PC _ Computer - Crypt of the NecroDanceFloors_77: -1806739526
+      PC _ Computer - Crypt of the NecroDanceFloors_78: 1194041797
+      PC _ Computer - Crypt of the NecroDanceFloors_79: 1414927659
+      PC _ Computer - Crypt of the NecroDanceFloors_8: 665110960
+      PC _ Computer - Crypt of the NecroDanceFloors_80: 1536258921
+      PC _ Computer - Crypt of the NecroDanceFloors_81: -369721214
+      PC _ Computer - Crypt of the NecroDanceFloors_82: 893728168
+      PC _ Computer - Crypt of the NecroDanceFloors_83: 549691054
+      PC _ Computer - Crypt of the NecroDanceFloors_84: -255613580
+      PC _ Computer - Crypt of the NecroDanceFloors_85: 1582762705
+      PC _ Computer - Crypt of the NecroDanceFloors_86: -1846701334
+      PC _ Computer - Crypt of the NecroDanceFloors_87: 1853958870
+      PC _ Computer - Crypt of the NecroDanceFloors_88: 1182750204
+      PC _ Computer - Crypt of the NecroDanceFloors_89: -1359780685
+      PC _ Computer - Crypt of the NecroDanceFloors_9: 231305500
+      PC _ Computer - Crypt of the NecroDanceFloors_90: 2071979187
+      PC _ Computer - Crypt of the NecroDanceFloors_91: -583819890
+      PC _ Computer - Crypt of the NecroDanceFloors_92: -1066600136
+      PC _ Computer - Crypt of the NecroDanceFloors_93: -1260144882
+      PC _ Computer - Crypt of the NecroDanceFloors_94: -1346440838
+      PC _ Computer - Crypt of the NecroDanceFloors_95: 1104648683
+      PC _ Computer - Crypt of the NecroDanceFloors_96: 1963873483
+      PC _ Computer - Crypt of the NecroDanceFloors_97: 857661309
+      PC _ Computer - Crypt of the NecroDanceFloors_98: -1205422109
+      PC _ Computer - Crypt of the NecroDanceFloors_99: -1058185546
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

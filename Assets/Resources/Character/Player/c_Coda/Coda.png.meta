@@ -1,0 +1,6773 @@
+fileFormatVersion: 2
+guid: f4b26d13bd8e25b4e8828f0e3574f538
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6034721323054672815
+    second: Coda_0
+  - first:
+      213: -8235510802628180800
+    second: Coda_1
+  - first:
+      213: -4263315234395986307
+    second: Coda_2
+  - first:
+      213: 163732279685670682
+    second: Coda_3
+  - first:
+      213: -3574291736875460786
+    second: Coda_4
+  - first:
+      213: 8309416701947951197
+    second: Coda_5
+  - first:
+      213: 5940781857904397850
+    second: Coda_6
+  - first:
+      213: 4389877696554474747
+    second: Coda_7
+  - first:
+      213: -5870158791871939400
+    second: Coda_8
+  - first:
+      213: 7663470065059327411
+    second: Coda_9
+  - first:
+      213: -9115815391005599916
+    second: Coda_10
+  - first:
+      213: 7683354319503391613
+    second: Coda_11
+  - first:
+      213: -7880963321543404897
+    second: Coda_12
+  - first:
+      213: -7186923358835527060
+    second: Coda_13
+  - first:
+      213: 3160333504692779187
+    second: Coda_14
+  - first:
+      213: 4375345007795442365
+    second: Coda_15
+  - first:
+      213: -3839481777220601938
+    second: Coda_16
+  - first:
+      213: -8076221947954785280
+    second: Coda_17
+  - first:
+      213: 6108253686229586945
+    second: Coda_18
+  - first:
+      213: -1064811875677048639
+    second: Coda_19
+  - first:
+      213: -3464676940384607325
+    second: Coda_20
+  - first:
+      213: -5299643260081996220
+    second: Coda_21
+  - first:
+      213: 2946698252121827246
+    second: Coda_22
+  - first:
+      213: 791901697764176059
+    second: Coda_23
+  - first:
+      213: 687548130574139107
+    second: Coda_24
+  - first:
+      213: 2301989623068104310
+    second: Coda_25
+  - first:
+      213: 7298885125719410858
+    second: Coda_26
+  - first:
+      213: 5162773096539267341
+    second: Coda_27
+  - first:
+      213: -4700698778003075740
+    second: Coda_28
+  - first:
+      213: -1315555656275584943
+    second: Coda_29
+  - first:
+      213: -5146316225916630550
+    second: Coda_30
+  - first:
+      213: 5968162210137929833
+    second: Coda_31
+  - first:
+      213: -6430264564726390386
+    second: Coda_32
+  - first:
+      213: -3417371924377177965
+    second: Coda_33
+  - first:
+      213: 6962903232648524055
+    second: Coda_34
+  - first:
+      213: 3323230265984552756
+    second: Coda_35
+  - first:
+      213: 5054199466222583216
+    second: Coda_36
+  - first:
+      213: 383714911437030915
+    second: Coda_37
+  - first:
+      213: 7442860349482739505
+    second: Coda_38
+  - first:
+      213: 7308217023350778112
+    second: Coda_39
+  - first:
+      213: -3649824351864784407
+    second: Coda_40
+  - first:
+      213: 36099492795944800
+    second: Coda_41
+  - first:
+      213: 5659271730070129278
+    second: Coda_42
+  - first:
+      213: -4334658666192525788
+    second: Coda_43
+  - first:
+      213: -244472769423483694
+    second: Coda_44
+  - first:
+      213: 2191060816675693184
+    second: Coda_45
+  - first:
+      213: 4519931648572577555
+    second: Coda_46
+  - first:
+      213: 3952716443050284028
+    second: Coda_47
+  - first:
+      213: -8255798232715263389
+    second: Coda_48
+  - first:
+      213: -4797798991696704605
+    second: Coda_49
+  - first:
+      213: -5921763722192185760
+    second: Coda_50
+  - first:
+      213: -6832450654586643707
+    second: Coda_51
+  - first:
+      213: -8762815542281396955
+    second: Coda_52
+  - first:
+      213: 9063504190223443232
+    second: Coda_53
+  - first:
+      213: 5293098456392195653
+    second: Coda_54
+  - first:
+      213: 5822709420635406708
+    second: Coda_55
+  - first:
+      213: 8215084980231732489
+    second: Coda_56
+  - first:
+      213: -2446768469867592991
+    second: Coda_57
+  - first:
+      213: 4578928694939937130
+    second: Coda_58
+  - first:
+      213: -1027719427541012108
+    second: Coda_59
+  - first:
+      213: -5185260312360493654
+    second: Coda_60
+  - first:
+      213: 3348333257673923558
+    second: Coda_61
+  - first:
+      213: 8859166988444945103
+    second: Coda_62
+  - first:
+      213: -320986728766972127
+    second: Coda_63
+  - first:
+      213: 5602765066353911427
+    second: Coda_64
+  - first:
+      213: -1833376406279619253
+    second: Coda_65
+  - first:
+      213: -8555033473588807917
+    second: Coda_66
+  - first:
+      213: -7888239012739796982
+    second: Coda_67
+  - first:
+      213: -2465825059343791843
+    second: Coda_68
+  - first:
+      213: -1619193344870583848
+    second: Coda_69
+  - first:
+      213: -8049611161081210097
+    second: Coda_70
+  - first:
+      213: -6206453161385066276
+    second: Coda_71
+  - first:
+      213: -1388922022441732412
+    second: Coda_72
+  - first:
+      213: 4481400797387068836
+    second: Coda_73
+  - first:
+      213: -404311976822100727
+    second: Coda_74
+  - first:
+      213: 6738201462759262717
+    second: Coda_75
+  - first:
+      213: 1699021802473660179
+    second: Coda_76
+  - first:
+      213: 9172294613107088401
+    second: Coda_77
+  - first:
+      213: -2025771841303130696
+    second: Coda_78
+  - first:
+      213: 3637102053182228038
+    second: Coda_79
+  - first:
+      213: 3963022955679539596
+    second: Coda_80
+  - first:
+      213: 5671521890659874891
+    second: Coda_81
+  - first:
+      213: -4247609953049880331
+    second: Coda_82
+  - first:
+      213: 513767057057996148
+    second: Coda_83
+  - first:
+      213: 4834739682771049049
+    second: Coda_84
+  - first:
+      213: 4142120519617789658
+    second: Coda_85
+  - first:
+      213: -1849110908463107041
+    second: Coda_86
+  - first:
+      213: -119356662204786744
+    second: Coda_87
+  - first:
+      213: -3622911431343716777
+    second: Coda_88
+  - first:
+      213: 8443196569112026337
+    second: Coda_89
+  - first:
+      213: 6798459365576818936
+    second: Coda_90
+  - first:
+      213: 497445988349315391
+    second: Coda_91
+  - first:
+      213: -648576113294456872
+    second: Coda_92
+  - first:
+      213: 3298683132428395143
+    second: Coda_93
+  - first:
+      213: -6072813095093948330
+    second: Coda_94
+  - first:
+      213: 5736421076930804786
+    second: Coda_95
+  - first:
+      213: -8354859816792757919
+    second: Coda_96
+  - first:
+      213: 8511035182120637823
+    second: Coda_97
+  - first:
+      213: -8488427486022860190
+    second: Coda_98
+  - first:
+      213: -4621692807599919477
+    second: Coda_99
+  - first:
+      213: 1870830917305271026
+    second: Coda_100
+  - first:
+      213: -1380536645443869324
+    second: Coda_101
+  - first:
+      213: 7253183571014180597
+    second: Coda_102
+  - first:
+      213: 6570484741623827940
+    second: Coda_103
+  - first:
+      213: 286663431886925151
+    second: Coda_104
+  - first:
+      213: -8776268841019511132
+    second: Coda_105
+  - first:
+      213: 1557588673945014566
+    second: Coda_106
+  - first:
+      213: 2443937532005463647
+    second: Coda_107
+  - first:
+      213: 6362001626045010480
+    second: Coda_108
+  - first:
+      213: 6949211881857111958
+    second: Coda_109
+  - first:
+      213: -8405004050995429221
+    second: Coda_110
+  - first:
+      213: -4550117596641849118
+    second: Coda_111
+  - first:
+      213: -2239791897709134030
+    second: Coda_112
+  - first:
+      213: 6558560997213413436
+    second: Coda_113
+  - first:
+      213: -3011910496112941562
+    second: Coda_114
+  - first:
+      213: 1250195679525162793
+    second: Coda_115
+  - first:
+      213: 469017404973445009
+    second: Coda_116
+  - first:
+      213: -2632532852820281818
+    second: Coda_117
+  - first:
+      213: 6631224968986063465
+    second: Coda_118
+  - first:
+      213: -2321653565714369042
+    second: Coda_119
+  - first:
+      213: 3360357584097125485
+    second: Coda_120
+  - first:
+      213: -3786266527781582691
+    second: Coda_121
+  - first:
+      213: -1901929743528946291
+    second: Coda_122
+  - first:
+      213: 6984291158551675070
+    second: Coda_123
+  - first:
+      213: 4315242299535091310
+    second: Coda_124
+  - first:
+      213: -3579227439145146744
+    second: Coda_125
+  - first:
+      213: 6465702411906486263
+    second: Coda_126
+  - first:
+      213: -7525485973843796535
+    second: Coda_127
+  - first:
+      213: -1665776539543891827
+    second: Coda_128
+  - first:
+      213: 5675502173182987251
+    second: Coda_129
+  - first:
+      213: -1485867885731821350
+    second: Coda_130
+  - first:
+      213: -3017746521923773380
+    second: Coda_131
+  - first:
+      213: 3944565692255892674
+    second: Coda_132
+  - first:
+      213: 1886873997465276926
+    second: Coda_133
+  - first:
+      213: 2389062432621826574
+    second: Coda_134
+  - first:
+      213: 106119488445869903
+    second: Coda_135
+  - first:
+      213: -2111451792449778001
+    second: Coda_136
+  - first:
+      213: 8340530399456695122
+    second: Coda_137
+  - first:
+      213: -5345251848630026901
+    second: Coda_138
+  - first:
+      213: 4034799911797603723
+    second: Coda_139
+  - first:
+      213: 8927467671910238557
+    second: Coda_140
+  - first:
+      213: 8973801259294143728
+    second: Coda_141
+  - first:
+      213: 369543884382567072
+    second: Coda_142
+  - first:
+      213: -8672092661546658520
+    second: Coda_143
+  - first:
+      213: -2604851524095938658
+    second: Coda_144
+  - first:
+      213: 4172596474571437583
+    second: Coda_145
+  - first:
+      213: 5774398486449518182
+    second: Coda_146
+  - first:
+      213: 498215104828795165
+    second: Coda_147
+  - first:
+      213: -5900784844913281584
+    second: Coda_148
+  - first:
+      213: 7677208113231431235
+    second: Coda_149
+  - first:
+      213: 4806212724035473456
+    second: Coda_150
+  - first:
+      213: -5837040719563411922
+    second: Coda_151
+  - first:
+      213: 7193855850239092545
+    second: Coda_152
+  - first:
+      213: 6216125304546222815
+    second: Coda_153
+  - first:
+      213: -4944239987295301540
+    second: Coda_154
+  - first:
+      213: -986709831876422285
+    second: Coda_155
+  - first:
+      213: -129519151956064668
+    second: Coda_156
+  - first:
+      213: -942263011613425627
+    second: Coda_157
+  - first:
+      213: -5046604945073646177
+    second: Coda_158
+  - first:
+      213: 3735563824690963891
+    second: Coda_159
+  - first:
+      213: 5222856155222743531
+    second: Coda_160
+  - first:
+      213: -4849841618671912020
+    second: Coda_161
+  - first:
+      213: 7503445556160364970
+    second: Coda_162
+  - first:
+      213: -3110831936271181873
+    second: Coda_163
+  - first:
+      213: 8062239439330722768
+    second: Coda_164
+  - first:
+      213: 5093094179108324194
+    second: Coda_165
+  - first:
+      213: 8939072789748365347
+    second: Coda_166
+  - first:
+      213: 7909139020991235992
+    second: Coda_167
+  - first:
+      213: -4755951209429773588
+    second: Coda_168
+  - first:
+      213: -2727206679669632923
+    second: Coda_169
+  - first:
+      213: 5539434200194804176
+    second: Coda_170
+  - first:
+      213: -5983251064991994542
+    second: Coda_171
+  - first:
+      213: 268210290205881303
+    second: Coda_172
+  - first:
+      213: -5660646294540590724
+    second: Coda_173
+  - first:
+      213: 4508669038711972097
+    second: Coda_174
+  - first:
+      213: -8303344564306382670
+    second: Coda_175
+  - first:
+      213: -7849456906976028315
+    second: Coda_176
+  - first:
+      213: 6991899112754739711
+    second: Coda_177
+  - first:
+      213: -6786342358533400667
+    second: Coda_178
+  - first:
+      213: 6288779558925212341
+    second: Coda_179
+  - first:
+      213: -4559561740659079237
+    second: Coda_180
+  - first:
+      213: -8567895970568049004
+    second: Coda_181
+  - first:
+      213: -6026037656340107079
+    second: Coda_182
+  - first:
+      213: 4427802975619766254
+    second: Coda_183
+  - first:
+      213: 278892497263511692
+    second: Coda_184
+  - first:
+      213: 3366366955933139766
+    second: Coda_185
+  - first:
+      213: -3211521159884282011
+    second: Coda_186
+  - first:
+      213: -1473352261430722743
+    second: Coda_187
+  - first:
+      213: -1125705265968043059
+    second: Coda_188
+  - first:
+      213: 7416335840872862639
+    second: Coda_189
+  - first:
+      213: -6093935220728905748
+    second: Coda_190
+  - first:
+      213: 7339888104302319503
+    second: Coda_191
+  - first:
+      213: 1914178933148780922
+    second: Coda_192
+  - first:
+      213: 8232336791575447506
+    second: Coda_193
+  - first:
+      213: -6571335126546049861
+    second: Coda_194
+  - first:
+      213: 8255187134880444118
+    second: Coda_195
+  - first:
+      213: 1416231810220041875
+    second: Coda_196
+  - first:
+      213: 1269359024511773314
+    second: Coda_197
+  - first:
+      213: -8834470920450278383
+    second: Coda_198
+  - first:
+      213: -5239786650906531090
+    second: Coda_199
+  - first:
+      213: 7983828446979342520
+    second: Coda_200
+  - first:
+      213: 2151121026097343348
+    second: Coda_201
+  - first:
+      213: 8616762985990511306
+    second: Coda_202
+  - first:
+      213: 7859002297222876392
+    second: Coda_203
+  - first:
+      213: -7342375519379542035
+    second: Coda_204
+  - first:
+      213: 5027352652641240071
+    second: Coda_205
+  - first:
+      213: -7367758034077428353
+    second: Coda_206
+  - first:
+      213: -3567767402500202705
+    second: Coda_207
+  - first:
+      213: -751809231084230588
+    second: Coda_208
+  - first:
+      213: 120520969049943878
+    second: Coda_209
+  - first:
+      213: 1717000949348254340
+    second: Coda_210
+  - first:
+      213: 6128243942459453407
+    second: Coda_211
+  - first:
+      213: -8478440978659849931
+    second: Coda_212
+  - first:
+      213: -5333063686229917929
+    second: Coda_213
+  - first:
+      213: 407244515427495135
+    second: Coda_214
+  - first:
+      213: -5452196851362816850
+    second: Coda_215
+  - first:
+      213: 1216063135862970294
+    second: Coda_216
+  - first:
+      213: -9114299742369344916
+    second: Coda_217
+  - first:
+      213: 1771423953016575363
+    second: Coda_218
+  - first:
+      213: -3539638725100709933
+    second: Coda_219
+  - first:
+      213: -1377423004078406490
+    second: Coda_220
+  - first:
+      213: -5895255788643914419
+    second: Coda_221
+  - first:
+      213: 1974751223454962837
+    second: Coda_222
+  - first:
+      213: -2644067088084207528
+    second: Coda_223
+  - first:
+      213: 1140760172208240643
+    second: Coda_224
+  - first:
+      213: 4165035999557488870
+    second: Coda_225
+  - first:
+      213: -2392209525566244675
+    second: Coda_226
+  - first:
+      213: -5675432993918874708
+    second: Coda_227
+  - first:
+      213: 1305454154531949546
+    second: Coda_228
+  - first:
+      213: -4335151323535300301
+    second: Coda_229
+  - first:
+      213: 7124259542953700421
+    second: Coda_230
+  - first:
+      213: -7113625951020356645
+    second: Coda_231
+  - first:
+      213: -7386889939327172338
+    second: Coda_232
+  - first:
+      213: 5839835194988671678
+    second: Coda_233
+  - first:
+      213: -4096994861100421762
+    second: Coda_234
+  - first:
+      213: -6519521810342933349
+    second: Coda_235
+  - first:
+      213: 4454808426193321491
+    second: Coda_236
+  - first:
+      213: -744275552054729210
+    second: Coda_237
+  - first:
+      213: 4665431019559139518
+    second: Coda_238
+  - first:
+      213: -8692251835939320917
+    second: Coda_239
+  - first:
+      213: -3051030073325410257
+    second: Coda_240
+  - first:
+      213: 6001979737417096849
+    second: Coda_241
+  - first:
+      213: 2901993394738433766
+    second: Coda_242
+  - first:
+      213: 1737291724222204164
+    second: Coda_243
+  - first:
+      213: -2832548158855573121
+    second: Coda_244
+  - first:
+      213: -173452009265174153
+    second: Coda_245
+  - first:
+      213: -8447600513632860644
+    second: Coda_246
+  - first:
+      213: -5181975222407664745
+    second: Coda_247
+  - first:
+      213: 6572594892549628640
+    second: Coda_248
+  - first:
+      213: -5305470993412445382
+    second: Coda_249
+  - first:
+      213: 484824926662073898
+    second: Coda_250
+  - first:
+      213: 2572684963045086263
+    second: Coda_251
+  - first:
+      213: 549755404171903987
+    second: Coda_252
+  - first:
+      213: -1966504487634571790
+    second: Coda_253
+  - first:
+      213: -4577627062897185257
+    second: Coda_254
+  - first:
+      213: 2776992917803346113
+    second: Coda_255
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Coda_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 466
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab262be113afb350800000000000000
+      internalID: 6034721323054672815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 464
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c484710f8695bd80800000000000000
+      internalID: -8235510802628180800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 462
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76e050e169a5d4c0800000000000000
+      internalID: -4263315234395986307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 464
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17ede014a1b54200800000000000000
+      internalID: 163732279685670682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 466
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e479ceb4a90956ec0800000000000000
+      internalID: -3574291736875460786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_5
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 464
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d583e4a177af05370800000000000000
+      internalID: 8309416701947951197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 462
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e0a78cf95e17250800000000000000
+      internalID: 5940781857904397850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 464
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc1a86a18afbec30800000000000000
+      internalID: 4389877696554474747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_8
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 466
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bc36532ea1098ea0800000000000000
+      internalID: -5870158791871939400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_9
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 464
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd63bedb6d1a5a60800000000000000
+      internalID: 7663470065059327411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_10
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 462
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4579215133e1e7180800000000000000
+      internalID: -9115815391005599916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_11
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 464
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b7671ab02c0aa60800000000000000
+      internalID: 7683354319503391613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_12
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 466
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92d58b3d9131a290800000000000000
+      internalID: -7880963321543404897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_13
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 464
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c62b6a8784be24c90800000000000000
+      internalID: -7186923358835527060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_14
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 462
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b87afe0492cbdb20800000000000000
+      internalID: 3160333504692779187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_15
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 464
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db21d6f5a1958bc30800000000000000
+      internalID: 4375345007795442365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 436
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea73e238aab67bac0800000000000000
+      internalID: -3839481777220601938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_17
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 434
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00411f09dee7bef80800000000000000
+      internalID: -8076221947954785280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_18
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 432
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1045fad5d50e4c450800000000000000
+      internalID: 6108253686229586945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_19
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 434
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0f6ad9d370931f0800000000000000
+      internalID: -1064811875677048639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_20
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 436
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a363eaedaefaefc0800000000000000
+      internalID: -3464676940384607325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_21
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 434
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ef48e9882e376b0800000000000000
+      internalID: -5299643260081996220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_22
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 432
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea76cf1b276c4e820800000000000000
+      internalID: 2946698252121827246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 434
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0334006666dfa00800000000000000
+      internalID: 791901697764176059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_24
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 436
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eefad8c169aa8900800000000000000
+      internalID: 687548130574139107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_25
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 434
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6761c9f9d5f42ff10800000000000000
+      internalID: 2301989623068104310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_26
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 432
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa843e6c959da4560800000000000000
+      internalID: 7298885125719410858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_27
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 434
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01aa2b17cad5a740800000000000000
+      internalID: 5162773096539267341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_28
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 436
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d8305ed53c3ceb0800000000000000
+      internalID: -4700698778003075740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_29
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 434
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1581079c9153ebde0800000000000000
+      internalID: -1315555656275584943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_30
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 432
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9096ca8ac9498b0800000000000000
+      internalID: -5146316225916630550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_31
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 434
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9687e21d8eb23d250800000000000000
+      internalID: 5968162210137929833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 390
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e81a3b7827c13c6a0800000000000000
+      internalID: -6430264564726390386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_33
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 390
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390fa1e375e0390d0800000000000000
+      internalID: -3417371924377177965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_34
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 390
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7113f6b599331a060800000000000000
+      internalID: 6962903232648524055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_35
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 390
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f06d6d15c7e1e20800000000000000
+      internalID: 3323230265984552756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_36
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 390
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd7a20e2af142640800000000000000
+      internalID: 5054199466222583216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_37
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 390
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306893fcdaa335500800000000000000
+      internalID: 383714911437030915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_38
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 390
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13722cbcd0a5a4760800000000000000
+      internalID: 7442860349482739505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_39
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 390
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 009294289a00c6560800000000000000
+      internalID: 7308217023350778112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_40
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 390
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9778ee618395dc0800000000000000
+      internalID: -3649824351864784407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_41
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 390
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f8ca42c40408000800000000000000
+      internalID: 36099492795944800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_42
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 390
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a8d3687a5c98e40800000000000000
+      internalID: 5659271730070129278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_43
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 390
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 426a60bb8e238d3c0800000000000000
+      internalID: -4334658666192525788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_44
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 390
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dcd14dbf457b9cf0800000000000000
+      internalID: -244472769423483694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_45
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 390
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0826b3b3436386e10800000000000000
+      internalID: 2191060816675693184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_46
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 390
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317d63203e50abe30800000000000000
+      internalID: 4519931648572577555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_47
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 390
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf39bdd99aedad630800000000000000
+      internalID: 3952716443050284028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_48
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 360
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36285b99f338d6d80800000000000000
+      internalID: -8255798232715263389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_49
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 360
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3abc034ac3bca6db0800000000000000
+      internalID: -4797798991696704605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_50
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 360
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06690fef44ba1dda0800000000000000
+      internalID: -5921763722192185760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_51
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 360
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b5afb54524e21a0800000000000000
+      internalID: -6832450654586643707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_52
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 360
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d9b0211b9346680800000000000000
+      internalID: -8762815542281396955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_53
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 360
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025688e5a0908cd70800000000000000
+      internalID: 9063504190223443232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_54
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 360
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54edc66800dd47940800000000000000
+      internalID: 5293098456392195653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_55
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 360
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4714b473e5b6ec050800000000000000
+      internalID: 5822709420635406708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_56
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 360
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90dfb5e9348d10270800000000000000
+      internalID: 8215084980231732489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_57
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 360
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e28ae94a055b0ed0800000000000000
+      internalID: -2446768469867592991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_58
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 360
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a69ecb9436f9b8f30800000000000000
+      internalID: 4578928694939937130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_59
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 360
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47176a030aeccb1f0800000000000000
+      internalID: -1027719427541012108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_60
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 360
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad52d5f7314a08b0800000000000000
+      internalID: -5185260312360493654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_61
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 360
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebd74d8b5ba77e20800000000000000
+      internalID: 3348333257673923558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_62
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 360
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcac028207512fa70800000000000000
+      internalID: 8859166988444945103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_63
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 360
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fda365540ab8bf0800000000000000
+      internalID: -320986728766972127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_64
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 330
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3862ef3a42501cd40800000000000000
+      internalID: 5602765066353911427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_65
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 330
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4dfe144fd98e86e0800000000000000
+      internalID: -1833376406279619253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_66
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 330
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317b92dd16a664980800000000000000
+      internalID: -8555033473588807917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_67
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 330
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00344e5968578290800000000000000
+      internalID: -7888239012739796982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_68
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 330
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d198e8b4c21a7cdd0800000000000000
+      internalID: -2465825059343791843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_69
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 330
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1ff405b387789e0800000000000000
+      internalID: -1619193344870583848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_70
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 330
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b1cb33c490a4090800000000000000
+      internalID: -8049611161081210097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_71
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 330
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd00b80abbf3ed9a0800000000000000
+      internalID: -6206453161385066276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_72
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 330
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6b4a787ce89bce0800000000000000
+      internalID: -1388922022441732412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_73
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 330
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a598602842213e30800000000000000
+      internalID: 4481400797387068836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_74
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 330
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d25133668936af0800000000000000
+      internalID: -404311976822100727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_75
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 330
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df988c4a786e28d50800000000000000
+      internalID: 6738201462759262717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_76
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 330
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f161ad353249710800000000000000
+      internalID: 1699021802473660179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_77
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 330
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c1a7d8a598a4f70800000000000000
+      internalID: 9172294613107088401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_78
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 330
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd432b4e3303e3e0800000000000000
+      internalID: -2025771841303130696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_79
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 330
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64645c31c05997230800000000000000
+      internalID: 3637102053182228038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_80
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 300
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c816ff5916c7ff630800000000000000
+      internalID: 3963022955679539596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_81
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 300
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4832ac4c1b45be40800000000000000
+      internalID: 5671521890659874891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_82
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 300
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f85c04a0457d05c0800000000000000
+      internalID: -4247609953049880331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_83
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 300
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d5d359a64412700800000000000000
+      internalID: 513767057057996148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_84
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 300
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a9d0d3022781340800000000000000
+      internalID: 4834739682771049049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_85
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 300
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adebcacaaa4cb7930800000000000000
+      internalID: 4142120519617789658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_86
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 300
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14b1cefc63a656e0800000000000000
+      internalID: -1849110908463107041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_87
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 300
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c715b38fb5f75ef0800000000000000
+      internalID: -119356662204786744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_88
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 300
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7564e0a8f35d8bdc0800000000000000
+      internalID: -3622911431343716777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_89
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec18beab824c2570800000000000000
+      internalID: 8443196569112026337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_90
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 300
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f04221f5caf85e50800000000000000
+      internalID: 6798459365576818936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_91
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 300
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f390186ad7847e600800000000000000
+      internalID: 497445988349315391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_92
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 300
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d7c745167bcff6f0800000000000000
+      internalID: -648576113294456872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_93
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 300
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782a7fee4d647cd20800000000000000
+      internalID: 3298683132428395143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_94
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 300
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650b5974aa809bba0800000000000000
+      internalID: -6072813095093948330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_95
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 300
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c368c939cdb9f40800000000000000
+      internalID: 5736421076930804786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_96
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 270
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169e1e733439d0c80800000000000000
+      internalID: -8354859816792757919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_97
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 270
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75172d97654d1670800000000000000
+      internalID: 8511035182120637823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_98
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 270
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26202f1dc2c033a80800000000000000
+      internalID: -8488427486022860190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_99
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 270
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e6706d0e27cdfb0800000000000000
+      internalID: -4621692807599919477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_100
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 270
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f28cc4aec686f910800000000000000
+      internalID: 1870830917305271026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_101
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 270
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475a8e04c3957dce0800000000000000
+      internalID: -1380536645443869324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_102
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 270
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fedff0670c78a460800000000000000
+      internalID: 7253183571014180597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_103
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 270
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4edcc928f0d0f2b50800000000000000
+      internalID: 6570484741623827940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_104
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 270
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5de6bb5fde6af300800000000000000
+      internalID: 286663431886925151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_105
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 270
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aee3bddcfd643680800000000000000
+      internalID: -8776268841019511132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_106
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 270
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6211aa085aaad9510800000000000000
+      internalID: 1557588673945014566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_107
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 270
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f563e60ac3c9ae120800000000000000
+      internalID: 2443937532005463647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_108
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 270
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032ded485ce5a4850800000000000000
+      internalID: 6362001626045010480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_109
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 270
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6975407536f807060800000000000000
+      internalID: 6949211881857111958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_110
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 270
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90c2b4e85d6b5b80800000000000000
+      internalID: -8405004050995429221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_111
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 270
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e098e5472cbad0c0800000000000000
+      internalID: -4550117596641849118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_112
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 240
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23fbf3ec229aae0e0800000000000000
+      internalID: -2239791897709134030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_113
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 240
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3023ac6a70b40b50800000000000000
+      internalID: 6558560997213413436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_114
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 240
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 606eaef8c5b8336d0800000000000000
+      internalID: -3011910496112941562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_115
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 240
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f43d1c856995110800000000000000
+      internalID: 1250195679525162793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_116
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 240
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19feae848d8428600800000000000000
+      internalID: 469017404973445009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_117
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 240
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626f910715d577bd0800000000000000
+      internalID: -2632532852820281818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_118
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 240
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9627d1eb9f7d60c50800000000000000
+      internalID: 6631224968986063465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_119
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 240
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee57314f164d7cfd0800000000000000
+      internalID: -2321653565714369042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_120
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 240
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6426663b6362ae20800000000000000
+      internalID: 3360357584097125485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_121
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 240
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9880aa47aa747bc0800000000000000
+      internalID: -3786266527781582691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_122
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 240
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d851531a9fcfa95e0800000000000000
+      internalID: -1901929743528946291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_123
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 240
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0cf59edcf2de060800000000000000
+      internalID: 6984291158551675070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_124
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 240
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e66678f1202d2eb30800000000000000
+      internalID: 4315242299535091310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_125
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 240
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8862c6f8b97045ec0800000000000000
+      internalID: -3579227439145146744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_126
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 240
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff821d361acab950800000000000000
+      internalID: 6465702411906486263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_127
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 240
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd1bd6e06a109790800000000000000
+      internalID: -7525485973843796535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_128
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 210
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d809e4d1019f1e8e0800000000000000
+      internalID: -1665776539543891827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_129
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 210
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb878a082f63ce40800000000000000
+      internalID: 5675502173182987251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_130
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 210
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad84bc7c703216be0800000000000000
+      internalID: -1485867885731821350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_131
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 210
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c109ae68fce16d0800000000000000
+      internalID: -3017746521923773380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_132
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 210
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c4fa101999edb630800000000000000
+      internalID: 3944565692255892674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_133
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 210
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1d6d257e58f2a10800000000000000
+      internalID: 1886873997465276926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_134
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 210
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0297aaef97a72120800000000000000
+      internalID: 2389062432621826574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_135
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 210
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4fef8ccc13097100800000000000000
+      internalID: 106119488445869903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_136
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 210
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae4bae18cd92b2e0800000000000000
+      internalID: -2111451792449778001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_137
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 210
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25396f155348fb370800000000000000
+      internalID: 8340530399456695122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_138
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 210
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d386793c9d1d5b0800000000000000
+      internalID: -5345251848630026901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_139
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 210
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d397a742d7ef730800000000000000
+      internalID: 4034799911797603723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_140
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 210
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d594eff3c8cb4eb70800000000000000
+      internalID: 8927467671910238557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_141
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 210
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f43e2933b8598c70800000000000000
+      internalID: 8973801259294143728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_142
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 210
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa7a857432e02500800000000000000
+      internalID: 369543884382567072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_143
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 210
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8255d39cba986a780800000000000000
+      internalID: -8672092661546658520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_144
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 180
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f60a50755b9dbd0800000000000000
+      internalID: -2604851524095938658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_145
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 180
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06b0e1e26a08e930800000000000000
+      internalID: 4172596474571437583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_146
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 180
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666706054d8c22050800000000000000
+      internalID: 5774398486449518182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_147
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 180
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19ed098ff30ae600800000000000000
+      internalID: 498215104828795165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_148
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 180
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d57fee72733c1ea0800000000000000
+      internalID: -5900784844913281584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_149
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 180
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34608e77a1cea8a60800000000000000
+      internalID: 7677208113231431235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_150
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 180
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 030d813120913b240800000000000000
+      internalID: 4806212724035473456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_151
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 180
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2eaeea346aaefea0800000000000000
+      internalID: -5837040719563411922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_152
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 180
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147edd6f7c5b5d360800000000000000
+      internalID: 7193855850239092545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_153
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 180
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd26bc0b70d144650800000000000000
+      internalID: 6216125304546222815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_154
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 180
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c505bf06de7826bb0800000000000000
+      internalID: -4944239987295301540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_155
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 180
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375de9eb2a08e42f0800000000000000
+      internalID: -986709831876422285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_156
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 180
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4668c0c740bd33ef0800000000000000
+      internalID: -129519151956064668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_157
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 180
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520cac388c86ce2f0800000000000000
+      internalID: -942263011613425627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_158
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 180
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95d72f5a8bd6f9b0800000000000000
+      internalID: -5046604945073646177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_159
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 180
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b52186b18367d330800000000000000
+      internalID: 3735563824690963891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_160
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 150
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be9930550005b7840800000000000000
+      internalID: 5222856155222743531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_161
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 150
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cabb72e4eb6e1bcb0800000000000000
+      internalID: -4849841618671912020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_162
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 150
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa10c667af7912860800000000000000
+      internalID: 7503445556160364970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_163
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 150
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc79d9af5da14d4d0800000000000000
+      internalID: -3110831936271181873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_164
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 150
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3c373fd04d2ef60800000000000000
+      internalID: 8062239439330722768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_165
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 150
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2638c59eb2e4ea640800000000000000
+      internalID: 5093094179108324194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_166
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 150
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328bf4e4757fd0c70800000000000000
+      internalID: 8939072789748365347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_167
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 150
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8970d510908e2cd60800000000000000
+      internalID: 7909139020991235992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_168
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 150
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce259d8b2977ffdb0800000000000000
+      internalID: -4755951209429773588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_169
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 150
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560183569f3072ad0800000000000000
+      internalID: -2727206679669632923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_170
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 150
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d9e24f4e0600ec40800000000000000
+      internalID: 5539434200194804176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_171
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 150
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25dac256bd837fca0800000000000000
+      internalID: -5983251064991994542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_172
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 150
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d373d086dfd8b300800000000000000
+      internalID: 268210290205881303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_173
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 150
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71e6cebf285171b0800000000000000
+      internalID: -5660646294540590724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_174
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 150
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101aa3e4a92029e30800000000000000
+      internalID: 4508669038711972097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_175
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 150
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0f8dc9c1894cc80800000000000000
+      internalID: -8303344564306382670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_176
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 120
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56915f30880211390800000000000000
+      internalID: -7849456906976028315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_177
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 120
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff97d19c237380160800000000000000
+      internalID: 6991899112754739711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_178
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 120
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a71e6b949112d1a0800000000000000
+      internalID: -6786342358533400667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_179
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 120
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba997080bb364750800000000000000
+      internalID: 6288779558925212341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_180
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 120
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7cd8421ce29b0c0800000000000000
+      internalID: -4559561740659079237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_181
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 120
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e6ac96208b81980800000000000000
+      internalID: -8567895970568049004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_182
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 120
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b078bacda63f5ca0800000000000000
+      internalID: -6026037656340107079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_183
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 120
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7db39c857b27d30800000000000000
+      internalID: 4427802975619766254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_184
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 120
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88c9e5af33ded300800000000000000
+      internalID: 278892497263511692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_185
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 120
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633020029ecb7be20800000000000000
+      internalID: 3366366955933139766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_186
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 120
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 567627c35826e63d0800000000000000
+      internalID: -3211521159884282011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_187
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 120
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f3764ace99d8be0800000000000000
+      internalID: -1473352261430722743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_188
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 120
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb203c5601b060f0800000000000000
+      internalID: -1125705265968043059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_189
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 120
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa39932672e1ce660800000000000000
+      internalID: 7416335840872862639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_190
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 120
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef363c243efd6ba0800000000000000
+      internalID: -6093935220728905748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_191
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 120
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f871e0ca7558cd560800000000000000
+      internalID: 7339888104302319503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_192
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 90
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a798ed21997809a10800000000000000
+      internalID: 1914178933148780922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_193
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 90
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7cb35f1b22f3270800000000000000
+      internalID: 8232336791575447506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_194
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 90
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb41d22d48dedc4a0800000000000000
+      internalID: -6571335126546049861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_195
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 90
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de6ce816f0509270800000000000000
+      internalID: 8255187134880444118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_196
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 90
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39626cfe35777a310800000000000000
+      internalID: 1416231810220041875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_197
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 90
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ae574be4bad9110800000000000000
+      internalID: 1269359024511773314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_198
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 90
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11cfa004187a56580800000000000000
+      internalID: -8834470920450278383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_199
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 90
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeae1e57dc98847b0800000000000000
+      internalID: -5239786650906531090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_200
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 90
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0ccd12ca14cce60800000000000000
+      internalID: 7983828446979342520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_201
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 90
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47be7651d215add10800000000000000
+      internalID: 2151121026097343348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_202
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 90
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acad2bd3844e49770800000000000000
+      internalID: 8616762985990511306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_203
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 90
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ecc2f653f8c01d60800000000000000
+      internalID: 7859002297222876392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_204
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 90
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: defabdfdd54aa1a90800000000000000
+      internalID: -7342375519379542035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_205
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 90
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7048c4df99eb4c540800000000000000
+      internalID: 5027352652641240071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_206
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 90
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75d8c3aa1770c990800000000000000
+      internalID: -7367758034077428353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_207
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 90
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2fd1c4437ebc7ec0800000000000000
+      internalID: -3567767402500202705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_208
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 60
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4486d52dc790195f0800000000000000
+      internalID: -751809231084230588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_209
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 60
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f253cce2d2ca100800000000000000
+      internalID: 120520969049943878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_210
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 60
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48249e0344304d710800000000000000
+      internalID: 1717000949348254340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_211
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 60
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf2c379565eb0550800000000000000
+      internalID: 6128243942459453407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_212
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 60
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5394dd1c9d6865a80800000000000000
+      internalID: -8478440978659849931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_213
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 60
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ffab945d62df5b0800000000000000
+      internalID: -5333063686229917929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_214
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 60
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc28c6aab2d6a500800000000000000
+      internalID: 407244515427495135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_215
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 60
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac1405c9d7e554b0800000000000000
+      internalID: -5452196851362816850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_216
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 60
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b75f85aaf250e010800000000000000
+      internalID: 1216063135862970294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_217
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 60
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6214a78ca0838180800000000000000
+      internalID: -9114299742369344916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_218
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 60
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 385db2a23bc559810800000000000000
+      internalID: 1771423953016575363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_219
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 60
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7d725555da0eec0800000000000000
+      internalID: -3539638725100709933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_220
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 60
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a48470631962ece0800000000000000
+      internalID: -1377423004078406490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_221
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 60
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d60d93818df2ea0800000000000000
+      internalID: -5895255788643914419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_222
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 60
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5941dc966c9b76b10800000000000000
+      internalID: 1974751223454962837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_223
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 60
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85870740ef26e4bd0800000000000000
+      internalID: -2644067088084207528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_224
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 30
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308b266255bc4df00800000000000000
+      internalID: 1140760172208240643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_225
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 30
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0965e9c2e2dc930800000000000000
+      internalID: 4165035999557488870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_226
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 30
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db871586c1a2dced0800000000000000
+      internalID: -2392209525566244675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_227
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 30
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab0fe203cfcc31b0800000000000000
+      internalID: -5675432993918874708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_228
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 30
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb4f6f03a7ed1210800000000000000
+      internalID: 1305454154531949546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_229
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 30
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3392d1107d276d3c0800000000000000
+      internalID: -4335151323535300301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_230
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 30
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c2171fe447ed260800000000000000
+      internalID: 7124259542953700421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_231
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 30
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb6e6c13e2574d90800000000000000
+      internalID: -7113625951020356645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_232
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 30
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e014f73dcbe7c7990800000000000000
+      internalID: -7386889939327172338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_233
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 30
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2bf184b234b0150800000000000000
+      internalID: 5839835194988671678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_234
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 30
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d228171ec8427c0800000000000000
+      internalID: -4096994861100421762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_235
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 30
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c091594710685a0800000000000000
+      internalID: -6519521810342933349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_236
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 30
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e7ba939a8a2dd30800000000000000
+      internalID: 4454808426193321491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_237
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 30
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60625c8245dcba5f0800000000000000
+      internalID: -744275552054729210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_238
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 30
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb839e43bc0feb040800000000000000
+      internalID: 4665431019559139518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_239
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 30
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab899c320bee5780800000000000000
+      internalID: -8692251835939320917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_240
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28a768305098a5d0800000000000000
+      internalID: -3051030073325410257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_241
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e96d575c05b4350800000000000000
+      internalID: 6001979737417096849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_242
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee0ae9fd93f54820800000000000000
+      internalID: 2901993394738433766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_243
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4098d7d5e991c1810800000000000000
+      internalID: 1737291724222204164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_244
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f711a3ef474c0b8d0800000000000000
+      internalID: -2832548158855573121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_245
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779eb2a0156c79df0800000000000000
+      internalID: -173452009265174153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_246
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c168184171814ca80800000000000000
+      internalID: -8447600513632860644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_247
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79be3819dfce518b0800000000000000
+      internalID: -5181975222407664745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_248
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2a7fe4b3c863b50800000000000000
+      internalID: 6572594892549628640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_249
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b2387bd3e2f56b0800000000000000
+      internalID: -5305470993412445382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_250
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 0
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e92fbb3b17ab600800000000000000
+      internalID: 484824926662073898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_251
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 0
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7349a4dd75304b320800000000000000
+      internalID: 2572684963045086263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_252
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 0
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f3840b90af11a700800000000000000
+      internalID: 549755404171903987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_253
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd6455669295b4e0800000000000000
+      internalID: -1966504487634571790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_254
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 0
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e6cc980700970c0800000000000000
+      internalID: -4577627062897185257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coda_255
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 0
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8a179785cd98620800000000000000
+      internalID: 2776992917803346113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Coda_0: 6034721323054672815
+      Coda_1: -8235510802628180800
+      Coda_10: -9115815391005599916
+      Coda_100: 1870830917305271026
+      Coda_101: -1380536645443869324
+      Coda_102: 7253183571014180597
+      Coda_103: 6570484741623827940
+      Coda_104: 286663431886925151
+      Coda_105: -8776268841019511132
+      Coda_106: 1557588673945014566
+      Coda_107: 2443937532005463647
+      Coda_108: 6362001626045010480
+      Coda_109: 6949211881857111958
+      Coda_11: 7683354319503391613
+      Coda_110: -8405004050995429221
+      Coda_111: -4550117596641849118
+      Coda_112: -2239791897709134030
+      Coda_113: 6558560997213413436
+      Coda_114: -3011910496112941562
+      Coda_115: 1250195679525162793
+      Coda_116: 469017404973445009
+      Coda_117: -2632532852820281818
+      Coda_118: 6631224968986063465
+      Coda_119: -2321653565714369042
+      Coda_12: -7880963321543404897
+      Coda_120: 3360357584097125485
+      Coda_121: -3786266527781582691
+      Coda_122: -1901929743528946291
+      Coda_123: 6984291158551675070
+      Coda_124: 4315242299535091310
+      Coda_125: -3579227439145146744
+      Coda_126: 6465702411906486263
+      Coda_127: -7525485973843796535
+      Coda_128: -1665776539543891827
+      Coda_129: 5675502173182987251
+      Coda_13: -7186923358835527060
+      Coda_130: -1485867885731821350
+      Coda_131: -3017746521923773380
+      Coda_132: 3944565692255892674
+      Coda_133: 1886873997465276926
+      Coda_134: 2389062432621826574
+      Coda_135: 106119488445869903
+      Coda_136: -2111451792449778001
+      Coda_137: 8340530399456695122
+      Coda_138: -5345251848630026901
+      Coda_139: 4034799911797603723
+      Coda_14: 3160333504692779187
+      Coda_140: 8927467671910238557
+      Coda_141: 8973801259294143728
+      Coda_142: 369543884382567072
+      Coda_143: -8672092661546658520
+      Coda_144: -2604851524095938658
+      Coda_145: 4172596474571437583
+      Coda_146: 5774398486449518182
+      Coda_147: 498215104828795165
+      Coda_148: -5900784844913281584
+      Coda_149: 7677208113231431235
+      Coda_15: 4375345007795442365
+      Coda_150: 4806212724035473456
+      Coda_151: -5837040719563411922
+      Coda_152: 7193855850239092545
+      Coda_153: 6216125304546222815
+      Coda_154: -4944239987295301540
+      Coda_155: -986709831876422285
+      Coda_156: -129519151956064668
+      Coda_157: -942263011613425627
+      Coda_158: -5046604945073646177
+      Coda_159: 3735563824690963891
+      Coda_16: -3839481777220601938
+      Coda_160: 5222856155222743531
+      Coda_161: -4849841618671912020
+      Coda_162: 7503445556160364970
+      Coda_163: -3110831936271181873
+      Coda_164: 8062239439330722768
+      Coda_165: 5093094179108324194
+      Coda_166: 8939072789748365347
+      Coda_167: 7909139020991235992
+      Coda_168: -4755951209429773588
+      Coda_169: -2727206679669632923
+      Coda_17: -8076221947954785280
+      Coda_170: 5539434200194804176
+      Coda_171: -5983251064991994542
+      Coda_172: 268210290205881303
+      Coda_173: -5660646294540590724
+      Coda_174: 4508669038711972097
+      Coda_175: -8303344564306382670
+      Coda_176: -7849456906976028315
+      Coda_177: 6991899112754739711
+      Coda_178: -6786342358533400667
+      Coda_179: 6288779558925212341
+      Coda_18: 6108253686229586945
+      Coda_180: -4559561740659079237
+      Coda_181: -8567895970568049004
+      Coda_182: -6026037656340107079
+      Coda_183: 4427802975619766254
+      Coda_184: 278892497263511692
+      Coda_185: 3366366955933139766
+      Coda_186: -3211521159884282011
+      Coda_187: -1473352261430722743
+      Coda_188: -1125705265968043059
+      Coda_189: 7416335840872862639
+      Coda_19: -1064811875677048639
+      Coda_190: -6093935220728905748
+      Coda_191: 7339888104302319503
+      Coda_192: 1914178933148780922
+      Coda_193: 8232336791575447506
+      Coda_194: -6571335126546049861
+      Coda_195: 8255187134880444118
+      Coda_196: 1416231810220041875
+      Coda_197: 1269359024511773314
+      Coda_198: -8834470920450278383
+      Coda_199: -5239786650906531090
+      Coda_2: -4263315234395986307
+      Coda_20: -3464676940384607325
+      Coda_200: 7983828446979342520
+      Coda_201: 2151121026097343348
+      Coda_202: 8616762985990511306
+      Coda_203: 7859002297222876392
+      Coda_204: -7342375519379542035
+      Coda_205: 5027352652641240071
+      Coda_206: -7367758034077428353
+      Coda_207: -3567767402500202705
+      Coda_208: -751809231084230588
+      Coda_209: 120520969049943878
+      Coda_21: -5299643260081996220
+      Coda_210: 1717000949348254340
+      Coda_211: 6128243942459453407
+      Coda_212: -8478440978659849931
+      Coda_213: -5333063686229917929
+      Coda_214: 407244515427495135
+      Coda_215: -5452196851362816850
+      Coda_216: 1216063135862970294
+      Coda_217: -9114299742369344916
+      Coda_218: 1771423953016575363
+      Coda_219: -3539638725100709933
+      Coda_22: 2946698252121827246
+      Coda_220: -1377423004078406490
+      Coda_221: -5895255788643914419
+      Coda_222: 1974751223454962837
+      Coda_223: -2644067088084207528
+      Coda_224: 1140760172208240643
+      Coda_225: 4165035999557488870
+      Coda_226: -2392209525566244675
+      Coda_227: -5675432993918874708
+      Coda_228: 1305454154531949546
+      Coda_229: -4335151323535300301
+      Coda_23: 791901697764176059
+      Coda_230: 7124259542953700421
+      Coda_231: -7113625951020356645
+      Coda_232: -7386889939327172338
+      Coda_233: 5839835194988671678
+      Coda_234: -4096994861100421762
+      Coda_235: -6519521810342933349
+      Coda_236: 4454808426193321491
+      Coda_237: -744275552054729210
+      Coda_238: 4665431019559139518
+      Coda_239: -8692251835939320917
+      Coda_24: 687548130574139107
+      Coda_240: -3051030073325410257
+      Coda_241: 6001979737417096849
+      Coda_242: 2901993394738433766
+      Coda_243: 1737291724222204164
+      Coda_244: -2832548158855573121
+      Coda_245: -173452009265174153
+      Coda_246: -8447600513632860644
+      Coda_247: -5181975222407664745
+      Coda_248: 6572594892549628640
+      Coda_249: -5305470993412445382
+      Coda_25: 2301989623068104310
+      Coda_250: 484824926662073898
+      Coda_251: 2572684963045086263
+      Coda_252: 549755404171903987
+      Coda_253: -1966504487634571790
+      Coda_254: -4577627062897185257
+      Coda_255: 2776992917803346113
+      Coda_26: 7298885125719410858
+      Coda_27: 5162773096539267341
+      Coda_28: -4700698778003075740
+      Coda_29: -1315555656275584943
+      Coda_3: 163732279685670682
+      Coda_30: -5146316225916630550
+      Coda_31: 5968162210137929833
+      Coda_32: -6430264564726390386
+      Coda_33: -3417371924377177965
+      Coda_34: 6962903232648524055
+      Coda_35: 3323230265984552756
+      Coda_36: 5054199466222583216
+      Coda_37: 383714911437030915
+      Coda_38: 7442860349482739505
+      Coda_39: 7308217023350778112
+      Coda_4: -3574291736875460786
+      Coda_40: -3649824351864784407
+      Coda_41: 36099492795944800
+      Coda_42: 5659271730070129278
+      Coda_43: -4334658666192525788
+      Coda_44: -244472769423483694
+      Coda_45: 2191060816675693184
+      Coda_46: 4519931648572577555
+      Coda_47: 3952716443050284028
+      Coda_48: -8255798232715263389
+      Coda_49: -4797798991696704605
+      Coda_5: 8309416701947951197
+      Coda_50: -5921763722192185760
+      Coda_51: -6832450654586643707
+      Coda_52: -8762815542281396955
+      Coda_53: 9063504190223443232
+      Coda_54: 5293098456392195653
+      Coda_55: 5822709420635406708
+      Coda_56: 8215084980231732489
+      Coda_57: -2446768469867592991
+      Coda_58: 4578928694939937130
+      Coda_59: -1027719427541012108
+      Coda_6: 5940781857904397850
+      Coda_60: -5185260312360493654
+      Coda_61: 3348333257673923558
+      Coda_62: 8859166988444945103
+      Coda_63: -320986728766972127
+      Coda_64: 5602765066353911427
+      Coda_65: -1833376406279619253
+      Coda_66: -8555033473588807917
+      Coda_67: -7888239012739796982
+      Coda_68: -2465825059343791843
+      Coda_69: -1619193344870583848
+      Coda_7: 4389877696554474747
+      Coda_70: -8049611161081210097
+      Coda_71: -6206453161385066276
+      Coda_72: -1388922022441732412
+      Coda_73: 4481400797387068836
+      Coda_74: -404311976822100727
+      Coda_75: 6738201462759262717
+      Coda_76: 1699021802473660179
+      Coda_77: 9172294613107088401
+      Coda_78: -2025771841303130696
+      Coda_79: 3637102053182228038
+      Coda_8: -5870158791871939400
+      Coda_80: 3963022955679539596
+      Coda_81: 5671521890659874891
+      Coda_82: -4247609953049880331
+      Coda_83: 513767057057996148
+      Coda_84: 4834739682771049049
+      Coda_85: 4142120519617789658
+      Coda_86: -1849110908463107041
+      Coda_87: -119356662204786744
+      Coda_88: -3622911431343716777
+      Coda_89: 8443196569112026337
+      Coda_9: 7663470065059327411
+      Coda_90: 6798459365576818936
+      Coda_91: 497445988349315391
+      Coda_92: -648576113294456872
+      Coda_93: 3298683132428395143
+      Coda_94: -6072813095093948330
+      Coda_95: 5736421076930804786
+      Coda_96: -8354859816792757919
+      Coda_97: 8511035182120637823
+      Coda_98: -8488427486022860190
+      Coda_99: -4621692807599919477
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
