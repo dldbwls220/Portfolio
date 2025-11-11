@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform _characterPos;
 
     Camera _followCamera;
+    GameObject _myAttackEffect;
     Animator _slashAnim;
 
     public LookDir _myDir;
@@ -41,6 +42,10 @@ public class PlayerController : MonoBehaviour
         _baseY = transform.position.y;
         _followCamera = Camera.main;
         _myDir = LookDir.Left;
+
+        _myAttackEffect = Instantiate(_slashAnimPrefab, transform.position, Quaternion.identity);
+        _slashAnim = _myAttackEffect.GetComponent<Animator>();
+        _slashAnim.enabled = false;
     }
 
     // Update is called once per frame
@@ -99,7 +104,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            Attack();
+            StartCoroutine(Attack());
         }
     }
 
@@ -109,28 +114,35 @@ public class PlayerController : MonoBehaviour
         _followCamera.transform.position = Vector3.Lerp(_followCamera.transform.position, desiredPosition, _moveSpeed * Time.deltaTime);
     }
 
-    void Attack()
+    IEnumerator Attack()
     {
+        
+
         switch (_myDir)
         {
             case LookDir.Up:
-                _slashAnimPrefab.transform.position = transform.position + new Vector3(0, 1, 0);
-                
+               _myAttackEffect.transform.position = transform.position + new Vector3(0, 1, 0);
+                _slashAnim.enabled = true;
                 break;
             case LookDir.Down:
-                _slashAnimPrefab.transform.position = transform.position + new Vector3(0, 1, 0);
-
+                _myAttackEffect.transform.position = transform.position + new Vector3(0, -1, 0);
+                _slashAnim.enabled = true;
                 break;
             case LookDir.Left:
-                _slashAnimPrefab.transform.position = transform.position + new Vector3(-1, 0, 0);
-
+                _myAttackEffect.transform.position = transform.position + new Vector3(-1, 0, 0);
+                _slashAnim.enabled = true;
                 break;
             case LookDir.Right:
-                _slashAnimPrefab.transform.position = transform.position + new Vector3(1, 0, 0);
-
+                _myAttackEffect.transform.position = transform.position + new Vector3(1, 0, 0);
+                _slashAnim.enabled = true;
                 break;
         }
 
+        yield return new WaitForSeconds(0.5f);
+
+        _slashAnim.enabled = false;
+
+        yield return null;
         
     }
 
