@@ -43,9 +43,9 @@ public class PlayerController : MonoBehaviour
         _followCamera = Camera.main;
         _myDir = LookDir.Left;
 
-        _myAttackEffect = Instantiate(_slashAnimPrefab, transform.position, Quaternion.identity);
+        _myAttackEffect = Instantiate(_slashAnimPrefab, transform.position, Quaternion.identity, transform);
         _slashAnim = _myAttackEffect.GetComponent<Animator>();
-        _slashAnim.enabled = false;
+        //_slashAnim.enabled = false;
     }
 
     // Update is called once per frame
@@ -122,28 +122,30 @@ public class PlayerController : MonoBehaviour
         {
             case LookDir.Up:
                _myAttackEffect.transform.position = transform.position + new Vector3(0, 1, 0);
-                _slashAnim.enabled = true;
+                _myAttackEffect.transform.rotation = Quaternion.Euler(0, 0, 90);
+                _slashAnim.SetTrigger("Slash_Normal");
                 break;
             case LookDir.Down:
                 _myAttackEffect.transform.position = transform.position + new Vector3(0, -1, 0);
-                _slashAnim.enabled = true;
+                _myAttackEffect.transform.rotation = Quaternion.Euler(0, 0, -90);
+                _slashAnim.SetTrigger("Slash_Normal");
                 break;
             case LookDir.Left:
                 _myAttackEffect.transform.position = transform.position + new Vector3(-1, 0, 0);
-                _slashAnim.enabled = true;
+                _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
+                _slashAnim.SetTrigger("Slash_Normal");
                 break;
             case LookDir.Right:
                 _myAttackEffect.transform.position = transform.position + new Vector3(1, 0, 0);
-                _slashAnim.enabled = true;
+                _slashAnim.SetTrigger("Slash_Normal");
                 break;
         }
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.4f);
 
-        _slashAnim.enabled = false;
+        _myAttackEffect.transform.rotation = Quaternion.identity;
+        _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
 
-        yield return null;
-        
     }
 
     IEnumerator MoveJump()
