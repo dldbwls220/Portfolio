@@ -2,15 +2,36 @@ using UnityEngine;
 
 public class MonsterDetectorChild : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private MonsterDetectorParent _monsterDParent;
+    [SerializeField] private string _directionName;
+
     void Start()
     {
-        
+        _monsterDParent = GetComponentInParent<MonsterDetectorParent>();
+
+        if (string.IsNullOrEmpty(_directionName))
+            _directionName = gameObject.name;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Monster"))
+        {
+            if (_monsterDParent != null)
+            {
+                _monsterDParent.OnMonsterDetected(_directionName, collision.gameObject);
+            }
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Monster"))
+        {
+            if (_monsterDParent != null)
+            {
+                _monsterDParent.OnMonsterLost(_directionName, collision.gameObject);
+            }
+        }
     }
 }

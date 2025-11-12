@@ -47,11 +47,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform _collisionPoint;
     [SerializeField] Transform _characterPos;
 
+    [SerializeField] MonsterDetectorParent _monsterDetectorParent;
+
     Camera _followCamera;
     GameObject _myAttackEffect;
     Animator _slashAnim;
 
     bool _isFlipY;
+    bool _isAttack;
 
     public LookDir _myDir;
     public WeaponName _weaponName;
@@ -66,6 +69,7 @@ public class PlayerController : MonoBehaviour
     void InitCharacter()
     {
         _isFlipY = false;
+        _isAttack = false;
 
         _movePoint.parent = null;
         _baseY = transform.position.y;
@@ -89,35 +93,12 @@ public class PlayerController : MonoBehaviour
 
         if (Vector3.Distance(transform.position, _movePoint.position) <= 0.05f)
         {
-            
-
-            if (Mathf.Abs(horizontal) == 1f)
-            {
-                InitAttack();
-
-                if (!Physics2D.OverlapCircle(_movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), 0.2f, _stopMovement))
-                {
-                    Move(horizontal, vertical);
-
-                    StartCoroutine(MoveJump());
-                }
-            }
-            else if (Mathf.Abs(vertical) == 1f)
-            {
-                InitAttack();
-
-                if (!Physics2D.OverlapCircle(_movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), 0.2f, _stopMovement))
-                {
-                    Move(horizontal, vertical);
-
-                    StartCoroutine(MoveJump());
-                }
-            }
+            MoveNAttack(horizontal, vertical);          
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            Attack();
+            //Attack();
         }
     }
 
@@ -127,73 +108,107 @@ public class PlayerController : MonoBehaviour
         _followCamera.transform.position = Vector3.Lerp(_followCamera.transform.position, desiredPosition, _moveSpeed * Time.deltaTime);
     }
 
-
-    void InitAttack()
+    void MoveNAttack(float horizontal, float vertical)
     {
-        _myAttackEffect.transform.rotation = Quaternion.identity;
-        _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
-        _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipY = false;
-        _isFlipY = false;
-    }
-
-    void Move(float horizontal, float vertical)
-    {
-        _movePoint.position += new Vector3(horizontal, vertical, 0f);
-
-        if (horizontal > 0f)
+        if (Mathf.Abs(horizontal) == 1f)
         {
-            _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
-            _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = false;
-            _myDir = LookDir.Right;
-        }
-        else if(horizontal < 0f)
-        {
-            _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
-            _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = true;
-            _myDir = LookDir.Left;
-        }
-        else if (vertical > 0f)
-        {
-            _myDir = LookDir.Up;
-        }
-        else if (vertical < 0f)
-        {
-            _myDir = LookDir.Down;
-        }
+            
+            if (horizontal > 0f)
+            {
 
-        Debug.Log(_myDir);
+                _myDir = LookDir.Right;
+                _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
+                _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = false;
+                if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
+                {
+                    Attack();
+                    return;
+                }
 
-        StartCoroutine(MoveJump());
+            }
+            else if (horizontal < 0f)
+            {
+
+                _myDir = LookDir.Left;
+                _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
+                _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = true;
+                if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
+                {
+                    Attack();
+                    return;
+                }
+            }
+            _movePoint.position += new Vector3(horizontal, 0f, 0f);
+            StartCoroutine(MoveJump());           
+        }
+        else if (Mathf.Abs(vertical) == 1f)
+        {
+            
+            if (vertical > 0f)
+            {
+
+                _myDir = LookDir.Up;
+
+                if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
+                {
+                    Attack();
+                    return;
+                }
+            }
+            else if (vertical < 0f)
+            {
+
+                _myDir = LookDir.Down;
+
+                if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
+                {
+                    Attack();
+                    return;
+                }
+            }
+            _movePoint.position += new Vector3(0f, vertical, 0f);
+            StartCoroutine(MoveJump());
+        }          
     }
 
     void Attack()
     {
+        if (_isAttack) return;
+        StartCoroutine(AttackCooldown());
+
         switch (_myDir)
         {
             case LookDir.Up:
                _myAttackEffect.transform.position = transform.position + new Vector3(0, 1, 0);
                 _myAttackEffect.transform.rotation = Quaternion.Euler(0, 0, 90);
+                _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
                 _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipY = _isFlipY = _isFlipY == false ? true : false;
                 _slashAnim.SetTrigger(_weaponName.ToString());
                 break;
             case LookDir.Down:
                 _myAttackEffect.transform.position = transform.position + new Vector3(0, -1, 0);
                 _myAttackEffect.transform.rotation = Quaternion.Euler(0, 0, -90);
+                _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
                 _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipY = _isFlipY = _isFlipY == false ? true : false;
                 _slashAnim.SetTrigger(_weaponName.ToString());
                 break;
             case LookDir.Left:
                 _myAttackEffect.transform.position = transform.position + new Vector3(-1, 0, 0);
+                _myAttackEffect.transform.rotation = Quaternion.identity;
                 _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;            
                 _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipY = _isFlipY = _isFlipY == false ? true : false;
                 _slashAnim.SetTrigger(_weaponName.ToString());
                 break;
             case LookDir.Right:
                 _myAttackEffect.transform.position = transform.position + new Vector3(1, 0, 0);
+                _myAttackEffect.transform.rotation = Quaternion.identity;
+                _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
                 _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipY = _isFlipY = _isFlipY == false ? true : false;
                 _slashAnim.SetTrigger(_weaponName.ToString());
                 break;
         }
+
+        Debug.Log("АјАн!");
     }
 
     IEnumerator MoveJump()
@@ -212,5 +227,12 @@ public class PlayerController : MonoBehaviour
         }
 
         _characterPos.localPosition = new Vector3(_characterPos.localPosition.x, _baseY, _characterPos.localPosition.z);
+    }
+
+    IEnumerator AttackCooldown()
+    {
+        _isAttack = true;
+        yield return new WaitForSeconds(0.3f);
+        _isAttack = false;
     }
 }
