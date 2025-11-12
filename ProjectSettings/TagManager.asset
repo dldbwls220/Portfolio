@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RightNote
   - LeftNote
+  - Monster
   layers:
   - Default
   - TransparentFX

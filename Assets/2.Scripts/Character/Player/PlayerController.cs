@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,8 +12,31 @@ public class PlayerController : MonoBehaviour
         Right
     }
 
+    public enum WeaponName
+    {
+        DaggerN,
+        DaggerB,
+        DaggerT,
+        DaggerO1,
+        DaggerO2,
+        DaggerO3,
+
+        SwordN,
+        SwordB,
+        SwordT,
+        SwordO,
+
+        SpearN,
+        SpearB,
+        SpearT,
+        SpearO1,
+        SpearO2,
+        SpearO3,
+    }
+
     [SerializeField] float _moveSpeed = 5f;
     [SerializeField] float _jumpHeight = 0.5f;
+    [SerializeField] float _animSpeed = 1f;
 
     [SerializeField] GameObject _characterBody;
     [SerializeField] GameObject _slashAnimPrefab;
@@ -27,7 +51,10 @@ public class PlayerController : MonoBehaviour
     GameObject _myAttackEffect;
     Animator _slashAnim;
 
+    bool _isFlipY;
+
     public LookDir _myDir;
+    public WeaponName _weaponName;
 
     float _baseY;
 
@@ -38,6 +65,8 @@ public class PlayerController : MonoBehaviour
 
     void InitCharacter()
     {
+        _isFlipY = false;
+
         _movePoint.parent = null;
         _baseY = transform.position.y;
         _followCamera = Camera.main;
@@ -45,7 +74,7 @@ public class PlayerController : MonoBehaviour
 
         _myAttackEffect = Instantiate(_slashAnimPrefab, transform.position, Quaternion.identity, transform);
         _slashAnim = _myAttackEffect.GetComponent<Animator>();
-        //_slashAnim.enabled = false;
+        _slashAnim.speed = _animSpeed;
     }
 
     // Update is called once per frame
@@ -60,42 +89,26 @@ public class PlayerController : MonoBehaviour
 
         if (Vector3.Distance(transform.position, _movePoint.position) <= 0.05f)
         {
+            
+
             if (Mathf.Abs(horizontal) == 1f)
             {
+                InitAttack();
+
                 if (!Physics2D.OverlapCircle(_movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), 0.2f, _stopMovement))
                 {
-                    _movePoint.position += new Vector3(horizontal, 0f, 0f);
-
-                    if (horizontal > 0f)
-                    {
-                        _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
-                        _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = false;
-                        _myDir = LookDir.Right;
-                    }
-                    else
-                    {
-                        _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
-                        _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = true;
-                        _myDir = LookDir.Left;
-                    }
+                    Move(horizontal, vertical);
 
                     StartCoroutine(MoveJump());
                 }
             }
             else if (Mathf.Abs(vertical) == 1f)
             {
+                InitAttack();
+
                 if (!Physics2D.OverlapCircle(_movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), 0.2f, _stopMovement))
                 {
-                    _movePoint.position += new Vector3(0f, vertical, 0f);
-
-                    if (vertical > 0f)
-                    {
-                        _myDir = LookDir.Up;
-                    }
-                    else
-                    {
-                        _myDir = LookDir.Down;
-                    }
+                    Move(horizontal, vertical);
 
                     StartCoroutine(MoveJump());
                 }
@@ -104,7 +117,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            StartCoroutine(Attack());
+            Attack();
         }
     }
 
@@ -114,38 +127,73 @@ public class PlayerController : MonoBehaviour
         _followCamera.transform.position = Vector3.Lerp(_followCamera.transform.position, desiredPosition, _moveSpeed * Time.deltaTime);
     }
 
-    IEnumerator Attack()
-    {
-        
 
+    void InitAttack()
+    {
+        _myAttackEffect.transform.rotation = Quaternion.identity;
+        _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
+        _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipY = false;
+        _isFlipY = false;
+    }
+
+    void Move(float horizontal, float vertical)
+    {
+        _movePoint.position += new Vector3(horizontal, vertical, 0f);
+
+        if (horizontal > 0f)
+        {
+            _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
+            _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = false;
+            _myDir = LookDir.Right;
+        }
+        else if(horizontal < 0f)
+        {
+            _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
+            _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = true;
+            _myDir = LookDir.Left;
+        }
+        else if (vertical > 0f)
+        {
+            _myDir = LookDir.Up;
+        }
+        else if (vertical < 0f)
+        {
+            _myDir = LookDir.Down;
+        }
+
+        Debug.Log(_myDir);
+
+        StartCoroutine(MoveJump());
+    }
+
+    void Attack()
+    {
         switch (_myDir)
         {
             case LookDir.Up:
                _myAttackEffect.transform.position = transform.position + new Vector3(0, 1, 0);
                 _myAttackEffect.transform.rotation = Quaternion.Euler(0, 0, 90);
-                _slashAnim.SetTrigger("Slash_Normal");
+                _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipY = _isFlipY = _isFlipY == false ? true : false;
+                _slashAnim.SetTrigger(_weaponName.ToString());
                 break;
             case LookDir.Down:
                 _myAttackEffect.transform.position = transform.position + new Vector3(0, -1, 0);
                 _myAttackEffect.transform.rotation = Quaternion.Euler(0, 0, -90);
-                _slashAnim.SetTrigger("Slash_Normal");
+                _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipY = _isFlipY = _isFlipY == false ? true : false;
+                _slashAnim.SetTrigger(_weaponName.ToString());
                 break;
             case LookDir.Left:
                 _myAttackEffect.transform.position = transform.position + new Vector3(-1, 0, 0);
-                _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
-                _slashAnim.SetTrigger("Slash_Normal");
+                _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;            
+                _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipY = _isFlipY = _isFlipY == false ? true : false;
+                _slashAnim.SetTrigger(_weaponName.ToString());
                 break;
             case LookDir.Right:
                 _myAttackEffect.transform.position = transform.position + new Vector3(1, 0, 0);
-                _slashAnim.SetTrigger("Slash_Normal");
+                _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipY = _isFlipY = _isFlipY == false ? true : false;
+                _slashAnim.SetTrigger(_weaponName.ToString());
                 break;
         }
-
-        yield return new WaitForSeconds(0.4f);
-
-        _myAttackEffect.transform.rotation = Quaternion.identity;
-        _myAttackEffect.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
-
     }
 
     IEnumerator MoveJump()
