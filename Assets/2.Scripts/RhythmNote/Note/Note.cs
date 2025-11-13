@@ -8,6 +8,12 @@ public class Note : MonoBehaviour
     Vector3 _stopPos;
     bool _isSpriteStop = false;
 
+    void OnEnable()
+    {
+        _isSpriteStop=false;
+        _spriteTf.position = transform.position;
+    }
+
     // Update is called once per frame
     void Update()
     {

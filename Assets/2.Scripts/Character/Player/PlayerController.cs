@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] GameObject _characterBody;
     [SerializeField] GameObject _slashAnimPrefab;
+    [SerializeField] GameObject _musicNotePrefab;
 
     [SerializeField]LayerMask _stopMovement;
 
@@ -48,13 +49,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform _characterPos;
 
     [SerializeField] MonsterDetectorParent _monsterDetectorParent;
+    TimingManager _tm;
 
     Camera _followCamera;
     GameObject _myAttackEffect;
+    GameObject _myMusicNote;
     Animator _slashAnim;
 
     bool _isFlipY;
     bool _isAttack;
+    bool _isMoving;
 
     public LookDir _myDir;
     public WeaponName _weaponName;
@@ -70,6 +74,7 @@ public class PlayerController : MonoBehaviour
     {
         _isFlipY = false;
         _isAttack = false;
+        _isMoving = false;
 
         _movePoint.parent = null;
         _baseY = transform.position.y;
@@ -79,6 +84,9 @@ public class PlayerController : MonoBehaviour
         _myAttackEffect = Instantiate(_slashAnimPrefab, transform.position, Quaternion.identity, transform);
         _slashAnim = _myAttackEffect.GetComponent<Animator>();
         _slashAnim.speed = _animSpeed;
+
+        _myMusicNote = _musicNotePrefab; //Instantiate(_musicNotePrefab, GameObject.Find("Canvas").transform);
+        _tm = _myMusicNote.GetComponent<TimingManager>();
     }
 
     // Update is called once per frame
@@ -91,15 +99,12 @@ public class PlayerController : MonoBehaviour
         
         _collisionPoint.position = _movePoint.position;
 
+
         if (Vector3.Distance(transform.position, _movePoint.position) <= 0.05f)
         {
-            MoveNAttack(horizontal, vertical);          
+            MoveNAttack(horizontal, vertical);
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            //Attack();
-        }
     }
 
     void LateUpdate()
@@ -110,12 +115,16 @@ public class PlayerController : MonoBehaviour
 
     void MoveNAttack(float horizontal, float vertical)
     {
+        if (_isMoving) return;
+        
+
         if (Mathf.Abs(horizontal) == 1f)
         {
             
             if (horizontal > 0f)
             {
-
+                if (!_tm.CheckTiming()) return;
+                StartCoroutine(MoveCooldown());
                 _myDir = LookDir.Right;
                 _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
                 _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = false;
@@ -128,7 +137,8 @@ public class PlayerController : MonoBehaviour
             }
             else if (horizontal < 0f)
             {
-
+                if (!_tm.CheckTiming()) return;
+                StartCoroutine(MoveCooldown());
                 _myDir = LookDir.Left;
                 _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
                 _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = true;
@@ -138,15 +148,20 @@ public class PlayerController : MonoBehaviour
                     return;
                 }
             }
-            _movePoint.position += new Vector3(horizontal, 0f, 0f);
-            StartCoroutine(MoveJump());           
+            if (!Physics2D.OverlapCircle(_movePoint.position + new Vector3(horizontal, 0f, 0f), 0.1f, _stopMovement))
+            {
+                _movePoint.position += new Vector3(horizontal, 0f, 0f);
+                StartCoroutine(MoveJump());
+
+            }
         }
         else if (Mathf.Abs(vertical) == 1f)
         {
             
             if (vertical > 0f)
             {
-
+                if (!_tm.CheckTiming()) return;
+                StartCoroutine(MoveCooldown());
                 _myDir = LookDir.Up;
 
                 if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
@@ -157,7 +172,8 @@ public class PlayerController : MonoBehaviour
             }
             else if (vertical < 0f)
             {
-
+                if (!_tm.CheckTiming()) return;
+                StartCoroutine(MoveCooldown());
                 _myDir = LookDir.Down;
 
                 if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
@@ -166,8 +182,11 @@ public class PlayerController : MonoBehaviour
                     return;
                 }
             }
-            _movePoint.position += new Vector3(0f, vertical, 0f);
-            StartCoroutine(MoveJump());
+            if (!Physics2D.OverlapCircle(_movePoint.position + new Vector3(0f, vertical, 0f), 0.1f, _stopMovement))
+            {
+                _movePoint.position += new Vector3(0f, vertical, 0f);
+                StartCoroutine(MoveJump());
+            }
         }          
     }
 
@@ -225,7 +244,6 @@ public class PlayerController : MonoBehaviour
             _characterPos.localPosition = charPos;
             yield return null;
         }
-
         _characterPos.localPosition = new Vector3(_characterPos.localPosition.x, _baseY, _characterPos.localPosition.z);
     }
 
@@ -234,5 +252,12 @@ public class PlayerController : MonoBehaviour
         _isAttack = true;
         yield return new WaitForSeconds(0.3f);
         _isAttack = false;
+    }
+
+    IEnumerator MoveCooldown()
+    {
+        _isMoving = true;
+        yield return new WaitForSeconds(0.3f);
+        _isMoving = false;
     }
 }
