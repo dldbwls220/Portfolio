@@ -20,16 +20,14 @@ public class NoteManager : MonoBehaviour
             GameObject goLeft = ObjectPool._instance._leftNoteQueue.Dequeue();
             goLeft.transform.position = _tfNoteAppearLeft.position;
             goLeft.SetActive(true);
-            //GameObject goLeft = Instantiate(_goNoteLeft, _tfNoteAppearLeft.position, Quaternion.identity);
-            //goLeft.transform.SetParent(transform);
+           
             TimingManager.Instance._boxNoteListL.Add(goLeft);
 
 
             GameObject goRight = ObjectPool._instance._rightNoteQueue.Dequeue();
             goRight.transform.position = _tfNoteAppearRight.position;
             goRight.SetActive(true);
-            //GameObject goRight = Instantiate(_goNoteRight, _tfNoteAppearRight.position, Quaternion.identity);
-            //goRight.transform.SetParent(transform);
+            
             TimingManager.Instance._boxNoteListR.Add(goRight);
             _currentTime -= 60d / _bpm;
         }
