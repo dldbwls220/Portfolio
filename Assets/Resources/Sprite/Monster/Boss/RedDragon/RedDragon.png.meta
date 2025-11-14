@@ -85,7 +85,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -99,7 +99,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 26
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,7 +123,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -152,11 +152,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 6
-        width: 56
-        height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 57
+        width: 55
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -177,8 +177,8 @@ TextureImporter:
         y: 57
         width: 54
         height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.51, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,37 +192,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedDragon_2
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 6
-        width: 54
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b6000d80442ab7770800000000000000
-      internalID: 8609653525738160235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: RedDragon_3
       rect:
         serializedVersion: 2
         x: 139
         y: 57
-        width: 53
+        width: 52
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.51, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,10 +219,10 @@ TextureImporter:
         serializedVersion: 2
         x: 199
         y: 57
-        width: 59
+        width: 54
         height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.51, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -258,28 +236,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedDragon_5
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 6
-        width: 54
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2646d7ebd5a1bdcc0800000000000000
-      internalID: -3685322880142449566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: RedDragon_6
       rect:
         serializedVersion: 2
@@ -287,8 +243,8 @@ TextureImporter:
         y: 57
         width: 58
         height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.47, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -302,28 +258,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedDragon_7
-      rect:
-        serializedVersion: 2
-        x: 260
-        y: 6
-        width: 58
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 24359bf2525af9d40800000000000000
-      internalID: 5593370841350492994
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: RedDragon_8
       rect:
         serializedVersion: 2
@@ -331,8 +265,8 @@ TextureImporter:
         y: 57
         width: 57
         height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -346,37 +280,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedDragon_9
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 6
-        width: 57
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f59c92030a5e71730800000000000000
-      internalID: 3969894072715954527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: RedDragon_10
       rect:
         serializedVersion: 2
         x: 388
         y: 57
         width: 50
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 51
+      alignment: 9
+      pivot: {x: 0.42, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -396,9 +308,9 @@ TextureImporter:
         x: 438
         y: 57
         width: 61
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -418,9 +330,9 @@ TextureImporter:
         x: 499
         y: 57
         width: 61
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -433,99 +345,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: RedDragon_13
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 6
-        width: 53
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 61f1e0f4dc8b04710800000000000000
-      internalID: 1675542253315956502
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RedDragon_14
-      rect:
-        serializedVersion: 2
-        x: 388
-        y: 6
-        width: 50
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef5265968ed315010800000000000000
-      internalID: 1175789046129370622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RedDragon_15
-      rect:
-        serializedVersion: 2
-        x: 438
-        y: 6
-        width: 61
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 967397c2bd602fb20800000000000000
-      internalID: 3166601026408626025
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RedDragon_16
-      rect:
-        serializedVersion: 2
-        x: 499
-        y: 6
-        width: 61
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 76ed52ac2a3c73050800000000000000
-      internalID: 5780303750696918631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0169e408779ab4947947ced39bbb8c4c
     internalID: 0
     vertices: []
     indices: 
