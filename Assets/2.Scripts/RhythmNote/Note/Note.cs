@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Note : MonoBehaviour
 {
-    [SerializeField] float _speed = 120f;
+    [SerializeField] float _speed = 120f; // 240ÀÌ 60bpm
     [SerializeField] Transform _spriteTf;
 
     Vector3 _stopPos;

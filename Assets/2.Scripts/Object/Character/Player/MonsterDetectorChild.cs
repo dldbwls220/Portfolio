@@ -22,6 +22,7 @@ public class MonsterDetectorChild : MonoBehaviour
                 _monsterDParent.OnMonsterDetected(_directionName, collision.gameObject);
             }
         }
+
     }
 
     void OnTriggerExit2D(Collider2D collision)

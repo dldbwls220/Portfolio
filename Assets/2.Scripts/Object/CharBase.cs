@@ -13,7 +13,7 @@ public class CharBase : MonoBehaviour
 
     public bool _isDead { get {  return _dead; } }
     public float _currentHp { get{return _nowHp;} }
-    
+
 
     protected void InitBaseSet(string name, int strength, float hp, int gold, int beat)
     {

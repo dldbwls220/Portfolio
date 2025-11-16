@@ -1,7 +1,10 @@
+using System;
 using UnityEngine;
 
 public class NoteManager : MonoBehaviour
 {
+
+    static NoteManager _uniqueInstance;
 
     [SerializeField] int _bpm = 0;
     double _currentTime = 0;
@@ -9,12 +12,23 @@ public class NoteManager : MonoBehaviour
     [SerializeField] Transform _tfNoteAppearLeft;
     [SerializeField] Transform _tfNoteAppearRight;
 
-    [SerializeField] GameObject _goNoteRight;
+    public event Action OnBeat;
+
+    public static NoteManager _instance
+        { get { return _uniqueInstance; } }
+
+    private void Awake()
+    {
+        _uniqueInstance = this;
+    }
 
     void Update()
     {
         _currentTime += Time.deltaTime;
         //60(1분) / _bpm을 하여 1beat를 계산
+
+        if (_bpm <= 0) return;
+
         if (_currentTime >= 60d / _bpm) 
         {
             GameObject goLeft = ObjectPool._instance._leftNoteQueue.Dequeue();
@@ -30,8 +44,9 @@ public class NoteManager : MonoBehaviour
             
             TimingManager.Instance._boxNoteListR.Add(goRight);
             _currentTime -= 60d / _bpm;
+
+            OnBeat?.Invoke();
+            
         }
     }
-
-    
 }

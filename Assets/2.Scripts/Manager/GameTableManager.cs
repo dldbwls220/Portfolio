@@ -22,6 +22,7 @@ public class GameTableManager :TSingleton<GameTableManager>
 
         TextAsset tAsset = Resources.Load("Tables/" + name.ToString()) as TextAsset;
 
+
         if (tAsset != null)
         {
             T t = new T();

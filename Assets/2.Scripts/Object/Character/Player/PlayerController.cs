@@ -1,17 +1,10 @@
 using System.Collections;
 using UnityEngine;
-using static UnityEditor.Searcher.SearcherWindow.Alignment;
+using DefineEnum;
+
 
 public class PlayerController : MonoBehaviour
 {
-    public enum LookDir
-    {
-        Up, 
-        Down, 
-        Left, 
-        Right
-    }
-
     public enum WeaponName
     {
         DaggerN,

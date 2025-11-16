@@ -28,7 +28,6 @@ public class TimingManager : MonoBehaviour
 
     void initManager()
     {
-        Debug.Log(_center.localPosition.x);
 
         _canJudge = true;
         _judgeCooldown = 0.15f;

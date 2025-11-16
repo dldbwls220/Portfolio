@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+using DefineEnum;
 public class MonsterDetectorParent : MonoBehaviour
 {
     private Dictionary<string, List<GameObject>> _monsterDetected = new Dictionary<string, List<GameObject>>();

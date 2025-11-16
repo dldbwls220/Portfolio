@@ -6,4 +6,14 @@ namespace DefineEnum
     {
         MonsterInfoList
     }
+
+    public enum LookDir
+    {
+        Up,
+        Down,
+        Left,
+        Right,
+
+        count
+    }
 }
