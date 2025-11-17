@@ -1586,6 +1586,7 @@ GameObject:
   - component: {fileID: 1061387150}
   - component: {fileID: 1061387147}
   - component: {fileID: 1061387149}
+  - component: {fileID: 1061387151}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Untagged
@@ -1600,7 +1601,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061387146}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09c4ccac2a057da4cb28ae1aeb0b70db, type: 3}
   m_Name: 
@@ -1674,6 +1675,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1061387151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061387146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3ba4e541219d624aadd7ce933d41823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pFinder: {fileID: 1191632551}
+  _tileManager: {fileID: 1191632550}
+  _playerObj: {fileID: 1411731527}
+  _spriteObj: {fileID: 0}
+  _moveSpeed: 5
 --- !u!1 &1131345388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,7 +2308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3136876406269655969, guid: 3cc0b45d963636f4baad50fbecd13834, type: 3}
       propertyPath: m_Size.x
-      value: 100.22
+      value: 69.38
       objectReference: {fileID: 0}
     - target: {fileID: 3618372655212049403, guid: 3cc0b45d963636f4baad50fbecd13834, type: 3}
       propertyPath: _bpm
@@ -8197,7 +8215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &2580407313005506933
 BoxCollider2D:
   m_ObjectHideFlags: 0

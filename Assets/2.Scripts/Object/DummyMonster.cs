@@ -20,10 +20,14 @@ public class DummyMonster : MonoBehaviour
 
     Animator _anim;
 
+    bool _isAttack;
+
     void Start()
     {
         NoteManager._instance.OnBeat += OnBeat;
+        startNode = grid.NodeFromWorldPos(transform.position);
         _anim = GetComponent<Animator>();
+        _isAttack = false;
     }
 
     void Update()
@@ -50,16 +54,20 @@ public class DummyMonster : MonoBehaviour
         
 
         if (_myBeat == 1 || _myBeat == 3)
-        {
-            // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
-
-            if (path != null && path.Count == 2)
+        {        
+            if (path != null && path.Count == 3)
             {
-                Debug.Log("공격!");
+                if (!_isAttack)
+                    StartCoroutine(Attack(path[1], 0.1f));
             }
-            else if (path != null && path.Count > 1)
+            else if (path != null && path.Count == 2)       //바로 앞에 타겟이 있으면 공격
+            {
+                if (!_isAttack)
+                    StartCoroutine(Attack(path[1], 0.15f));
+            }
+            else if (path != null && path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
             {                
-                StartCoroutine(MoveToNode(path[1]));  // path[0]은 startNode 이므로 path[1]이 다음 칸
+                StartCoroutine(MoveToNode(path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
             }
             
         }
@@ -89,6 +97,30 @@ public class DummyMonster : MonoBehaviour
         transform.position = targetPos;
 
         isMoving = false;
+    }
+
+    IEnumerator Attack(Node nextNode , float delay)
+    {
+        _isAttack = true;
+
+        Node targetAttackNode = nextNode;
+
+        yield return new WaitForSeconds(delay);
+
+        Node playerNowNode = grid.NodeFromWorldPos(target.position);
+
+        if (playerNowNode == targetAttackNode)
+        {
+            Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
+            // TODO: 데미지 처리
+        }
+        else
+        {
+            Debug.Log("공격 실패 → 이동");
+            StartCoroutine(MoveToNode(nextNode));
+        }
+
+        _isAttack = false;
     }
 
     //IEnumerator FrontBack()
