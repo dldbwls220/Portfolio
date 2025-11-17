@@ -8,7 +8,7 @@ public class DummyMonster : MonoBehaviour
 {
     public PathFinding pathfinder;
     public TileMapGridManager grid;
-    public Transform target;
+    public Transform _targetTF;
     public float moveSpeed = 5f;
     public Transform _characterPos;
 
@@ -32,7 +32,7 @@ public class DummyMonster : MonoBehaviour
 
     void Update()
     {
-        targetNode = grid.NodeFromWorldPos(target.position);
+        targetNode = grid.NodeFromWorldPos(_targetTF.position);
         path = pathfinder.FindPath(startNode._worldPosition, targetNode._worldPosition);
     }
 
@@ -44,15 +44,9 @@ public class DummyMonster : MonoBehaviour
         if (_myBeat > 4)
             _myBeat = 1;
 
-        // 현재 몬스터 위치 → 타일 노드
         startNode = grid.NodeFromWorldPos(transform.position);
 
-        // 플레이어 위치 → 타일 노드
         
-
-        // A*로 전체 경로 생성
-        
-
         if (_myBeat == 1 || _myBeat == 3)
         {        
             if (path != null && path.Count == 3)
@@ -68,9 +62,9 @@ public class DummyMonster : MonoBehaviour
             else if (path != null && path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
             {                
                 StartCoroutine(MoveToNode(path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
-            }
-            
+            }        
         }
+        
 
         _anim.SetTrigger(_myBeat + "Beat");
       
@@ -82,6 +76,14 @@ public class DummyMonster : MonoBehaviour
         StartCoroutine(MoveJump());
         Vector3 targetPos = nextNode._worldPosition;
         targetPos.z = transform.position.z;
+
+        float diffX = nextNode._worldPosition.x - transform.position.x;
+
+        if (diffX > 0) 
+            transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
+        else if (diffX < 0)
+            transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
+
 
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {
@@ -107,7 +109,7 @@ public class DummyMonster : MonoBehaviour
 
         yield return new WaitForSeconds(delay);
 
-        Node playerNowNode = grid.NodeFromWorldPos(target.position);
+        Node playerNowNode = grid.NodeFromWorldPos(_targetTF.position);
 
         if (playerNowNode == targetAttackNode)
         {

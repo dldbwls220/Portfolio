@@ -8215,7 +8215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &2580407313005506933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8615,7 +8615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pathfinder: {fileID: 1191632551}
   grid: {fileID: 1191632550}
-  target: {fileID: 1411731529}
+  _targetTF: {fileID: 1411731529}
   moveSpeed: 5
   _characterPos: {fileID: 7930566735999027782}
 --- !u!61 &7379097489792280049
