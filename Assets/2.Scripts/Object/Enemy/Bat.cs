@@ -5,7 +5,6 @@ using UnityEngine;
 public class Bat : CharBase
 {
     [SerializeField] float _moveSpeed = 5f;
-    [SerializeField] float _jumpHeight = 0.5f;
     [SerializeField] Transform _characterPos;
 
     [SerializeField] PlayerDetectorParent _playerDetector;
@@ -20,7 +19,6 @@ public class Bat : CharBase
     LookDir _nextDir;
 
     int _nowBeat;
-    float _baseY = 0;
     bool _isAttack;
     bool _isMove;
 
