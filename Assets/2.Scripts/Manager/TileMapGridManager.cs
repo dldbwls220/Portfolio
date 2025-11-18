@@ -38,6 +38,8 @@ public class TileMapGridManager : MonoBehaviour
 
     List<Node> _debugPath;
 
+    Dictionary<string, List<Node>> _debugList;
+
     BoundsInt _bounds;
 
     [SerializeField] bool _DrawGizzmo;
@@ -45,6 +47,7 @@ public class TileMapGridManager : MonoBehaviour
     void Awake()
     {
         nodeDiameter = _nodeRadius * 2f;
+        _debugList = new Dictionary<string, List<Node>>();
 
         _tilePenaltyMap = new Dictionary<TileBase, TilePenaltyData>();
         foreach (var data in _tilePenaltyList)
@@ -195,9 +198,17 @@ public class TileMapGridManager : MonoBehaviour
         return neighbors;
     }
 
-    public void SetDebugPath(List<Node> path)
+    public void SetDebugPath(string name, List<Node> node)
     {
-        _debugPath = path;
+        if (!_debugList.ContainsKey(name))
+            _debugList.Add(name, node);
+        else
+            _debugList[name] = node;
+    }
+
+    public void SetNodeBlocked(Node node, bool blocked)
+    {
+        node._walkable = !blocked;
     }
 
     void OnDrawGizmos()
@@ -213,12 +224,16 @@ public class TileMapGridManager : MonoBehaviour
                 Gizmos.DrawCube(n._worldPosition, Vector3.one * (nodeDiameter - 0.1f));
             }
 
-            if (_debugPath != null)
+            if (_debugList != null)
             {
-                Gizmos.color = Color.yellow;
-                foreach (var n in _debugPath)
+
+                foreach (var i in _debugList)
                 {
-                    Gizmos.DrawCube(n._worldPosition, Vector3.one * (nodeDiameter - 0.12f));
+                    foreach (var n in i.Value)
+                    {
+                        Gizmos.color = Color.yellow;
+                        Gizmos.DrawCube(n._worldPosition, Vector3.one * (nodeDiameter - 0.12f));
+                    }
                 }
             }
         } 

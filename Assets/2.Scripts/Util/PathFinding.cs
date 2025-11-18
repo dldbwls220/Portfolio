@@ -30,8 +30,8 @@ public class PathFinding : MonoBehaviour
             // ¸ñÇ¥ µµÂø
             if (current == targetNode)
             {
-                List<Node> finalPath = RetracePath(startNode, targetNode);
-                grid.SetDebugPath(finalPath);
+                List<Node> finalPath = RetracePath(startNode, targetNode);                
+                //grid.SetDebugPath(finalPath);
                 return finalPath;
             }
 

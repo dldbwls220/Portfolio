@@ -1,12 +1,10 @@
 using DefineEnum;
-using NUnit.Framework.Interfaces;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
-public class BatObject : CharBase
+public class SlimeObject : CharBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
@@ -20,15 +18,14 @@ public class BatObject : CharBase
     List<Node> _path;
     Node _startNode;
     Node _targetNode;
-    Node _randomNode;
+    Node _upDownNode;
+    LookDir _myDir;
     int _myBeat;
     bool _isMoving;
     bool _isAttack;
 
     Vector2Int[] dir = new Vector2Int[]
     {
-        new Vector2Int (1,0), //오른쪽
-        new Vector2Int (-1,0),//왼쪽
         new Vector2Int (0,1), //위
         new Vector2Int (0,-1) //아래
     };
@@ -60,11 +57,13 @@ public class BatObject : CharBase
         _targetTF = _playerObj.transform;
         _playerController = _targetTF.GetComponent<PlayerController>();
 
-        
+
         _animController = GetComponent<Animator>();
+        _animController.speed = (115f / 60f);
         _myBeat = 0;
         _isAttack = false;
         _isMoving = false;
+        _myDir = LookDir.Down;
     }
 
     void OnBeat()
@@ -72,15 +71,16 @@ public class BatObject : CharBase
         if (_isMoving) return;
 
         _myBeat += 1;
-        if(_myBeat > 4) _myBeat = 1;
+        if (_myBeat > 4) _myBeat = 1;
 
-        _startNode = _tileManager.NodeFromWorldPos(transform.position) ;
+        _startNode = _tileManager.NodeFromWorldPos(transform.position);
         _startNode._walkable = false;
-        _startNode._movementCost = 3;
+        _startNode._movementCost = 5;
 
-        _randomNode = GetRandomNode();
+        if (_myBeat == 1 || _myBeat == 3)
+            _upDownNode = GetUpDownNode();
 
-        _path = _pFinder.FindPath(_startNode._worldPosition, _randomNode._worldPosition);
+        _path = _pFinder.FindPath(_startNode._worldPosition, _upDownNode._worldPosition);
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
@@ -101,14 +101,14 @@ public class BatObject : CharBase
             {
                 if (!_isAttack)
                     StartCoroutine(Attack(_path[1], 0.15f));
-                
+
             }
             else
             {
                 StartCoroutine(MoveToNode(_path[1]));
             }
         }
-        
+
 
         _animController.SetTrigger(_myBeat + "Beat");
     }
@@ -116,12 +116,14 @@ public class BatObject : CharBase
     IEnumerator MoveToNode(Node nextNode)
     {
         _isMoving = true;
-        
+
         Vector3 targetPos = nextNode._worldPosition;
         targetPos.z = transform.position.z;
 
         _startNode._walkable = true;
-        _startNode._movementCost = 0;
+
+
+        StartCoroutine(MoveJump());
 
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {
@@ -152,7 +154,17 @@ public class BatObject : CharBase
         if (playerNowNode == targetAttackNode)
         {
             StartCoroutine(AttackFrontBack(nextNode));
-            Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
+            if (_myDir == LookDir.Up)
+            {
+                _myDir = LookDir.Down;
+                _myBeat = 2;
+            }
+            else if (_myDir == LookDir.Down)
+            {
+                _myDir = LookDir.Up;
+                _myBeat = 0;
+            }
+                Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
             // TODO: 데미지 처리
         }
         else
@@ -179,8 +191,8 @@ public class BatObject : CharBase
         {
             t += Time.deltaTime / moveTime;
 
-            
-            float move = Mathf.Sin(t * Mathf.PI);   
+
+            float move = Mathf.Sin(t * Mathf.PI);
             Vector3 offset = dir * move * 0.5f;
 
             transform.position = origin + offset;
@@ -188,27 +200,49 @@ public class BatObject : CharBase
             yield return null;
         }
 
-        
+
         transform.position = origin;
     }
 
-    Node GetRandomNode()
+    IEnumerator MoveJump()
     {
-        Vector2Int[] arr = dir;
-        Node rndNode;
-        while (true)
+        float t = 0;
+        float moveTime = 1 / _moveSpeed;
+
+        while (t < 1f)
         {
-            int rnd = Random.Range(0, arr.Length);
-
-            Vector3 rndPos = new Vector3(arr[rnd].x + transform.position.x, arr[rnd].y + transform.position.y, 0);
-
-            rndNode = _tileManager.NodeFromWorldPos(rndPos);
-
-            if (rndNode._walkable)
-                break;
+            t += Time.deltaTime / moveTime;
+            float height = Mathf.Sin(t * Mathf.PI) * 0.5f;
+            Vector3 charPos = _spriteObj.transform.localPosition;
+            charPos.y = 0 + height;
+            _spriteObj.transform.localPosition = charPos;
+            yield return null;
         }
-       return rndNode;
+        _spriteObj.transform.localPosition = new Vector3(_spriteObj.transform.localPosition.x, 0, _spriteObj.transform.localPosition.z);
 
     }
 
+    Node GetUpDownNode()
+    {
+        // 0 => 위 1 => 아래
+        Vector2Int[] arr = dir;
+        Node nextNode;
+        Vector3 nextPos = Vector3.zero;
+
+        if (_myDir == LookDir.Up)
+        {
+            nextPos = new Vector3(transform.position.x, arr[1].y + transform.position.y, 0);
+            _myDir = LookDir.Down;
+        }
+        else if (_myDir == LookDir.Down)
+        {
+            nextPos = new Vector3(transform.position.x, arr[0].y + transform.position.y, 0);
+            _myDir = LookDir.Up;
+        }
+
+        nextNode = _tileManager.NodeFromWorldPos(nextPos);
+
+        return nextNode;
+
+    }
 }

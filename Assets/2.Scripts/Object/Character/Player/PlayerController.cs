@@ -73,6 +73,7 @@ public class PlayerController : MonoBehaviour
         _baseY = transform.position.y;
         _followCamera = Camera.main;
         _myDir = LookDir.Left;
+        _weaponName = WeaponName.SwordB;
 
         _myAttackEffect = Instantiate(_slashAnimPrefab, transform.position, Quaternion.identity, transform);
         _slashAnim = _myAttackEffect.GetComponent<Animator>();

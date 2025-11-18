@@ -102,9 +102,9 @@ GameObject:
   m_Component:
   - component: {fileID: 368486979802545202}
   - component: {fileID: 555058182170878268}
-  - component: {fileID: 4399631420471449544}
   - component: {fileID: 8016732195154561633}
   - component: {fileID: 4029888215345606553}
+  - component: {fileID: 6273356620172024025}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Monster
@@ -152,22 +152,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4399631420471449544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3937228665968558841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f46bceab52536b41a7d1938ea8f342e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _moveSpeed: 5
-  _jumpHeight: 0.5
-  _characterPos: {fileID: 5681377535513917793}
-  _playerDetector: {fileID: 9164841777841597471}
 --- !u!50 &8016732195154561633
 Rigidbody2D:
   serializedVersion: 5
@@ -241,6 +225,23 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.6, y: 0.6}
   m_EdgeRadius: 0
+--- !u!114 &6273356620172024025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3937228665968558841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e70e3682fb235dd4db501743959d6ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pFinder: {fileID: 0}
+  _tileManager: {fileID: 0}
+  _playerObj: {fileID: 0}
+  _spriteObj: {fileID: 7974137076342144986}
+  _moveSpeed: 5
 --- !u!1 &4130801885943361062
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,7 +613,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7526866347251117655, guid: 3dc1825588691b6429f0abbae50cd698, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

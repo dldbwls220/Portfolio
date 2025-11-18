@@ -27,7 +27,7 @@ AnimationClip:
     - time: 1
       value: {fileID: -8558182943265400422, guid: 1d0e6f3ec1e5220459597e94c2cc0567, type: 3}
     attribute: m_Sprite
-    path: MonsterSprite
+    path: GolemSprite
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -39,7 +39,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2098139524
+      path: 4283840572
       attribute: 0
       script: {fileID: 0}
       typeID: 212

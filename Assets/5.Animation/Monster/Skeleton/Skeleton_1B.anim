@@ -24,7 +24,7 @@ AnimationClip:
       value: {fileID: 4354231566380549168, guid: 49d4d4b3328e7bb45ad5900af8371d6b, type: 3}
     - time: 0.25
       value: {fileID: 5809030516613042957, guid: 49d4d4b3328e7bb45ad5900af8371d6b, type: 3}
-    - time: 0.41666666
+    - time: 0.33333334
       value: {fileID: -6534455043122499310, guid: 49d4d4b3328e7bb45ad5900af8371d6b, type: 3}
     - time: 0.5
       value: {fileID: -7021505876318606439, guid: 49d4d4b3328e7bb45ad5900af8371d6b, type: 3}
@@ -70,7 +70,7 @@ AnimationClip:
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
