@@ -109,7 +109,7 @@ public class SlimeObject : CharBase
             }
         }
 
-
+        Debug.Log(_myDir);
         _animController.SetTrigger(_myBeat + "Beat");
     }
 
@@ -121,10 +121,7 @@ public class SlimeObject : CharBase
         targetPos.z = transform.position.z;
 
         _startNode._walkable = true;
-
-
         StartCoroutine(MoveJump());
-
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {
             transform.position = Vector3.MoveTowards(

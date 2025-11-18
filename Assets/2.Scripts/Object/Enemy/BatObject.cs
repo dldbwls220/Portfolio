@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
+using static UnityEngine.UI.Image;
 
 public class BatObject : CharBase
 {
@@ -65,6 +66,7 @@ public class BatObject : CharBase
         _myBeat = 0;
         _isAttack = false;
         _isMoving = false;
+        
     }
 
     void OnBeat()
@@ -92,6 +94,7 @@ public class BatObject : CharBase
 
         if (_myBeat == 2 || _myBeat == 4)
         {
+
             if (distance == 2)
             {
                 if (!_isAttack)
@@ -108,7 +111,6 @@ public class BatObject : CharBase
                 StartCoroutine(MoveToNode(_path[1]));
             }
         }
-        
 
         _animController.SetTrigger(_myBeat + "Beat");
     }
@@ -116,12 +118,14 @@ public class BatObject : CharBase
     IEnumerator MoveToNode(Node nextNode)
     {
         _isMoving = true;
-        
+        Vector3 origin = transform.position;
         Vector3 targetPos = nextNode._worldPosition;
-        targetPos.z = transform.position.z;
+        
+        Vector3 dir = (nextNode._worldPosition - origin).normalized;
 
         _startNode._walkable = true;
         _startNode._movementCost = 0;
+
 
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {
@@ -133,9 +137,9 @@ public class BatObject : CharBase
 
             yield return null;
         }
-
         transform.position = targetPos;
-
+        
+        
         _isMoving = false;
     }
 
@@ -152,12 +156,12 @@ public class BatObject : CharBase
         if (playerNowNode == targetAttackNode)
         {
             StartCoroutine(AttackFrontBack(nextNode));
-            Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
+            //Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
             // TODO: 데미지 처리
         }
         else
         {
-            Debug.Log("공격 실패 → 이동");
+            //Debug.Log("공격 실패 → 이동");
             StartCoroutine(MoveToNode(nextNode));
         }
 
@@ -169,9 +173,6 @@ public class BatObject : CharBase
         Vector3 origin = transform.position;
 
         Vector3 dir = (nextNode._worldPosition - origin).normalized;
-
-
-
         float t = 0;
         float moveTime = 1 / _moveSpeed;
 

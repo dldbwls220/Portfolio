@@ -7,7 +7,7 @@ public class Bat : CharBase
     [SerializeField] float _moveSpeed = 5f;
     [SerializeField] Transform _characterPos;
 
-    [SerializeField] PlayerDetectorParent _playerDetector;
+    [SerializeField] DetectorParent _playerDetector;
 
     BoxCollider2D _collider;
     Animator _aniController;
@@ -63,7 +63,7 @@ public class Bat : CharBase
 
         if (_nowBeat == _beat)
         {
-            if (_playerDetector.IsPlayerInDirection(_myDir.ToString()) && _myDir != LookDir.count)
+            if (_playerDetector.IsMonsterInDirection(_myDir.ToString()) && _myDir != LookDir.count)
             {
                 StartCoroutine(FrontBack());
                 Attack();
@@ -81,32 +81,32 @@ public class Bat : CharBase
     void SetNextPosition()
     {     
         
-        LookDir dir = new LookDir();
-        do
-        {
-            int rnd = Random.Range(0, (int)LookDir.count);
-            dir = (LookDir)rnd;
-            switch (rnd)
-            {
-                case (int)LookDir.Up:
-                    _nextPos = _originPos + Vector3.up;
-                    _myDir = LookDir.Up;
-                    break;
-                case (int)LookDir.Down:
-                    _nextPos = _originPos + Vector3.down;
-                    _myDir = LookDir.Down;
-                    break;
-                case (int)LookDir.Left:
-                    _nextPos = _originPos + Vector3.left;
-                    _myDir = LookDir.Left;
-                    break;
-                case (int)LookDir.Right:
-                    _nextPos = _originPos + Vector3.right;
-                    _myDir = LookDir.Right;
-                    break;
-            }           
-        }
-        while (_playerDetector.IsWallInDirection(dir.ToString()));
+        //LookDir dir = new LookDir();
+        //do
+        //{
+        //    int rnd = Random.Range(0, (int)LookDir.count);
+        //    dir = (LookDir)rnd;
+        //    switch (rnd)
+        //    {
+        //        case (int)LookDir.Up:
+        //            _nextPos = _originPos + Vector3.up;
+        //            _myDir = LookDir.Up;
+        //            break;
+        //        case (int)LookDir.Down:
+        //            _nextPos = _originPos + Vector3.down;
+        //            _myDir = LookDir.Down;
+        //            break;
+        //        case (int)LookDir.Left:
+        //            _nextPos = _originPos + Vector3.left;
+        //            _myDir = LookDir.Left;
+        //            break;
+        //        case (int)LookDir.Right:
+        //            _nextPos = _originPos + Vector3.right;
+        //            _myDir = LookDir.Right;
+        //            break;
+        //    }           
+        //}
+        //while (_playerDetector.IsWallInDirection(dir.ToString()));
 
     }
 

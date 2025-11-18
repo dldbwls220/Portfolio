@@ -16,7 +16,7 @@ public class SkeletonObject : CharBase
     Node _startNode;
     Node _targetNode;
     int _myBeat = 0;
-    bool isMoving = false;
+    bool _isMoving = false;
 
     Animator _anim;
 
@@ -52,7 +52,7 @@ public class SkeletonObject : CharBase
 
     void OnBeat()
     {
-        if (isMoving) return;
+        if (_isMoving) return;
 
         _myBeat += 1;
         if (_myBeat > 4)
@@ -79,7 +79,7 @@ public class SkeletonObject : CharBase
             else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
             {
                 if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.15f));
+                    StartCoroutine(Attack(_path[1], 0.1f));
             }
             else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
             {                
@@ -94,10 +94,9 @@ public class SkeletonObject : CharBase
 
     IEnumerator MoveToNode(Node nextNode)
     {
-        isMoving = true;
-        StartCoroutine(MoveJump());
+        _isMoving = true;
+       
         Vector3 targetPos = nextNode._worldPosition;
-        targetPos.z = transform.position.z;
 
         _startNode._walkable = true;
         _startNode._movementCost = 0;
@@ -111,6 +110,7 @@ public class SkeletonObject : CharBase
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
 
 
+        StartCoroutine(MoveJump());
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {
             transform.position = Vector3.MoveTowards(
@@ -121,10 +121,9 @@ public class SkeletonObject : CharBase
 
             yield return null;
         }
-
-        transform.position = targetPos;
-
-        isMoving = false;
+        transform.position = targetPos;  
+        
+        _isMoving = false;
     }
 
     IEnumerator Attack(Node nextNode , float delay)
@@ -157,6 +156,7 @@ public class SkeletonObject : CharBase
         Vector3 origin = transform.position;
         Vector3 dir = (nextNode._worldPosition - origin).normalized;
         float jumpHeight = 0;
+
 
         if (dir == Vector3.down)
             jumpHeight = 1;
@@ -221,4 +221,6 @@ public class SkeletonObject : CharBase
         }
 
     }
+
+
 }

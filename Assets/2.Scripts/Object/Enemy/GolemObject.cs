@@ -15,7 +15,7 @@ public class GolemObject : CharBase
     Node _startNode;
     Node _targetNode;
     int _myBeat = 0;
-    bool isMoving = false;
+    bool _isMoving = false;
 
     Animator _anim;
 
@@ -25,11 +25,6 @@ public class GolemObject : CharBase
     {
         NoteManager._instance.OnBeat += OnBeat;
         InitMonster(4);
-    }
-
-    void Update()
-    {
-        
     }
 
     public void InitMonster(int enemyIndex)
@@ -52,7 +47,7 @@ public class GolemObject : CharBase
 
     void OnBeat()
     {
-        if (isMoving) return;
+        if (_isMoving) return;
 
         _myBeat += 1;
         if (_myBeat > 4)
@@ -94,7 +89,7 @@ public class GolemObject : CharBase
 
     IEnumerator MoveToNode(Node nextNode)
     {
-        isMoving = true;
+        _isMoving = true;
         StartCoroutine(MoveJump());
         Vector3 targetPos = nextNode._worldPosition;
         targetPos.z = transform.position.z;
@@ -110,7 +105,6 @@ public class GolemObject : CharBase
         else if (diffX < 0)
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
 
-
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {
             transform.position = Vector3.MoveTowards(
@@ -121,10 +115,10 @@ public class GolemObject : CharBase
 
             yield return null;
         }
-
         transform.position = targetPos;
+        
 
-        isMoving = false;
+        _isMoving = false;
     }
 
     IEnumerator Attack(Node nextNode, float delay)

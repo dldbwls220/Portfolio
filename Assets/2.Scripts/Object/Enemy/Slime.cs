@@ -9,7 +9,7 @@ public class Slime : CharBase
     [SerializeField] float _jumpHeight = 0.5f;
     [SerializeField] Transform _characterPos;
 
-    [SerializeField] PlayerDetectorParent _playerDetector;
+    [SerializeField] DetectorParent _playerDetector;
 
     BoxCollider2D _collider;
     Animator _aniController;
@@ -64,7 +64,7 @@ public class Slime : CharBase
 
         if (_nowBeat == _beat)
         {
-            if (_playerDetector.IsPlayerInDirection("Up")  && _myDir == LookDir.Down)
+            if (_playerDetector.IsMonsterInDirection("Up")  && _myDir == LookDir.Down)
             {
                 Debug.Log("위 공격");
                 StartCoroutine(FrontBack());
@@ -82,7 +82,7 @@ public class Slime : CharBase
         }
         else if (_nowBeat == _beat + _beat)
         {
-            if (_playerDetector.IsPlayerInDirection("Down")  && _myDir == LookDir.Up)
+            if (_playerDetector.IsMonsterInDirection("Down")  && _myDir == LookDir.Up)
             {
                 Debug.Log("아래 공격");
                 StartCoroutine(FrontBack());
