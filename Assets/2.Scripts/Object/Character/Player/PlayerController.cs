@@ -1,31 +1,11 @@
-using System.Collections;
-using UnityEngine;
 using DefineEnum;
+using System.Collections;
+using Unity.VisualScripting;
+using UnityEngine;
 
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : CharBase
 {
-    public enum WeaponName
-    {
-        DaggerN,
-        DaggerB,
-        DaggerT,
-        DaggerO1,
-        DaggerO2,
-        DaggerO3,
-
-        SwordN,
-        SwordB,
-        SwordT,
-        SwordO,
-
-        SpearN,
-        SpearB,
-        SpearT,
-        SpearO1,
-        SpearO2,
-        SpearO3,
-    }
 
     [SerializeField] float _moveSpeed = 5f;
     [SerializeField] float _jumpHeight = 0.5f;
@@ -34,6 +14,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject _characterBody;
     [SerializeField] GameObject _slashAnimPrefab;
     [SerializeField] GameObject _musicNotePrefab;
+    [SerializeField] GameObject _attackRangeParent;
+    [SerializeField] GameObject _monsterSlashFX;
+
+    [SerializeField] BoxCollider2D[] _attackColliders;
 
     [SerializeField]LayerMask _stopMovement;
 
@@ -42,16 +26,20 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform _characterPos;
 
     [SerializeField] MonsterDetectorParent _monsterDetectorParent;
+    
     TimingManager _tm;
+    CheckAttackRange[] _weaponCheck;
 
     Camera _followCamera;
     GameObject _myAttackEffect;
     GameObject _myMusicNote;
     Animator _slashAnim;
+    Animator _monsterSlashAnim;
 
     bool _isFlipY;
     bool _isAttack;
     bool _isMoving;
+    bool _isDelayEnd;
 
     public LookDir _myDir;
     public WeaponName _weaponName;
@@ -65,9 +53,14 @@ public class PlayerController : MonoBehaviour
 
     void InitCharacter()
     {
+        InitBaseSet("Cadence", 1, 2, 0, 0);
+
+
+
         _isFlipY = false;
         _isAttack = false;
         _isMoving = false;
+        _isDelayEnd = false;
 
         _movePoint.parent = null;
         _baseY = transform.position.y;
@@ -78,9 +71,24 @@ public class PlayerController : MonoBehaviour
         _myAttackEffect = Instantiate(_slashAnimPrefab, transform.position, Quaternion.identity, transform);
         _slashAnim = _myAttackEffect.GetComponent<Animator>();
         _slashAnim.speed = _animSpeed;
+        _monsterSlashAnim = _monsterSlashFX.GetComponent<Animator>();
 
         _myMusicNote = _musicNotePrefab; //Instantiate(_musicNotePrefab, GameObject.Find("Canvas").transform);
         _tm = _myMusicNote.GetComponent<TimingManager>();
+
+        Debug.Log(_attackRangeParent.transform.childCount);
+
+        _attackColliders = new BoxCollider2D[_attackRangeParent.transform.childCount];
+        _weaponCheck = new CheckAttackRange[_attackRangeParent.transform.childCount];
+
+        for (int i = 0; i < _attackRangeParent.transform.childCount; i++)
+        {        
+            _attackColliders[i] = _attackRangeParent.transform.GetChild(i).GetComponent<BoxCollider2D>();
+            _weaponCheck[i] = _attackColliders[i].GetComponent<CheckAttackRange>();
+            _weaponCheck[i].InitSetRange(this);
+        }
+
+       
     }
 
     // Update is called once per frame
@@ -122,6 +130,7 @@ public class PlayerController : MonoBehaviour
                 _myDir = LookDir.Right;
                 _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
                 _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = false;
+                _monsterSlashFX.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX=false;
                 if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
                 {
                     Attack();
@@ -136,6 +145,7 @@ public class PlayerController : MonoBehaviour
                 _myDir = LookDir.Left;
                 _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
                 _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = true;
+                _monsterSlashFX.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
                 if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
                 {
                     Attack();
@@ -220,8 +230,23 @@ public class PlayerController : MonoBehaviour
                 _slashAnim.SetTrigger(_weaponName.ToString());
                 break;
         }
-
+        StartCoroutine(CameraShaker(0.05f, 0.3f));
         Debug.Log("АјАн!");
+    }
+
+    public void OnHitting(float dmg)
+    {
+        if ((_nowHp -= dmg) <= 0)
+        {
+            _nowHp = 0;
+        }
+        else
+        {
+            StartCoroutine(GetDamageBlink());
+            StartCoroutine(CameraShaker(0.05f, 0.3f));
+            _monsterSlashAnim.SetTrigger("E_Attack");
+        }
+
     }
 
     IEnumerator MoveJump()
@@ -253,5 +278,39 @@ public class PlayerController : MonoBehaviour
         _isMoving = true;
         yield return new WaitForSeconds(0.3f);
         _isMoving = false;
+    }
+
+    IEnumerator GetDamageBlink()
+    {
+        float time = 0;
+        float _blinkDuration = 0.4f;
+        float _blinkSpeed = 0.05f;
+
+        SpriteRenderer head = _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>();
+        SpriteRenderer body = _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>();
+
+        while (time < _blinkDuration)
+        {
+            head.enabled = !head.enabled;
+            body.enabled = !body.enabled;
+            time += Time.deltaTime / _blinkSpeed;
+            yield return new WaitForSeconds(_blinkSpeed);
+        }
+
+        head.enabled = true;
+        body.enabled = true;
+    }
+
+    IEnumerator CameraShaker(float shakeAmount, float shakeTime)
+    {
+        float time = 0;
+        while (time < shakeTime)
+        {
+            _followCamera.transform.position = (Vector3)Random.insideUnitSphere * shakeAmount + (new Vector3(0, 0, -10) + transform.position);
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        _followCamera.transform.position = new Vector3(0, 0, -10) + transform.position;
     }
 }

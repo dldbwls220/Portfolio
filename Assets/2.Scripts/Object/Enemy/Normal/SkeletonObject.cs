@@ -17,6 +17,7 @@ public class SkeletonObject : CharBase
     Node _targetNode;
     int _myBeat = 0;
     bool _isMoving = false;
+    PlayerController _playerController;
 
     Animator _anim;
 
@@ -44,6 +45,7 @@ public class SkeletonObject : CharBase
 
         InitBaseSet(name, str, hp, gold, beat);
 
+        _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();
         _anim.speed = (115f / 60f);
         _isAttack = false;
@@ -149,6 +151,8 @@ public class SkeletonObject : CharBase
             StartCoroutine(AttackFrontBack(nextNode));
             Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
             // TODO: 데미지 처리
+
+            _playerController.OnHitting(_strength);
         }
         else if (isOtherReserved(nextNode) && nextNode._walkable)
         {
@@ -249,6 +253,11 @@ public class SkeletonObject : CharBase
             nextNode._BatNode == true)
             return true;
         else return false;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        
     }
 
 }

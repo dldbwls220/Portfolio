@@ -1,11 +1,8 @@
 using DefineEnum;
-using NUnit.Framework.Interfaces;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
-using static UnityEngine.UI.Image;
+
 
 public class BatObject : CharBase
 {
@@ -163,6 +160,8 @@ public class BatObject : CharBase
             StartCoroutine(AttackFrontBack(nextNode));
             //Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
             // TODO: 데미지 처리
+
+            _playerController.OnHitting(_strength);
         }
         else if(isOtherReserved(nextNode) && nextNode._walkable)
         {

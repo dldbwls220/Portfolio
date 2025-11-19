@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BansheeObject : CharBase
+public class RedDragonObject : CharBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
@@ -20,12 +20,16 @@ public class BansheeObject : CharBase
     Animator _anim;
 
     bool _isAttack;
-    bool _isDamaged;
 
     void Start()
     {
         NoteManager._instance.OnBeat += OnBeat;
-        InitMonster(6);
+        InitMonster(5);
+    }
+
+    void Update()
+    {
+
     }
 
     public void InitMonster(int enemyIndex)
@@ -42,7 +46,6 @@ public class BansheeObject : CharBase
         _anim = GetComponent<Animator>();
         _anim.speed = (115f / 60f);
         _isAttack = false;
-        _isDamaged = false;
     }
 
 
@@ -70,29 +73,30 @@ public class BansheeObject : CharBase
 
         _anim.SetTrigger(_myBeat + "Beat");
 
-        if (_path != null && _path.Count == 3)
+        if (_myBeat == 2 || _myBeat == 4)
         {
-            if (!_isAttack)
-                StartCoroutine(Attack(_path[1], 0.11f));
-        }
-        else if (_path != null && _path.Count == 2)       
-        {
-            if (!_isAttack)
-                StartCoroutine(Attack(_path[1], 0.11f));
-        }
-        else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-        {
-            Debug.Log("지나가지 못함");
-            return;
-        }
-        else if (_path != null && _path.Count > 1)   
-        {
-            StartCoroutine(MoveToNode(_path[1]));   
-        }
-        else if (_isDamaged)
-        {
-            StopAllCoroutines();
-            StartCoroutine(KnockBack());
+            if (_path != null && _path.Count == 3)
+            {
+                if (!_isAttack)
+                    StartCoroutine(Attack(_path[1], 0.1f));
+            }
+            else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
+            {
+                if (!_isAttack)
+                    StartCoroutine(Attack(_path[1], 0.1f));
+            }
+            else if (isOtherReserved(_path[1]) && _path[1]._walkable)
+            {
+
+                _myBeat -= 2;
+                StartCoroutine(MoveJump());
+                Debug.Log("지나가지 못함");
+                return;
+            }
+            else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
+            {
+                StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
+            }
         }
     }
 
@@ -112,6 +116,8 @@ public class BansheeObject : CharBase
         else if (diffX < 0)
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
 
+
+        StartCoroutine(MoveJump());
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {
             transform.position = Vector3.MoveTowards(
@@ -125,25 +131,6 @@ public class BansheeObject : CharBase
         transform.position = targetPos;
 
         _isMoving = false;
-    }
-
-    IEnumerator KnockBack()
-    {
-        Vector3 origin = transform.position;
-        Vector3 dir = (_targetTF.position - origin).normalized;
-        Vector3 targetPos = origin - dir;
-
-        while (Vector3.Distance(transform.position, targetPos) > 0.01f)
-        {
-            transform.position = Vector3.MoveTowards(
-                transform.position,
-                targetPos,
-                _moveSpeed * Time.deltaTime
-            );
-
-            yield return null;
-        }
-        transform.position = targetPos;
     }
 
     IEnumerator Attack(Node nextNode, float delay)
@@ -187,6 +174,7 @@ public class BansheeObject : CharBase
         else jumpHeight = 0.5f;
         float t = 0;
         float moveTime = 1 / _moveSpeed;
+        StartCoroutine(MoveJump());
 
         while (t < 1f)
         {
@@ -202,7 +190,24 @@ public class BansheeObject : CharBase
 
         transform.position = origin;
     }
-  
+
+    IEnumerator MoveJump()
+    {
+        float t = 0;
+        float moveTime = 1 / _moveSpeed;
+
+        while (t < 1f)
+        {
+            t += Time.deltaTime / moveTime;
+            float height = Mathf.Sin(t * Mathf.PI) * 0.5f;
+            Vector3 charPos = _characterPos.localPosition;
+            charPos.y = 0 + height;
+            _characterPos.localPosition = charPos;
+            yield return null;
+        }
+        _characterPos.localPosition = new Vector3(_characterPos.localPosition.x, 0, _characterPos.localPosition.z);
+
+    }
 
     void SetMovementCost(int cost, bool isSet)
     {
