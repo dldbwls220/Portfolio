@@ -1,10 +1,9 @@
 using DefineEnum;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class SkeletonObject : CharBase
+public class BansheeObject : CharBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
@@ -26,11 +25,6 @@ public class SkeletonObject : CharBase
     {
         NoteManager._instance.OnBeat += OnBeat;
         InitMonster(3);
-    }
-
-    void Update()
-    {
-            
     }
 
     public void InitMonster(int enemyIndex)
@@ -58,59 +52,59 @@ public class SkeletonObject : CharBase
         if (_myBeat > 4)
             _myBeat = 1;
 
+        if (_path != null)
+            SetTile(_path[1], true, false, 0);
+
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
-        _startNode._walkable = false;
-        _startNode._movementCost = 3;
+
         SetMovementCost(5, true);
 
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
         _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
 
+        SetTile(_path[1], false, true, 5);
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
-        if (_myBeat == 2 || _myBeat == 4)
-        {        
-            if (_path != null && _path.Count == 3)
-            {
-                if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.1f));
-            }
-            else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
-            {
-                if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.1f));
-            }
-            else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
-            {                
-                StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
-            }        
-        }
-        
-
         _anim.SetTrigger(_myBeat + "Beat");
-      
+
+        if (_path != null && _path.Count == 3)
+        {
+            if (!_isAttack)
+                StartCoroutine(Attack(_path[1], 0.11f));
+        }
+        else if (_path != null && _path.Count == 2)       
+        {
+            if (!_isAttack)
+                StartCoroutine(Attack(_path[1], 0.11f));
+        }
+        else if (isOtherReserved(_path[1]) && _path[1]._walkable)
+        {
+            Debug.Log("지나가지 못함");
+            return;
+        }
+        else if (_path != null && _path.Count > 1)   
+        {
+            StartCoroutine(MoveToNode(_path[1]));   
+        }
     }
 
     IEnumerator MoveToNode(Node nextNode)
     {
         _isMoving = true;
-       
+
         Vector3 targetPos = nextNode._worldPosition;
 
-        _startNode._walkable = true;
-        _startNode._movementCost = 0;
+        SetTile(nextNode, true, false, 0);
         SetMovementCost(5, false);
 
         float diffX = nextNode._worldPosition.x - transform.position.x;
 
-        if (diffX > 0) 
+        if (diffX > 0)
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
         else if (diffX < 0)
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
 
-
-        StartCoroutine(MoveJump());
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {
             transform.position = Vector3.MoveTowards(
@@ -121,12 +115,12 @@ public class SkeletonObject : CharBase
 
             yield return null;
         }
-        transform.position = targetPos;  
-        
+        transform.position = targetPos;
+
         _isMoving = false;
     }
 
-    IEnumerator Attack(Node nextNode , float delay)
+    IEnumerator Attack(Node nextNode, float delay)
     {
         _isAttack = true;
 
@@ -141,6 +135,10 @@ public class SkeletonObject : CharBase
             StartCoroutine(AttackFrontBack(nextNode));
             Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
             // TODO: 데미지 처리
+        }
+        else if (isOtherReserved(nextNode) && nextNode._walkable)
+        {
+            StartCoroutine(AttackFrontBack(nextNode));
         }
         else
         {
@@ -161,9 +159,8 @@ public class SkeletonObject : CharBase
         if (dir == Vector3.down)
             jumpHeight = 1;
         else jumpHeight = 0.5f;
-            float t = 0;
+        float t = 0;
         float moveTime = 1 / _moveSpeed;
-        StartCoroutine(MoveJump());
 
         while (t < 1f)
         {
@@ -179,24 +176,7 @@ public class SkeletonObject : CharBase
 
         transform.position = origin;
     }
-
-    IEnumerator MoveJump()
-    {
-        float t = 0;
-        float moveTime = 1 / _moveSpeed;
-
-        while (t < 1f)
-        {
-            t += Time.deltaTime / moveTime;
-            float height = Mathf.Sin(t * Mathf.PI) * 0.5f;
-            Vector3 charPos = _characterPos.localPosition;
-            charPos.y = 0 + height;
-            _characterPos.localPosition = charPos;
-            yield return null;
-        }
-        _characterPos.localPosition = new Vector3(_characterPos.localPosition.x, 0, _characterPos.localPosition.z);
-
-    }
+  
 
     void SetMovementCost(int cost, bool isSet)
     {
@@ -222,5 +202,20 @@ public class SkeletonObject : CharBase
 
     }
 
+    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
+    {
+        _startNode._walkable = isWalkable;
 
+        nextNode._SkeletonNode = isResrve;
+        nextNode._movementCost = reserveCost;
+    }
+
+    bool isOtherReserved(Node nextNode)
+    {
+        if (nextNode._GolemNode == true ||
+            nextNode._SlimeNode == true ||
+            nextNode._BatNode == true)
+            return true;
+        else return false;
+    }
 }

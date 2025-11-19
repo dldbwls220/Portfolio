@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 5703639421238536362}
   - component: {fileID: 7966510699887846386}
   - component: {fileID: 7454191024894104084}
+  - component: {fileID: 51118522718580429}
   m_Layer: 0
   m_Name: Golem
   m_TagString: Monster
@@ -216,7 +217,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &7454191024894104084
 MonoBehaviour:
@@ -230,8 +231,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcab92fa9c5f17f4a96a22a0f380cd10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pFinder: {fileID: 0}
   _tileManager: {fileID: 0}
+  _pFinder: {fileID: 51118522718580429}
   _targetTF: {fileID: 0}
   _moveSpeed: 5
   _characterPos: {fileID: 3397495038210544601}
+--- !u!114 &51118522718580429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2223962498275254399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cc0206dbb3ca5c42a7066ec0066fd74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 0}

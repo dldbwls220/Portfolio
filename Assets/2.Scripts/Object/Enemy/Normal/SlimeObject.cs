@@ -73,14 +73,17 @@ public class SlimeObject : CharBase
         _myBeat += 1;
         if (_myBeat > 4) _myBeat = 1;
 
-        _startNode = _tileManager.NodeFromWorldPos(transform.position);
-        _startNode._walkable = false;
-        _startNode._movementCost = 5;
+        if (_path != null)
+            SetTile(_path[1], true, false, 0);
+
+        _startNode = _tileManager.NodeFromWorldPos(transform.position);     
 
         if (_myBeat == 1 || _myBeat == 3)
             _upDownNode = GetUpDownNode();
 
         _path = _pFinder.FindPath(_startNode._worldPosition, _upDownNode._worldPosition);
+
+        SetTile(_path[1], false, true, 5);
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
@@ -89,6 +92,8 @@ public class SlimeObject : CharBase
         Node nextNode = _path[1];
 
         int distance = Mathf.Abs(_startNode._grideX - _targetNode._grideX) + Mathf.Abs(_startNode._grideY - _targetNode._grideY);
+
+        _animController.SetTrigger(_myBeat + "Beat");
 
         if (_myBeat == 2 || _myBeat == 4)
         {
@@ -103,14 +108,16 @@ public class SlimeObject : CharBase
                     StartCoroutine(Attack(_path[1], 0.15f));
 
             }
+            else if(isOtherReserved(_path[1]) && _path[1]._walkable)
+            {
+                StartCoroutine(MoveJump());
+                return;
+            }
             else
             {
                 StartCoroutine(MoveToNode(_path[1]));
             }
-        }
-
-        Debug.Log(_myDir);
-        _animController.SetTrigger(_myBeat + "Beat");
+        }       
     }
 
     IEnumerator MoveToNode(Node nextNode)
@@ -118,9 +125,9 @@ public class SlimeObject : CharBase
         _isMoving = true;
 
         Vector3 targetPos = nextNode._worldPosition;
-        targetPos.z = transform.position.z;
 
-        _startNode._walkable = true;
+        SetTile(nextNode, true, false, 0);
+
         StartCoroutine(MoveJump());
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {
@@ -163,6 +170,10 @@ public class SlimeObject : CharBase
             }
                 Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
             // TODO: 데미지 처리
+        }
+        else if (isOtherReserved(nextNode) && nextNode._walkable)
+        {
+            StartCoroutine(AttackFrontBack(nextNode));
         }
         else
         {
@@ -241,5 +252,22 @@ public class SlimeObject : CharBase
 
         return nextNode;
 
+    }
+
+    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
+    {
+        _startNode._walkable = isWalkable;
+
+        nextNode._SlimeNode = isResrve;
+        nextNode._movementCost = reserveCost;
+    }
+
+    bool isOtherReserved(Node nextNode)
+    {
+        if (nextNode._GolemNode == true ||
+            nextNode._SkeletonNode == true ||
+            nextNode._BatNode == true)
+            return true;
+        else return false;
     }
 }

@@ -1,12 +1,13 @@
 using DefineEnum;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class GolemObject : CharBase
+public class SkeletonObject : CharBase
 {
-    [SerializeField] TileMapGridManager _tileManager;
     [SerializeField] PathFinding _pFinder;
+    [SerializeField] TileMapGridManager _tileManager;
     [SerializeField] Transform _targetTF;
     [SerializeField] float _moveSpeed = 5f;
     [SerializeField] Transform _characterPos;
@@ -24,7 +25,12 @@ public class GolemObject : CharBase
     void Start()
     {
         NoteManager._instance.OnBeat += OnBeat;
-        InitMonster(4);
+        InitMonster(3);
+    }
+
+    void Update()
+    {
+            
     }
 
     public void InitMonster(int enemyIndex)
@@ -37,7 +43,6 @@ public class GolemObject : CharBase
         int beat = table.ToI(enemyIndex, "Beat");
 
         InitBaseSet(name, str, hp, gold, beat);
-
 
         _anim = GetComponent<Animator>();
         _anim.speed = (115f / 60f);
@@ -53,19 +58,24 @@ public class GolemObject : CharBase
         if (_myBeat > 4)
             _myBeat = 1;
 
+        if(_path != null)
+            SetTile(_path[1], true, false, 0);
+
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
-        _startNode._walkable = false;
-        _startNode._movementCost = 3;
+        
         SetMovementCost(5, true);
 
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
         _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
+        
+        SetTile(_path[1], false, true, 5);
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
+        _anim.SetTrigger(_myBeat + "Beat");
 
-        if (_myBeat == 4)
-        {
+        if (_myBeat == 2 || _myBeat == 4)
+        {        
             if (_path != null && _path.Count == 3)
             {
                 if (!_isAttack)
@@ -74,37 +84,41 @@ public class GolemObject : CharBase
             else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
             {
                 if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.15f));
+                    StartCoroutine(Attack(_path[1], 0.1f));
+            }
+            else if (isOtherReserved(_path[1]) && _path[1]._walkable)
+            {
+
+                _myBeat -= 2;
+                StartCoroutine(MoveJump());
+                Debug.Log("지나가지 못함");
+                return;
             }
             else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
             {
                 StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
-            }
-        }
-
-
-        _anim.SetTrigger(_myBeat + "Beat");
-
+            }        
+        }   
     }
 
     IEnumerator MoveToNode(Node nextNode)
     {
         _isMoving = true;
-        StartCoroutine(MoveJump());
+       
         Vector3 targetPos = nextNode._worldPosition;
-        targetPos.z = transform.position.z;
 
-        _startNode._walkable = true;
-        _startNode._movementCost = 0;
+        SetTile(nextNode, true, false, 0);
         SetMovementCost(5, false);
 
         float diffX = nextNode._worldPosition.x - transform.position.x;
 
-        if (diffX > 0)
+        if (diffX > 0) 
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
         else if (diffX < 0)
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
 
+
+        StartCoroutine(MoveJump());
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {
             transform.position = Vector3.MoveTowards(
@@ -115,13 +129,12 @@ public class GolemObject : CharBase
 
             yield return null;
         }
-        transform.position = targetPos;
+        transform.position = targetPos;  
         
-
         _isMoving = false;
     }
 
-    IEnumerator Attack(Node nextNode, float delay)
+    IEnumerator Attack(Node nextNode , float delay)
     {
         _isAttack = true;
 
@@ -136,6 +149,10 @@ public class GolemObject : CharBase
             StartCoroutine(AttackFrontBack(nextNode));
             Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
             // TODO: 데미지 처리
+        }
+        else if (isOtherReserved(nextNode) && nextNode._walkable)
+        {
+            StartCoroutine(AttackFrontBack(nextNode));
         }
         else
         {
@@ -152,10 +169,11 @@ public class GolemObject : CharBase
         Vector3 dir = (nextNode._worldPosition - origin).normalized;
         float jumpHeight = 0;
 
+
         if (dir == Vector3.down)
             jumpHeight = 1;
         else jumpHeight = 0.5f;
-        float t = 0;
+            float t = 0;
         float moveTime = 1 / _moveSpeed;
         StartCoroutine(MoveJump());
 
@@ -195,11 +213,7 @@ public class GolemObject : CharBase
     void SetMovementCost(int cost, bool isSet)
     {
         Node up = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.up);
-        Node upright = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.up + Vector3.right);
-        Node upleft = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.up + Vector3.left);
         Node down = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.down);
-        Node downright = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.down + Vector3.right);
-        Node downleft = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.down + Vector3.left);
         Node left = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.left);
         Node right = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.right);
 
@@ -209,10 +223,6 @@ public class GolemObject : CharBase
             down._movementCost = cost;
             left._movementCost = cost;
             right._movementCost = cost;
-            upleft._movementCost = cost;
-            upright._movementCost = cost;
-            downleft._movementCost = cost;
-            downright._movementCost = cost;
         }
         else
         {
@@ -220,11 +230,25 @@ public class GolemObject : CharBase
             down._movementCost = 0;
             left._movementCost = 0;
             right._movementCost = 0;
-            upleft._movementCost = 0;
-            upright._movementCost = 0;
-            downleft._movementCost = 0;
-            downright._movementCost = 0;
         }
 
     }
+
+    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
+    {
+        _startNode._walkable = isWalkable;
+
+        nextNode._SkeletonNode = isResrve;
+        nextNode._movementCost = reserveCost;
+    }
+
+    bool isOtherReserved(Node nextNode)
+    {
+        if(nextNode._GolemNode == true ||
+            nextNode._SlimeNode == true ||
+            nextNode._BatNode == true)
+            return true;
+        else return false;
+    }
+
 }

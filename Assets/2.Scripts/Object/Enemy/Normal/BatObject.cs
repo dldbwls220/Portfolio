@@ -76,14 +76,15 @@ public class BatObject : CharBase
         _myBeat += 1;
         if(_myBeat > 4) _myBeat = 1;
 
-        _startNode = _tileManager.NodeFromWorldPos(transform.position) ;
-        _startNode._walkable = false;
-        _startNode._movementCost = 3;
+        if (_path != null)
+            SetTile(_path[1], true, false, 0);
 
+        _startNode = _tileManager.NodeFromWorldPos(transform.position);
         _randomNode = GetRandomNode();
-
         _path = _pFinder.FindPath(_startNode._worldPosition, _randomNode._worldPosition);
-
+        
+        SetTile(_path[1], false, true, 5);
+        
         _tileManager.SetDebugPath(gameObject.name, _path);
 
         if (_path == null || _path.Count <= 1)
@@ -91,6 +92,8 @@ public class BatObject : CharBase
         Node nextNode = _path[1];
 
         int distance = Mathf.Abs(_startNode._grideX - _targetNode._grideX) + Mathf.Abs(_startNode._grideY - _targetNode._grideY);
+
+        _animController.SetTrigger(_myBeat + "Beat");
 
         if (_myBeat == 2 || _myBeat == 4)
         {
@@ -104,15 +107,18 @@ public class BatObject : CharBase
             {
                 if (!_isAttack)
                     StartCoroutine(Attack(_path[1], 0.15f));
+
+            }
+            else if (isOtherReserved(_path[1]) && _path[1]._walkable)
+            {
                 
+                return;
             }
             else
             {
                 StartCoroutine(MoveToNode(_path[1]));
-            }
-        }
-
-        _animController.SetTrigger(_myBeat + "Beat");
+            }          
+        }   
     }
 
     IEnumerator MoveToNode(Node nextNode)
@@ -123,8 +129,7 @@ public class BatObject : CharBase
         
         Vector3 dir = (nextNode._worldPosition - origin).normalized;
 
-        _startNode._walkable = true;
-        _startNode._movementCost = 0;
+        SetTile(nextNode, true, false, 0);
 
 
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
@@ -158,6 +163,10 @@ public class BatObject : CharBase
             StartCoroutine(AttackFrontBack(nextNode));
             //Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
             // TODO: 데미지 처리
+        }
+        else if(isOtherReserved(nextNode) && nextNode._walkable)
+        {
+            StartCoroutine(AttackFrontBack(nextNode));
         }
         else
         {
@@ -212,4 +221,20 @@ public class BatObject : CharBase
 
     }
 
+    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
+    {       
+        _startNode._walkable = isWalkable;
+
+        nextNode._BatNode = isResrve;
+        nextNode._movementCost = reserveCost;
+    }
+
+    bool isOtherReserved(Node nextNode)
+    {
+        if (nextNode._GolemNode == true ||
+            nextNode._SlimeNode == true ||
+            nextNode._SkeletonNode == true)
+            return true;
+        else return false;
+    }
 }
