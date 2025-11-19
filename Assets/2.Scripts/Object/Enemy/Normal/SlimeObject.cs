@@ -54,9 +54,12 @@ public class SlimeObject : CharBase
 
         InitBaseSet(name, str, hp, gold, beat);
 
+        _pFinder = GameObject.Find("GridManager").GetComponent<PathFinding>();
+        _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
+        _playerObj = GameObject.Find("PlayerCharacter");
+
         _targetTF = _playerObj.transform;
         _playerController = _targetTF.GetComponent<PlayerController>();
-
 
         _animController = GetComponent<Animator>();
         _animController.speed = (115f / 60f);
@@ -170,6 +173,8 @@ public class SlimeObject : CharBase
             }
                 Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
             // TODO: 데미지 처리
+
+            _playerController.OnHitting(_strength);
         }
         else if (isOtherReserved(nextNode) && nextNode._walkable)
         {

@@ -55,6 +55,10 @@ public class BatObject : CharBase
 
         InitBaseSet(name, str, hp, gold, beat);
 
+        _pFinder = GameObject.Find("GridManager").GetComponent<PathFinding>();
+        _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
+        _playerObj = GameObject.Find("PlayerCharacter");
+
         _targetTF = _playerObj.transform;
         _playerController = _targetTF.GetComponent<PlayerController>();
 

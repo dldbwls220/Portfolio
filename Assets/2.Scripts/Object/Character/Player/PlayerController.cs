@@ -44,6 +44,7 @@ public class PlayerController : CharBase
     public LookDir _myDir;
     public WeaponName _weaponName;
 
+    int _combo;
     float _baseY;
 
     private void Start()
@@ -87,7 +88,6 @@ public class PlayerController : CharBase
             _weaponCheck[i] = _attackColliders[i].GetComponent<CheckAttackRange>();
             _weaponCheck[i].InitSetRange(this);
         }
-
        
     }
 
@@ -131,11 +131,6 @@ public class PlayerController : CharBase
                 _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
                 _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = false;
                 _monsterSlashFX.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX=false;
-                if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
-                {
-                    Attack();
-                    return;
-                }
 
             }
             else if (horizontal < 0f)
@@ -146,17 +141,16 @@ public class PlayerController : CharBase
                 _characterBody.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
                 _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = true;
                 _monsterSlashFX.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
-                if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
-                {
-                    Attack();
-                    return;
-                }
             }
-            if (!Physics2D.OverlapCircle(_movePoint.position + new Vector3(horizontal, 0f, 0f), 0.1f, _stopMovement))
+            if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
+            {
+                Attack();
+            }
+            else if (!Physics2D.OverlapCircle(_movePoint.position + new Vector3(horizontal, 0f, 0f), 0.1f, _stopMovement))
             {
                 _movePoint.position += new Vector3(horizontal, 0f, 0f);
                 StartCoroutine(MoveJump());
-
+                initCombo();
             }
         }
         else if (Mathf.Abs(vertical) == 1f)
@@ -166,30 +160,23 @@ public class PlayerController : CharBase
             {
                 if (!_tm.CheckTiming()) return;
                 StartCoroutine(MoveCooldown());
-                _myDir = LookDir.Up;
-
-                if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
-                {
-                    Attack();
-                    return;
-                }
+                _myDir = LookDir.Up;          
             }
             else if (vertical < 0f)
             {
                 if (!_tm.CheckTiming()) return;
                 StartCoroutine(MoveCooldown());
-                _myDir = LookDir.Down;
-
-                if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
-                {
-                    Attack();
-                    return;
-                }
+                _myDir = LookDir.Down;              
             }
-            if (!Physics2D.OverlapCircle(_movePoint.position + new Vector3(0f, vertical, 0f), 0.1f, _stopMovement))
+            if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
+            {
+                Attack();
+            }
+            else if (!Physics2D.OverlapCircle(_movePoint.position + new Vector3(0f, vertical, 0f), 0.1f, _stopMovement))
             {
                 _movePoint.position += new Vector3(0f, vertical, 0f);
                 StartCoroutine(MoveJump());
+                initCombo();
             }
         }          
     }
@@ -198,6 +185,26 @@ public class PlayerController : CharBase
     {
         if (_isAttack) return;
         StartCoroutine(AttackCooldown());
+
+        switch (_combo)
+        {
+            case 0:
+                SoundManager._instance.PlaySFX(SFXName.Cadence_Attack_Combo_01);
+                _combo++;
+                break;
+            case 1:
+                SoundManager._instance.PlaySFX(SFXName.Cadence_Attack_Combo_02);
+                _combo++;
+                break;
+            case 2:
+                SoundManager._instance.PlaySFX(SFXName.Cadence_Attack_Combo_03);
+                _combo++;
+                break;
+            case 3:
+                SoundManager._instance.PlaySFX(SFXName.Cadence_Attack_Combo_04);
+                initCombo();
+                break;
+        }
 
         switch (_myDir)
         {
@@ -231,7 +238,13 @@ public class PlayerController : CharBase
                 break;
         }
         StartCoroutine(CameraShaker(0.05f, 0.3f));
+       
         Debug.Log("АјАн!");
+    }
+
+    void initCombo()
+    {
+        _combo = 0;
     }
 
     public void OnHitting(float dmg)

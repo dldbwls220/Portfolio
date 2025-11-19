@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class GolemObject : CharBase
 {
-    [SerializeField] TileMapGridManager _tileManager;
     [SerializeField] PathFinding _pFinder;
+    [SerializeField] TileMapGridManager _tileManager;
     [SerializeField] Transform _targetTF;
     [SerializeField] float _moveSpeed = 5f;
     [SerializeField] Transform _characterPos;
@@ -16,6 +16,7 @@ public class GolemObject : CharBase
     Node _targetNode;
     int _myBeat = 0;
     bool _isMoving = false;
+    PlayerController _playerController;
 
     Animator _anim;
 
@@ -38,7 +39,11 @@ public class GolemObject : CharBase
 
         InitBaseSet(name, str, hp, gold, beat);
 
+        _pFinder = GameObject.Find("GridManager").GetComponent<PathFinding>();
+        _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
+        _targetTF = GameObject.Find("PlayerCharacter").transform;
 
+        _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();
         _anim.speed = (115f / 60f);
         _isAttack = false;
@@ -141,6 +146,8 @@ public class GolemObject : CharBase
             StartCoroutine(AttackFrontBack(nextNode));
             Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
             // TODO: 데미지 처리
+
+            _playerController.OnHitting(_strength);
         }
         else if (isOtherReserved(nextNode) && nextNode._walkable)
         {

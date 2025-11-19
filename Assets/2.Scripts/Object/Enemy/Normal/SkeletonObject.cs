@@ -45,6 +45,10 @@ public class SkeletonObject : CharBase
 
         InitBaseSet(name, str, hp, gold, beat);
 
+        _pFinder = GameObject.Find("GridManager").GetComponent<PathFinding>();
+        _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
+        _targetTF = GameObject.Find("PlayerCharacter").transform;
+
         _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();
         _anim.speed = (115f / 60f);
