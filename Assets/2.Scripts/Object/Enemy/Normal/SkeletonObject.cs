@@ -13,7 +13,6 @@ public class SkeletonObject : CharBase
     [SerializeField] Transform _characterPos;
 
     BoxCollider2D _attackCollider;
-    CheckAttackRange _weaponCheck;
 
     List<Node> _path;
     Node _startNode;
@@ -53,7 +52,6 @@ public class SkeletonObject : CharBase
         _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
         _targetTF = GameObject.Find("PlayerCharacter").transform;
         _attackCollider = GetComponent<BoxCollider2D>();
-        _weaponCheck = _attackCollider.GetComponent<CheckAttackRange>();
 
         _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();

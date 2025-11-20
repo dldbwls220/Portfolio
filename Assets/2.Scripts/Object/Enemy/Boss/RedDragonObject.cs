@@ -10,6 +10,8 @@ public class RedDragonObject : CharBase
     [SerializeField] Transform _targetTF;
     [SerializeField] float _moveSpeed = 5f;
     [SerializeField] Transform _characterPos;
+    [SerializeField] GameObject _breathObj;
+    [SerializeField] GameObject _fireSpriteObj;
 
     List<Node> _path;
     Node _startNode;
@@ -18,7 +20,12 @@ public class RedDragonObject : CharBase
     bool _isMoving = false;
 
     Animator _anim;
+    Animator _fireAnim;
+    PlayerController _playerController;
+    SpriteRenderer[] _fireSprite;
 
+
+    bool _isFire;
     bool _isAttack;
 
     void Start()
@@ -43,9 +50,22 @@ public class RedDragonObject : CharBase
 
         InitBaseSet(name, str, hp, gold, beat);
 
+        _pFinder = GameObject.Find("GridManager").GetComponent<PathFinding>();
+        _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
+        _targetTF = GameObject.Find("PlayerCharacter").transform;
+        _fireAnim = _breathObj.GetComponent<Animator>();
+        _fireSprite = new SpriteRenderer[_fireSpriteObj.transform.childCount];
+
+        for (int i = 0; i < _fireSpriteObj.transform.childCount; i++)
+        {
+            _fireSprite[i] = _fireSpriteObj.transform.GetChild(i).GetComponent<SpriteRenderer>();
+        }
+
+        _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();
         _anim.speed = (115f / 60f);
         _isAttack = false;
+        _isFire = false;
     }
 
 
@@ -73,30 +93,88 @@ public class RedDragonObject : CharBase
 
         _anim.SetTrigger(_myBeat + "Beat");
 
-        if (_myBeat == 2 || _myBeat == 4)
+        switch (_myBeat)
         {
-            if (_path != null && _path.Count == 3)
-            {
-                if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.1f));
-            }
-            else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
-            {
-                if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.1f));
-            }
-            else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-            {
+            case 1:
+                if(_startNode._worldPosition.y == _targetNode._worldPosition.y && _path.Count > 1)
+                {
+                    _isFire = true;
+                    _anim.SetBool("isFire", true);
+                    SoundManager._instance.PlaySFX(SFXName.Dragon_attack_prefire);
+                }
+                break;
+            case 2:
 
-                _myBeat -= 2;
-                StartCoroutine(MoveJump());
-                Debug.Log("지나가지 못함");
-                return;
-            }
-            else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
-            {
-                StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
-            }
+                if (_isFire)
+                {
+                    SoundManager._instance.PlaySFX(SFXName.Dragon_attack_fire);
+                    _fireAnim.SetTrigger("Fire");
+                    StartCoroutine(Attack(_path[1], 0.1f));
+                }
+                else if (_path != null && _path.Count == 3)
+                {
+                    if (!_isAttack)
+                        StartCoroutine(Attack(_path[1], 0.1f));
+                }
+                else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
+                {
+                    if (!_isAttack)
+                        StartCoroutine(Attack(_path[1], 0.1f));
+                }
+                else if (isOtherReserved(_path[1]) && _path[1]._walkable)
+                {
+                    _myBeat -= 2;
+                    StartCoroutine(MoveJump());
+                    return;
+                }
+                else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
+                {
+                    StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
+                }
+                break;
+            case 3:
+                _isFire = false;
+                _anim.SetBool("isFire", false);
+                break;
+            case 4:
+
+                if (_path != null && _path.Count == 3)
+                {
+                    if (!_isAttack)
+                        StartCoroutine(Attack(_path[1], 0.1f));
+                }
+                else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
+                {
+                    if (!_isAttack)
+                        StartCoroutine(Attack(_path[1], 0.1f));
+                }
+                else if (isOtherReserved(_path[1]) && _path[1]._walkable)
+                {
+                    _myBeat -= 2;
+                    StartCoroutine(MoveJump());
+                    return;
+                }
+                else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
+                {
+                    StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
+                }
+                break;
+        }
+        
+    }
+
+    public void OnHitting(float dmg)
+    {
+        if ((_nowHp -= dmg) <= 0)
+        {
+            _nowHp = 0;
+            SoundManager._instance.PlaySFX(SFXName.Dragon_death);
+            _dead = true;
+        }
+        else
+        {
+            int rnd = Random.Range((int)SFXName.Dragon_hurt_01, (int)SFXName.Dragon_hurt_03 + 1);
+            SoundManager._instance.PlaySFX((SFXName)rnd);
         }
     }
 
@@ -109,12 +187,31 @@ public class RedDragonObject : CharBase
         SetTile(nextNode, true, false, 0);
         SetMovementCost(5, false);
 
+        int rnd = Random.Range((int)SFXName.Dragon_walk_01, (int)SFXName.Dragon_walk_03 + 1);
+        SoundManager._instance.PlaySFX((SFXName)rnd);
+
         float diffX = nextNode._worldPosition.x - transform.position.x;
 
         if (diffX > 0)
+        {
+            for (int i = 0; i < _breathObj.transform.GetChild(0).transform.childCount; i++)
+            {
+                _fireSprite[i].flipX = true;
+            }
+            _fireSpriteObj.transform.rotation = Quaternion.Euler(0, 0, 180);
+            _fireSpriteObj.transform.localPosition = new Vector3(0.5f, 0, 0); 
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
+        }
         else if (diffX < 0)
+        {
+            for (int i = 0; i < _breathObj.transform.GetChild(0).transform.childCount; i++)
+            {
+                _fireSprite[i].flipX = false;
+            }
+            _fireSpriteObj.transform.rotation = Quaternion.Euler(0, 0, 0);
+            _fireSpriteObj.transform.localPosition = new Vector3(-0.5f, 0, 0);
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
+        }
 
 
         StartCoroutine(MoveJump());
@@ -146,16 +243,22 @@ public class RedDragonObject : CharBase
         if (playerNowNode == targetAttackNode)
         {
             StartCoroutine(AttackFrontBack(nextNode));
-            Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
-            // TODO: 데미지 처리
+
+            SoundManager._instance.PlaySFX(SFXName.Dragon_attack_melee);
+            _playerController.OnHitting(_strength);
         }
-        else if (isOtherReserved(nextNode) && nextNode._walkable)
+        else if(_startNode._worldPosition.y == playerNowNode._worldPosition.y && _isFire)
         {
+            _playerController.OnHitting(_strength - 1);
+            Debug.Log("불에 맞음");
+        }
+        else if (isOtherReserved(nextNode) && nextNode._walkable && !_isFire)
+        {
+            Debug.Log("4번");
             StartCoroutine(AttackFrontBack(nextNode));
         }
-        else
+        else if(!_isFire)
         {
-            Debug.Log("공격 실패 → 이동");
             StartCoroutine(MoveToNode(nextNode));
         }
 
@@ -248,5 +351,15 @@ public class RedDragonObject : CharBase
             nextNode._BatNode == true)
             return true;
         else return false;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PWeapon"))
+        {
+            CheckAttackRange car = collision.GetComponent<CheckAttackRange>();
+            PlayerController pc = car.GetOwner<PlayerController>();
+            OnHitting(pc._str);
+        }
     }
 }

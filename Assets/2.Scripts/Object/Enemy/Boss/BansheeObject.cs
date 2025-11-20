@@ -17,10 +17,14 @@ public class BansheeObject : CharBase
     int _myBeat = 0;
     bool _isMoving = false;
 
+
     Animator _anim;
 
     bool _isAttack;
     bool _isDamaged;
+    bool _isAngry;
+
+    PlayerController _playerController;
 
     void Start()
     {
@@ -39,10 +43,16 @@ public class BansheeObject : CharBase
 
         InitBaseSet(name, str, hp, gold, beat);
 
+        _pFinder = GameObject.Find("GridManager").GetComponent<PathFinding>();
+        _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
+        _targetTF = GameObject.Find("PlayerCharacter").transform;
+
+        _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();
         _anim.speed = (115f / 60f);
         _isAttack = false;
         _isDamaged = false;
+        _isAngry = false;
     }
 
 
@@ -85,14 +95,34 @@ public class BansheeObject : CharBase
             Debug.Log("지나가지 못함");
             return;
         }
-        else if (_path != null && _path.Count > 1)   
-        {
-            StartCoroutine(MoveToNode(_path[1]));   
-        }
         else if (_isDamaged)
         {
             StopAllCoroutines();
             StartCoroutine(KnockBack());
+            SetTile(_path[1], true, false, 0);
+        }
+        else if (_path != null && _path.Count > 1)   
+        {
+            StartCoroutine(MoveToNode(_path[1]));   
+        }
+        
+    }
+
+    public void OnHitting(float dmg)
+    {
+        if ((_nowHp -= dmg) <= 0)
+        {
+            _nowHp = 0;
+            SoundManager._instance.PlaySFX(SFXName.Banshee_death);
+            _isDamaged = false;
+            _dead = true;
+        }
+        else
+        {
+            _isDamaged = true;
+            StartCoroutine(KnockBack());
+            int rnd = Random.Range((int)SFXName.Banshee_hurt_01, (int)SFXName.Banshee_hurt_03 + 1);
+            SoundManager._instance.PlaySFX((SFXName)rnd);
         }
     }
 
@@ -132,6 +162,7 @@ public class BansheeObject : CharBase
         Vector3 origin = transform.position;
         Vector3 dir = (_targetTF.position - origin).normalized;
         Vector3 targetPos = origin - dir;
+       
 
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {
@@ -144,6 +175,7 @@ public class BansheeObject : CharBase
             yield return null;
         }
         transform.position = targetPos;
+        _isDamaged = false;
     }
 
     IEnumerator Attack(Node nextNode, float delay)
@@ -161,6 +193,8 @@ public class BansheeObject : CharBase
             StartCoroutine(AttackFrontBack(nextNode));
             Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
             // TODO: 데미지 처리
+
+            _playerController.OnHitting(_strength);
         }
         else if (isOtherReserved(nextNode) && nextNode._walkable)
         {
@@ -243,5 +277,15 @@ public class BansheeObject : CharBase
             nextNode._BatNode == true)
             return true;
         else return false;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PWeapon"))
+        {
+            CheckAttackRange car = collision.GetComponent<CheckAttackRange>();
+            PlayerController pc = car.GetOwner<PlayerController>();
+            OnHitting(pc._str);
+        }
     }
 }

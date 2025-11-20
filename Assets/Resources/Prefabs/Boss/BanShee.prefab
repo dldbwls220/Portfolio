@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2328345243928020465}
   - component: {fileID: 5196076926574651983}
   - component: {fileID: 1551657325067449360}
-  - component: {fileID: 1157715461030535116}
   - component: {fileID: 2642198009194823206}
   - component: {fileID: 4360886509216341711}
   m_Layer: 0
@@ -72,24 +71,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3d5fb26ac85c2147b7a50f25f604fed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pFinder: {fileID: 1157715461030535116}
+  _pFinder: {fileID: 0}
   _tileManager: {fileID: 0}
   _targetTF: {fileID: 0}
   _moveSpeed: 7
   _characterPos: {fileID: 8215790903593760421}
---- !u!114 &1157715461030535116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009239959614061799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cc0206dbb3ca5c42a7066ec0066fd74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grid: {fileID: 0}
 --- !u!61 &2642198009194823206
 BoxCollider2D:
   m_ObjectHideFlags: 0
