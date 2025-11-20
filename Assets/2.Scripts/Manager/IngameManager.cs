@@ -31,7 +31,7 @@ public class IngameManager : MonoBehaviour
         Debug.Log(_myBeat);
         if (_myBeat == 4 && !_isPlayingBGM)
         {
-            StartCoroutine(StartMusic());
+            //StartCoroutine(DelayMusic());
             Debug.Log("노래시작");
         }
         else if (_myBeat > 4)
@@ -40,9 +40,9 @@ public class IngameManager : MonoBehaviour
         }
     }
 
-    IEnumerator StartMusic()
+    IEnumerator DelayMusic()
     {
-        yield return new WaitForSeconds(0.23f);
+        yield return new WaitForSeconds(0.08f);
         SoundManager._instance.PlayBGM(BGMName.Disco_Descent);
         _isPlayingBGM = true;
     }

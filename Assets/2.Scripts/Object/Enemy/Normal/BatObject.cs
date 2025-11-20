@@ -15,10 +15,15 @@ public class BatObject : CharBase
 
     Transform _targetTF;
     PlayerController _playerController;
+
+
+
     List<Node> _path;
     Node _startNode;
     Node _targetNode;
     Node _randomNode;
+
+
     int _myBeat;
     bool _isMoving;
     bool _isAttack;
@@ -54,6 +59,8 @@ public class BatObject : CharBase
         int beat = table.ToI(enemyIndex, "Beat");
 
         InitBaseSet(name, str, hp, gold, beat);
+
+        Debug.Log(str+"힘");
 
         _pFinder = GameObject.Find("GridManager").GetComponent<PathFinding>();
         _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
@@ -122,6 +129,40 @@ public class BatObject : CharBase
         }   
     }
 
+    public void OnHitting(float dmg)
+    {
+        if ((_nowHp -= dmg) <= 0)
+        {
+            _nowHp = 0;
+            SoundManager._instance.PlaySFX(SFXName.Bat_death);
+            _dead = true;
+        }
+        else
+        {
+            if(_name == "DireBat")
+                SoundManager._instance.PlaySFX(SFXName.Bat_minibpss_hit);
+            else
+                SoundManager._instance.PlaySFX(SFXName.Bat_hit);
+        }
+    }
+
+    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
+    {
+        _startNode._walkable = isWalkable;
+
+        nextNode._BatNode = isResrve;
+        nextNode._movementCost = reserveCost;
+    }
+
+    bool isOtherReserved(Node nextNode)
+    {
+        if (nextNode._GolemNode == true ||
+            nextNode._SlimeNode == true ||
+            nextNode._SkeletonNode == true)
+            return true;
+        else return false;
+    }
+
     IEnumerator MoveToNode(Node nextNode)
     {
         _isMoving = true;
@@ -164,7 +205,7 @@ public class BatObject : CharBase
             StartCoroutine(AttackFrontBack(nextNode));
             //Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
             // TODO: 데미지 처리
-
+            SoundManager._instance.PlaySFX(SFXName.Bat_attack);
             _playerController.OnHitting(_strength);
         }
         else if(isOtherReserved(nextNode) && nextNode._walkable)
@@ -224,20 +265,13 @@ public class BatObject : CharBase
 
     }
 
-    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
-    {       
-        _startNode._walkable = isWalkable;
-
-        nextNode._BatNode = isResrve;
-        nextNode._movementCost = reserveCost;
-    }
-
-    bool isOtherReserved(Node nextNode)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (nextNode._GolemNode == true ||
-            nextNode._SlimeNode == true ||
-            nextNode._SkeletonNode == true)
-            return true;
-        else return false;
+        if (collision.CompareTag("PWeapon"))
+        {
+            CheckAttackRange car = collision.GetComponent<CheckAttackRange>();
+            PlayerController pc = car.GetOwner<PlayerController>();
+            OnHitting(pc._str);
+        }
     }
 }

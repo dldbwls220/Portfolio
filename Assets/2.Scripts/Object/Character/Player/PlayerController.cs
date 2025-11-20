@@ -1,6 +1,5 @@
 using DefineEnum;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -16,6 +15,7 @@ public class PlayerController : CharBase
     [SerializeField] GameObject _musicNotePrefab;
     [SerializeField] GameObject _attackRangeParent;
     [SerializeField] GameObject _monsterSlashFX;
+    [SerializeField] GameObject _myAttackEffect;
 
     [SerializeField] BoxCollider2D[] _attackColliders;
 
@@ -31,7 +31,6 @@ public class PlayerController : CharBase
     CheckAttackRange[] _weaponCheck;
 
     Camera _followCamera;
-    GameObject _myAttackEffect;
     GameObject _myMusicNote;
     Animator _slashAnim;
     Animator _monsterSlashAnim;
@@ -46,6 +45,8 @@ public class PlayerController : CharBase
 
     int _combo;
     float _baseY;
+
+    public float _str { get { return _strength; } }
 
     private void Start()
     {
@@ -67,7 +68,7 @@ public class PlayerController : CharBase
         _baseY = transform.position.y;
         _followCamera = Camera.main;
         _myDir = LookDir.Left;
-        _weaponName = WeaponName.SwordB;
+        _weaponName = WeaponName.SwordO;
 
         _myAttackEffect = Instantiate(_slashAnimPrefab, transform.position, Quaternion.identity, transform);
         _slashAnim = _myAttackEffect.GetComponent<Animator>();
@@ -87,6 +88,7 @@ public class PlayerController : CharBase
             _attackColliders[i] = _attackRangeParent.transform.GetChild(i).GetComponent<BoxCollider2D>();
             _weaponCheck[i] = _attackColliders[i].GetComponent<CheckAttackRange>();
             _weaponCheck[i].InitSetRange(this);
+            _attackColliders[i].enabled = false;
         }
        
     }
@@ -142,7 +144,7 @@ public class PlayerController : CharBase
                 _characterBody.transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = true;
                 _monsterSlashFX.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
             }
-            if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
+            if (CheckMonster())
             {
                 Attack();
             }
@@ -168,7 +170,7 @@ public class PlayerController : CharBase
                 StartCoroutine(MoveCooldown());
                 _myDir = LookDir.Down;              
             }
-            if (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()))
+            if (CheckMonster())
             {
                 Attack();
             }
@@ -242,6 +244,116 @@ public class PlayerController : CharBase
         Debug.Log("공격!");
     }
 
+    public void EnableWeaponCollider(int index)
+    {
+        Debug.Log(index);
+
+        switch (index)
+        {
+            case (int)WeaponName.DaggerN:
+                if (_myDir == LookDir.Up)
+                    _attackColliders[(int)LookDir.Up].enabled = true;
+                else if (_myDir == LookDir.Down)
+                    _attackColliders[(int)LookDir.Down].enabled = true;
+                else if (_myDir == LookDir.Left)
+                    _attackColliders[(int)LookDir.Left].enabled = true;
+                else if (_myDir == LookDir.Right)
+                    _attackColliders[(int)LookDir.Right].enabled = true;
+                break;
+            case (int)WeaponName.SwordN:
+                if (_myDir == LookDir.Up)
+                {
+                    _attackColliders[(int)LookDir.Up].enabled = true;
+                    _attackColliders[(int)LookDir.UpLeft].enabled = true;
+                    _attackColliders[(int)LookDir.UpRight].enabled = true;
+                }
+                else if (_myDir == LookDir.Down)
+                {
+                    _attackColliders[(int)LookDir.Down].enabled = true;
+                    _attackColliders[(int)LookDir.DownRight].enabled = true;
+                    _attackColliders[(int)LookDir.DownLeft].enabled = true;
+                }
+                else if (_myDir == LookDir.Left)
+                {
+                    _attackColliders[(int)LookDir.Left].enabled = true;
+                    _attackColliders[(int)LookDir.UpLeft].enabled = true;
+                    _attackColliders[(int)LookDir.DownLeft].enabled = true;
+                }
+                else if (_myDir == LookDir.Right)
+                {
+                    _attackColliders[(int)LookDir.Right].enabled = true;
+                    _attackColliders[(int)LookDir.UpRight].enabled = true;
+                    _attackColliders[(int)LookDir.DownRight].enabled = true;
+                }
+                break;
+        }
+    }
+
+    public void DisableWeaponCollider()
+    {
+        _attackColliders[(int)LookDir.Up].enabled = false;
+        _attackColliders[(int)LookDir.UpRight].enabled = false;
+        _attackColliders[(int)LookDir.UpLeft].enabled = false;
+        _attackColliders[(int)LookDir.Down].enabled = false;
+        _attackColliders[(int)LookDir.DownRight].enabled = false;
+        _attackColliders[(int)LookDir.DownLeft].enabled = false;
+        _attackColliders[(int)LookDir.Left].enabled = false;
+        _attackColliders[(int)LookDir.Right].enabled = false;
+    }
+
+    bool CheckMonster()
+    {
+        bool ischeck = false;
+
+        switch (_weaponName)
+        {
+            case WeaponName.DaggerN:
+            case WeaponName.DaggerB:
+            case WeaponName.DaggerT:
+            case WeaponName.DaggerO1:
+            case WeaponName.DaggerO2:
+            case WeaponName.DaggerO3:
+                switch (_myDir)
+                {
+                    case LookDir.Up:
+                        ischeck = _monsterDetectorParent.IsMonsterInDirection(_myDir.ToString());
+                        break;
+                    case LookDir.Down:
+                        ischeck = _monsterDetectorParent.IsMonsterInDirection(_myDir.ToString());
+                        break;
+                    case LookDir.Left:
+                        ischeck = _monsterDetectorParent.IsMonsterInDirection(_myDir.ToString());
+                        break;
+                    case LookDir.Right:
+                        ischeck = _monsterDetectorParent.IsMonsterInDirection(_myDir.ToString());
+                        break;
+                }
+                break;
+            case WeaponName.SwordN:
+            case WeaponName.SwordB:
+            case WeaponName.SwordT:
+            case WeaponName.SwordO:
+                switch (_myDir)
+                {
+                    case LookDir.Up:
+                        ischeck = (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()) || _monsterDetectorParent.IsMonsterInDirection(LookDir.UpLeft.ToString()) || _monsterDetectorParent.IsMonsterInDirection(LookDir.UpRight.ToString()));
+                        break;
+                    case LookDir.Down:
+                        ischeck = (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()) || _monsterDetectorParent.IsMonsterInDirection(LookDir.DownLeft.ToString()) || _monsterDetectorParent.IsMonsterInDirection(LookDir.DownRight.ToString()));
+                        break;
+                    case LookDir.Left:
+                        ischeck = (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()) || _monsterDetectorParent.IsMonsterInDirection(LookDir.DownLeft.ToString()) || _monsterDetectorParent.IsMonsterInDirection(LookDir.UpLeft.ToString()));
+                        break;
+                    case LookDir.Right:
+                        ischeck = (_monsterDetectorParent.IsMonsterInDirection(_myDir.ToString()) || _monsterDetectorParent.IsMonsterInDirection(LookDir.DownRight.ToString()) || _monsterDetectorParent.IsMonsterInDirection(LookDir.UpRight.ToString()));
+                        break;
+                }
+                break;
+        }
+
+        return ischeck;
+    }
+
     void initCombo()
     {
         _combo = 0;
@@ -252,12 +364,23 @@ public class PlayerController : CharBase
         if ((_nowHp -= dmg) <= 0)
         {
             _nowHp = 0;
+            int rnd = Random.Range((int)SFXName.Cadence_death_01, (int)SFXName.Cadence_death_03 + 1);
+            SoundManager._instance.PlaySFX((SFXName)rnd);
+            SoundManager._instance.PlaySFX(SFXName.sfx_player_death_ST);
+            _monsterSlashAnim.SetTrigger("E_Attack");
+            _dead = true;
         }
         else
         {
             StartCoroutine(GetDamageBlink());
             StartCoroutine(CameraShaker(0.05f, 0.3f));
+
+            int rnd = Random.Range((int)SFXName.Cadence_hurt_01, (int)SFXName.Cadence_hurt_06+1);
+            SoundManager._instance.PlaySFX((SFXName)rnd);
+            SoundManager._instance.PlaySFX(SFXName.sfx_player_hit_ST);
             _monsterSlashAnim.SetTrigger("E_Attack");
+
+            Debug.Log(dmg+"데미지");
         }
 
     }

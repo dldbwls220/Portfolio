@@ -15,6 +15,10 @@ public class SlimeObject : CharBase
 
     Transform _targetTF;
     PlayerController _playerController;
+
+    BoxCollider2D _attackCollider;
+    CheckAttackRange _weaponCheck;
+
     List<Node> _path;
     Node _startNode;
     Node _targetNode;
@@ -57,6 +61,8 @@ public class SlimeObject : CharBase
         _pFinder = GameObject.Find("GridManager").GetComponent<PathFinding>();
         _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
         _playerObj = GameObject.Find("PlayerCharacter");
+        _attackCollider = GetComponent<BoxCollider2D>();
+        _weaponCheck = _attackCollider.GetComponent<CheckAttackRange>();
 
         _targetTF = _playerObj.transform;
         _playerController = _targetTF.GetComponent<PlayerController>();
@@ -123,6 +129,24 @@ public class SlimeObject : CharBase
         }       
     }
 
+    public void OnHitting(float dmg)
+    {
+        if ((_nowHp -= dmg) <= 0)
+        {
+            _nowHp = 0;
+
+            int rnd = Random.Range((int)SFXName.Slime_death_01, (int)SFXName.Slime_death_03 + 1);
+            SoundManager._instance.PlaySFX((SFXName)rnd);
+
+            _dead = true;
+        }
+        else
+        {
+            int rnd = Random.Range((int)SFXName.Slime_hurt_01, (int)SFXName.Slime_hurt_03 + 1);
+            SoundManager._instance.PlaySFX((SFXName)rnd);
+        }
+    }
+
     IEnumerator MoveToNode(Node nextNode)
     {
         _isMoving = true;
@@ -173,7 +197,7 @@ public class SlimeObject : CharBase
             }
                 Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
             // TODO: 데미지 처리
-
+            SoundManager._instance.PlaySFX(SFXName.Slime_attack);
             _playerController.OnHitting(_strength);
         }
         else if (isOtherReserved(nextNode) && nextNode._walkable)
@@ -274,5 +298,15 @@ public class SlimeObject : CharBase
             nextNode._BatNode == true)
             return true;
         else return false;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PWeapon"))
+        {
+            CheckAttackRange car = collision.GetComponent<CheckAttackRange>();
+            PlayerController pc = car.GetOwner<PlayerController>();
+            OnHitting(pc._str);
+        }
     }
 }

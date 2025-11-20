@@ -8,7 +8,7 @@ public class MonsterTable : TableBase
         Index,
         Name,
         HP,
-        Strngth,
+        Strength,
         Gold,
         Beat,
 

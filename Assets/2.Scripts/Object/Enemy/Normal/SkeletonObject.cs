@@ -12,9 +12,13 @@ public class SkeletonObject : CharBase
     [SerializeField] float _moveSpeed = 5f;
     [SerializeField] Transform _characterPos;
 
+    BoxCollider2D _attackCollider;
+    CheckAttackRange _weaponCheck;
+
     List<Node> _path;
     Node _startNode;
     Node _targetNode;
+
     int _myBeat = 0;
     bool _isMoving = false;
     PlayerController _playerController;
@@ -48,6 +52,8 @@ public class SkeletonObject : CharBase
         _pFinder = GameObject.Find("GridManager").GetComponent<PathFinding>();
         _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
         _targetTF = GameObject.Find("PlayerCharacter").transform;
+        _attackCollider = GetComponent<BoxCollider2D>();
+        _weaponCheck = _attackCollider.GetComponent<CheckAttackRange>();
 
         _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();
@@ -107,6 +113,21 @@ public class SkeletonObject : CharBase
         }   
     }
 
+    public void OnHitting(float dmg)
+    {
+        if ((_nowHp -= dmg) <= 0)
+        {
+            _nowHp = 0;
+            SoundManager._instance.PlaySFX(SFXName.Skel_death);
+            _dead = true;
+        }
+        else
+        {
+            int rnd = Random.Range((int)SFXName.Skel_hurt_01, (int)SFXName.Skel_hurt_03 + 1);
+            SoundManager._instance.PlaySFX((SFXName)rnd);
+        }
+    }
+
     IEnumerator MoveToNode(Node nextNode)
     {
         _isMoving = true;
@@ -155,7 +176,7 @@ public class SkeletonObject : CharBase
             StartCoroutine(AttackFrontBack(nextNode));
             Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
             // TODO: 데미지 처리
-
+            SoundManager._instance.PlaySFX(SFXName.Skel_attack_melee);
             _playerController.OnHitting(_strength);
         }
         else if (isOtherReserved(nextNode) && nextNode._walkable)
@@ -261,7 +282,12 @@ public class SkeletonObject : CharBase
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("PWeapon"))
+        {
+            CheckAttackRange car = collision.GetComponent<CheckAttackRange>();
+            PlayerController pc = car.GetOwner<PlayerController>();
+            OnHitting(pc._str);
+        }
     }
 
 }
