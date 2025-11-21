@@ -146,6 +146,11 @@ public class BatObject : CharBase
         }
     }
 
+    protected override void CheckPlayerinRange()
+    {
+        base.CheckPlayerinRange();
+    }
+
     void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
     {
         _startNode._walkable = isWalkable;

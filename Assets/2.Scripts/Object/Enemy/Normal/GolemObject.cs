@@ -32,6 +32,11 @@ public class GolemObject : CharBase
         InitMonster(4);
     }
 
+    private void Update()
+    {
+        CheckPlayerinRange();
+    }
+
     public void InitMonster(int enemyIndex)
     {
         TableBase table = GameTableManager._instance.Get(TableName.MonsterInfoList);
@@ -119,6 +124,11 @@ public class GolemObject : CharBase
         }
     }
 
+    protected override void CheckPlayerinRange()
+    {
+        base.CheckPlayerinRange();
+    }
+
     IEnumerator MoveToNode(Node nextNode)
     {
         _isMoving = true;
@@ -132,7 +142,9 @@ public class GolemObject : CharBase
         float diffX = nextNode._worldPosition.x - transform.position.x;
 
         int rnd = Random.Range((int)SFXName.Golemstone_move_01, (int)SFXName.Golemstone_move_03 + 1);
-        SoundManager._instance.PlaySFX((SFXName)rnd);
+
+        if (_detectPlayer)
+            SoundManager._instance.PlaySFX((SFXName)rnd);
 
         if (diffX > 0)
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;

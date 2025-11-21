@@ -175,8 +175,25 @@ public class BansheeObject : CharBase
     {
         Vector3 origin = transform.position;
         Vector3 dir = (_targetTF.position - origin).normalized;
-        Vector3 targetPos = origin - dir;
-       
+
+        Vector3 targetPos = Vector3.zero;
+
+        if (_playerController._checkDir == LookDir.Up)
+        {
+            targetPos = Vector3.up + origin;
+        }
+        else if(_playerController._checkDir == LookDir.Down)
+        {
+            targetPos = Vector3.down + origin;
+        }
+        else if (_playerController._checkDir == LookDir.Right)
+        {
+            targetPos = Vector3.right + origin;
+        }
+        else if (_playerController._checkDir == LookDir.Left)
+        {
+            targetPos = Vector3.left + origin;
+        }
 
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {

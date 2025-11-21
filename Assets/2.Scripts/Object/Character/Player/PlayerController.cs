@@ -40,8 +40,9 @@ public class PlayerController : CharBase
     bool _isMoving;
     bool _isDelayEnd;
 
-    public LookDir _myDir;
+    LookDir _myDir;
     public WeaponName _weaponName;
+    public LookDir _checkDir { get { return _myDir; } }
 
     int _combo;
     float _baseY;
@@ -382,6 +383,11 @@ public class PlayerController : CharBase
 
             Debug.Log(dmg+"µ¥¹ÌÁö");
         }
+
+    }
+
+    void AdjustSortingLayer()
+    {
 
     }
 

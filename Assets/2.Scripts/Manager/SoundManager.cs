@@ -36,7 +36,7 @@ public class SoundManager : TSingleton<SoundManager>
         _sfxPlayer = gameObject.AddComponent<AudioSource>();
 
         _introDESC = new AudioPlayerDESC(_introPlayer, 1, false, false);
-        _bgmDESC = new AudioPlayerDESC(_bgmPlayer, 1, false);
+        _bgmDESC = new AudioPlayerDESC(_bgmPlayer, 0.6f, false);
         _shopkeeperDESC = new AudioPlayerDESC(_shopkeeperPlayer, 1, false);
         _bansheeDESC = new AudioPlayerDESC(_bansheePlayer, 0, false);
         _sfxDESC = new AudioPlayerDESC(_sfxPlayer, 1, false, false);
@@ -95,8 +95,8 @@ public class SoundManager : TSingleton<SoundManager>
 
     public void PlayBanshee()
     {
-        _bgmPlayer.clip = Resources.Load<AudioClip>("Sound/" + "BGM/" + "Banshee_loop");
-        _bgmPlayer.Play();        
+        _bansheePlayer.clip = Resources.Load<AudioClip>("Sound/" + "BGM/" + "Banshee_loop");
+        _bansheePlayer.Play();        
     }
 
 }

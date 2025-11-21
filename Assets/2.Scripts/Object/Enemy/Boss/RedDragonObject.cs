@@ -42,6 +42,8 @@ public class RedDragonObject : CharBase
 
     void Update()
     {
+        CheckPlayerinRange();
+
         if (_path != null)
         {
             Vector3 dir = new Vector3(_path[1]._worldPosition.x - transform.position.x, 0, 0);
@@ -53,10 +55,8 @@ public class RedDragonObject : CharBase
             }
             else
             {
-                _fireLength = 0;
+                _fireLength = _fireSpriteObj.transform.childCount;
             }
-
-            
         }
        
     }
@@ -121,7 +121,7 @@ public class RedDragonObject : CharBase
         switch (_myBeat)
         {
             case 1:
-                if(_startNode._worldPosition.y == _targetNode._worldPosition.y && _path.Count > 1 && _path.Count < 6)
+                if(_startNode._worldPosition.y == _targetNode._worldPosition.y && _path.Count > 1 && _path.Count < 9)
                 {
                     _isFire = true;
                     _anim.SetBool("isFire", true);
@@ -211,17 +211,13 @@ public class RedDragonObject : CharBase
 
         Vector3 dir = new Vector3(_path[1]._worldPosition.x - transform.position.x, 0, 0);
 
-        if (dir == Vector3.right)
-        {
-            for (int i = 0; i < _fireLength + 1; i++)
-                _fireSprite[i].enabled = true;
-        }
-        else
-        {
-            for (int i = 0; i < _fireLength + 1; i++)
-                _fireSprite[i].enabled = true;
-        }
-        
+        for (int i = 0; i < _fireLength; i++)
+            _fireSprite[i].enabled = true;      
+    }
+
+    protected override void CheckPlayerinRange()
+    {
+        base.CheckPlayerinRange();
     }
 
     IEnumerator MoveToNode(Node nextNode)
@@ -232,11 +228,8 @@ public class RedDragonObject : CharBase
 
         SetTile(nextNode, true, false, 0);
         SetMovementCost(5, false);
-        
-
-        int rnd = Random.Range((int)SFXName.Dragon_walk_01, (int)SFXName.Dragon_walk_03 + 1);
-        SoundManager._instance.PlaySFX((SFXName)rnd);
-
+               
+       
         float diffX = nextNode._worldPosition.x - transform.position.x;
 
         if (diffX > 0)
@@ -246,7 +239,7 @@ public class RedDragonObject : CharBase
                 _fireSprite[i].flipX = true;
             }
             _fireSpriteObj.transform.rotation = Quaternion.Euler(0, 0, 180);
-            _fireSpriteObj.transform.localPosition = new Vector3(0.5f, 0, 0); 
+            _fireSpriteObj.transform.localPosition = new Vector3(1, 0, 0);
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
         }
         else if (diffX < 0)
@@ -256,7 +249,7 @@ public class RedDragonObject : CharBase
                 _fireSprite[i].flipX = false;
             }
             _fireSpriteObj.transform.rotation = Quaternion.Euler(0, 0, 0);
-            _fireSpriteObj.transform.localPosition = new Vector3(-0.5f, 0, 0);
+            _fireSpriteObj.transform.localPosition = new Vector3(-1, 0, 0);
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
         }
 
@@ -273,7 +266,13 @@ public class RedDragonObject : CharBase
             yield return null;
         }
         transform.position = targetPos;
-        
+
+        if (_detectPlayer)
+        {
+            int rnd = Random.Range((int)SFXName.Dragon_walk_01, (int)SFXName.Dragon_walk_03 + 1);
+            SoundManager._instance.PlaySFX((SFXName)rnd);
+        }
+
         _isMoving = false;
     }
 

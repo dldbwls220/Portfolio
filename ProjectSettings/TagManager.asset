@@ -18,7 +18,7 @@ TagManager:
   - UI
   - StopMovement
   - Ground
-  - 
+  - Player
   - 
   - 
   - 
@@ -45,6 +45,30 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 2280433941
+    locked: 0
+  - name: Wall
+    uniqueID: 3373824741
+    locked: 0
+  - name: PlayerBody
+    uniqueID: 1498270209
+    locked: 0
+  - name: PlayerHead
+    uniqueID: 1421044387
+    locked: 0
+  - name: Monster
+    uniqueID: 151321031
+    locked: 0
+  - name: Effect
+    uniqueID: 21228939
+    locked: 0
+  - name: Fire
+    uniqueID: 3718191905
+    locked: 0
+  - name: Item
+    uniqueID: 1926964135
     locked: 0
   m_RenderingLayers:
   - Default

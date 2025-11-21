@@ -9,6 +9,7 @@ public class CharBase : MonoBehaviour
     protected int _beat;
 
     protected bool _dead;
+    protected bool _detectPlayer;
     protected float _nowHp;
 
     public bool _isDead { get {  return _dead; } }
@@ -23,6 +24,15 @@ public class CharBase : MonoBehaviour
         _strength = strength;
         _gold = gold;
         _beat = beat;
+        _detectPlayer = false;
+    }
 
+    protected virtual void CheckPlayerinRange()
+    {
+        Collider2D collide = Physics2D.OverlapCircle(transform.position, 5, LayerMask.GetMask("Player"));
+        if(collide != null)
+            _detectPlayer=true;
+        else
+            _detectPlayer=false;
     }
 }

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8016732195154561633}
   - component: {fileID: 4029888215345606553}
   - component: {fileID: 6273356620172024025}
-  - component: {fileID: 1009989658774350892}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Monster
@@ -144,24 +143,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e70e3682fb235dd4db501743959d6ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pFinder: {fileID: 1009989658774350892}
+  _pFinder: {fileID: 0}
   _tileManager: {fileID: 0}
   _playerObj: {fileID: 0}
   _spriteObj: {fileID: 7974137076342144986}
   _moveSpeed: 5
---- !u!114 &1009989658774350892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3937228665968558841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cc0206dbb3ca5c42a7066ec0066fd74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grid: {fileID: 0}
 --- !u!1 &7974137076342144986
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5681377535513917793}
   - component: {fileID: 5738277900197681305}
+  - component: {fileID: 2899690323086371556}
   m_Layer: 0
   m_Name: SlimeSprite
   m_TagString: Untagged
@@ -235,9 +222,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingLayerID: 151321031
+  m_SortingLayer: 4
+  m_SortingOrder: 0
   m_Sprite: {fileID: 7526866347251117655, guid: 3dc1825588691b6429f0abbae50cd698, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -249,3 +236,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2899690323086371556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7974137076342144986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f369787979200d4eac830c7baa75140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pixel: 26

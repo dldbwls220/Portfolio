@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2465983931136394476}
   - component: {fileID: 8918401433805092424}
+  - component: {fileID: 7035409001960250231}
   m_Layer: 0
   m_Name: BatSprite
   m_TagString: Untagged
@@ -73,9 +74,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingLayerID: 151321031
+  m_SortingLayer: 4
+  m_SortingOrder: 0
   m_Sprite: {fileID: 8647823593821616703, guid: fa5dbeb72ba25834d885d0e7f5c71276, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -87,6 +88,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7035409001960250231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5614706333734056913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f369787979200d4eac830c7baa75140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pixel: 26
 --- !u!1 &7152074447272707043
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,7 +114,6 @@ GameObject:
   - component: {fileID: 6984810328936664062}
   - component: {fileID: 6734943768340107235}
   - component: {fileID: 4341561956661156886}
-  - component: {fileID: 2826814581174231622}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Monster
@@ -231,21 +244,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3ba4e541219d624aadd7ce933d41823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pFinder: {fileID: 2826814581174231622}
+  _pFinder: {fileID: 0}
   _tileManager: {fileID: 0}
   _playerObj: {fileID: 0}
   _spriteObj: {fileID: 5614706333734056913}
   _moveSpeed: 5
---- !u!114 &2826814581174231622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7152074447272707043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cc0206dbb3ca5c42a7066ec0066fd74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grid: {fileID: 0}
