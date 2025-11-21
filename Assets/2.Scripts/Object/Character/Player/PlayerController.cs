@@ -172,7 +172,7 @@ public class PlayerController : CharBase
             }
             if (CheckMonster())
             {
-                Attack();
+                Attack();              
             }
             else if (!Physics2D.OverlapCircle(_movePoint.position + new Vector3(0f, vertical, 0f), 0.1f, _stopMovement))
             {

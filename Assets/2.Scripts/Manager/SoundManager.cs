@@ -1,7 +1,8 @@
 using DefineEnum;
-using System.Collections.Generic;
-using UnityEngine;
 using DefineStructure;
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
 
 public class SoundManager : TSingleton<SoundManager>
 {
@@ -12,10 +13,12 @@ public class SoundManager : TSingleton<SoundManager>
 
     AudioPlayerDESC _introDESC;
     AudioSource _introPlayer;
-    AudioPlayerDESC _bgmDESC;
+    public AudioPlayerDESC _bgmDESC;
     AudioSource _bgmPlayer;
-    AudioPlayerDESC _shopkeeperDESC;
+    public AudioPlayerDESC _shopkeeperDESC;
     AudioSource _shopkeeperPlayer;
+    public AudioPlayerDESC _bansheeDESC;
+    AudioSource _bansheePlayer;
     AudioPlayerDESC _sfxDESC;
     AudioSource _sfxPlayer;
 
@@ -29,11 +32,13 @@ public class SoundManager : TSingleton<SoundManager>
         _introPlayer = gameObject.AddComponent<AudioSource>();
         _bgmPlayer = gameObject.AddComponent<AudioSource>();
         _shopkeeperPlayer = gameObject.AddComponent<AudioSource>();
+        _bansheePlayer = gameObject.AddComponent<AudioSource>();
         _sfxPlayer = gameObject.AddComponent<AudioSource>();
 
         _introDESC = new AudioPlayerDESC(_introPlayer, 1, false, false);
         _bgmDESC = new AudioPlayerDESC(_bgmPlayer, 1, false);
         _shopkeeperDESC = new AudioPlayerDESC(_shopkeeperPlayer, 1, false);
+        _bansheeDESC = new AudioPlayerDESC(_bansheePlayer, 0, false);
         _sfxDESC = new AudioPlayerDESC(_sfxPlayer, 1, false, false);
 
         string path = "Sound/";
@@ -86,6 +91,12 @@ public class SoundManager : TSingleton<SoundManager>
             return;
         }
         _sfxPlayer.PlayOneShot(_sfxClipDoc[name]);
+    }
+
+    public void PlayBanshee()
+    {
+        _bgmPlayer.clip = Resources.Load<AudioClip>("Sound/" + "BGM/" + "Banshee_loop");
+        _bgmPlayer.Play();        
     }
 
 }

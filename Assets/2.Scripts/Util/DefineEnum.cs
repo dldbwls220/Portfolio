@@ -63,7 +63,7 @@ namespace DefineEnum
     public enum BGMName
     {
         Disco_Descent,
-       
+        
         Banshee_loop,
 
         Count

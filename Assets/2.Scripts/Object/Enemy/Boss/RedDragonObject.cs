@@ -1,7 +1,10 @@
 using DefineEnum;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
+using static UnityEngine.UI.Image;
 
 public class RedDragonObject : CharBase
 {
@@ -13,11 +16,14 @@ public class RedDragonObject : CharBase
     [SerializeField] GameObject _breathObj;
     [SerializeField] GameObject _fireSpriteObj;
 
+    [SerializeField] LayerMask _wallDetect;
+
     List<Node> _path;
     Node _startNode;
     Node _targetNode;
     int _myBeat = 0;
     bool _isMoving = false;
+    int _fireLength;
 
     Animator _anim;
     Animator _fireAnim;
@@ -26,7 +32,7 @@ public class RedDragonObject : CharBase
 
 
     bool _isFire;
-    bool _isAttack;
+    bool _isAttack;    
 
     void Start()
     {
@@ -36,7 +42,23 @@ public class RedDragonObject : CharBase
 
     void Update()
     {
+        if (_path != null)
+        {
+            Vector3 dir = new Vector3(_path[1]._worldPosition.x - transform.position.x, 0, 0);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, _fireSpriteObj.transform.childCount, _wallDetect);
+            Debug.DrawRay(transform.position, dir * hit.distance, Color.yellow);
+            if (hit.collider != null)
+            {
+                _fireLength = (int)hit.distance;
+            }
+            else
+            {
+                _fireLength = 0;
+            }
 
+            
+        }
+       
     }
 
     public void InitMonster(int enemyIndex)
@@ -78,12 +100,15 @@ public class RedDragonObject : CharBase
             _myBeat = 1;
 
         if (_path != null)
+        {
+            InitFireLength();
             SetTile(_path[1], true, false, 0);
+        }
 
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
 
         SetMovementCost(5, true);
-
+        
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
         _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
 
@@ -96,10 +121,11 @@ public class RedDragonObject : CharBase
         switch (_myBeat)
         {
             case 1:
-                if(_startNode._worldPosition.y == _targetNode._worldPosition.y && _path.Count > 1)
+                if(_startNode._worldPosition.y == _targetNode._worldPosition.y && _path.Count > 1 && _path.Count < 6)
                 {
                     _isFire = true;
                     _anim.SetBool("isFire", true);
+                    //InitFireLength();
                     SoundManager._instance.PlaySFX(SFXName.Dragon_attack_prefire);
                 }
                 break;
@@ -178,6 +204,26 @@ public class RedDragonObject : CharBase
         }
     }
 
+    void InitFireLength()
+    {
+        for (int i = 0; i < _fireSprite.Length; i++)
+            _fireSprite[i].enabled = false;
+
+        Vector3 dir = new Vector3(_path[1]._worldPosition.x - transform.position.x, 0, 0);
+
+        if (dir == Vector3.right)
+        {
+            for (int i = 0; i < _fireLength + 1; i++)
+                _fireSprite[i].enabled = true;
+        }
+        else
+        {
+            for (int i = 0; i < _fireLength + 1; i++)
+                _fireSprite[i].enabled = true;
+        }
+        
+    }
+
     IEnumerator MoveToNode(Node nextNode)
     {
         _isMoving = true;
@@ -186,6 +232,7 @@ public class RedDragonObject : CharBase
 
         SetTile(nextNode, true, false, 0);
         SetMovementCost(5, false);
+        
 
         int rnd = Random.Range((int)SFXName.Dragon_walk_01, (int)SFXName.Dragon_walk_03 + 1);
         SoundManager._instance.PlaySFX((SFXName)rnd);
@@ -226,7 +273,7 @@ public class RedDragonObject : CharBase
             yield return null;
         }
         transform.position = targetPos;
-
+        
         _isMoving = false;
     }
 

@@ -80,7 +80,12 @@ public class BansheeObject : CharBase
 
         _anim.SetTrigger(_myBeat + "Beat");
 
-        if (_path != null && _path.Count == 3)
+        if(_isDamaged)
+        {
+            _isDamaged = false;
+            return;
+        }
+        else if (_path != null && _path.Count == 3)
         {
             if (!_isAttack)
                 StartCoroutine(Attack(_path[1], 0.11f));
@@ -114,15 +119,24 @@ public class BansheeObject : CharBase
         {
             _nowHp = 0;
             SoundManager._instance.PlaySFX(SFXName.Banshee_death);
+
+            SoundManager._instance._bgmDESC._volum = 1;
+            SoundManager._instance._bansheeDESC._volum = 0;
+
             _isDamaged = false;
             _dead = true;
         }
         else
         {
             _isDamaged = true;
+
             StartCoroutine(KnockBack());
+
             int rnd = Random.Range((int)SFXName.Banshee_hurt_01, (int)SFXName.Banshee_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
+
+            SoundManager._instance._bgmDESC._volum = 0;
+            SoundManager._instance._bansheeDESC._volum = 1;
         }
     }
 
@@ -175,7 +189,7 @@ public class BansheeObject : CharBase
             yield return null;
         }
         transform.position = targetPos;
-        _isDamaged = false;
+        
     }
 
     IEnumerator Attack(Node nextNode, float delay)
