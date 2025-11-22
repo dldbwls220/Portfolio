@@ -66,7 +66,7 @@ public class PlayerController : CharBase
         _isDelayEnd = false;
 
         _movePoint.parent = null;
-        _baseY = transform.position.y;
+        _baseY = _characterBody.transform.localPosition.y;
         _followCamera = Camera.main;
         _myDir = LookDir.Left;
         _weaponName = WeaponName.SwordO;
