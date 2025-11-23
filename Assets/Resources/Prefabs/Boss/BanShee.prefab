@@ -76,6 +76,8 @@ MonoBehaviour:
   _targetTF: {fileID: 0}
   _moveSpeed: 7
   _characterPos: {fileID: 8215790903593760421}
+  _defaultSpriteObj: {fileID: 2608471960056926659}
+  _angrySpriteObj: {fileID: 2672061400112261622}
 --- !u!61 &2642198009194823206
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -224,7 +226,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 151321031
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 145006694055187837, guid: fc32781d495fbb24d868f908f6509ec6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -325,7 +327,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 151321031
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

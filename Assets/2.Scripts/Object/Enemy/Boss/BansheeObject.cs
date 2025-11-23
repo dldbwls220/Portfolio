@@ -3,13 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BansheeObject : CharBase
+public class BansheeObject : MonsterBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
     [SerializeField] Transform _targetTF;
     [SerializeField] float _moveSpeed = 5f;
     [SerializeField] Transform _characterPos;
+    [SerializeField] GameObject _defaultSpriteObj;
+    [SerializeField] GameObject _angrySpriteObj;
 
     List<Node> _path;
     Node _startNode;
@@ -65,7 +67,7 @@ public class BansheeObject : CharBase
             _myBeat = 1;
 
         if (_path != null)
-            SetTile(_path[1], true, false, 0);
+            SetTile(_path[1], true);
 
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
 
@@ -74,7 +76,8 @@ public class BansheeObject : CharBase
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
         _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
 
-        SetTile(_path[1], false, true, 5);
+        SetTile(_path[1], false);
+        ReserveNextTile();
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
@@ -88,23 +91,23 @@ public class BansheeObject : CharBase
         else if (_path != null && _path.Count == 3)
         {
             if (!_isAttack)
-                StartCoroutine(Attack(_path[1], 0.11f));
+                StartCoroutine(Attack(_path[1], 0.1f));
         }
         else if (_path != null && _path.Count == 2)       
         {
             if (!_isAttack)
-                StartCoroutine(Attack(_path[1], 0.11f));
+                StartCoroutine(Attack(_path[1], 0.1f));
         }
-        else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-        {
-            Debug.Log("지나가지 못함");
-            return;
-        }
+        //else if (isOtherReserved(_path[1]) && _path[1]._walkable)
+        //{
+        //    Debug.Log("지나가지 못함");
+        //    return;
+        //}
         else if (_isDamaged)
         {
             StopAllCoroutines();
             StartCoroutine(KnockBack());
-            SetTile(_path[1], true, false, 0);
+            SetTile(_path[1], true);
         }
         else if (_path != null && _path.Count > 1)   
         {
@@ -137,6 +140,9 @@ public class BansheeObject : CharBase
 
             SoundManager._instance._bgmDESC._volum = 0;
             SoundManager._instance._bansheeDESC._volum = 1;
+
+            _angrySpriteObj.SetActive(true);
+            _defaultSpriteObj.SetActive(false);
         }
     }
 
@@ -146,7 +152,7 @@ public class BansheeObject : CharBase
 
         Vector3 targetPos = nextNode._worldPosition;
 
-        SetTile(nextNode, true, false, 0);
+        SetTile(nextNode, true);
         SetMovementCost(5, false);
 
         float diffX = nextNode._worldPosition.x - transform.position.x;
@@ -167,7 +173,7 @@ public class BansheeObject : CharBase
             yield return null;
         }
         transform.position = targetPos;
-
+        ReleaseOldTile(nextNode);
         _isMoving = false;
     }
 
@@ -227,10 +233,10 @@ public class BansheeObject : CharBase
 
             _playerController.OnHitting(_strength);
         }
-        else if (isOtherReserved(nextNode) && nextNode._walkable)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-        }
+        //else if (isOtherReserved(nextNode) && nextNode._walkable)
+        //{
+        //    StartCoroutine(AttackFrontBack(nextNode));
+        //}
         else
         {
             Debug.Log("공격 실패 → 이동");
@@ -293,21 +299,31 @@ public class BansheeObject : CharBase
 
     }
 
-    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
+    void SetTile(Node nextNode, bool isWalkable)
     {
         _startNode._walkable = isWalkable;
+    }
+    void ReserveNextTile()
+    {
+        if (_path == null || _path.Count < 2)
+            return;
 
-        nextNode._SkeletonNode = isResrve;
-        nextNode._movementCost = reserveCost;
+        Node nextNode = _path[1];
+
+        if (nextNode._isReserved && nextNode._reserveBy != this)
+            return;
+
+        nextNode._isReserved = true;
+        nextNode._reserveBy = this;
     }
 
-    bool isOtherReserved(Node nextNode)
+    void ReleaseOldTile(Node oldNode)
     {
-        if (nextNode._GolemNode == true ||
-            nextNode._SlimeNode == true ||
-            nextNode._BatNode == true)
-            return true;
-        else return false;
+        if (oldNode._reserveBy == this)
+        {
+            oldNode._isReserved = false;
+            oldNode._reserveBy = null;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)

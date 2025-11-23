@@ -4,12 +4,9 @@ using UnityEngine;
 public class Node : IHeapItem<Node>
 //¼öÁ¤(end)
 {
-    #region[MonsterReserves]
-    public bool _BatNode { get; set; } = false;
-    public bool _SkeletonNode { get; set; } = false;
-    public bool _SlimeNode { get; set; } = false;
-    public bool _GolemNode { get; set; } = false;
-    #endregion[MonsterReserves]
+    public bool _isReserved { get; set; }
+    public object _reserveBy { get; set; }
+
     public bool _walkable { get; set; }
     public Vector3 _worldPosition { get; set; }
 

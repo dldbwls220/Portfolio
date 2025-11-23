@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class SlimeObject : CharBase
+public class SlimeObject : MonsterBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
@@ -83,7 +83,7 @@ public class SlimeObject : CharBase
         if (_myBeat > 4) _myBeat = 1;
 
         if (_path != null)
-            SetTile(_path[1], true, false, 0);
+            SetTile(_path[1], true);
 
         _startNode = _tileManager.NodeFromWorldPos(transform.position);     
 
@@ -92,7 +92,8 @@ public class SlimeObject : CharBase
 
         _path = _pFinder.FindPath(_startNode._worldPosition, _upDownNode._worldPosition);
 
-        SetTile(_path[1], false, true, 5);
+        SetTile(_path[1], false);
+        ReserveNextTile();
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
@@ -117,11 +118,11 @@ public class SlimeObject : CharBase
                     StartCoroutine(Attack(_path[1], 0.15f));
 
             }
-            else if(isOtherReserved(_path[1]) && _path[1]._walkable)
-            {
-                StartCoroutine(MoveJump());
-                return;
-            }
+            //else if(isOtherReserved(_path[1]) && _path[1]._walkable)
+            //{
+            //    StartCoroutine(MoveJump());
+            //    return;
+            //}
             else
             {
                 StartCoroutine(MoveToNode(_path[1]));
@@ -153,7 +154,7 @@ public class SlimeObject : CharBase
 
         Vector3 targetPos = nextNode._worldPosition;
 
-        SetTile(nextNode, true, false, 0);
+        SetTile(nextNode, true);
 
         StartCoroutine(MoveJump());
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
@@ -168,7 +169,7 @@ public class SlimeObject : CharBase
         }
 
         transform.position = targetPos;
-
+        ReleaseOldTile(nextNode);
         _isMoving = false;
     }
 
@@ -200,10 +201,10 @@ public class SlimeObject : CharBase
             SoundManager._instance.PlaySFX(SFXName.Slime_attack);
             _playerController.OnHitting(_strength);
         }
-        else if (isOtherReserved(nextNode) && nextNode._walkable)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-        }
+        //else if (isOtherReserved(nextNode) && nextNode._walkable)
+        //{
+        //    StartCoroutine(AttackFrontBack(nextNode));
+        //}
         else
         {
             Debug.Log("공격 실패 → 이동");
@@ -283,21 +284,32 @@ public class SlimeObject : CharBase
 
     }
 
-    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
+    void SetTile(Node nextNode, bool isWalkable)
     {
         _startNode._walkable = isWalkable;
-
-        nextNode._SlimeNode = isResrve;
-        nextNode._movementCost = reserveCost;
     }
 
-    bool isOtherReserved(Node nextNode)
+    void ReserveNextTile()
     {
-        if (nextNode._GolemNode == true ||
-            nextNode._SkeletonNode == true ||
-            nextNode._BatNode == true)
-            return true;
-        else return false;
+        if(_path == null || _path.Count < 2)
+            return;
+
+        Node nextNode = _path[1];
+
+        if (nextNode._isReserved && nextNode._reserveBy != this)
+            return;
+
+        nextNode._isReserved = true;
+        nextNode._reserveBy = this;
+    }
+
+    void ReleaseOldTile(Node oldNode)
+    {
+        if (oldNode._reserveBy == this)
+        {
+            oldNode._isReserved = false;
+            oldNode._reserveBy = null;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)

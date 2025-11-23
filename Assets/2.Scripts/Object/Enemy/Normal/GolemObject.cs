@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GolemObject : CharBase
+public class GolemObject : MonsterBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
@@ -70,7 +70,7 @@ public class GolemObject : CharBase
             _myBeat = 1;
 
         if (_path != null)
-            SetTile(_path[1], true, false, 0);
+            //SetTile(_path[1], true, false, 0);
 
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
         
@@ -79,7 +79,7 @@ public class GolemObject : CharBase
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
         _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
         
-        SetTile(_path[1], false, true, 5);
+        //SetTile(_path[1], false, true, 5);
         
         _tileManager.SetDebugPath(gameObject.name, _path);
 
@@ -97,11 +97,11 @@ public class GolemObject : CharBase
                 if (!_isAttack)
                     StartCoroutine(Attack(_path[1], 0.15f));
             }
-            else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-            {
-                StartCoroutine(MoveJump());
-                return;
-            }
+            //else if (isOtherReserved(_path[1]) && _path[1]._walkable)
+            //{
+            //    StartCoroutine(MoveJump());
+            //    return;
+            //}
             else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
             {
                 StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
@@ -136,7 +136,7 @@ public class GolemObject : CharBase
         Vector3 targetPos = nextNode._worldPosition;
         targetPos.z = transform.position.z;
 
-        SetTile(nextNode, true, false, 0);
+        //SetTile(nextNode, true, false, 0);
         SetMovementCost(5, false);
 
         float diffX = nextNode._worldPosition.x - transform.position.x;
@@ -185,10 +185,10 @@ public class GolemObject : CharBase
             SoundManager._instance.PlaySFX(SFXName.Golemstone_attack);
             _playerController.OnHitting(_strength);
         }
-        else if (isOtherReserved(nextNode) && nextNode._walkable)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-        }
+        //else if (isOtherReserved(nextNode) && nextNode._walkable)
+        //{
+        //    StartCoroutine(AttackFrontBack(nextNode));
+        //}
         else
         {
             Debug.Log("공격 실패 → 이동");
@@ -280,22 +280,22 @@ public class GolemObject : CharBase
 
     }
 
-    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
-    {
-        _startNode._walkable = isWalkable;
+    //void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
+    //{
+    //    _startNode._walkable = isWalkable;
 
-        nextNode._GolemNode = isResrve;
-        nextNode._movementCost = reserveCost;
-    }
+    //    nextNode._GolemNode = isResrve;
+    //    nextNode._movementCost = reserveCost;
+    //}
 
-    bool isOtherReserved(Node nextNode)
-    {
-        if (nextNode._SkeletonNode == true ||
-            nextNode._SlimeNode == true ||
-            nextNode._BatNode == true)
-            return true;
-        else return false;
-    }
+    //bool isOtherReserved(Node nextNode)
+    //{
+    //    if (nextNode._SkeletonNode == true ||
+    //        nextNode._SlimeNode == true ||
+    //        nextNode._BatNode == true)
+    //        return true;
+    //    else return false;
+    //}
 
     void OnTriggerEnter2D(Collider2D collision)
     {

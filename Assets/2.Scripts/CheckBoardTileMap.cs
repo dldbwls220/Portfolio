@@ -35,8 +35,6 @@ public class CheckBoardTileMap : MonoBehaviour
             {
                 Vector3Int position = new Vector3Int(x, y, 0);
 
-                // Determine which tile to place based on the sum of coordinates
-                // (x + y) % 2 will alternate between 0 and 1
                 if ((x + y) % 2 == 0)
                 {
                     targetTilemap.SetTile(position, tileA);
@@ -87,9 +85,6 @@ public class CheckBoardTileMap : MonoBehaviour
             for (int y = 0; y < gridSize.y; y++)
             {
                 Vector3Int position = new Vector3Int(x, y, 0);
-
-                // Determine which tile to place based on the sum of coordinates
-                // (x + y) % 2 will alternate between 0 and 1
 
                 if ((x + y) % 2 == 0)
                 {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class BatObject : CharBase
+public class BatObject : MonsterBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
@@ -85,13 +85,14 @@ public class BatObject : CharBase
         if(_myBeat > 4) _myBeat = 1;
 
         if (_path != null)
-            SetTile(_path[1], true, false, 0);
+            SetTile(_path[1], true);
 
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
         _randomNode = GetRandomNode();
         _path = _pFinder.FindPath(_startNode._worldPosition, _randomNode._worldPosition);
         
-        SetTile(_path[1], false, true, 5);
+        SetTile(_path[1], false);
+        ReserveNextTile();
         
         _tileManager.SetDebugPath(gameObject.name, _path);
 
@@ -117,11 +118,11 @@ public class BatObject : CharBase
                     StartCoroutine(Attack(_path[1], 0.15f));
 
             }
-            else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-            {
+            //else if (isOtherReserved(_path[1]) && _path[1]._walkable)
+            //{
                 
-                return;
-            }
+            //    return;
+            //}
             else
             {
                 StartCoroutine(MoveToNode(_path[1]));
@@ -151,22 +152,6 @@ public class BatObject : CharBase
         base.CheckPlayerinRange();
     }
 
-    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
-    {
-        _startNode._walkable = isWalkable;
-
-        nextNode._BatNode = isResrve;
-        nextNode._movementCost = reserveCost;
-    }
-
-    bool isOtherReserved(Node nextNode)
-    {
-        if (nextNode._GolemNode == true ||
-            nextNode._SlimeNode == true ||
-            nextNode._SkeletonNode == true)
-            return true;
-        else return false;
-    }
 
     IEnumerator MoveToNode(Node nextNode)
     {
@@ -176,7 +161,7 @@ public class BatObject : CharBase
         
         Vector3 dir = (nextNode._worldPosition - origin).normalized;
 
-        SetTile(nextNode, true, false, 0);
+        SetTile(nextNode, true);
 
 
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
@@ -191,7 +176,7 @@ public class BatObject : CharBase
         }
         transform.position = targetPos;
         
-        
+        ReleaseOldTile(nextNode);
         _isMoving = false;
     }
 
@@ -213,10 +198,10 @@ public class BatObject : CharBase
             SoundManager._instance.PlaySFX(SFXName.Bat_attack);
             _playerController.OnHitting(_strength);
         }
-        else if(isOtherReserved(nextNode) && nextNode._walkable)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-        }
+        //else if(isOtherReserved(nextNode) && nextNode._walkable)
+        //{
+        //    StartCoroutine(AttackFrontBack(nextNode));
+        //}
         else
         {
             //Debug.Log("공격 실패 → 이동");
@@ -270,6 +255,33 @@ public class BatObject : CharBase
 
     }
 
+    void SetTile(Node nextNode, bool isWalkable)
+    {
+        _startNode._walkable = isWalkable;
+    }
+
+    void ReserveNextTile()
+    {
+        if (_path == null || _path.Count < 2)
+            return;
+
+        Node nextNode = _path[1];
+
+        if (nextNode._isReserved && nextNode._reserveBy != this)
+            return;
+
+        nextNode._isReserved = true;
+        nextNode._reserveBy = this;
+    }
+
+    void ReleaseOldTile(Node oldNode)
+    {
+        if (oldNode._reserveBy == this)
+        {
+            oldNode._isReserved = false;
+            oldNode._reserveBy = null;
+        }
+    }
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("PWeapon"))

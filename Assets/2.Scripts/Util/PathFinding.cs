@@ -41,6 +41,9 @@ public class PathFinding : MonoBehaviour
                 {
                     continue;
                 }
+                //11월 23일 추가
+                if (neighbor._isReserved && neighbor != targetNode)
+                    continue;
 
                 int newCost = current._gCost + GetDistance(current, neighbor) + neighbor._movementCost;
 

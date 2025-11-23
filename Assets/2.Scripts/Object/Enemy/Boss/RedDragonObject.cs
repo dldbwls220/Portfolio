@@ -6,7 +6,7 @@ using UnityEngine;
 using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 using static UnityEngine.UI.Image;
 
-public class RedDragonObject : CharBase
+public class RedDragonObject : MonsterBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
@@ -102,17 +102,19 @@ public class RedDragonObject : CharBase
         if (_path != null)
         {
             InitFireLength();
-            SetTile(_path[1], true, false, 0);
+            SetTile(_path[1], true);
         }
 
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
 
         SetMovementCost(5, true);
         
+
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
         _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
 
-        SetTile(_path[1], false, true, 5);
+        ReserveNextTile();
+        SetTile(_path[1], false);
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
@@ -121,7 +123,7 @@ public class RedDragonObject : CharBase
         switch (_myBeat)
         {
             case 1:
-                if(_startNode._worldPosition.y == _targetNode._worldPosition.y && _path.Count > 1 && _path.Count < 9)
+                if(_startNode._worldPosition.y == _targetNode._worldPosition.y && _path.Count > 2 && _path.Count < 9)
                 {
                     _isFire = true;
                     _anim.SetBool("isFire", true);
@@ -147,12 +149,12 @@ public class RedDragonObject : CharBase
                     if (!_isAttack)
                         StartCoroutine(Attack(_path[1], 0.1f));
                 }
-                else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-                {
-                    _myBeat -= 2;
-                    StartCoroutine(MoveJump());
-                    return;
-                }
+                //else if (isOtherReserved(_path[1]) && _path[1]._walkable)
+                //{
+                //    _myBeat -= 2;
+                //    StartCoroutine(MoveJump());
+                //    return;
+                //}
                 else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
                 {
                     StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
@@ -174,12 +176,12 @@ public class RedDragonObject : CharBase
                     if (!_isAttack)
                         StartCoroutine(Attack(_path[1], 0.1f));
                 }
-                else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-                {
-                    _myBeat -= 2;
-                    StartCoroutine(MoveJump());
-                    return;
-                }
+                //else if (isOtherReserved(_path[1]) && _path[1]._walkable)
+                //{
+                //    _myBeat -= 2;
+                //    StartCoroutine(MoveJump());
+                //    return;
+                //}
                 else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
                 {
                     StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
@@ -226,7 +228,7 @@ public class RedDragonObject : CharBase
 
         Vector3 targetPos = nextNode._worldPosition;
 
-        SetTile(nextNode, true, false, 0);
+        SetTile(nextNode, true);
         SetMovementCost(5, false);
                
        
@@ -272,7 +274,7 @@ public class RedDragonObject : CharBase
             int rnd = Random.Range((int)SFXName.Dragon_walk_01, (int)SFXName.Dragon_walk_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
         }
-
+        ReleaseOldTile(nextNode);
         _isMoving = false;
     }
 
@@ -298,11 +300,11 @@ public class RedDragonObject : CharBase
             _playerController.OnHitting(_strength - 1);
             Debug.Log("불에 맞음");
         }
-        else if (isOtherReserved(nextNode) && nextNode._walkable && !_isFire)
-        {
-            Debug.Log("4번");
-            StartCoroutine(AttackFrontBack(nextNode));
-        }
+        //else if (isOtherReserved(nextNode) && nextNode._walkable && !_isFire)
+        //{
+        //    Debug.Log("4번");
+        //    StartCoroutine(AttackFrontBack(nextNode));
+        //}
         else if(!_isFire)
         {
             StartCoroutine(MoveToNode(nextNode));
@@ -382,21 +384,31 @@ public class RedDragonObject : CharBase
 
     }
 
-    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
+    void SetTile(Node nextNode, bool isWalkable)
     {
         _startNode._walkable = isWalkable;
+    }
+    void ReserveNextTile()
+    {
+        if (_path == null || _path.Count < 2)
+            return;
 
-        nextNode._SkeletonNode = isResrve;
-        nextNode._movementCost = reserveCost;
+        Node nextNode = _path[1];
+
+        if (nextNode._isReserved && nextNode._reserveBy != this)
+            return;
+
+        nextNode._isReserved = true;
+        nextNode._reserveBy = this;
     }
 
-    bool isOtherReserved(Node nextNode)
+    void ReleaseOldTile(Node oldNode)
     {
-        if (nextNode._GolemNode == true ||
-            nextNode._SlimeNode == true ||
-            nextNode._BatNode == true)
-            return true;
-        else return false;
+        if (oldNode._reserveBy == this)
+        {
+            oldNode._isReserved = false;
+            oldNode._reserveBy = null;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)

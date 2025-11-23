@@ -1,10 +1,11 @@
 using DefineEnum;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class SkeletonObject : CharBase
+public class SkeletonObject : MonsterBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
@@ -69,16 +70,17 @@ public class SkeletonObject : CharBase
             _myBeat = 1;
 
         if(_path != null)
-            SetTile(_path[1], true, false, 0);
+            SetTile(_path[1], true);
 
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
         
-        SetMovementCost(5, true);
+        SetMovementCost(5, true);     
 
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
         _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
         
-        SetTile(_path[1], false, true, 5);
+        ReserveNextTile();
+        //SetTile(_path[1], false);
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
@@ -96,14 +98,14 @@ public class SkeletonObject : CharBase
                 if (!_isAttack)
                     StartCoroutine(Attack(_path[1], 0.1f));
             }
-            else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-            {
+            //else if (isOtherReserved(_path[1]) && _path[1]._walkable)
+            //{
 
-                _myBeat -= 2;
-                StartCoroutine(MoveJump());
-                Debug.Log("지나가지 못함");
-                return;
-            }
+            //    _myBeat -= 2;
+            //    StartCoroutine(MoveJump());
+            //    Debug.Log("지나가지 못함");
+            //    return;
+            //}
             else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
             {
                 StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
@@ -132,7 +134,7 @@ public class SkeletonObject : CharBase
        
         Vector3 targetPos = nextNode._worldPosition;
 
-        SetTile(nextNode, true, false, 0);
+        //SetTile(nextNode, true);
         SetMovementCost(5, false);
 
         float diffX = nextNode._worldPosition.x - transform.position.x;
@@ -154,8 +156,8 @@ public class SkeletonObject : CharBase
 
             yield return null;
         }
-        transform.position = targetPos;  
-        
+        transform.position = targetPos;
+        ReleaseOldTile(nextNode);
         _isMoving = false;
     }
 
@@ -177,10 +179,10 @@ public class SkeletonObject : CharBase
             SoundManager._instance.PlaySFX(SFXName.Skel_attack_melee);
             _playerController.OnHitting(_strength);
         }
-        else if (isOtherReserved(nextNode) && nextNode._walkable)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-        }
+        //else if (isOtherReserved(nextNode) && nextNode._walkable)
+        //{
+        //    StartCoroutine(AttackFrontBack(nextNode));
+        //}
         else
         {
             Debug.Log("공격 실패 → 이동");
@@ -261,21 +263,34 @@ public class SkeletonObject : CharBase
 
     }
 
-    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
+    void SetTile(Node nextNode, bool isWalkable)
     {
         _startNode._walkable = isWalkable;
-
-        nextNode._SkeletonNode = isResrve;
-        nextNode._movementCost = reserveCost;
     }
 
-    bool isOtherReserved(Node nextNode)
+    void ReserveNextTile()
     {
-        if(nextNode._GolemNode == true ||
-            nextNode._SlimeNode == true ||
-            nextNode._BatNode == true)
-            return true;
-        else return false;
+        if (_path == null || _path.Count < 2)
+            return;
+
+        Node nextNode = _path[1];
+        MonsterBase other = nextNode._reserveBy as MonsterBase;
+
+
+        if (other != this)
+            return;
+
+        nextNode._isReserved = true;
+        nextNode._reserveBy = this;
+    }
+
+    void ReleaseOldTile(Node oldNode)
+    {
+        if (oldNode._reserveBy == this)
+        {
+            oldNode._isReserved = false;
+            oldNode._reserveBy = null;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
