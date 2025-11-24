@@ -10,6 +10,7 @@ public class SlimeObject : CharBase
     [SerializeField] TileMapGridManager _tileManager;
     [SerializeField] GameObject _playerObj;
     [SerializeField] GameObject _spriteObj;
+    [SerializeField] GameObject _HeartUI;
 
     [SerializeField] float _moveSpeed = 5f;
 
@@ -17,7 +18,7 @@ public class SlimeObject : CharBase
     PlayerController _playerController;
 
     BoxCollider2D _attackCollider;
-    CheckAttackRange _weaponCheck;
+    HealthBarManager _healthBarManager;
 
     List<Node> _path;
     Node _startNode;
@@ -62,7 +63,7 @@ public class SlimeObject : CharBase
         _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
         _playerObj = GameObject.Find("PlayerCharacter");
         _attackCollider = GetComponent<BoxCollider2D>();
-        _weaponCheck = _attackCollider.GetComponent<CheckAttackRange>();
+        _healthBarManager = _HeartUI.GetComponent<HealthBarManager>();
 
         _targetTF = _playerObj.transform;
         _playerController = _targetTF.GetComponent<PlayerController>();
@@ -73,6 +74,10 @@ public class SlimeObject : CharBase
         _isAttack = false;
         _isMoving = false;
         _myDir = LookDir.Down;
+
+        _healthBarManager.ClearHeart();
+        _healthBarManager.CreateEmptyHeart(_maxHP);
+        _healthBarManager.DrawHearts(_nowHp);
     }
 
     void OnBeat()
@@ -137,13 +142,14 @@ public class SlimeObject : CharBase
 
             int rnd = Random.Range((int)SFXName.Slime_death_01, (int)SFXName.Slime_death_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
-
+            _healthBarManager.ClearHeart();
             _dead = true;
         }
         else
         {
             int rnd = Random.Range((int)SFXName.Slime_hurt_01, (int)SFXName.Slime_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
+            _healthBarManager.DrawHearts(_nowHp);
         }
     }
 

@@ -16,6 +16,7 @@ public class PlayerController : CharBase
     [SerializeField] GameObject _attackRangeParent;
     [SerializeField] GameObject _monsterSlashFX;
     [SerializeField] GameObject _myAttackEffect;
+    [SerializeField] GameObject _heartUI;
 
     [SerializeField] BoxCollider2D[] _attackColliders;
 
@@ -34,6 +35,7 @@ public class PlayerController : CharBase
     GameObject _myMusicNote;
     Animator _slashAnim;
     Animator _monsterSlashAnim;
+    HealthBarManager _healthBarManager;
 
     bool _isFlipY;
     bool _isAttack;
@@ -75,6 +77,7 @@ public class PlayerController : CharBase
         _slashAnim = _myAttackEffect.GetComponent<Animator>();
         _slashAnim.speed = _animSpeed;
         _monsterSlashAnim = _monsterSlashFX.GetComponent<Animator>();
+        _healthBarManager = _heartUI.GetComponent<HealthBarManager>();
 
         _myMusicNote = _musicNotePrefab; //Instantiate(_musicNotePrefab, GameObject.Find("Canvas").transform);
         _tm = _myMusicNote.GetComponent<TimingManager>();
@@ -83,6 +86,10 @@ public class PlayerController : CharBase
 
         _attackColliders = new BoxCollider2D[_attackRangeParent.transform.childCount];
         _weaponCheck = new CheckAttackRange[_attackRangeParent.transform.childCount];
+
+        _healthBarManager.ClearHeart();
+        _healthBarManager.CreateEmptyHeart(_maxHP, false);
+        _healthBarManager.DrawHearts(_nowHp);
 
         for (int i = 0; i < _attackRangeParent.transform.childCount; i++)
         {        
@@ -369,6 +376,7 @@ public class PlayerController : CharBase
             SoundManager._instance.PlaySFX((SFXName)rnd);
             SoundManager._instance.PlaySFX(SFXName.sfx_player_death_ST);
             _monsterSlashAnim.SetTrigger("E_Attack");
+            _healthBarManager.DrawHearts(_nowHp);
             _dead = true;
         }
         else
@@ -380,7 +388,7 @@ public class PlayerController : CharBase
             SoundManager._instance.PlaySFX((SFXName)rnd);
             SoundManager._instance.PlaySFX(SFXName.sfx_player_hit_ST);
             _monsterSlashAnim.SetTrigger("E_Attack");
-
+            _healthBarManager.DrawHearts(_nowHp);
             Debug.Log(dmg+"µ¥¹ÌÁö");
         }
 

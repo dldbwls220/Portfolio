@@ -7,6 +7,12 @@ namespace DefineEnum
         MonsterInfoList
     }
 
+    public enum HeartSatus
+    {
+        Empty,
+        Full
+    }
+
     public enum LookDir
     {
         Up,

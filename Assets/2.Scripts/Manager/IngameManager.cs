@@ -4,11 +4,16 @@ using System.Collections;
 
 public class IngameManager : MonoBehaviour
 {
+    static IngameManager _uniqueInstance;
+
     int _myBeat;
     bool _isPlayingBGM;
 
+    public static IngameManager _instance { get { return _instance; } }
+
     private void Awake()
     {
+        _uniqueInstance = this;
         NoteManager._instance.OnBeat += OnBeat;
     }
 

@@ -22,6 +22,11 @@ public class NoteManager : MonoBehaviour
         _uniqueInstance = this;
     }
 
+    public void InitNote(int bpm)
+    {
+        _bpm = bpm;
+    }
+
     void Update()
     {
         _currentTime += Time.deltaTime;

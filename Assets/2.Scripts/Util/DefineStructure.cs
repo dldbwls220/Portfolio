@@ -51,4 +51,10 @@ namespace DefineStructure
             _player.loop = loop;
         }
     }
+
+    public struct Song
+    {
+        public string _name;
+        public int bpm;
+    }
 }

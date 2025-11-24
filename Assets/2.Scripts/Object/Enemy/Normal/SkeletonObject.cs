@@ -11,6 +11,7 @@ public class SkeletonObject : CharBase
     [SerializeField] Transform _targetTF;
     [SerializeField] float _moveSpeed = 5f;
     [SerializeField] Transform _characterPos;
+    [SerializeField] GameObject _heartUI;
 
     BoxCollider2D _attackCollider;
 
@@ -21,8 +22,8 @@ public class SkeletonObject : CharBase
     int _myBeat = 0;
     bool _isMoving = false;
     PlayerController _playerController;
-
     Animator _anim;
+    HealthBarManager _healthBarManager;
 
     bool _isAttack;
 
@@ -52,11 +53,16 @@ public class SkeletonObject : CharBase
         _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
         _targetTF = GameObject.Find("PlayerCharacter").transform;
         _attackCollider = GetComponent<BoxCollider2D>();
+        _healthBarManager = _heartUI.GetComponent<HealthBarManager>();
 
         _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();
         _anim.speed = (115f / 60f);
         _isAttack = false;
+
+        _healthBarManager.ClearHeart();
+        _healthBarManager.CreateEmptyHeart(_maxHP);
+        _healthBarManager.DrawHearts(_nowHp);
     }
 
 
@@ -117,12 +123,16 @@ public class SkeletonObject : CharBase
         {
             _nowHp = 0;
             SoundManager._instance.PlaySFX(SFXName.Skel_death);
+
+            _healthBarManager.ClearHeart();
+
             _dead = true;
         }
         else
         {
             int rnd = Random.Range((int)SFXName.Skel_hurt_01, (int)SFXName.Skel_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
+            _healthBarManager.DrawHearts(_nowHp);
         }
     }
 

@@ -10,12 +10,13 @@ public class BatObject : CharBase
     [SerializeField] TileMapGridManager _tileManager;
     [SerializeField] GameObject _playerObj;
     [SerializeField] GameObject _spriteObj;
+    [SerializeField] GameObject _heartUI;
 
     [SerializeField] float _moveSpeed = 5f;
 
     Transform _targetTF;
     PlayerController _playerController;
-
+    HealthBarManager _heartManager;
 
 
     List<Node> _path;
@@ -68,13 +69,16 @@ public class BatObject : CharBase
 
         _targetTF = _playerObj.transform;
         _playerController = _targetTF.GetComponent<PlayerController>();
-
+        _heartManager = _heartUI.GetComponent<HealthBarManager>();
         
         _animController = GetComponent<Animator>();
         _myBeat = 0;
         _isAttack = false;
         _isMoving = false;
-        
+
+        _heartManager.ClearHeart();
+        _heartManager.CreateEmptyHeart(_maxHP);
+        _heartManager.DrawHearts(_nowHp);
     }
 
     void OnBeat()
@@ -136,6 +140,7 @@ public class BatObject : CharBase
             _nowHp = 0;
             SoundManager._instance.PlaySFX(SFXName.Bat_death);
             _dead = true;
+            _heartManager.ClearHeart();
         }
         else
         {
@@ -143,6 +148,9 @@ public class BatObject : CharBase
                 SoundManager._instance.PlaySFX(SFXName.Bat_minibpss_hit);
             else
                 SoundManager._instance.PlaySFX(SFXName.Bat_hit);
+
+            _heartManager.DrawHearts(_nowHp);
+            Debug.Log(_nowHp);
         }
     }
 

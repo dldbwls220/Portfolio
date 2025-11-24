@@ -10,9 +10,7 @@ public class GolemObject : CharBase
     [SerializeField] Transform _targetTF;
     [SerializeField] float _moveSpeed = 5f;
     [SerializeField] Transform _characterPos;
-
-    BoxCollider2D _attackCollider;
-    CheckAttackRange _weaponCheck;
+    [SerializeField] GameObject _heartUI;
 
     List<Node> _path;
     Node _startNode;
@@ -21,6 +19,7 @@ public class GolemObject : CharBase
     int _myBeat = 0;
     bool _isMoving = false;
     PlayerController _playerController;
+    HealthBarManager _healthBarManager;
 
     Animator _anim;
 
@@ -51,13 +50,16 @@ public class GolemObject : CharBase
         _pFinder = GameObject.Find("GridManager").GetComponent<PathFinding>();
         _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
         _targetTF = GameObject.Find("PlayerCharacter").transform;
-        _attackCollider = GetComponent<BoxCollider2D>();
-        _weaponCheck = _attackCollider.GetComponent<CheckAttackRange>();
+        _healthBarManager = _heartUI.GetComponent<HealthBarManager>();
 
         _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();
         _anim.speed = (115f / 60f);
         _isAttack = false;
+
+        _healthBarManager.ClearHeart();
+        _healthBarManager.CreateEmptyHeart(_maxHP);
+        _healthBarManager.DrawHearts(_nowHp);
     }
 
 
@@ -121,6 +123,8 @@ public class GolemObject : CharBase
         {
             int rnd = Random.Range((int)SFXName.Golemstone_hurt_01, (int)SFXName.Golemstone_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
+
+            _healthBarManager.DrawHearts(_nowHp);
         }
     }
 

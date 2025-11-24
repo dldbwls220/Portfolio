@@ -1,10 +1,7 @@
 using DefineEnum;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
-using static UnityEngine.UI.Image;
 
 public class RedDragonObject : CharBase
 {
@@ -15,6 +12,7 @@ public class RedDragonObject : CharBase
     [SerializeField] Transform _characterPos;
     [SerializeField] GameObject _breathObj;
     [SerializeField] GameObject _fireSpriteObj;
+    [SerializeField] GameObject _heartUI;
 
     [SerializeField] LayerMask _wallDetect;
 
@@ -29,7 +27,7 @@ public class RedDragonObject : CharBase
     Animator _fireAnim;
     PlayerController _playerController;
     SpriteRenderer[] _fireSprite;
-
+    HealthBarManager _healthBarManager;
 
     bool _isFire;
     bool _isAttack;    
@@ -77,6 +75,7 @@ public class RedDragonObject : CharBase
         _targetTF = GameObject.Find("PlayerCharacter").transform;
         _fireAnim = _breathObj.GetComponent<Animator>();
         _fireSprite = new SpriteRenderer[_fireSpriteObj.transform.childCount];
+        _healthBarManager = _heartUI.GetComponent<HealthBarManager>();
 
         for (int i = 0; i < _fireSpriteObj.transform.childCount; i++)
         {
@@ -88,6 +87,10 @@ public class RedDragonObject : CharBase
         _anim.speed = (115f / 60f);
         _isAttack = false;
         _isFire = false;
+
+        _healthBarManager.ClearHeart();
+        _healthBarManager.CreateEmptyHeart(_maxHP);
+        _healthBarManager.DrawHearts(_nowHp);
     }
 
 
@@ -195,12 +198,17 @@ public class RedDragonObject : CharBase
         {
             _nowHp = 0;
             SoundManager._instance.PlaySFX(SFXName.Dragon_death);
+
+            _healthBarManager.ClearHeart();
+
             _dead = true;
         }
         else
         {
             int rnd = Random.Range((int)SFXName.Dragon_hurt_01, (int)SFXName.Dragon_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
+
+            _healthBarManager.DrawHearts(_nowHp);
         }
     }
 

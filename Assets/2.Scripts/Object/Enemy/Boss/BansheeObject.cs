@@ -10,6 +10,7 @@ public class BansheeObject : CharBase
     [SerializeField] Transform _targetTF;
     [SerializeField] float _moveSpeed = 5f;
     [SerializeField] Transform _characterPos;
+    [SerializeField] GameObject _heartUI;
 
     List<Node> _path;
     Node _startNode;
@@ -22,9 +23,9 @@ public class BansheeObject : CharBase
 
     bool _isAttack;
     bool _isDamaged;
-    bool _isAngry;
 
     PlayerController _playerController;
+    HealthBarManager _healthBarManager;
 
     void Start()
     {
@@ -46,13 +47,17 @@ public class BansheeObject : CharBase
         _pFinder = GameObject.Find("GridManager").GetComponent<PathFinding>();
         _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
         _targetTF = GameObject.Find("PlayerCharacter").transform;
+        _healthBarManager = _heartUI.GetComponent<HealthBarManager>();
 
         _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();
         _anim.speed = (115f / 60f);
         _isAttack = false;
         _isDamaged = false;
-        _isAngry = false;
+
+        _healthBarManager.ClearHeart();
+        _healthBarManager.CreateEmptyHeart(_maxHP);
+        _healthBarManager.DrawHearts(_nowHp);
     }
 
 
@@ -123,6 +128,8 @@ public class BansheeObject : CharBase
             SoundManager._instance._bgmDESC._volum = 1;
             SoundManager._instance._bansheeDESC._volum = 0;
 
+            _healthBarManager.ClearHeart();
+
             _isDamaged = false;
             _dead = true;
         }
@@ -137,6 +144,8 @@ public class BansheeObject : CharBase
 
             SoundManager._instance._bgmDESC._volum = 0;
             SoundManager._instance._bansheeDESC._volum = 1;
+
+            _healthBarManager.DrawHearts(_nowHp);
         }
     }
 
