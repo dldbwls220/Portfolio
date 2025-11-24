@@ -4,7 +4,8 @@ namespace DefineEnum
 {
     public enum TableName
     {
-        MonsterInfoList
+        MonsterInfoList,
+        MusicList
     }
 
     public enum HeartSatus
@@ -82,8 +83,9 @@ namespace DefineEnum
     public enum BGMName
     {
         Disco_Descent,
-        
-        Banshee_loop,
+        Crypt_FamilyJules_Remix,
+        Crypteque,
+        March_of_the_Profane,
 
         Count
     }

@@ -39,6 +39,7 @@ public class GameTableManager :TSingleton<GameTableManager>
     public void AllLoadTable()
     {
         Load<MonsterTable>(TableName.MonsterInfoList);
+        Load<MusicTable>(TableName.MusicList);
     }
 
     public TableBase Get(TableName name)

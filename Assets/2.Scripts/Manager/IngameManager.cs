@@ -6,6 +6,8 @@ public class IngameManager : MonoBehaviour
 {
     static IngameManager _uniqueInstance;
 
+    [SerializeField]MusicSelectBox _musicSelectBox;
+
     int _myBeat;
     bool _isPlayingBGM;
 
@@ -14,6 +16,7 @@ public class IngameManager : MonoBehaviour
     private void Awake()
     {
         _uniqueInstance = this;
+
         NoteManager._instance.OnBeat += OnBeat;
     }
 
@@ -22,6 +25,8 @@ public class IngameManager : MonoBehaviour
     {
         _myBeat = 0;
         _isPlayingBGM = false;
+
+        _musicSelectBox.InitWnd();
     }
 
     // Update is called once per frame
