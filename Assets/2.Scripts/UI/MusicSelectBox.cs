@@ -6,7 +6,6 @@ public class MusicSelectBox : MonoBehaviour
 {
     [SerializeField] ScrollRect _musicScroll;
     [SerializeField] Text _startBtn;
-    [SerializeField] GameObject _heartUI;
     RectTransform _rect;
 
     string _selectedName;
@@ -24,7 +23,6 @@ public class MusicSelectBox : MonoBehaviour
     {
         _rect = _musicScroll.content;
         _isSelected = false;
-        _heartUI.SetActive(false);
 
         TableBase musicTable = GameTableManager._instance.Get(TableName.MusicList);
 
@@ -65,7 +63,6 @@ public class MusicSelectBox : MonoBehaviour
         if (!_isSelected) return;
 
         IngameManager._instance.SetMusic(_selectedIndex, _selectedBPM);
-        _heartUI.SetActive(true);
         CloseWnd();
     }
 }

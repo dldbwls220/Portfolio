@@ -30,12 +30,22 @@ public class RedDragonObject : CharBase
     HealthBarManager _healthBarManager;
 
     bool _isFire;
-    bool _isAttack;    
+    bool _isAttack;
 
-    void Start()
+    void OnEnable()
     {
         NoteManager._instance.OnBeat += OnBeat;
-        InitMonster(5);
+    }
+
+    private void OnDisable()
+    {
+
+        NoteManager._instance.OnBeat -= OnBeat;
+        if (_isDead)
+        {
+            InitMonsterStat();
+            _dead = false;
+        }
     }
 
     void Update()
@@ -93,7 +103,11 @@ public class RedDragonObject : CharBase
         _healthBarManager.DrawHearts(_nowHp);
     }
 
-
+    void InitMonsterStat()
+    {
+        _nowHp = _maxHP;
+        _healthBarManager.DrawHearts(_nowHp);
+    }
     void OnBeat()
     {
         if (_isMoving) return;

@@ -45,18 +45,6 @@ namespace DefineEnum
         Count
     }
 
-    public enum SortingObjLayer
-    {
-        Ground =1,
-        playerBody,
-        playerHead,
-        monster,
-        item,
-        effect,
-        fire,
-        wall
-    }
-
     public enum WeaponName
     {
         DaggerN,

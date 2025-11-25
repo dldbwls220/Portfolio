@@ -39,10 +39,20 @@ public class BatObject : CharBase
 
     Animator _animController;
 
-    private void Start()
+    void OnEnable()
     {
         NoteManager._instance.OnBeat += OnBeat;
-        InitMonster(2);
+    }
+
+    private void OnDisable()
+    {
+
+        NoteManager._instance.OnBeat -= OnBeat;
+        if (_isDead)
+        {
+            InitMonsterStat();
+            _dead = false;
+        }
     }
 
     private void Update()
@@ -81,6 +91,11 @@ public class BatObject : CharBase
         _heartManager.DrawHearts(_nowHp);
     }
 
+    void InitMonsterStat()
+    {
+        _nowHp = _maxHP;
+        _heartManager.DrawHearts(_nowHp);
+    }
     void OnBeat()
     {
         if (_isMoving) return;

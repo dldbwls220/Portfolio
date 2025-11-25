@@ -27,15 +27,20 @@ public class SkeletonObject : CharBase
 
     bool _isAttack;
 
-    void Start()
+    void OnEnable()
     {
         NoteManager._instance.OnBeat += OnBeat;
-        InitMonster(3);
     }
 
-    void Update()
+    private void OnDisable()
     {
-            
+
+        NoteManager._instance.OnBeat -= OnBeat;
+        if (_isDead)
+        {
+            InitMonsterStat();
+            _dead = false;
+        }
     }
 
     public void InitMonster(int enemyIndex)
@@ -65,6 +70,11 @@ public class SkeletonObject : CharBase
         _healthBarManager.DrawHearts(_nowHp);
     }
 
+    void InitMonsterStat()
+    {
+        _nowHp = _maxHP;
+        _healthBarManager.DrawHearts(_nowHp);
+    }
 
     void OnBeat()
     {

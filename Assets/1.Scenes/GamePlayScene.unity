@@ -292,17 +292,34 @@ MonoBehaviour:
   - _objPrefab: {fileID: 3582326110419496402, guid: 9948315a84bd2ca44a429afc9c7323d3, type: 3}
     _count: 10
     _tfPoolParent: {fileID: 899920042}
-  - _objPrefab: {fileID: 8447900050747559194, guid: ce00b145c3da48a47bef56fe69b5b02c, type: 3}
-    _count: 5
-    _tfPoolParent: {fileID: 1416432215}
-  - _objPrefab: {fileID: 7152074447272707043, guid: e2530335a1a99114682f04895db6377d, type: 3}
-    _count: 4
-    _tfPoolParent: {fileID: 1416432215}
+  _monsterInfo:
   - _objPrefab: {fileID: 3937228665968558841, guid: cae569836d2b6ee4696ceafa0cd0f9e9, type: 3}
     _count: 3
+    MonsterType: 0
+    _tfPoolParent: {fileID: 1416432215}
+  - _objPrefab: {fileID: 7152074447272707043, guid: e2530335a1a99114682f04895db6377d, type: 3}
+    _count: 3
+    MonsterType: 1
+    _tfPoolParent: {fileID: 1416432215}
+  - _objPrefab: {fileID: 8447900050747559194, guid: ce00b145c3da48a47bef56fe69b5b02c, type: 3}
+    _count: 4
+    MonsterType: 2
     _tfPoolParent: {fileID: 1416432215}
   - _objPrefab: {fileID: 2223962498275254399, guid: 800dd5780eea2e44c93f300892e715bc, type: 3}
     _count: 2
+    MonsterType: 3
+    _tfPoolParent: {fileID: 1416432215}
+  - _objPrefab: {fileID: 2862061249864562837, guid: caf2741a49071f14793d23100498ab46, type: 3}
+    _count: 1
+    MonsterType: 4
+    _tfPoolParent: {fileID: 1416432215}
+  - _objPrefab: {fileID: 1009239959614061799, guid: 878b09ada06e02749892d548658a6f93, type: 3}
+    _count: 1
+    MonsterType: 5
+    _tfPoolParent: {fileID: 1416432215}
+  - _objPrefab: {fileID: 2623437532178284439, guid: cc33dca2b21f49243aa5f67220cea859, type: 3}
+    _count: 1
+    MonsterType: 6
     _tfPoolParent: {fileID: 1416432215}
 --- !u!1 &124340957
 GameObject:
@@ -640,8 +657,8 @@ RectTransform:
   m_Children:
   - {fileID: 899920042}
   - {fileID: 1543114241}
-  - {fileID: 1743892959}
   - {fileID: 268286104}
+  - {fileID: 1743892959}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -15309,7 +15326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1416432215}
   m_Layer: 0
-  m_Name: MonserPool
+  m_Name: MonsterPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16385,7 +16402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1743892959
 RectTransform:
   m_ObjectHideFlags: 0

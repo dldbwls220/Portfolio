@@ -25,10 +25,20 @@ public class GolemObject : CharBase
 
     bool _isAttack;
 
-    void Start()
+    void OnEnable()
     {
         NoteManager._instance.OnBeat += OnBeat;
-        InitMonster(4);
+    }
+
+    private void OnDisable()
+    {
+
+        NoteManager._instance.OnBeat -= OnBeat;
+        if (_isDead)
+        {
+            InitMonsterStat();
+            _dead = false;
+        }
     }
 
     private void Update()
@@ -62,7 +72,11 @@ public class GolemObject : CharBase
         _healthBarManager.DrawHearts(_nowHp);
     }
 
-
+    void InitMonsterStat()
+    {
+        _nowHp = _maxHP;
+        _healthBarManager.DrawHearts(_nowHp);
+    }
     void OnBeat()
     {
         if (_isMoving) return;
