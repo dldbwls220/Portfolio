@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DefineEnum;
+using System.Collections;
 
 public class MusicSelectButton : MonoBehaviour
 {
@@ -27,8 +28,9 @@ public class MusicSelectButton : MonoBehaviour
     {
         _bpm = bpm;
         _musicName.text = _name = name;
-        _BPM.text = _bpm.ToString();
+        _BPM.text = _bpm.ToString() + " BPM";
         _index = index;
+        SoundManager._instance._bgmDESC._mute = true;
     }
 
     public void selectMusic()
@@ -41,11 +43,24 @@ public class MusicSelectButton : MonoBehaviour
     {
         _musicName.color = Color.cyan;
         _BPM.color = Color.cyan;
+
+        StartCoroutine(StartMusic());
+        
     }
 
     public void PointerOut()
     {
         _musicName.color= Color.white;
         _BPM.color= Color.white;
+
+        SoundManager._instance._bgmDESC._mute = true;
+    }
+
+    IEnumerator StartMusic()
+    {
+        yield return new WaitForSeconds(0.3f);
+
+        SoundManager._instance.PlayBGM((BGMName)(_musicIndex - 1));
+        SoundManager._instance._bgmDESC._mute = false;
     }
 }

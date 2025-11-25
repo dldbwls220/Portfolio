@@ -8,10 +8,14 @@ public class IngameManager : MonoBehaviour
 
     [SerializeField]MusicSelectBox _musicSelectBox;
 
+    int _musicIndex;
     int _myBeat;
     bool _isPlayingBGM;
+    bool _isSelected;
 
-    public static IngameManager _instance { get { return _instance; } }
+    public bool _isStartMusic { get { return _isSelected; } }
+
+    public static IngameManager _instance { get { return _uniqueInstance; } }
 
     private void Awake()
     {
@@ -25,7 +29,7 @@ public class IngameManager : MonoBehaviour
     {
         _myBeat = 0;
         _isPlayingBGM = false;
-
+        _isSelected = false;
         _musicSelectBox.InitWnd();
     }
 
@@ -35,8 +39,17 @@ public class IngameManager : MonoBehaviour
         
     }
 
+    public void SetMusic(int index, int bpm)
+    {
+        NoteManager._instance.InitNote(bpm);
+        _musicIndex = index;
+        _isSelected = true;
+    }
+
     void OnBeat()
     {
+        if (!_isSelected) return;
+
         _myBeat++;
         Debug.Log(_myBeat);
         if (_myBeat == 4 && !_isPlayingBGM)
@@ -53,7 +66,8 @@ public class IngameManager : MonoBehaviour
     IEnumerator DelayMusic()
     {
         yield return new WaitForSeconds(0.08f);
-        SoundManager._instance.PlayBGM(BGMName.Disco_Descent);
+        SoundManager._instance._bgmDESC._mute = false;
+        SoundManager._instance.PlayBGM((BGMName)(_musicIndex - 1));
         SoundManager._instance.PlayBanshee();
         _isPlayingBGM = true;
     }

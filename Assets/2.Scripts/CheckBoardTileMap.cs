@@ -13,12 +13,15 @@ public class CheckBoardTileMap : MonoBehaviour
     Tile changeTileB;
     bool isChange;
     [SerializeField] bool isFever;
-    public Vector2Int gridSize = new Vector2Int(10, 10); // Define the size of your checkerboard
+    public Vector2Int gridSize = new Vector2Int(10, 10);
+
+    public Vector2 shopGridSize = new Vector2Int(10, 10);
 
     void Start()
     {
         NoteManager._instance.OnBeat += OnBeat;
         GenerateCheckerboard();
+        CreateShopTile();
     }
 
     void GenerateCheckerboard()
@@ -48,7 +51,33 @@ public class CheckBoardTileMap : MonoBehaviour
             }
         }
 
+        
+
         isChange = true;
+    }
+
+    void CreateShopTile()
+    {
+        int offsetx = gridSize.x + 30;
+
+        for (int x = offsetx; x < offsetx + shopGridSize.x; x++)
+        {
+            for (int y = 0; y < shopGridSize.y; y++)
+            {
+                Vector3Int position = new Vector3Int(x, y, 0);
+
+                // Determine which tile to place based on the sum of coordinates
+                // (x + y) % 2 will alternate between 0 and 1
+                if ((x + y) % 2 == 0)
+                {
+                    targetTilemap.SetTile(position, tileA);
+                }
+                else
+                {
+                    targetTilemap.SetTile(position, tileB);
+                }
+            }
+        }
     }
 
     void OnBeat()

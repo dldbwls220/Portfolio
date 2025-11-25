@@ -6,7 +6,7 @@ public class MusicSelectBox : MonoBehaviour
 {
     [SerializeField] ScrollRect _musicScroll;
     [SerializeField] Text _startBtn;
-    [SerializeField] Text _demoBtn;
+    [SerializeField] GameObject _heartUI;
     RectTransform _rect;
 
     string _selectedName;
@@ -22,8 +22,9 @@ public class MusicSelectBox : MonoBehaviour
 
     public void InitWnd()
     {
-        _isSelected = false;
         _rect = _musicScroll.content;
+        _isSelected = false;
+        _heartUI.SetActive(false);
 
         TableBase musicTable = GameTableManager._instance.Get(TableName.MusicList);
 
@@ -44,17 +45,9 @@ public class MusicSelectBox : MonoBehaviour
         _selectedBPM = bpm;
         _selectedIndex = index;
         _selectedName = name;
-
         _isSelected = true;
-
         Debug.Log(_selectedBPM);
         Debug.Log(_selectedName);
-    }
-
-    public void DemoPointerOn()
-    {
-        _demoBtn.color = Color.cyan;
-
     }
 
     public void StartPointerOn()
@@ -62,20 +55,17 @@ public class MusicSelectBox : MonoBehaviour
         _startBtn.color = Color.cyan;
     }
 
-    public void DemoPointerOut()
-    {
-        _demoBtn.color = Color.white;
-    }
-
     public void StartPointerOut()
     {
         _startBtn.color = Color.white;
     }
 
-    public void StartDemo()
+    public void StartGame()
     {
-        Debug.Log("¿Ωæ«Ω√¿€");
-        BGMName name = (BGMName)(_selectedIndex-1);
-        SoundManager._instance.PlayBGM(name);
+        if (!_isSelected) return;
+
+        IngameManager._instance.SetMusic(_selectedIndex, _selectedBPM);
+        _heartUI.SetActive(true);
+        CloseWnd();
     }
 }

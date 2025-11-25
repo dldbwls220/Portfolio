@@ -6,7 +6,7 @@ public class NoteManager : MonoBehaviour
 
     static NoteManager _uniqueInstance;
 
-    [SerializeField] int _bpm = 0;
+    int _bpm = 0;
     double _currentTime = 0;
 
     [SerializeField] Transform _tfNoteAppearLeft;
@@ -29,6 +29,8 @@ public class NoteManager : MonoBehaviour
 
     void Update()
     {
+        if (!IngameManager._instance._isStartMusic) return;
+
         _currentTime += Time.deltaTime;
         //60(1분) / _bpm을 하여 1beat를 계산
 
