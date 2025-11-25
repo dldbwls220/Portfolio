@@ -16223,6 +16223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicScroll: {fileID: 1034943445}
   _startBtn: {fileID: 868164498}
+  _heartUI: {fileID: 268286103}
 --- !u!1 &1806976162
 GameObject:
   m_ObjectHideFlags: 0
