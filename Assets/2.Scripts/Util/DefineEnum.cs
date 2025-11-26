@@ -73,6 +73,13 @@ namespace DefineEnum
         HealthUp
     }
 
+    public enum Food
+    {
+        Apple,
+        Cheese,
+        Chicken
+    }
+
     #region[Music]
     public enum BGMName
     {
@@ -80,6 +87,26 @@ namespace DefineEnum
         Crypt_FamilyJules_Remix,
         Crypteque,
         March_of_the_Profane,
+
+        Count
+    }
+
+    public enum LoopName
+    {
+        Disco_Descent_loop,
+        Crypt_FamilyJules_Remix_loop,
+        Crypteque_loop,
+        March_of_the_Profane_loop,
+
+        Count
+    }
+
+    public enum ShopkeeperName
+    {
+        Disco_Descent_shopkeeper_loop,
+        Crypt_FamilyJules_Remix_shopkeeper_loop,
+        Crypteque_shopkeeper_loop,
+        March_of_the_Profane_shopkeeper_loop,
 
         Count
     }

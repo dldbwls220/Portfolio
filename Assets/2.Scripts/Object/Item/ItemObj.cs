@@ -24,5 +24,7 @@ public class ItemObj : ItemBase
         }
         
         _price += 20;
+        gameObject.SetActive(false);
+
     }
 }

@@ -1,5 +1,6 @@
 using DefineEnum;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 
@@ -31,6 +32,7 @@ public class ObjectPool : MonoBehaviour
 {
     [SerializeField] ObjectInfo[] _objInfo;
     [SerializeField] Monsterinfo[] _monsterInfo;
+    [SerializeField] ItemInfo[] _itemInfo;
 
     public Queue<GameObject> _leftNoteQueue;
     public Queue<GameObject> _rightNoteQueue;
@@ -42,6 +44,10 @@ public class ObjectPool : MonoBehaviour
     public Queue<GameObject> _redDragonQueue;
     public Queue<GameObject> _bansheeQueue;
     public Queue<GameObject> _direBatQueue;
+
+    public List<GameObject> _weaponList;
+    public List<GameObject> _foodList;
+    public List<GameObject> _powerUpList;
 
    static ObjectPool _uniqueInstance;
 
@@ -71,6 +77,10 @@ public class ObjectPool : MonoBehaviour
         _bansheeQueue = new Queue<GameObject>();
         _direBatQueue = new Queue<GameObject>();
 
+        _weaponList = new List<GameObject>();
+        _foodList = new List<GameObject>();
+        _powerUpList = new List<GameObject>();
+
         _leftNoteQueue = InsertQueue(_objInfo[0]);
         _rightNoteQueue = InsertQueue(_objInfo[1]);
 
@@ -81,6 +91,19 @@ public class ObjectPool : MonoBehaviour
         _redDragonQueue = InsertMonsterQueue(_monsterInfo[4]);
         _bansheeQueue = InsertMonsterQueue(_monsterInfo[5]);
         _direBatQueue = InsertMonsterQueue(_monsterInfo[6]);
+        
+        for (int i = 0; i < 7; i++)
+        {
+            InsertWeaponList(_itemInfo[i]);
+        }
+        for (int i = 7; i < 9; i++)
+        {
+            InsertPowerUpList(_itemInfo[i]);
+        }
+        for (int i = 9; i < 12; i++)
+        {
+            InsertFoodList(_itemInfo[i]);
+        }
     }
 
     Queue<GameObject> InsertQueue(ObjectInfo objInfo)
@@ -151,5 +174,35 @@ public class ObjectPool : MonoBehaviour
         }
 
         return queue;
+    }
+
+    void InsertWeaponList(ItemInfo objInfo)
+    {
+
+        GameObject weapon = Instantiate(objInfo._objPrefab, transform.position, Quaternion.identity);
+        weapon.SetActive(false);
+        weapon.transform.SetParent(objInfo._tfPoolParent);
+
+        _weaponList.Add(weapon);
+    }
+    void InsertFoodList(ItemInfo objInfo)
+    {
+        List<GameObject> list = new List<GameObject>();
+
+        GameObject food = Instantiate(objInfo._objPrefab, transform.position, Quaternion.identity);
+        food.SetActive(false);
+        food.transform.SetParent(objInfo._tfPoolParent);
+
+        _foodList.Add(food);
+    }
+    void InsertPowerUpList(ItemInfo objInfo)
+    {
+        List<GameObject> list = new List<GameObject>();
+
+        GameObject weapon = Instantiate(objInfo._objPrefab, transform.position, Quaternion.identity);
+        weapon.SetActive(false);
+        weapon.transform.SetParent(objInfo._tfPoolParent);
+
+        _powerUpList.Add(weapon);
     }
 }

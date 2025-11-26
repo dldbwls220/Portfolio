@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 26
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,18 +107,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 37
-        width: 376
-        height: 39
+        y: 38
+        width: 47
+        height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9018646b3afedf740800000000000000
+      spriteID: 6ef95a7770123294fbe6ddca7559c209
       internalID: 5187565832217461001
       vertices: []
       indices: 
@@ -128,20 +128,328 @@ TextureImporter:
       name: ShopKeeper_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 376
-        height: 39
+        x: 47
+        y: 38
+        width: 47
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0ebc4752259377e00800000000000000
+      spriteID: 4b166bcf1f1720f4d92c831f3f888de4
       internalID: 1042364863738072032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopKeeper_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 38
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4728ea15f44a49649b578803c5b9479c
+      internalID: -161149758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopKeeper_3
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 38
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60b7a9b1db66c8469cb5aa7cb6fd021
+      internalID: 185699728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopKeeper_4
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 38
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c648329b8e60148b37eeaefe555336
+      internalID: -13064140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopKeeper_5
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 38
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4354cc2fa6d2d4bae8eb93e7d95546
+      internalID: 378918504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopKeeper_6
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 38
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6508a58f827903a4f854b02c92c70c67
+      internalID: 603204628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopKeeper_7
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 38
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01cd55c261e8b3f489c9df7fae643e29
+      internalID: -1526498444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopKeeper_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a984c5d3e38a1b64fbfe5294a3bf490f
+      internalID: -1122547491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopKeeper_9
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e5109e8bcb7544499f05ef0b73f400
+      internalID: 1269319572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopKeeper_10
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 0
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b11d53843b2e046af760fa34809b18
+      internalID: 2025051121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopKeeper_11
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3873f4cc3bf104cb669e27dbc5c14d
+      internalID: 1228498023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopKeeper_12
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d276fb33eae50458a27e2205db4fc6
+      internalID: 1762053825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopKeeper_13
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 0
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dfa30af73a5fd24e9f699289d930f7f
+      internalID: 276146658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopKeeper_14
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 0
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06c541dc452dcd4ca18543352742f7d
+      internalID: -1892436169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopKeeper_15
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8f0e3d1e2e79c42a16f60f0fb5d89c
+      internalID: -1792299693
       vertices: []
       indices: 
       edges: []
@@ -150,7 +458,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7c7fd27a434cddf40883f8cdfb26a0aa
     internalID: 0
     vertices: []
     indices: 
@@ -162,6 +470,20 @@ TextureImporter:
     nameFileIdTable:
       ShopKeeper_0: 5187565832217461001
       ShopKeeper_1: 1042364863738072032
+      ShopKeeper_10: 2025051121
+      ShopKeeper_11: 1228498023
+      ShopKeeper_12: 1762053825
+      ShopKeeper_13: 276146658
+      ShopKeeper_14: -1892436169
+      ShopKeeper_15: -1792299693
+      ShopKeeper_2: -161149758
+      ShopKeeper_3: 185699728
+      ShopKeeper_4: -13064140
+      ShopKeeper_5: 378918504
+      ShopKeeper_6: 603204628
+      ShopKeeper_7: -1526498444
+      ShopKeeper_8: -1122547491
+      ShopKeeper_9: 1269319572
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

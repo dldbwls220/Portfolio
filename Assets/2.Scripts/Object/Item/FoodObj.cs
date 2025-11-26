@@ -1,9 +1,9 @@
 using UnityEngine;
 using DefineEnum;
 
-public class WeaponObj : ItemBase
+public class FoodObj : ItemBase
 {
-    [SerializeField] WeaponName _weapon;
+    [SerializeField] int heal;
 
     private void OnEnable()
     {
@@ -12,8 +12,7 @@ public class WeaponObj : ItemBase
 
     protected override void GetItem()
     {
-        _playerController.BuyWeapon(_price, _weapon);
+        _playerController.BuyFood(_price, heal);
         gameObject.SetActive(false);
-        ObjectPool._instance._weaponList.Remove(gameObject);
     }
 }

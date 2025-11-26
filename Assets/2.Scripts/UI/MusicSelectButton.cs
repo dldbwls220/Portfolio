@@ -58,7 +58,7 @@ public class MusicSelectButton : MonoBehaviour
 
     IEnumerator StartMusic()
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.1f);
 
         SoundManager._instance.PlayBGM((BGMName)(_musicIndex - 1));
         SoundManager._instance._bgmDESC._mute = false;

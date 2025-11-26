@@ -6,61 +6,61 @@ using UnityEngine;
 
 public class SoundManager : TSingleton<SoundManager>
 {
-    Dictionary<BGMName, AudioClip> _introClipDoc;
+    Dictionary<LoopName, AudioClip> _loopClipDoc;
     Dictionary<BGMName, AudioClip> _bgmClipDoc;
-    Dictionary<BGMName, AudioClip> _shopkeeperClipDoc;
+    Dictionary<ShopkeeperName, AudioClip> _shopkeeperClipDoc;
     Dictionary<SFXName, AudioClip> _sfxClipDoc;
 
-    AudioPlayerDESC _introDESC;
-    AudioSource _introPlayer;
+    AudioPlayerDESC _loopDESC;
+    AudioSource _loopPlayer;
     public AudioPlayerDESC _bgmDESC;
     AudioSource _bgmPlayer;
     public AudioPlayerDESC _shopkeeperDESC;
     AudioSource _shopkeeperPlayer;
     public AudioPlayerDESC _bansheeDESC;
     AudioSource _bansheePlayer;
-    AudioPlayerDESC _sfxDESC;
+    public AudioPlayerDESC _sfxDESC;
     AudioSource _sfxPlayer;
 
     public void LoadAllSound()
     {
-        _introClipDoc = new Dictionary<BGMName, AudioClip>();
+        _loopClipDoc = new Dictionary<LoopName, AudioClip>();
         _bgmClipDoc = new Dictionary<BGMName, AudioClip>();
-        _shopkeeperClipDoc = new Dictionary<BGMName, AudioClip>();
+        _shopkeeperClipDoc = new Dictionary<ShopkeeperName, AudioClip>();
         _sfxClipDoc = new Dictionary<SFXName, AudioClip>();
 
-        _introPlayer = gameObject.AddComponent<AudioSource>();
+        _loopPlayer = gameObject.AddComponent<AudioSource>();
         _bgmPlayer = gameObject.AddComponent<AudioSource>();
         _shopkeeperPlayer = gameObject.AddComponent<AudioSource>();
         _bansheePlayer = gameObject.AddComponent<AudioSource>();
         _sfxPlayer = gameObject.AddComponent<AudioSource>();
 
-        _introDESC = new AudioPlayerDESC(_introPlayer, 1, false, false);
+        _loopDESC = new AudioPlayerDESC(_loopPlayer, 1, false);
         _bgmDESC = new AudioPlayerDESC(_bgmPlayer, 0.6f, false);
-        _shopkeeperDESC = new AudioPlayerDESC(_shopkeeperPlayer, 1, false);
+        _shopkeeperDESC = new AudioPlayerDESC(_shopkeeperPlayer, 0, false);
         _bansheeDESC = new AudioPlayerDESC(_bansheePlayer, 0, false);
         _sfxDESC = new AudioPlayerDESC(_sfxPlayer, 1, false, false);
 
         string path = "Sound/";
         int count = (int)BGMName.Count;
-        //for (int i = 0; i < count; i++)
-        //{
-        //    BGMName name = (BGMName)i;
-        //    AudioClip clip = Resources.Load<AudioClip>(path + "BGM/" + name + "_intro");
-        //    _introClipDoc.Add(name, clip);
-        //}
+        for (int i = 0; i < count; i++)
+        {
+            LoopName name = (LoopName)i;
+            AudioClip clip = Resources.Load<AudioClip>(path + "BGM/" + name);
+            _loopClipDoc.Add(name, clip);
+        }
         for (int i = 0; i < count; i++)
         {
             BGMName name = (BGMName)i;
             AudioClip clip = Resources.Load<AudioClip>(path + "BGM/" + name);
             _bgmClipDoc.Add(name, clip);
         }
-        //for (int i = 0; i < count; i++)
-        //{
-        //    BGMName name = (BGMName)i;
-        //    AudioClip clip = Resources.Load<AudioClip>(path + "BGM/" + name + "_shopkeeper");
-        //    _shopkeeperClipDoc.Add(name, clip);
-        //}
+        for (int i = 0; i < count; i++)
+        {
+            ShopkeeperName name = (ShopkeeperName)i;
+            AudioClip clip = Resources.Load<AudioClip>(path + "BGM/" + name);
+            _shopkeeperClipDoc.Add(name, clip);
+        }
 
         count = (int)SFXName.Count;
         for (int i = 0; i < count; i++)
@@ -80,6 +80,28 @@ public class SoundManager : TSingleton<SoundManager>
         }
         _bgmPlayer.clip = _bgmClipDoc[name];
         _bgmPlayer.Play();
+    }
+
+    public void PlayLoop(LoopName name)
+    {
+        if (!_loopClipDoc.ContainsKey(name))
+        {
+            Debug.LogFormat("{0} AudioClip은 없습니다", name);
+            return;
+        }
+        _loopPlayer.clip = _loopClipDoc[name];
+        _loopPlayer.Play();
+    }
+
+    public void PlayShop(ShopkeeperName name)
+    {
+        if (!_shopkeeperClipDoc.ContainsKey(name))
+        {
+            Debug.LogFormat("{0} AudioClip은 없습니다", name);
+            return;
+        }
+        _shopkeeperPlayer.clip = _shopkeeperClipDoc[name];
+        _shopkeeperPlayer.Play();
     }
 
     public void PlaySFX(SFXName name)

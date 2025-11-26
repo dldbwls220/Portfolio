@@ -66,8 +66,9 @@ public class IngameManager : MonoBehaviour
     IEnumerator DelayMusic()
     {
         yield return new WaitForSeconds(0.08f);
-        SoundManager._instance._bgmDESC._mute = false;
-        SoundManager._instance.PlayBGM((BGMName)(_musicIndex - 1));
+        
+        SoundManager._instance.PlayLoop((LoopName)(_musicIndex - 1));
+        SoundManager._instance.PlayShop((ShopkeeperName)(_musicIndex - 1));
         SoundManager._instance.PlayBanshee();
         _isPlayingBGM = true;
     }
