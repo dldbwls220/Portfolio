@@ -20,6 +20,13 @@ public class Monsterinfo
     public Transform _tfPoolParent;
 }
 
+[System.Serializable]
+public class ItemInfo
+{
+    public GameObject _objPrefab;
+    public Transform _tfPoolParent;
+}
+
 public class ObjectPool : MonoBehaviour
 {
     [SerializeField] ObjectInfo[] _objInfo;
@@ -36,11 +43,13 @@ public class ObjectPool : MonoBehaviour
     public Queue<GameObject> _bansheeQueue;
     public Queue<GameObject> _direBatQueue;
 
-    public static ObjectPool _instance;
+   static ObjectPool _uniqueInstance;
+
+    public static ObjectPool _instance { get { return _uniqueInstance; } }
 
     void Awake()
     {
-        _instance = this;
+        _uniqueInstance = this;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

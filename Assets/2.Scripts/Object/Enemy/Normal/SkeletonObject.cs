@@ -87,9 +87,7 @@ public class SkeletonObject : CharBase
         if(_path != null)
             SetTile(_path[1], true, false, 0);
 
-        _startNode = _tileManager.NodeFromWorldPos(transform.position);
-        
-        SetMovementCost(5, true);
+        _startNode = _tileManager.NodeFromWorldPos(transform.position);        
 
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
         _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
@@ -133,10 +131,11 @@ public class SkeletonObject : CharBase
         {
             _nowHp = 0;
             SoundManager._instance.PlaySFX(SFXName.Skel_death);
-
-            _healthBarManager.ClearHeart();
-
+            SetTile(_path[1], true, false, 0);
             _dead = true;
+            SpawnGold(_gold);
+            ObjectPool._instance._skeletonQueue.Enqueue(gameObject);
+            gameObject.SetActive(false);
         }
         else
         {

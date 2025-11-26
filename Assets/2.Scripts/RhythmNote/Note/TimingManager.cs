@@ -66,7 +66,7 @@ public class TimingManager : MonoBehaviour
                         _boxNoteListL.RemoveAt(i);
                         _boxNoteListR[i].GetComponent<Note>().StopSprite();
                         _boxNoteListR.RemoveAt(i);
-                        Debug.Log("Miss");
+                        
 
                         return false;
                     }
@@ -80,7 +80,7 @@ public class TimingManager : MonoBehaviour
                         _boxNoteListR[i].GetComponent<Note>().StopSprite();
                         _boxNoteListR.RemoveAt(i);
 
-                        Debug.Log("Hit" + n);
+                        
 
                         return true;
                     }                  

@@ -155,7 +155,10 @@ public class BatObject : CharBase
             _nowHp = 0;
             SoundManager._instance.PlaySFX(SFXName.Bat_death);
             _dead = true;
-            _heartManager.ClearHeart();
+            SpawnGold(_gold);
+            SetTile(_path[1], true, false, 0);
+            ObjectPool._instance._batQueue.Enqueue(gameObject);
+            gameObject.SetActive(false);
         }
         else
         {

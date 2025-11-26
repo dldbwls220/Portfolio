@@ -130,8 +130,12 @@ public class GolemObject : CharBase
         if ((_nowHp -= dmg) <= 0)
         {
             _nowHp = 0;
+            SpawnGold(_gold);
+            SetTile(_path[1], true, false, 0);
             SoundManager._instance.PlaySFX(SFXName.Golemstone_death);
             _dead = true;
+            ObjectPool._instance._golemQueue.Enqueue(gameObject);
+            gameObject.SetActive(false);
         }
         else
         {

@@ -17,7 +17,6 @@ public class SlimeObject : CharBase
     Transform _targetTF;
     PlayerController _playerController;
 
-    BoxCollider2D _attackCollider;
     HealthBarManager _healthBarManager;
 
     List<Node> _path;
@@ -72,7 +71,6 @@ public class SlimeObject : CharBase
         _pFinder = GameObject.Find("GridManager").GetComponent<PathFinding>();
         _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
         _playerObj = GameObject.Find("PlayerCharacter");
-        _attackCollider = GetComponent<BoxCollider2D>();
         _healthBarManager = _HeartUI.GetComponent<HealthBarManager>();
 
         _targetTF = _playerObj.transform;
@@ -130,12 +128,12 @@ public class SlimeObject : CharBase
             if (distance == 2)
             {
                 if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.1f));
+                    StartCoroutine(Attack(_path[1], 0.06f));
             }
             else if (distance == 1)
             {
                 if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.15f));
+                    StartCoroutine(Attack(_path[1], 0.07f));
 
             }
             else if(isOtherReserved(_path[1]) && _path[1]._walkable)
@@ -155,10 +153,13 @@ public class SlimeObject : CharBase
         if ((_nowHp -= dmg) <= 0)
         {
             _nowHp = 0;
-
+            SpawnGold(_gold);
+            SetTile(_path[1], true, false, 0);
             int rnd = Random.Range((int)SFXName.Slime_death_01, (int)SFXName.Slime_death_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
             _dead = true;
+            ObjectPool._instance._slimeQueue.Enqueue(gameObject);
+            gameObject.SetActive(false);
         }
         else
         {

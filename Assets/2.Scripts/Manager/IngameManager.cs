@@ -51,7 +51,7 @@ public class IngameManager : MonoBehaviour
         if (!_isSelected) return;
 
         _myBeat++;
-        Debug.Log(_myBeat);
+        
         if (_myBeat == 4 && !_isPlayingBGM)
         {
             StartCoroutine(DelayMusic());

@@ -19,8 +19,6 @@ public class HealthBarManager : MonoBehaviour
             else
                 _hearts[i].SetHeartImage(HeartSatus.Empty);
         }
-
-        Debug.Log("하트 그리기");
     }
 
     public void CreateEmptyHeart(float maxHP, bool isMonster = true)

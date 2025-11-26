@@ -41,6 +41,8 @@ public class PlayerController : CharBase
     bool _isAttack;
     bool _isMoving;
     bool _isDelayEnd;
+    int _goldCollect;
+    float _originStr;
 
     LookDir _myDir;
     public WeaponName _weaponName;
@@ -50,6 +52,7 @@ public class PlayerController : CharBase
     float _baseY;
 
     public float _str { get { return _strength; } }
+    public int _goldContain { get { return _goldCollect; } }
 
     private void Start()
     {
@@ -60,7 +63,7 @@ public class PlayerController : CharBase
     {
         InitBaseSet("Cadence", 1, 2, 0, 0);
 
-
+        _originStr = _str;
 
         _isFlipY = false;
         _isAttack = false;
@@ -72,6 +75,7 @@ public class PlayerController : CharBase
         _followCamera = Camera.main;
         _myDir = LookDir.Left;
         _weaponName = WeaponName.SwordO;
+        _goldCollect = 0;
 
         _myAttackEffect = Instantiate(_slashAnimPrefab, transform.position, Quaternion.identity, transform);
         _slashAnim = _myAttackEffect.GetComponent<Animator>();
@@ -247,14 +251,12 @@ public class PlayerController : CharBase
                 _slashAnim.SetTrigger(_weaponName.ToString());
                 break;
         }
-        StartCoroutine(CameraShaker(0.05f, 0.3f));
-       
-        Debug.Log("공격!");
+        StartCoroutine(CameraShaker(0.05f, 0.3f));      
     }
 
     public void EnableWeaponCollider(int index)
     {
-        Debug.Log(index);
+        //Debug.Log(index);
 
         switch (index)
         {
@@ -394,9 +396,49 @@ public class PlayerController : CharBase
 
     }
 
-    void AdjustSortingLayer()
+    public void GetGold(int gold)
     {
+        _goldCollect += gold;
 
+        Debug.Log(_goldCollect + "gold");
+    }
+
+    public void BuyWeapon(int gold, WeaponName weapon)
+    {
+        _goldCollect -= gold;
+        _weaponName = weapon;
+    }
+
+    public void BuyFood(int gold, int heal)
+    {
+        _goldCollect -= gold;
+        _nowHp += heal;
+
+        if( _currentHp > _maxHP)
+            _nowHp = _maxHP;
+
+        _healthBarManager.DrawHearts(_currentHp);
+    }
+
+    public void BuyHeart(int gold, float heart)
+    {
+        _goldCollect -= gold;
+        _hp += heart;
+        _nowHp += 1;
+
+        _healthBarManager.ClearHeart();
+        _healthBarManager.CreateEmptyHeart(_maxHP, false);
+        _healthBarManager.DrawHearts(_currentHp);
+    }
+
+    public void BuyStrUp(int gold, float strup)
+    {
+        Debug.Log("전 공격력" + _str);
+
+        _goldCollect -= gold;
+        _strength = _originStr += strup;
+
+        Debug.Log("후 공격력" + _str);
     }
 
     IEnumerator MoveJump()

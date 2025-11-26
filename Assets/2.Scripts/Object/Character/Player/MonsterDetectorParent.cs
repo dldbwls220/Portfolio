@@ -13,7 +13,7 @@ public class MonsterDetectorParent : MonoBehaviour
         if (!_monsterDetected[direction].Contains(monster))
         {
             _monsterDetected[direction].Add(monster);
-            Debug.Log($"[{direction}] 방향에서 몬스터 {monster.name} 감지됨");
+            //Debug.Log($"[{direction}] 방향에서 몬스터 {monster.name} 감지됨");
         }
     }
 
@@ -22,7 +22,7 @@ public class MonsterDetectorParent : MonoBehaviour
         if (_monsterDetected.ContainsKey(direction))
         {
             _monsterDetected[direction].Remove(monster);
-            Debug.Log($"[{direction}] 방향에서 몬스터 {monster.name} 사라짐");
+            //Debug.Log($"[{direction}] 방향에서 몬스터 {monster.name} 사라짐");
         }
     }
 

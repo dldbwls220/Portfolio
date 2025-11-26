@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7464643392648269219}
   - component: {fileID: 1893994185835991859}
   - component: {fileID: 525221684618398281}
-  - component: {fileID: 4082378690583597012}
   m_Layer: 0
   m_Name: RedDragon
   m_TagString: Monster
@@ -157,21 +156,6 @@ MonoBehaviour:
   _wallDetect:
     serializedVersion: 2
     m_Bits: 64
---- !u!114 &4082378690583597012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2862061249864562837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae5da2e1ad6652644b82351c5baff645, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sr: {fileID: 3018547628752986028}
-  headOffset: 200
-  multiplier: 26
 --- !u!1 &2867979863558585584
 GameObject:
   m_ObjectHideFlags: 0

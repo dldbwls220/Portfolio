@@ -67,6 +67,12 @@ namespace DefineEnum
         SpearO3,
     }
 
+    public enum Upgrade
+    {
+        StrUp,
+        HealthUp
+    }
+
     #region[Music]
     public enum BGMName
     {
@@ -151,6 +157,10 @@ namespace DefineEnum
         sfx_ui_back,
         sfx_ui_select_down,
         sfx_ui_select_up,
+        sfx_pickup_gold_01,
+        sfx_pickup_gold_02,
+        sfx_pickup_gold_03,
+        sfx_pickup_purchase,
 
         Count
     }

@@ -35,4 +35,14 @@ public class CharBase : MonoBehaviour
         else
             _detectPlayer=false;
     }
+
+    protected void SpawnGold(int gold)
+    {
+        Vector3 pos = new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y), Mathf.RoundToInt(transform.position.z));
+
+        GameObject goldcoin = Resources.Load<GameObject>("Prefabs/Item/GoldCoin");
+        GameObject go = Instantiate(goldcoin, pos, Quaternion.identity);
+        GoldCoinObj co = go.GetComponent<GoldCoinObj>();
+        co.InitGold(gold);
+    }
 }
