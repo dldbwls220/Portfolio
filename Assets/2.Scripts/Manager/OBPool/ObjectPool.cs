@@ -1,5 +1,6 @@
 using DefineEnum;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
@@ -28,11 +29,20 @@ public class ItemInfo
     public Transform _tfPoolParent;
 }
 
+[System.Serializable]
+public class ShopInfo
+{
+    public GameObject _objPrefab;
+    public int _count;
+    public Transform _tfPoolParent;
+}
+
 public class ObjectPool : MonoBehaviour
 {
     [SerializeField] ObjectInfo[] _objInfo;
     [SerializeField] Monsterinfo[] _monsterInfo;
     [SerializeField] ItemInfo[] _itemInfo;
+    [SerializeField] ShopInfo _shopInfo;
 
     public Queue<GameObject> _leftNoteQueue;
     public Queue<GameObject> _rightNoteQueue;
@@ -48,6 +58,8 @@ public class ObjectPool : MonoBehaviour
     public List<GameObject> _weaponList;
     public List<GameObject> _foodList;
     public List<GameObject> _powerUpList;
+
+    public List<GameObject> _shopList;
 
    static ObjectPool _uniqueInstance;
 
@@ -81,6 +93,8 @@ public class ObjectPool : MonoBehaviour
         _foodList = new List<GameObject>();
         _powerUpList = new List<GameObject>();
 
+        _shopList = new List<GameObject>();
+
         _leftNoteQueue = InsertQueue(_objInfo[0]);
         _rightNoteQueue = InsertQueue(_objInfo[1]);
 
@@ -104,6 +118,8 @@ public class ObjectPool : MonoBehaviour
         {
             InsertFoodList(_itemInfo[i]);
         }
+
+        InsertShopList(_shopInfo);
     }
 
     Queue<GameObject> InsertQueue(ObjectInfo objInfo)
@@ -137,30 +153,37 @@ public class ObjectPool : MonoBehaviour
                 case Monsters.Slime:
                     SlimeObject slime = monster.GetComponent<SlimeObject>();
                     slime.InitMonster((int)objInfo.MonsterType + 1);
+                    slime.name = objInfo._objPrefab.name + i.ToString();
                     break;
                 case Monsters.Bat:
                     BatObject bat = monster.GetComponent<BatObject>();
                     bat.InitMonster((int)objInfo.MonsterType + 1);
+                    bat.name = objInfo._objPrefab.name + i.ToString();
                     break;
                 case Monsters.Skeleton:
                     SkeletonObject skeleton = monster.GetComponent<SkeletonObject>();
                     skeleton.InitMonster((int)objInfo.MonsterType + 1);
+                    skeleton.name = objInfo._objPrefab.name + i.ToString();
                     break;
                 case Monsters.Golem:
                     GolemObject golem = monster.GetComponent<GolemObject>();
                     golem.InitMonster((int)objInfo.MonsterType + 1);
+                    golem.name = objInfo._objPrefab.name + i.ToString();
                     break;
                 case Monsters.RedDragon:
                     RedDragonObject redDragon = monster.GetComponent<RedDragonObject>();
                     redDragon.InitMonster((int)objInfo.MonsterType + 1);
+                    redDragon.name = objInfo._objPrefab.name + i.ToString();
                     break;
                 case Monsters.Banshee:
                     BansheeObject banshee = monster.GetComponent<BansheeObject>();
                     banshee.InitMonster((int)objInfo.MonsterType + 1);
+                    banshee.name = objInfo._objPrefab.name + i.ToString();
                     break;
                 case Monsters.DireBat:
                     BatObject direbat = monster.GetComponent<BatObject>();
                     direbat.InitMonster((int)objInfo.MonsterType + 1);
+                    direbat.name = objInfo._objPrefab.name + i.ToString();
                     break;
             }
 
@@ -178,7 +201,6 @@ public class ObjectPool : MonoBehaviour
 
     void InsertWeaponList(ItemInfo objInfo)
     {
-
         GameObject weapon = Instantiate(objInfo._objPrefab, transform.position, Quaternion.identity);
         weapon.SetActive(false);
         weapon.transform.SetParent(objInfo._tfPoolParent);
@@ -187,8 +209,6 @@ public class ObjectPool : MonoBehaviour
     }
     void InsertFoodList(ItemInfo objInfo)
     {
-        List<GameObject> list = new List<GameObject>();
-
         GameObject food = Instantiate(objInfo._objPrefab, transform.position, Quaternion.identity);
         food.SetActive(false);
         food.transform.SetParent(objInfo._tfPoolParent);
@@ -197,12 +217,24 @@ public class ObjectPool : MonoBehaviour
     }
     void InsertPowerUpList(ItemInfo objInfo)
     {
-        List<GameObject> list = new List<GameObject>();
-
         GameObject weapon = Instantiate(objInfo._objPrefab, transform.position, Quaternion.identity);
         weapon.SetActive(false);
         weapon.transform.SetParent(objInfo._tfPoolParent);
 
         _powerUpList.Add(weapon);
+    }
+
+    void InsertShopList(ShopInfo objInfo)
+    {
+        for (int i = 0; i < objInfo._count; i++)
+        {
+            GameObject shopgate = Instantiate(objInfo._objPrefab, transform.position, Quaternion.identity);
+            shopgate.SetActive(false);
+            if (objInfo._tfPoolParent != null)
+                shopgate.transform.SetParent(objInfo._tfPoolParent);
+            else
+                shopgate.transform.SetParent(this.transform);
+            _shopList.Add(shopgate);
+        }
     }
 }

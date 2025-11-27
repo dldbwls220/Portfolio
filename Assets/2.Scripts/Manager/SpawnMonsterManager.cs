@@ -1,7 +1,9 @@
+using DefineEnum;
 using UnityEngine;
 
 public class SpawnMonsterManager : MonoBehaviour
 {
+    PlayerController _playerController;
     [SerializeField] TileMapGridManager _grid;
     [SerializeField] GameObject _enemySpawnObj;
     Transform[] _spawnPositions;
@@ -18,12 +20,14 @@ public class SpawnMonsterManager : MonoBehaviour
             _spawnPositions[i] = _enemySpawnObj.transform.GetChild(i).GetComponent<Transform>();
         }
 
+        _playerController = GameObject.Find("PlayerCharacter").GetComponent<PlayerController>();
+
         _myBeat = 0;
     }
 
     void OnBeat()
     {
-        if (!IngameManager._instance._isStartMusic) return;
+        if (!IngameManager._instance._isStartMusic || _playerController._isInShop) return;
 
         _myBeat += 1;
         
@@ -65,6 +69,33 @@ public class SpawnMonsterManager : MonoBehaviour
  
         }
 
+    }
+
+    public void SpawnBoss()
+    {
+        int rndBoss = Random.Range(0, 3);
+
+        switch (rndBoss)
+        {
+            case 0:
+                GameObject RDragon = ObjectPool._instance._redDragonQueue.Dequeue();
+                RDragon.transform.position = SetPostion();
+                SoundManager._instance.PlaySFX(SFXName.Dragon_cry);
+                RDragon.SetActive(true);
+                break;
+            case 1:
+                GameObject Banshee = ObjectPool._instance._bansheeQueue.Dequeue();
+                Banshee.transform.position = SetPostion();
+                SoundManager._instance.PlaySFX(SFXName.Banshee_cry);
+                Banshee.SetActive(true);
+                break;
+            case 2:
+                GameObject DireBat = ObjectPool._instance._direBatQueue.Dequeue();
+                DireBat.transform.position = SetPostion();
+                SoundManager._instance.PlaySFX(SFXName.Bat_hit);
+                DireBat.SetActive(true);
+                break;
+        }
     }
 
     Vector3 SetPostion()

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GolemObject : CharBase
+public class GolemObject : MonsterBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
@@ -28,17 +28,18 @@ public class GolemObject : CharBase
     void OnEnable()
     {
         NoteManager._instance.OnBeat += OnBeat;
+        if (_isDead)
+        {
+            InitMonsterStat();
+            _dead = false;
+        }
     }
 
     private void OnDisable()
     {
 
         NoteManager._instance.OnBeat -= OnBeat;
-        if (_isDead)
-        {
-            InitMonsterStat();
-            _dead = false;
-        }
+       
     }
 
     private void Update()
@@ -75,11 +76,13 @@ public class GolemObject : CharBase
     void InitMonsterStat()
     {
         _nowHp = _maxHP;
+        _healthBarManager.ClearHeart();
+        _healthBarManager.CreateEmptyHeart(_maxHP);
         _healthBarManager.DrawHearts(_nowHp);
     }
     void OnBeat()
     {
-        if (_isMoving) return;
+        if (_isMoving || _playerController._isInShop) return;
 
         _myBeat += 1;
         if (_myBeat > 4)
@@ -131,6 +134,7 @@ public class GolemObject : CharBase
         {
             _nowHp = 0;
             SpawnGold(_gold);
+            IngameManager._instance.KillCount();
             SetTile(_path[1], true, false, 0);
             SoundManager._instance.PlaySFX(SFXName.Golemstone_death);
             _dead = true;
@@ -314,7 +318,9 @@ public class GolemObject : CharBase
     {
         if (nextNode._SkeletonNode == true ||
             nextNode._SlimeNode == true ||
-            nextNode._BatNode == true)
+            nextNode._BatNode == true ||
+            nextNode._BansheeNode == true ||
+            nextNode._RedDragonNode == true)
             return true;
         else return false;
     }

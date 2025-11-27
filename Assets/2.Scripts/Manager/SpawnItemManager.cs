@@ -5,6 +5,9 @@ public class SpawnItemManager : MonoBehaviour
     [SerializeField] GameObject _itemPosObj;
     Transform[] _itemTf;
 
+    GameObject w;
+    GameObject f;
+
     void Start()
     {
         _itemTf = new Transform[_itemPosObj.transform.childCount];
@@ -20,12 +23,12 @@ public class SpawnItemManager : MonoBehaviour
     public void SetSellingItems()
     {
         int rndW = Random.Range(0, ObjectPool._instance._weaponList.Count);
-        GameObject w = ObjectPool._instance._weaponList[rndW];
+        w = ObjectPool._instance._weaponList[rndW];
         w.transform.position = _itemTf[0].position;
         w.SetActive(true);
 
         int rndF = Random.Range(0, ObjectPool._instance._foodList.Count);
-        GameObject f = ObjectPool._instance._foodList[rndF];
+        f = ObjectPool._instance._foodList[rndF];
         f.transform.position = _itemTf[1].position;
         f.SetActive(true);
 
@@ -36,5 +39,11 @@ public class SpawnItemManager : MonoBehaviour
         pu = ObjectPool._instance._powerUpList[1];
         pu.transform.position = _itemTf[3].position;
         pu.SetActive(true);
+    }
+
+    public void MakeItemEnable()
+    {
+        w.SetActive(false);
+        f.SetActive(false);
     }
 }

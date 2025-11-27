@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class BatObject : CharBase
+public class BatObject : MonsterBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
@@ -42,17 +42,18 @@ public class BatObject : CharBase
     void OnEnable()
     {
         NoteManager._instance.OnBeat += OnBeat;
+        if (_isDead)
+        {
+            InitMonsterStat();
+            _dead = false;
+        }
     }
 
     private void OnDisable()
     {
 
         NoteManager._instance.OnBeat -= OnBeat;
-        if (_isDead)
-        {
-            InitMonsterStat();
-            _dead = false;
-        }
+        
     }
 
     private void Update()
@@ -94,11 +95,13 @@ public class BatObject : CharBase
     void InitMonsterStat()
     {
         _nowHp = _maxHP;
+        _heartManager.ClearHeart();
+        _heartManager.CreateEmptyHeart(_maxHP);
         _heartManager.DrawHearts(_nowHp);
     }
     void OnBeat()
     {
-        if (_isMoving) return;
+        if (_isMoving || _playerController._isInShop) return;
 
         _myBeat += 1;
         if(_myBeat > 4) _myBeat = 1;
@@ -156,6 +159,11 @@ public class BatObject : CharBase
             SoundManager._instance.PlaySFX(SFXName.Bat_death);
             _dead = true;
             SpawnGold(_gold);
+
+            if(_name == "DireBat")
+                IngameManager._instance.BossCount();
+
+            IngameManager._instance.KillCount();
             SetTile(_path[1], true, false, 0);
             ObjectPool._instance._batQueue.Enqueue(gameObject);
             gameObject.SetActive(false);
@@ -189,7 +197,9 @@ public class BatObject : CharBase
     {
         if (nextNode._GolemNode == true ||
             nextNode._SlimeNode == true ||
-            nextNode._SkeletonNode == true)
+            nextNode._SkeletonNode == true ||
+            nextNode._BansheeNode == true ||
+            nextNode._RedDragonNode == true)
             return true;
         else return false;
     }

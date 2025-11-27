@@ -10,6 +10,6 @@ public class AdjustSortingLayer : MonoBehaviour
     void Update()
     {
         _sRenderer = GetComponent<SpriteRenderer>();
-        _sRenderer.sortingOrder = (int)(transform.position.y * _pixel);
+        _sRenderer.sortingOrder = (int)(transform.position.y * -_pixel);
     }
 }

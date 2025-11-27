@@ -54,6 +54,7 @@ public class PlayerController : CharBase
     public float _str { get { return _strength; } }
     public int _goldContain { get { return _goldCollect; } }
 
+    public bool _isInShop { get; set; }
     private void Start()
     {
        InitCharacter();
@@ -63,18 +64,21 @@ public class PlayerController : CharBase
     {
         InitBaseSet("Cadence", 1, 2, 0, 0);
 
+        gameObject.SetActive(true);
+
         _originStr = _str;
 
         _isFlipY = false;
         _isAttack = false;
         _isMoving = false;
         _isDelayEnd = false;
+        _isInShop = false;
 
         _movePoint.parent = null;
         _baseY = _characterBody.transform.localPosition.y;
         _followCamera = Camera.main;
         _myDir = LookDir.Left;
-        _weaponName = WeaponName.SwordO;
+        _weaponName = WeaponName.DaggerN;
         _goldCollect = 0;
 
         _myAttackEffect = Instantiate(_slashAnimPrefab, transform.position, Quaternion.identity, transform);
@@ -166,6 +170,8 @@ public class PlayerController : CharBase
                 StartCoroutine(MoveJump());
                 initCombo();
             }
+
+            CheckBoardTileMap._instance.ChangTile();
         }
         else if (Mathf.Abs(vertical) == 1f)
         {
@@ -192,6 +198,7 @@ public class PlayerController : CharBase
                 StartCoroutine(MoveJump());
                 initCombo();
             }
+            CheckBoardTileMap._instance.ChangTile();
         }          
     }
 
@@ -379,6 +386,7 @@ public class PlayerController : CharBase
             SoundManager._instance.PlaySFX(SFXName.sfx_player_death_ST);
             _monsterSlashAnim.SetTrigger("E_Attack");
             _healthBarManager.DrawHearts(_nowHp);
+            gameObject.SetActive(false);
             _dead = true;
         }
         else
@@ -391,7 +399,7 @@ public class PlayerController : CharBase
             SoundManager._instance.PlaySFX(SFXName.sfx_player_hit_ST);
             _monsterSlashAnim.SetTrigger("E_Attack");
             _healthBarManager.DrawHearts(_nowHp);
-            Debug.Log(dmg+"µ¥¹ÌÁö");
+            IngameManager._instance.ResetCombo();
         }
 
     }

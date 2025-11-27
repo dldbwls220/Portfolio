@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class SkeletonObject : CharBase
+public class SkeletonObject : MonsterBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
@@ -30,17 +30,18 @@ public class SkeletonObject : CharBase
     void OnEnable()
     {
         NoteManager._instance.OnBeat += OnBeat;
+        if (_isDead)
+        {
+            InitMonsterStat();
+            _dead = false;
+        }
     }
 
     private void OnDisable()
     {
 
         NoteManager._instance.OnBeat -= OnBeat;
-        if (_isDead)
-        {
-            InitMonsterStat();
-            _dead = false;
-        }
+        
     }
 
     public void InitMonster(int enemyIndex)
@@ -73,12 +74,14 @@ public class SkeletonObject : CharBase
     void InitMonsterStat()
     {
         _nowHp = _maxHP;
-        _healthBarManager.DrawHearts(_nowHp);
+        _healthBarManager.ClearHeart();
+        _healthBarManager.CreateEmptyHeart(_maxHP);
+        _healthBarManager.DrawHearts(_currentHp);
     }
 
     void OnBeat()
     {
-        if (_isMoving) return;
+        if (_isMoving || _playerController._isInShop) return;
 
         _myBeat += 1;
         if (_myBeat > 4)
@@ -134,6 +137,7 @@ public class SkeletonObject : CharBase
             SetTile(_path[1], true, false, 0);
             _dead = true;
             SpawnGold(_gold);
+            IngameManager._instance.KillCount();
             ObjectPool._instance._skeletonQueue.Enqueue(gameObject);
             gameObject.SetActive(false);
         }
@@ -292,7 +296,9 @@ public class SkeletonObject : CharBase
     {
         if(nextNode._GolemNode == true ||
             nextNode._SlimeNode == true ||
-            nextNode._BatNode == true)
+            nextNode._BatNode == true ||
+             nextNode._BansheeNode == true ||
+            nextNode._RedDragonNode == true)
             return true;
         else return false;
     }

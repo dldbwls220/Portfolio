@@ -11,7 +11,7 @@ public class SoundManager : TSingleton<SoundManager>
     Dictionary<ShopkeeperName, AudioClip> _shopkeeperClipDoc;
     Dictionary<SFXName, AudioClip> _sfxClipDoc;
 
-    AudioPlayerDESC _loopDESC;
+    public AudioPlayerDESC _loopDESC;
     AudioSource _loopPlayer;
     public AudioPlayerDESC _bgmDESC;
     AudioSource _bgmPlayer;

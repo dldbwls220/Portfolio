@@ -66,7 +66,8 @@ public class TimingManager : MonoBehaviour
                         _boxNoteListL.RemoveAt(i);
                         _boxNoteListR[i].GetComponent<Note>().StopSprite();
                         _boxNoteListR.RemoveAt(i);
-                        
+
+                        IngameManager._instance.ResetCombo();
 
                         return false;
                     }
@@ -87,6 +88,8 @@ public class TimingManager : MonoBehaviour
                 }
             }
         }
+
+        IngameManager._instance.ResetCombo();
 
         return false;
         

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BansheeObject : CharBase
+public class BansheeObject : MonsterBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
@@ -11,6 +11,8 @@ public class BansheeObject : CharBase
     [SerializeField] float _moveSpeed = 5f;
     [SerializeField] Transform _characterPos;
     [SerializeField] GameObject _heartUI;
+    [SerializeField] GameObject _defaultSprite;
+    [SerializeField] GameObject _angrySprite;
 
     List<Node> _path;
     Node _startNode;
@@ -30,17 +32,34 @@ public class BansheeObject : CharBase
     void OnEnable()
     {
         NoteManager._instance.OnBeat += OnBeat;
+       
+        if (_isDead)
+        {
+            InitMonsterStat();
+            _dead = false;
+        }
     }
 
     private void OnDisable()
     {
 
         NoteManager._instance.OnBeat -= OnBeat;
-        if (_isDead)
+        
+    }
+
+    private void Update()
+    {
+        if (_isDamaged)
         {
-            InitMonsterStat();
-            _dead = false;
+            _defaultSprite.SetActive(false);
+            _angrySprite.SetActive(true);
         }
+        else
+        {
+            _defaultSprite.SetActive(true);
+            _angrySprite.SetActive(false);
+        }
+
     }
 
     public void InitMonster(int enemyIndex)
@@ -65,14 +84,14 @@ public class BansheeObject : CharBase
         _isAttack = false;
         _isDamaged = false;
 
-        _healthBarManager.ClearHeart();
-        _healthBarManager.CreateEmptyHeart(_maxHP);
-        _healthBarManager.DrawHearts(_nowHp);
+        
     }
 
     void InitMonsterStat()
     {
         _nowHp = _maxHP;
+        _healthBarManager.ClearHeart();
+        _healthBarManager.CreateEmptyHeart(_maxHP);
         _healthBarManager.DrawHearts(_nowHp);
     }
     void OnBeat()
@@ -141,11 +160,15 @@ public class BansheeObject : CharBase
 
             SoundManager._instance._bgmDESC._volum = 1;
             SoundManager._instance._bansheeDESC._volum = 0;
-
-            _healthBarManager.ClearHeart();
-
+            
             _isDamaged = false;
             _dead = true;
+            SetTile(_path[1], true, false, 0);
+            SpawnGold(_gold);
+            IngameManager._instance.KillCount();
+            IngameManager._instance.BossCount();
+            ObjectPool._instance._bansheeQueue.Enqueue(gameObject);
+            gameObject.SetActive(false);
         }
         else
         {
@@ -320,15 +343,17 @@ public class BansheeObject : CharBase
     {
         _startNode._walkable = isWalkable;
 
-        nextNode._SkeletonNode = isResrve;
+        nextNode._BansheeNode = isResrve;
         nextNode._movementCost = reserveCost;
     }
 
     bool isOtherReserved(Node nextNode)
     {
         if (nextNode._GolemNode == true ||
-            nextNode._SlimeNode == true ||
-            nextNode._BatNode == true)
+             nextNode._SlimeNode == true ||
+             nextNode._BatNode == true ||
+             nextNode._SkeletonNode == true ||
+             nextNode._RedDragonNode == true)
             return true;
         else return false;
     }

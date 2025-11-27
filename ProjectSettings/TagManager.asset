@@ -9,6 +9,7 @@ TagManager:
   - Monster
   - Obstacle
   - PWeapon
+  - PlayerCharacter
   layers:
   - Default
   - TransparentFX

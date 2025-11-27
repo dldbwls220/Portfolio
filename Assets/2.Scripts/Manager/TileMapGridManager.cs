@@ -154,7 +154,7 @@ public class TileMapGridManager : MonoBehaviour
                 _grid[x, y]._movementCost = blurred;
 
                 _penaltyMin = Mathf.Min(_penaltyMin, blurred);
-                _penaltyMin = Mathf.Max(_penaltyMin, blurred);
+                _penaltyMax = Mathf.Max(_penaltyMax, blurred);
             }
         }
     }

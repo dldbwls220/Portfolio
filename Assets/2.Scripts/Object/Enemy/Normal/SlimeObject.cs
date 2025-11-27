@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class SlimeObject : CharBase
+public class SlimeObject : MonsterBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
@@ -38,18 +38,19 @@ public class SlimeObject : CharBase
 
     void OnEnable()
     {
-        NoteManager._instance.OnBeat += OnBeat;     
+        NoteManager._instance.OnBeat += OnBeat;
+        if (_isDead)
+        {
+            InitMonsterStat();
+            _dead = false;
+        }
     }
 
     private void OnDisable()
     {
 
         NoteManager._instance.OnBeat -= OnBeat;
-        if (_isDead)
-        {
-            InitMonsterStat();
-            _dead = false;
-        }
+        
     }
 
     private void Update()
@@ -91,12 +92,14 @@ public class SlimeObject : CharBase
     void InitMonsterStat()
     {
         _nowHp = _maxHP;
+        _healthBarManager.ClearHeart();
+        _healthBarManager.CreateEmptyHeart(_maxHP);
         _healthBarManager.DrawHearts(_nowHp);
     }
 
     void OnBeat()
     {
-        if (_isMoving) return;
+        if (_isMoving || _playerController._isInShop) return;
 
         _myBeat += 1;
         if (_myBeat > 4) _myBeat = 1;
@@ -154,6 +157,7 @@ public class SlimeObject : CharBase
         {
             _nowHp = 0;
             SpawnGold(_gold);
+            IngameManager._instance.KillCount();
             SetTile(_path[1], true, false, 0);
             int rnd = Random.Range((int)SFXName.Slime_death_01, (int)SFXName.Slime_death_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
@@ -317,7 +321,9 @@ public class SlimeObject : CharBase
     {
         if (nextNode._GolemNode == true ||
             nextNode._SkeletonNode == true ||
-            nextNode._BatNode == true)
+            nextNode._BatNode == true ||
+             nextNode._BansheeNode == true ||
+            nextNode._RedDragonNode == true)
             return true;
         else return false;
     }

@@ -9,6 +9,8 @@ public class Node : IHeapItem<Node>
     public bool _SkeletonNode { get; set; } = false;
     public bool _SlimeNode { get; set; } = false;
     public bool _GolemNode { get; set; } = false;
+    public bool _RedDragonNode { get; set; } = false;
+    public bool _BansheeNode { get; set; } = false;
     #endregion[MonsterReserves]
     public bool _walkable { get; set; }
     public Vector3 _worldPosition { get; set; }

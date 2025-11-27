@@ -8,6 +8,8 @@ public class Note : MonoBehaviour
     Vector3 _stopPos;
     bool _isSpriteStop = false;
 
+    public bool _isStop { get { return _isSpriteStop; }}
+
     void OnEnable()
     {
         _isSpriteStop=false;

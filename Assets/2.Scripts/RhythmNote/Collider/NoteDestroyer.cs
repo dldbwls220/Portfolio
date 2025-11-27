@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NoteDestroyer : MonoBehaviour
 {
@@ -6,6 +7,9 @@ public class NoteDestroyer : MonoBehaviour
     {
         if (collision.CompareTag("LeftNote"))
         {
+            if(!collision.transform.GetComponent<Note>()._isStop)
+                IngameManager._instance.ResetCombo();
+
             TimingManager.Instance._boxNoteListL.Remove(collision.gameObject);
             ObjectPool._instance._leftNoteQueue.Enqueue(collision.gameObject);
             collision.gameObject.SetActive(false);
@@ -14,6 +18,9 @@ public class NoteDestroyer : MonoBehaviour
         }
         else if (collision.CompareTag("RightNote"))
         {
+            if (!collision.transform.GetComponent<Note>()._isStop)
+                IngameManager._instance.ResetCombo();
+
             TimingManager.Instance._boxNoteListR.Remove(collision.gameObject);
             ObjectPool._instance._rightNoteQueue.Enqueue(collision.gameObject);
             collision.gameObject.SetActive(false);

@@ -8,7 +8,6 @@ public class GoldCoinObj : MonoBehaviour
     public Sprite _goldMany;
     public Sprite _goldFiled;
 
-    PlayerController _playerController;
     SpriteRenderer _sRenderer;
 
     int _goldCount;
@@ -26,7 +25,6 @@ public class GoldCoinObj : MonoBehaviour
         else
             _sRenderer.sprite = _goldFiled;
 
-        _playerController = GameObject.Find("PlayerCharacter").GetComponent<PlayerController>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,7 +33,7 @@ public class GoldCoinObj : MonoBehaviour
         {
             SoundManager._instance.PlaySFX(SFXName.sfx_pickup_gold_03);
 
-            _playerController.GetGold(_goldCount);
+            collision.transform.parent.GetComponent<PlayerController>().GetGold(_goldCount);
 
             Destroy(gameObject);
         }

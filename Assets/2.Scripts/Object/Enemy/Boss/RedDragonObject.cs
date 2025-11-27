@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RedDragonObject : CharBase
+public class RedDragonObject : MonsterBase
 {
     [SerializeField] PathFinding _pFinder;
     [SerializeField] TileMapGridManager _tileManager;
@@ -35,17 +35,19 @@ public class RedDragonObject : CharBase
     void OnEnable()
     {
         NoteManager._instance.OnBeat += OnBeat;
+       
+        if (_isDead)
+        {
+            InitMonsterStat();
+            _dead = false;
+        }
     }
 
     private void OnDisable()
     {
 
         NoteManager._instance.OnBeat -= OnBeat;
-        if (_isDead)
-        {
-            InitMonsterStat();
-            _dead = false;
-        }
+        
     }
 
     void Update()
@@ -106,6 +108,8 @@ public class RedDragonObject : CharBase
     void InitMonsterStat()
     {
         _nowHp = _maxHP;
+        _healthBarManager.ClearHeart();
+        _healthBarManager.CreateEmptyHeart(_maxHP);
         _healthBarManager.DrawHearts(_nowHp);
     }
     void OnBeat()
@@ -138,7 +142,7 @@ public class RedDragonObject : CharBase
         switch (_myBeat)
         {
             case 1:
-                if(_startNode._worldPosition.y == _targetNode._worldPosition.y && _path.Count > 1 && _path.Count < 9)
+                if(_startNode._worldPosition.y == _targetNode._worldPosition.y && _path.Count > 2 && _path.Count < 9)
                 {
                     _isFire = true;
                     _anim.SetBool("isFire", true);
@@ -216,6 +220,12 @@ public class RedDragonObject : CharBase
             _healthBarManager.ClearHeart();
 
             _dead = true;
+            SetTile(_path[1], true, false, 0);
+            SpawnGold(_gold);
+            IngameManager._instance.KillCount();
+            IngameManager._instance.BossCount();
+            ObjectPool._instance._redDragonQueue.Enqueue(gameObject);
+            gameObject.SetActive(false);
         }
         else
         {
@@ -408,7 +418,7 @@ public class RedDragonObject : CharBase
     {
         _startNode._walkable = isWalkable;
 
-        nextNode._SkeletonNode = isResrve;
+        nextNode._RedDragonNode = isResrve;
         nextNode._movementCost = reserveCost;
     }
 
@@ -416,7 +426,9 @@ public class RedDragonObject : CharBase
     {
         if (nextNode._GolemNode == true ||
             nextNode._SlimeNode == true ||
-            nextNode._BatNode == true)
+            nextNode._BatNode == true ||
+            nextNode._SkeletonNode == true ||
+            nextNode._BansheeNode == true)
             return true;
         else return false;
     }

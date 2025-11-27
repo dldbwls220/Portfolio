@@ -10,6 +10,7 @@ public class CharBase : MonoBehaviour
 
     protected bool _dead;
     protected bool _detectPlayer;
+    protected bool _isMonster;
     protected float _nowHp;
 
     public bool _isDead { get {  return _dead; } }
@@ -27,22 +28,5 @@ public class CharBase : MonoBehaviour
         _detectPlayer = false;
     }
 
-    protected virtual void CheckPlayerinRange()
-    {
-        Collider2D collide = Physics2D.OverlapCircle(transform.position, 5, LayerMask.GetMask("Player"));
-        if(collide != null)
-            _detectPlayer=true;
-        else
-            _detectPlayer=false;
-    }
-
-    protected void SpawnGold(int gold)
-    {
-        Vector3 pos = new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y), Mathf.RoundToInt(transform.position.z));
-
-        GameObject goldcoin = Resources.Load<GameObject>("Prefabs/Item/GoldCoin");
-        GameObject go = Instantiate(goldcoin, pos, Quaternion.identity);
-        GoldCoinObj co = go.GetComponent<GoldCoinObj>();
-        co.InitGold(gold);
-    }
+   
 }

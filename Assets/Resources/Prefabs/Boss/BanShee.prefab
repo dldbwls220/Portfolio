@@ -78,6 +78,8 @@ MonoBehaviour:
   _moveSpeed: 7
   _characterPos: {fileID: 8215790903593760421}
   _heartUI: {fileID: 5469471486041148889}
+  _defaultSprite: {fileID: 2608471960056926659}
+  _angrySprite: {fileID: 2672061400112261622}
 --- !u!61 &2642198009194823206
 BoxCollider2D:
   m_ObjectHideFlags: 0
