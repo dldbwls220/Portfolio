@@ -114,7 +114,7 @@ public class RedDragonObject : MonsterBase
     }
     void OnBeat()
     {
-        if (_isMoving) return;
+        if (_isMoving || _playerController._isDead || _playerController._isInShop || IngameManager._instance._gameEnd) return;
 
         _myBeat += 1;
         if (_myBeat > 4)
@@ -224,6 +224,8 @@ public class RedDragonObject : MonsterBase
             SpawnGold(_gold);
             IngameManager._instance.KillCount();
             IngameManager._instance.BossCount();
+            IngameManager._instance.UpgradeMonster();
+            StartCoroutine(Yeah());
             ObjectPool._instance._redDragonQueue.Enqueue(gameObject);
             gameObject.SetActive(false);
         }
@@ -388,6 +390,14 @@ public class RedDragonObject : MonsterBase
         }
         _characterPos.localPosition = new Vector3(_characterPos.localPosition.x, 0, _characterPos.localPosition.z);
 
+    }
+
+    IEnumerator Yeah()
+    {
+        yield return new WaitForSeconds(0.6f);
+        int rnd = Random.Range((int)SFXName.Cadence_yeah_01, (int)SFXName.Cadence_yeah_05 + 1);
+
+        SoundManager._instance.PlaySFX((SFXName)rnd);
     }
 
     void SetMovementCost(int cost, bool isSet)

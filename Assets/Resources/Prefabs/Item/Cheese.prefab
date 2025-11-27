@@ -329,6 +329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae5f5e251f441fb41969fc4ec5cd9924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _price: 35
+  _price: 20
   _priceTxt: {fileID: 8473404089323066899}
   heal: 2

@@ -25,8 +25,10 @@ public class PlayerController : CharBase
     [SerializeField] Transform _movePoint;
     [SerializeField] Transform _collisionPoint;
     [SerializeField] Transform _characterPos;
+    [SerializeField] Transform _spawnPos;
 
     [SerializeField] MonsterDetectorParent _monsterDetectorParent;
+    [SerializeField] NumberUI _numberUI;
     
     TimingManager _tm;
     CheckAttackRange[] _weaponCheck;
@@ -75,6 +77,7 @@ public class PlayerController : CharBase
         _isInShop = false;
 
         _movePoint.parent = null;
+        _spawnPos.parent = null;
         _baseY = _characterBody.transform.localPosition.y;
         _followCamera = Camera.main;
         _myDir = LookDir.Left;
@@ -112,12 +115,23 @@ public class PlayerController : CharBase
     // Update is called once per frame
     void Update()
     {
+        if (IngameManager._instance._gameEnd) return;
+
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
         transform.position = Vector3.MoveTowards(transform.position, _movePoint.position, _moveSpeed * Time.deltaTime);
         
         _collisionPoint.position = _movePoint.position;
+
+        if (_isInShop)
+        {
+            _spawnPos.position = new Vector3(30, 30, 0);
+        }
+        else
+        {
+            _spawnPos.position = _movePoint.position;
+        }
 
 
         if (Vector3.Distance(transform.position, _movePoint.position) <= 0.05f)
@@ -407,7 +421,7 @@ public class PlayerController : CharBase
     public void GetGold(int gold)
     {
         _goldCollect += gold;
-
+        _numberUI.GoldCountUI(_goldContain);
         Debug.Log(_goldCollect + "gold");
     }
 
@@ -415,6 +429,7 @@ public class PlayerController : CharBase
     {
         _goldCollect -= gold;
         _weaponName = weapon;
+        _numberUI.GoldCountUI(_goldContain);
     }
 
     public void BuyFood(int gold, int heal)
@@ -426,6 +441,7 @@ public class PlayerController : CharBase
             _nowHp = _maxHP;
 
         _healthBarManager.DrawHearts(_currentHp);
+        _numberUI.GoldCountUI(_goldContain);
     }
 
     public void BuyHeart(int gold, float heart)
@@ -437,16 +453,14 @@ public class PlayerController : CharBase
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP, false);
         _healthBarManager.DrawHearts(_currentHp);
+        _numberUI.GoldCountUI(_goldContain);
     }
 
     public void BuyStrUp(int gold, float strup)
     {
-        Debug.Log("전 공격력" + _str);
-
         _goldCollect -= gold;
         _strength = _originStr += strup;
-
-        Debug.Log("후 공격력" + _str);
+        _numberUI.GoldCountUI(_goldContain);
     }
 
     IEnumerator MoveJump()

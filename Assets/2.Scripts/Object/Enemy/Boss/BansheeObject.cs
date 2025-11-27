@@ -25,6 +25,7 @@ public class BansheeObject : MonsterBase
 
     bool _isAttack;
     bool _isDamaged;
+    bool _isAngry;
 
     PlayerController _playerController;
     HealthBarManager _healthBarManager;
@@ -49,7 +50,7 @@ public class BansheeObject : MonsterBase
 
     private void Update()
     {
-        if (_isDamaged)
+        if (_isAngry)
         {
             _defaultSprite.SetActive(false);
             _angrySprite.SetActive(true);
@@ -83,6 +84,7 @@ public class BansheeObject : MonsterBase
         _anim.speed = (115f / 60f);
         _isAttack = false;
         _isDamaged = false;
+        _isAngry = false;
 
         
     }
@@ -96,7 +98,7 @@ public class BansheeObject : MonsterBase
     }
     void OnBeat()
     {
-        if (_isMoving) return;
+        if (_isMoving || _playerController._isDead || _playerController._isInShop || IngameManager._instance._gameEnd) return;
 
         _myBeat += 1;
         if (_myBeat > 4)
@@ -158,28 +160,30 @@ public class BansheeObject : MonsterBase
             _nowHp = 0;
             SoundManager._instance.PlaySFX(SFXName.Banshee_death);
 
-            SoundManager._instance._bgmDESC._volum = 1;
+            SoundManager._instance._loopDESC._volum = 0.6f;
             SoundManager._instance._bansheeDESC._volum = 0;
             
-            _isDamaged = false;
+            _isAngry = false;
             _dead = true;
             SetTile(_path[1], true, false, 0);
             SpawnGold(_gold);
             IngameManager._instance.KillCount();
             IngameManager._instance.BossCount();
+            IngameManager._instance.UpgradeMonster();
+            StartCoroutine(Yeah());
             ObjectPool._instance._bansheeQueue.Enqueue(gameObject);
             gameObject.SetActive(false);
         }
         else
         {
-            _isDamaged = true;
+            _isAngry = true;
 
             StartCoroutine(KnockBack());
 
             int rnd = Random.Range((int)SFXName.Banshee_hurt_01, (int)SFXName.Banshee_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
 
-            SoundManager._instance._bgmDESC._volum = 0;
+            SoundManager._instance._loopDESC._volum = 0;
             SoundManager._instance._bansheeDESC._volum = 1;
 
             _healthBarManager.DrawHearts(_nowHp);
@@ -312,6 +316,14 @@ public class BansheeObject : MonsterBase
         }
 
         transform.position = origin;
+    }
+
+    IEnumerator Yeah()
+    {
+        yield return new WaitForSeconds(0.6f);
+        int rnd = Random.Range((int)SFXName.Cadence_yeah_01, (int)SFXName.Cadence_yeah_05 + 1);
+
+        SoundManager._instance.PlaySFX((SFXName)rnd);
     }
   
 

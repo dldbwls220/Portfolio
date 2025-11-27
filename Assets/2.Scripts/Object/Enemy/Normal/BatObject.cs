@@ -101,7 +101,7 @@ public class BatObject : MonsterBase
     }
     void OnBeat()
     {
-        if (_isMoving || _playerController._isInShop) return;
+        if (_isMoving || _playerController._isInShop || _playerController._isDead || IngameManager._instance._gameEnd) return;
 
         _myBeat += 1;
         if(_myBeat > 4) _myBeat = 1;
@@ -131,12 +131,12 @@ public class BatObject : MonsterBase
             if (distance == 2)
             {
                 if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.1f));
+                    StartCoroutine(Attack(_path[1], 0.13f));
             }
             else if (distance == 1)
             {
                 if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.15f));
+                    StartCoroutine(Attack(_path[1], 0.13f));
 
             }
             else if (isOtherReserved(_path[1]) && _path[1]._walkable)

@@ -82,7 +82,7 @@ public class GolemObject : MonsterBase
     }
     void OnBeat()
     {
-        if (_isMoving || _playerController._isInShop) return;
+        if (_isMoving || _playerController._isInShop || _playerController._isDead || IngameManager._instance._gameEnd) return;
 
         _myBeat += 1;
         if (_myBeat > 4)
@@ -109,12 +109,12 @@ public class GolemObject : MonsterBase
             if (_path != null && _path.Count == 3)
             {
                 if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.1f));
+                    StartCoroutine(Attack(_path[1], 0.13f));
             }
             else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
             {
                 if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.15f));
+                    StartCoroutine(Attack(_path[1], 0.13f));
             }
             else if (isOtherReserved(_path[1]) && _path[1]._walkable)
             {

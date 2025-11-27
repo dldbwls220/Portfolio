@@ -42,6 +42,21 @@ namespace DefineStructure
             set { _player.loop = value; }
         }
 
+        public void _pause()
+        {
+            _player.Pause();
+        }
+
+        public void _unpause()
+        {
+            _player.UnPause();
+        }
+
+        public void _stop()
+        {
+            _player.Stop();
+        }
+
         public AudioPlayerDESC(AudioSource audioS, float vol, bool mute, bool loop = true)
         {
             _player = audioS;

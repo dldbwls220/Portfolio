@@ -129,7 +129,17 @@ namespace DefineEnum
         Cadence_Attack_Combo_03,
         Cadence_Attack_Combo_04,
 
-        Cadence_yeah,
+        Cadence_yeah_01,
+        Cadence_yeah_02,
+        Cadence_yeah_03,
+        Cadence_yeah_04,
+        Cadence_yeah_05,
+
+        Cadence_teleport_01,
+        Cadence_teleport_02,
+        Cadence_teleport_03,
+        Cadence_teleport_04,
+        Cadence_teleport_05,
 
         Banshee_attack,
         Banshee_cry,
@@ -188,6 +198,10 @@ namespace DefineEnum
         sfx_pickup_gold_02,
         sfx_pickup_gold_03,
         sfx_pickup_purchase,
+        sfx_chain_break_ST,
+        sfx_chain_groove_ST,
+        sfx_error_ST,
+        sfx_item_food,
 
         Count
     }

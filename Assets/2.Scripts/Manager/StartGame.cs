@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
@@ -14,7 +13,7 @@ public class StartGame : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            SceneManager.LoadScene("GamePlayScene");
+            SceneManager.LoadSceneAsync("GamePlayScene");
         }
     }
 }

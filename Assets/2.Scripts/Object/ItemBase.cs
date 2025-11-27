@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using DefineEnum;
 
 public abstract class ItemBase : MonoBehaviour
 {
@@ -15,7 +16,12 @@ public abstract class ItemBase : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (_playerController._goldContain >= _price)
+        {
             GetItem();
+            SoundManager._instance.PlaySFX(SFXName.sfx_pickup_purchase);
+        }
+        else
+            SoundManager._instance.PlaySFX(SFXName.sfx_error_ST);
 
     }
 

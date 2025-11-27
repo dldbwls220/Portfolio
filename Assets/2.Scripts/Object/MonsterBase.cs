@@ -4,7 +4,7 @@ public class MonsterBase : CharBase
 {
     protected virtual void CheckPlayerinRange()
     {
-        Collider2D collide = Physics2D.OverlapCircle(transform.position, 5, LayerMask.GetMask("Player"));
+        Collider2D collide = Physics2D.OverlapCircle(transform.position, 7, LayerMask.GetMask("Player"));
         if (collide != null)
             _detectPlayer = true;
         else

@@ -1,3 +1,4 @@
+using DefineEnum;
 using UnityEngine;
 
 public class ExitGateObj : MonoBehaviour
@@ -32,6 +33,10 @@ public class ExitGateObj : MonoBehaviour
             _spawnItemManager.MakeItemEnable();
             _spawnItemManager.SetSellingItems();
             _gateManger.SpawnGate();
+
+            int rnd = Random.Range((int)SFXName.Cadence_teleport_01, (int)SFXName.Cadence_teleport_05 + 1);
+            SoundManager._instance.PlaySFX((SFXName)rnd);
+
             _playerController._isInShop = false;
         }    
     }

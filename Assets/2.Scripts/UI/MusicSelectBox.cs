@@ -6,6 +6,7 @@ public class MusicSelectBox : MonoBehaviour
 {
     [SerializeField] ScrollRect _musicScroll;
     [SerializeField] Text _startBtn;
+    [SerializeField] Text _selectedMusci;
     RectTransform _rect;
 
     string _selectedName;
@@ -21,6 +22,8 @@ public class MusicSelectBox : MonoBehaviour
 
     public void InitWnd()
     {
+        gameObject.SetActive(true);
+
         _rect = _musicScroll.content;
         _isSelected = false;
 
@@ -32,8 +35,10 @@ public class MusicSelectBox : MonoBehaviour
             int bpm = musicTable.ToI(i, "BPM");
 
             GameObject musicButton = Resources.Load<GameObject>("UI/MusicSelection");
+            Debug.Log("musicButton is null? : " + (musicButton == null));
             GameObject go = Instantiate(musicButton, _rect);
             MusicSelectButton msb = go.GetComponent<MusicSelectButton>();
+            msb.SetParentBox(this);
             msb.InitMusicSelect(name, bpm, i);
         }
     }
@@ -44,8 +49,10 @@ public class MusicSelectBox : MonoBehaviour
         _selectedIndex = index;
         _selectedName = name;
         _isSelected = true;
-        Debug.Log(_selectedBPM);
-        Debug.Log(_selectedName);
+
+
+        _selectedMusci.text = _selectedName;
+        _selectedMusci.color = new Color32(150, 213, 250, 255);
     }
 
     public void StartPointerOn()
@@ -60,10 +67,16 @@ public class MusicSelectBox : MonoBehaviour
 
     public void StartGame()
     {
-        if (!_isSelected) return;
+        if (!_isSelected)
+        {
+            _selectedMusci.text = "No music found";
+            _selectedMusci.color = Color.red;
+            return;
+        }
+
 
         IngameManager._instance.SetMusic(_selectedIndex, _selectedBPM);
-        SoundManager._instance._bgmDESC._mute = true;
+        //SoundManager._instance._bgmDESC._mute = true;
         CloseWnd();
     }
 }

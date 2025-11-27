@@ -8,7 +8,7 @@ public class MusicSelectButton : MonoBehaviour
     [SerializeField]Text _musicName;
     [SerializeField]Text _BPM;
 
-    MusicSelectBox _musicSelectBox;
+    [SerializeField] MusicSelectBox _musicSelectBox;
 
     string _name;
     int _bpm;
@@ -19,9 +19,9 @@ public class MusicSelectButton : MonoBehaviour
 
     public int _musicIndex { get { return _index; } }
 
-    private void Awake()
+    public void SetParentBox(MusicSelectBox box)
     {
-        _musicSelectBox = GameObject.Find("SelectSongUI").GetComponent<MusicSelectBox>();
+        _musicSelectBox = box;
     }
 
     public void InitMusicSelect(string name, int bpm, int index)
@@ -31,6 +31,7 @@ public class MusicSelectButton : MonoBehaviour
         _BPM.text = _bpm.ToString() + " BPM";
         _index = index;
         SoundManager._instance._bgmDESC._mute = true;
+        SoundManager._instance._bgmDESC._volum = 0.6f;
     }
 
     public void selectMusic()
@@ -53,7 +54,7 @@ public class MusicSelectButton : MonoBehaviour
         _musicName.color= Color.white;
         _BPM.color= Color.white;
 
-        SoundManager._instance._bgmDESC._mute = true;
+        SoundManager._instance._bgmDESC._stop() ;
     }
 
     IEnumerator StartMusic()
