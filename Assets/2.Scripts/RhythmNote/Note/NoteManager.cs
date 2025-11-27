@@ -8,6 +8,9 @@ public class NoteManager : MonoBehaviour
 
     int _bpm = 0;
     double _currentTime = 0;
+    double startTime;
+    double beatInterval;
+    int lastBeat = -1;
 
     [SerializeField] Transform _tfNoteAppearLeft;
     [SerializeField] Transform _tfNoteAppearRight;
@@ -22,38 +25,47 @@ public class NoteManager : MonoBehaviour
         _uniqueInstance = this;
     }
 
+    void Start()
+    {
+        
+       
+    }
+
     public void InitNote(int bpm)
     {
         _bpm = bpm;
+        startTime = Time.timeAsDouble;
+        beatInterval = 60.0 / _bpm;
     }
 
     void Update()
     {
-        if (!IngameManager._instance._isStartMusic) return;
+        if (!IngameManager._instance._isStartMusic)
+            return;
 
-        _currentTime += Time.deltaTime;
-        //60(1분) / _bpm을 하여 1beat를 계산
+        double elapsed = Time.timeAsDouble - startTime;
 
-        if (_bpm <= 0) return;
+        int currentBeat = (int)(elapsed / beatInterval);
 
-        if (_currentTime >= 60d / _bpm) 
+        if (currentBeat != lastBeat)
         {
-            GameObject goLeft = ObjectPool._instance._leftNoteQueue.Dequeue();
-            goLeft.transform.position = _tfNoteAppearLeft.position;
-            goLeft.SetActive(true);
-           
-            TimingManager.Instance._boxNoteListL.Add(goLeft);
-
-
-            GameObject goRight = ObjectPool._instance._rightNoteQueue.Dequeue();
-            goRight.transform.position = _tfNoteAppearRight.position;
-            goRight.SetActive(true);
-            
-            TimingManager.Instance._boxNoteListR.Add(goRight);
-            _currentTime -= 60d / _bpm;
-
-            OnBeat?.Invoke();
-            
+            lastBeat = currentBeat;
+            SpawnBeatNotes();
         }
+    }
+
+    void SpawnBeatNotes()
+    {
+        GameObject goLeft = ObjectPool._instance._leftNoteQueue.Dequeue();
+        goLeft.transform.position = _tfNoteAppearLeft.position;
+        goLeft.SetActive(true);
+        TimingManager.Instance._boxNoteListL.Add(goLeft);
+
+        GameObject goRight = ObjectPool._instance._rightNoteQueue.Dequeue();
+        goRight.transform.position = _tfNoteAppearRight.position;
+        goRight.SetActive(true);
+        TimingManager.Instance._boxNoteListR.Add(goRight);
+
+        OnBeat?.Invoke();
     }
 }

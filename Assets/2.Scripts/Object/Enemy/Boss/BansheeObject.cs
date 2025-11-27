@@ -160,7 +160,8 @@ public class BansheeObject : MonsterBase
             _nowHp = 0;
             SoundManager._instance.PlaySFX(SFXName.Banshee_death);
 
-            SoundManager._instance._loopDESC._volum = 0.6f;
+            SoundManager._instance._loopDESC._mute = false;
+            SoundManager._instance._shopkeeperDESC._mute = false;
             SoundManager._instance._bansheeDESC._volum = 0;
             
             _isAngry = false;
@@ -183,7 +184,8 @@ public class BansheeObject : MonsterBase
             int rnd = Random.Range((int)SFXName.Banshee_hurt_01, (int)SFXName.Banshee_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
 
-            SoundManager._instance._loopDESC._volum = 0;
+            SoundManager._instance._loopDESC._mute = true;
+            SoundManager._instance._shopkeeperDESC._mute = true;
             SoundManager._instance._bansheeDESC._volum = 1;
 
             _healthBarManager.DrawHearts(_nowHp);
