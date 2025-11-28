@@ -105,7 +105,7 @@ public class SkeletonObject : MonsterBase
             if (_path != null && _path.Count == 3)
             {
                 if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.13f));
+                    StartCoroutine(Attack(_path[1], 0.15f));
             }
             else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
             {

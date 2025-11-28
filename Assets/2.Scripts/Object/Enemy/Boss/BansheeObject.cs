@@ -86,7 +86,9 @@ public class BansheeObject : MonsterBase
         _isDamaged = false;
         _isAngry = false;
 
-        
+        _healthBarManager.ClearHeart();
+        _healthBarManager.CreateEmptyHeart(_maxHP);
+        _healthBarManager.DrawHearts(_nowHp);
     }
 
     void InitMonsterStat()
@@ -128,12 +130,12 @@ public class BansheeObject : MonsterBase
         else if (_path != null && _path.Count == 3)
         {
             if (!_isAttack)
-                StartCoroutine(Attack(_path[1], 0.11f));
+                StartCoroutine(Attack(_path[1], 0.15f));
         }
         else if (_path != null && _path.Count == 2)       
         {
             if (!_isAttack)
-                StartCoroutine(Attack(_path[1], 0.11f));
+                StartCoroutine(Attack(_path[1], 0.15f));
         }
         else if (isOtherReserved(_path[1]) && _path[1]._walkable)
         {
@@ -178,15 +180,15 @@ public class BansheeObject : MonsterBase
         else
         {
             _isAngry = true;
-
+            _isDamaged = true;
             StartCoroutine(KnockBack());
 
             int rnd = Random.Range((int)SFXName.Banshee_hurt_01, (int)SFXName.Banshee_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
 
-            SoundManager._instance._loopDESC._mute = true;
-            SoundManager._instance._shopkeeperDESC._mute = true;
-            SoundManager._instance._bansheeDESC._volum = 1;
+            SoundManager._instance._loopDESC._volum = 0;
+            SoundManager._instance._shopkeeperDESC._mute = false;
+            SoundManager._instance._bansheeDESC._mute = false;
 
             _healthBarManager.DrawHearts(_nowHp);
         }

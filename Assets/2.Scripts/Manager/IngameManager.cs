@@ -76,6 +76,7 @@ public class IngameManager : MonoBehaviour
             else
             {
                 _pause.PauseThisGame();
+                _isPaused = true;
             }
         }
 

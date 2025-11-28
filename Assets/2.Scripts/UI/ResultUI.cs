@@ -31,7 +31,6 @@ public class ResultUI : MonoBehaviour
 
         _scoreText.text = "Kill : " + score.ToString();
 
-        SoundManager._instance._loopDESC._volum = 0.3f;
         SoundManager._instance._shopkeeperDESC._volum = 0f;
     }
 

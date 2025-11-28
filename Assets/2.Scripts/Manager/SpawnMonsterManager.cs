@@ -31,7 +31,7 @@ public class SpawnMonsterManager : MonoBehaviour
 
         _myBeat += 1;
         
-        if (_myBeat > 8)
+        if (_myBeat > 4)
             _myBeat = 1;      
 
         switch (_myBeat)
@@ -58,7 +58,7 @@ public class SpawnMonsterManager : MonoBehaviour
                     bat.SetActive(true);
                 }
                 break;
-            case 8:
+            case 4:
                 if (ObjectPool._instance._golemQueue.Count > 0)
                 {
                     GameObject golem = ObjectPool._instance._golemQueue.Dequeue();
@@ -78,22 +78,31 @@ public class SpawnMonsterManager : MonoBehaviour
         switch (rndBoss)
         {
             case 0:
-                GameObject RDragon = ObjectPool._instance._redDragonQueue.Dequeue();
-                RDragon.transform.position = SetPostion();
-                SoundManager._instance.PlaySFX(SFXName.Dragon_cry);
-                RDragon.SetActive(true);
+                if (ObjectPool._instance._redDragonQueue.Count > 0)
+                {
+                    GameObject RDragon = ObjectPool._instance._redDragonQueue.Dequeue();
+                    RDragon.transform.position = SetPostion();
+                    SoundManager._instance.PlaySFX(SFXName.Dragon_cry);
+                    RDragon.SetActive(true);
+                }
                 break;
             case 1:
-                GameObject Banshee = ObjectPool._instance._bansheeQueue.Dequeue();
-                Banshee.transform.position = SetPostion();
-                SoundManager._instance.PlaySFX(SFXName.Banshee_cry);
-                Banshee.SetActive(true);
+                if (ObjectPool._instance._bansheeQueue.Count > 0)
+                {
+                    GameObject Banshee = ObjectPool._instance._bansheeQueue.Dequeue();
+                    Banshee.transform.position = SetPostion();
+                    SoundManager._instance.PlaySFX(SFXName.Banshee_cry);
+                    Banshee.SetActive(true);
+                }
                 break;
             case 2:
-                GameObject DireBat = ObjectPool._instance._direBatQueue.Dequeue();
-                DireBat.transform.position = SetPostion();
-                SoundManager._instance.PlaySFX(SFXName.Bat_hit);
-                DireBat.SetActive(true);
+                if (ObjectPool._instance._direBatQueue.Count > 0)
+                {
+                    GameObject DireBat = ObjectPool._instance._direBatQueue.Dequeue();
+                    DireBat.transform.position = SetPostion();
+                    SoundManager._instance.PlaySFX(SFXName.Bat_hit);
+                    DireBat.SetActive(true);
+                }
                 break;
         }
     }

@@ -156,17 +156,17 @@ public class RedDragonObject : MonsterBase
                 {
                     SoundManager._instance.PlaySFX(SFXName.Dragon_attack_fire);
                     _fireAnim.SetTrigger("Fire");
-                    StartCoroutine(Attack(_path[1], 0.1f));
+                    StartCoroutine(Attack(_path[1], 0.14f));
                 }
                 else if (_path != null && _path.Count == 3)
                 {
                     if (!_isAttack)
-                        StartCoroutine(Attack(_path[1], 0.1f));
+                        StartCoroutine(Attack(_path[1], 0.15f));
                 }
                 else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
                 {
                     if (!_isAttack)
-                        StartCoroutine(Attack(_path[1], 0.1f));
+                        StartCoroutine(Attack(_path[1], 0.13f));
                 }
                 else if (isOtherReserved(_path[1]) && _path[1]._walkable)
                 {
@@ -188,12 +188,12 @@ public class RedDragonObject : MonsterBase
                 if (_path != null && _path.Count == 3)
                 {
                     if (!_isAttack)
-                        StartCoroutine(Attack(_path[1], 0.1f));
+                        StartCoroutine(Attack(_path[1], 0.15f));
                 }
                 else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
                 {
                     if (!_isAttack)
-                        StartCoroutine(Attack(_path[1], 0.1f));
+                        StartCoroutine(Attack(_path[1], 0.13f));
                 }
                 else if (isOtherReserved(_path[1]) && _path[1]._walkable)
                 {

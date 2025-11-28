@@ -43,7 +43,7 @@ public class PlayerController : CharBase
     bool _isAttack;
     bool _isMoving;
     bool _isDelayEnd;
-    int _goldCollect;
+    [SerializeField] int _goldCollect;
     float _originStr;
 
     LookDir _myDir;

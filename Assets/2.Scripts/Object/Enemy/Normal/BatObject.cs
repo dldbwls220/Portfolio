@@ -131,7 +131,7 @@ public class BatObject : MonsterBase
             if (distance == 2)
             {
                 if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.13f));
+                    StartCoroutine(Attack(_path[1], 0.15f));
             }
             else if (distance == 1)
             {
