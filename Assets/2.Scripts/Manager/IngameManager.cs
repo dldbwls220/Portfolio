@@ -43,6 +43,7 @@ public class IngameManager : MonoBehaviour
 
     public int _monsterKillCount { get { return _killCount; } }
     public int _myBPM { get { return _bpm; } }
+    public int _myMusicIndex { get { return _musicIndex; } }
 
     public static IngameManager _instance { get { return _uniqueInstance; } }
 
@@ -201,7 +202,7 @@ public class IngameManager : MonoBehaviour
     {
         yield return null;
         
-        SoundManager._instance.PlayLoop((LoopName)(_musicIndex - 1));
+        //SoundManager._instance.PlayLoop((LoopName)(_musicIndex - 1));
         SoundManager._instance.PlayShop((ShopkeeperName)(_musicIndex - 1));
         SoundManager._instance._loopDESC._volum = 0.5f;
         SoundManager._instance._shopkeeperDESC._volum = 0.5f;

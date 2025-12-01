@@ -86,7 +86,7 @@ public class SoundManager : TSingleton<SoundManager>
         _bgmPlayer.Play();
     }
 
-    public void PlayLoop(LoopName name)
+    public void PlayLoop(LoopName name, double dspStartTime)
     {
         if (!_loopClipDoc.ContainsKey(name))
         {
@@ -94,7 +94,7 @@ public class SoundManager : TSingleton<SoundManager>
             return;
         }
         _loopPlayer.clip = _loopClipDoc[name];
-        _loopPlayer.Play();
+        _loopPlayer.PlayScheduled(dspStartTime);
     }
 
     public void PlayShop(ShopkeeperName name)
