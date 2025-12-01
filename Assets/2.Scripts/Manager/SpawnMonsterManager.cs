@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class SpawnMonsterManager : MonoBehaviour
 {
+    static SpawnMonsterManager _uniqueinstance;
+
     PlayerController _playerController;
     [SerializeField] TileMapGridManager _grid;
     [SerializeField] GameObject _enemySpawnObj;
@@ -10,7 +12,14 @@ public class SpawnMonsterManager : MonoBehaviour
 
     int _myBeat;
 
-    private void Start()
+    public static SpawnMonsterManager _instance { get { return _uniqueinstance; } }
+
+    private void Awake()
+    {
+        _uniqueinstance = this;
+    }
+
+    public void InitSpawn()
     {
         NoteManager._instance.OnBeat += OnBeat;
         _spawnPositions = new Transform[_enemySpawnObj.transform.childCount];

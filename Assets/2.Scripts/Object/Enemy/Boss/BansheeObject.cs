@@ -25,13 +25,14 @@ public class BansheeObject : MonsterBase
 
     bool _isAttack;
     bool _isDamaged;
-    bool _isAngry;
+
 
     PlayerController _playerController;
     HealthBarManager _healthBarManager;
 
     void OnEnable()
     {
+
         NoteManager._instance.OnBeat += OnBeat;
        
         if (_isDead)
@@ -50,7 +51,7 @@ public class BansheeObject : MonsterBase
 
     private void Update()
     {
-        if (_isAngry)
+        if (IngameManager._instance._bansheeSound)
         {
             _defaultSprite.SetActive(false);
             _angrySprite.SetActive(true);
@@ -81,10 +82,9 @@ public class BansheeObject : MonsterBase
 
         _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();
-        _anim.speed = (115f / 60f);
+        _anim.speed = (IngameManager._instance._myBPM / 60f);
         _isAttack = false;
         _isDamaged = false;
-        _isAngry = false;
 
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
@@ -142,12 +142,6 @@ public class BansheeObject : MonsterBase
             Debug.Log("지나가지 못함");
             return;
         }
-        else if (_isDamaged)
-        {
-            StopAllCoroutines();
-            StartCoroutine(KnockBack());
-            SetTile(_path[1], true, false, 0);
-        }
         else if (_path != null && _path.Count > 1)   
         {
             StartCoroutine(MoveToNode(_path[1]));   
@@ -166,11 +160,11 @@ public class BansheeObject : MonsterBase
             SoundManager._instance._shopkeeperDESC._mute = false;
             SoundManager._instance._bansheeDESC._volum = 0;
             
-            _isAngry = false;
+            IngameManager._instance._bansheeSound = false;
             _dead = true;
             SetTile(_path[1], true, false, 0);
-            SpawnGold(_gold);
             IngameManager._instance.KillCount();
+            SpawnGold(_gold);
             IngameManager._instance.BossCount();
             IngameManager._instance.UpgradeMonster();
             StartCoroutine(Yeah());
@@ -179,15 +173,17 @@ public class BansheeObject : MonsterBase
         }
         else
         {
-            _isAngry = true;
+            IngameManager._instance._bansheeSound = true;
             _isDamaged = true;
+            StopAllCoroutines();
             StartCoroutine(KnockBack());
+            SetTile(_path[1], true, false, 0);
 
             int rnd = Random.Range((int)SFXName.Banshee_hurt_01, (int)SFXName.Banshee_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
 
-            SoundManager._instance._loopDESC._volum = 0;
-            SoundManager._instance._shopkeeperDESC._mute = false;
+            SoundManager._instance._loopDESC._mute = true;
+            SoundManager._instance._shopkeeperDESC._mute = true;
             SoundManager._instance._bansheeDESC._mute = false;
 
             _healthBarManager.DrawHearts(_nowHp);
@@ -206,9 +202,15 @@ public class BansheeObject : MonsterBase
         float diffX = nextNode._worldPosition.x - transform.position.x;
 
         if (diffX > 0)
+        {
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
+            transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = true;
+        }
         else if (diffX < 0)
+        {
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
+            transform.GetChild(1).GetComponent<SpriteRenderer>().flipX = false;
+        }
 
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {

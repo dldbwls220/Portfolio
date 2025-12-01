@@ -21,6 +21,7 @@ public class IngameManager : MonoBehaviour
     int _comboCount;
     int _killCount;
     int _bossKillCount;
+    int _bpm;
     float _gameTime;
     bool _isPlayingBGM;
     bool _isSelected;
@@ -32,6 +33,7 @@ public class IngameManager : MonoBehaviour
     public bool _isCombo { get { return _isComboBonus; } }
 
     public bool _isPaused { get; set; }
+    public bool _bansheeSound { get; set; }
 
     public bool _isStartMusic { get { return _isSelected; } }
 
@@ -40,6 +42,7 @@ public class IngameManager : MonoBehaviour
     public int _comboNum {  get { return _comboCount; } }
 
     public int _monsterKillCount { get { return _killCount; } }
+    public int _myBPM { get { return _bpm; } }
 
     public static IngameManager _instance { get { return _uniqueInstance; } }
 
@@ -83,11 +86,13 @@ public class IngameManager : MonoBehaviour
         if (_bossKillCount == _totalBossToKill)
         {
             _isGameEnd = true;
+            SoundManager._instance._bansheeDESC._mute = true;
             StartCoroutine(OpenResult());
         }
         else if(_playerController._isDead)
         {
             _isGameEnd = true;
+            SoundManager._instance._bansheeDESC._mute = true;
             StartCoroutine(OpenResult());
         }
 
@@ -100,12 +105,15 @@ public class IngameManager : MonoBehaviour
         _killCount = 0;
         _bossKillCount = 0;
         _gameTime = 0;
+        _bpm = 0;
         _isPlayingBGM = false;
         _isSelected = false;
         _isComboBonus = false;
         _isGameEnd = false;
         _isPaused = false;
+        _bansheeSound = false;
         _musicSelectBox.InitWnd();
+       
 
         _pause.CloseWnd();
         _resultUI.CloseWnd();
@@ -114,9 +122,15 @@ public class IngameManager : MonoBehaviour
 
     public void SetMusic(int index, int bpm)
     {
-        NoteManager._instance.InitNote(bpm);
         _musicIndex = index;
         _isSelected = true;
+        _bpm = bpm; 
+        _playerController.SetWaitAttackTime(_bpm);
+        NoteManager._instance.InitNote(bpm);
+        ObjectPool._instance.InitPool();
+        ShopGateManager._instance.InitShopGate();
+        SpawnItemManager._instance.initSpawn();
+        SpawnMonsterManager._instance.InitSpawn();
     }
 
     public void UpgradeMonster()
@@ -133,7 +147,7 @@ public class IngameManager : MonoBehaviour
 
     public void ComboCountUp()
     {
-        _comboCount++;
+        ++_comboCount;
         if (_comboCount == 2)
         {
             SoundManager._instance.PlaySFX(SFXName.sfx_chain_groove_ST);
@@ -185,7 +199,7 @@ public class IngameManager : MonoBehaviour
 
     IEnumerator DelayMusic()
     {
-        yield return new WaitForSeconds(0);
+        yield return null;
         
         SoundManager._instance.PlayLoop((LoopName)(_musicIndex - 1));
         SoundManager._instance.PlayShop((ShopkeeperName)(_musicIndex - 1));

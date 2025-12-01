@@ -59,10 +59,9 @@ public class SkeletonObject : MonsterBase
         _targetTF = GameObject.Find("PlayerCharacter").transform;
         _attackCollider = GetComponent<BoxCollider2D>();
         _healthBarManager = _heartUI.GetComponent<HealthBarManager>();
-
         _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();
-        _anim.speed = (115f / 60f);
+        _anim.speed = (IngameManager._instance._myBPM / 60f);
         _isAttack = false;
 
         _healthBarManager.ClearHeart();
@@ -135,8 +134,8 @@ public class SkeletonObject : MonsterBase
             SoundManager._instance.PlaySFX(SFXName.Skel_death);
             SetTile(_path[1], true, false, 0);
             _dead = true;
-            SpawnGold(_gold);
             IngameManager._instance.KillCount();
+            SpawnGold(_gold);
             ObjectPool._instance._skeletonQueue.Enqueue(gameObject);
             gameObject.SetActive(false);
         }

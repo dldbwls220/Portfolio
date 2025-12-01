@@ -7,6 +7,7 @@ public class Note : MonoBehaviour
 
     Vector3 _stopPos;
     bool _isSpriteStop = false;
+    [SerializeField]float _musicSPD;
 
     public bool _isStop { get { return _isSpriteStop; }}
 
@@ -14,15 +15,17 @@ public class Note : MonoBehaviour
     {
         _isSpriteStop=false;
         _spriteTf.position = transform.position;
+
+        _musicSPD = _speed / 60 * IngameManager._instance._myBPM;
     }
 
     // Update is called once per frame
     void Update()
     {
         if (CompareTag("LeftNote"))
-            transform.localPosition += Vector3.right * _speed * Time.deltaTime;
+            transform.localPosition += Vector3.right * _musicSPD * Time.deltaTime;
         else if (CompareTag("RightNote"))
-            transform.localPosition += Vector3.left * _speed * Time.deltaTime;
+            transform.localPosition += Vector3.left * _musicSPD * Time.deltaTime;
 
         if (_isSpriteStop)
         {

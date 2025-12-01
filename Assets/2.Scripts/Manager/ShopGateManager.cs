@@ -2,10 +2,19 @@ using UnityEngine;
 
 public class ShopGateManager : MonoBehaviour
 {
+    static ShopGateManager _uniqueinstance;
+
     [SerializeField] GameObject _posObj;
     Transform[] _gatePos;
 
-    void Start()
+    public static ShopGateManager _instance {  get { return _uniqueinstance; } }
+
+    private void Awake()
+    {
+        _uniqueinstance = this;
+    }
+
+    public void InitShopGate()
     {
         _gatePos = new Transform[_posObj.transform.childCount];
         for (int i = 0; i < _gatePos.Length; i++)

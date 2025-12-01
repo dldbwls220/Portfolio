@@ -2,13 +2,23 @@ using UnityEngine;
 
 public class SpawnItemManager : MonoBehaviour
 {
+    static SpawnItemManager _uniqueinstance;
+
     [SerializeField] GameObject _itemPosObj;
     Transform[] _itemTf;
 
     GameObject w;
     GameObject f;
 
-    void Start()
+    public static SpawnItemManager _instance { get { return _uniqueinstance; } }
+
+    private void Awake()
+    {
+        _uniqueinstance = this;
+    }
+
+
+    public void initSpawn()
     {
         _itemTf = new Transform[_itemPosObj.transform.childCount];
 

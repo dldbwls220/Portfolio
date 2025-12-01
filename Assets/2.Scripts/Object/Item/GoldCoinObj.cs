@@ -14,7 +14,6 @@ public class GoldCoinObj : MonoBehaviour
     public void InitGold(int goldCount)
     {
         _goldCount = goldCount;
-
         _sRenderer = GetComponent<SpriteRenderer>();
 
         if (goldCount < 10)

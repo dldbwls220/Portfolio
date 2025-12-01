@@ -42,21 +42,26 @@ public class PlayerController : CharBase
     bool _isFlipY;
     bool _isAttack;
     bool _isMoving;
-    bool _isDelayEnd;
-    [SerializeField] int _goldCollect;
-    float _originStr;
-
+    bool _canAttackPlayer;
+   
     LookDir _myDir;
     public WeaponName _weaponName;
-    public LookDir _checkDir { get { return _myDir; } }
 
     int _combo;
+    [SerializeField] int _goldCollect;
+    float _originStr;
     float _baseY;
+    float _waitAttack;
+
+    public LookDir _checkDir { get { return _myDir; } }
 
     public float _str { get { return _strength; } }
     public int _goldContain { get { return _goldCollect; } }
 
     public bool _isInShop { get; set; }
+
+    public bool _isPlayerAttackable { get { return _canAttackPlayer; } }
+
     private void Start()
     {
        InitCharacter();
@@ -73,7 +78,7 @@ public class PlayerController : CharBase
         _isFlipY = false;
         _isAttack = false;
         _isMoving = false;
-        _isDelayEnd = false;
+        _canAttackPlayer = true;
         _isInShop = false;
 
         _movePoint.parent = null;
@@ -185,6 +190,7 @@ public class PlayerController : CharBase
                 initCombo();
             }
 
+            StartCoroutine(SetPlayerAttackable());
             CheckBoardTileMap._instance.ChangTile();
         }
         else if (Mathf.Abs(vertical) == 1f)
@@ -212,8 +218,13 @@ public class PlayerController : CharBase
                 StartCoroutine(MoveJump());
                 initCombo();
             }
+
+            StartCoroutine(SetPlayerAttackable());
             CheckBoardTileMap._instance.ChangTile();
-        }          
+        }
+        
+        Debug.Log(_canAttackPlayer);
+
     }
 
     void Attack()
@@ -390,6 +401,13 @@ public class PlayerController : CharBase
         _combo = 0;
     }
 
+    public void SetWaitAttackTime(int bpm)
+    {
+        //60bpm 기준 한박자는 1초 반박자는 0.5초
+        _waitAttack = 0.4f * 60 / bpm;
+        Debug.Log(_waitAttack);
+    }
+
     public void OnHitting(float dmg)
     {
         if ((_nowHp -= dmg) <= 0)
@@ -526,5 +544,14 @@ public class PlayerController : CharBase
         }
 
         _followCamera.transform.position = new Vector3(0, 0, -10) + transform.position;
+    }
+
+    IEnumerator SetPlayerAttackable()
+    {
+        _canAttackPlayer = false;
+
+        yield return new WaitForSeconds(_waitAttack);
+
+        _canAttackPlayer = true;
     }
 }

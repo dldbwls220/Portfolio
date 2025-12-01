@@ -83,6 +83,7 @@ public class BatObject : MonsterBase
         _heartManager = _heartUI.GetComponent<HealthBarManager>();
         
         _animController = GetComponent<Animator>();
+        _animController.speed = (IngameManager._instance._myBPM / 60f);
         _myBeat = 0;
         _isAttack = false;
         _isMoving = false;
@@ -158,12 +159,12 @@ public class BatObject : MonsterBase
             _nowHp = 0;
             SoundManager._instance.PlaySFX(SFXName.Bat_death);
             _dead = true;
+            IngameManager._instance.KillCount();
             SpawnGold(_gold);
 
             if(_name == "DireBat")
                 IngameManager._instance.BossCount();
 
-            IngameManager._instance.KillCount();
             SetTile(_path[1], true, false, 0);
             ObjectPool._instance._batQueue.Enqueue(gameObject);
             gameObject.SetActive(false);

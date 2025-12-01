@@ -10,12 +10,12 @@ public class ShopkeeperObj : MonoBehaviour
     void CheckPlayerinRange()
     {
         Collider2D collide = Physics2D.OverlapCircle(transform.position, 10, LayerMask.GetMask("Player"));
-        if (collide != null)
+        if (collide != null && !IngameManager._instance._bansheeSound)
         {
             SoundManager._instance._shopkeeperDESC._volum = 0.5f;
             SoundManager._instance._loopDESC._volum = 0;
         }
-        else
+        else if(!IngameManager._instance._bansheeSound)
         {
             SoundManager._instance._shopkeeperDESC._volum = 0;
             SoundManager._instance._loopDESC._volum = 0.5f;

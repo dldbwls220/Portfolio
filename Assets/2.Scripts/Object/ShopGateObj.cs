@@ -23,6 +23,8 @@ public class ShopGateObj : MonoBehaviour
 
     void Update()
     {
+        if (IngameManager._instance._bansheeSound) return;
+
         float distance = Vector3.Distance(_playerController.transform.position, transform.position);
         
         float t = Mathf.InverseLerp(_minDistance, _maxDistance, distance);

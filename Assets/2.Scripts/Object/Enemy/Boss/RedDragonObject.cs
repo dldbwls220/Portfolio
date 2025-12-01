@@ -34,6 +34,7 @@ public class RedDragonObject : MonsterBase
 
     void OnEnable()
     {
+
         NoteManager._instance.OnBeat += OnBeat;
        
         if (_isDead)
@@ -96,7 +97,7 @@ public class RedDragonObject : MonsterBase
 
         _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();
-        _anim.speed = (115f / 60f);
+        _anim.speed = (IngameManager._instance._myBPM / 60f);
         _isAttack = false;
         _isFire = false;
 
@@ -221,8 +222,8 @@ public class RedDragonObject : MonsterBase
 
             _dead = true;
             SetTile(_path[1], true, false, 0);
-            SpawnGold(_gold);
             IngameManager._instance.KillCount();
+            SpawnGold(_gold);
             IngameManager._instance.BossCount();
             IngameManager._instance.UpgradeMonster();
             StartCoroutine(Yeah());

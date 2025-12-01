@@ -78,7 +78,7 @@ public class SlimeObject : MonsterBase
         _playerController = _targetTF.GetComponent<PlayerController>();
 
         _animController = GetComponent<Animator>();
-        _animController.speed = (115f / 60f);
+        _animController.speed = (IngameManager._instance._myBPM / 60f);
         _myBeat = 0;
         _isAttack = false;
         _isMoving = false;
@@ -156,8 +156,8 @@ public class SlimeObject : MonsterBase
         if ((_nowHp -= dmg) <= 0)
         {
             _nowHp = 0;
-            SpawnGold(_gold);
             IngameManager._instance.KillCount();
+            SpawnGold(_gold);
             SetTile(_path[1], true, false, 0);
             int rnd = Random.Range((int)SFXName.Slime_death_01, (int)SFXName.Slime_death_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
