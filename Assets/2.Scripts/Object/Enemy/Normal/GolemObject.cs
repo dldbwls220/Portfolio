@@ -46,6 +46,7 @@ public class GolemObject : MonsterBase
     private void Update()
     {
         CheckPlayerinRange();
+        DetectAttack();
     }
 
     public void InitMonster(int enemyIndex)
@@ -76,6 +77,7 @@ public class GolemObject : MonsterBase
 
     void InitMonsterStat()
     {
+        _isMoving = false;
         _nowHp = _maxHP;
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
@@ -84,7 +86,7 @@ public class GolemObject : MonsterBase
     void OnBeat()
     {
         if (_isMoving || _playerController._isInShop || _playerController._isDead || IngameManager._instance._gameEnd) return;
-
+        _isAttack = true;
         _myBeat += 1;
         if (_myBeat > 4)
             _myBeat = 1;
@@ -107,25 +109,26 @@ public class GolemObject : MonsterBase
 
         if (_myBeat == 4)
         {
-            if (_path != null && _path.Count == 3)
-            {
-                if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.15f));
-            }
-            else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
-            {
-                if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.13f));
-            }
-            else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-            {
-                StartCoroutine(MoveJump());
-                return;
-            }
-            else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
-            {
-                StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
-            }
+            //if (_path != null && _path.Count == 3)
+            //{
+            //    if (!_isAttack)
+            //        StartCoroutine(Attack(_path[1], 0.15f));
+            //}
+            //else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
+            //{
+            //    if (!_isAttack)
+            //        StartCoroutine(Attack(_path[1], 0.13f));
+            //}
+            //else if (isOtherReserved(_path[1]) && _path[1]._walkable)
+            //{
+            //    StartCoroutine(MoveJump());
+            //    return;
+            //}
+            //else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
+            //{
+            //    StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
+            //}
+            StartCoroutine(MoveToNode(_path[1]));
         }
     }
 
@@ -225,32 +228,60 @@ public class GolemObject : MonsterBase
         _isAttack = false;
     }
 
+    //IEnumerator AttackFrontBack(Node nextNode)
+    //{
+    //    Vector3 origin = transform.position;
+    //    Vector3 dir = (nextNode._worldPosition - origin).normalized;
+    //    float jumpHeight = 0;
+
+    //    if (dir == Vector3.down)
+    //        jumpHeight = 1;
+    //    else jumpHeight = 0.5f;
+    //    float t = 0;
+    //    float moveTime = 1 / _moveSpeed;
+    //    StartCoroutine(MoveJump());
+
+    //    while (t < 1f)
+    //    {
+    //        t += Time.deltaTime / moveTime;
+
+    //        float move = Mathf.Sin(t * Mathf.PI);
+    //        Vector3 offset = dir * move * jumpHeight;
+
+    //        transform.position = origin + offset;
+
+    //        yield return null;
+    //    }
+
+    //    transform.position = origin;
+    //}
+
     IEnumerator AttackFrontBack(Node nextNode)
     {
-        Vector3 origin = transform.position;
-        Vector3 dir = (nextNode._worldPosition - origin).normalized;
-        float jumpHeight = 0;
+        _isAttack = false;
 
-        if (dir == Vector3.down)
-            jumpHeight = 1;
-        else jumpHeight = 0.5f;
+        Vector3 origin = _path[0]._worldPosition;
+        Vector3 dir = (nextNode._worldPosition - origin).normalized;
+
         float t = 0;
         float moveTime = 1 / _moveSpeed;
-        StartCoroutine(MoveJump());
+        AttackPlayer();
+        //StartCoroutine(MoveJump());
 
         while (t < 1f)
         {
             t += Time.deltaTime / moveTime;
 
             float move = Mathf.Sin(t * Mathf.PI);
-            Vector3 offset = dir * move * jumpHeight;
+            Vector3 offset = dir * move /** jumpHeight*/;
 
             transform.position = origin + offset;
 
             yield return null;
         }
 
-        transform.position = origin;
+        //transform.position = origin;
+
     }
 
     IEnumerator MoveJump()
@@ -269,6 +300,26 @@ public class GolemObject : MonsterBase
         }
         _characterPos.localPosition = new Vector3(_characterPos.localPosition.x, 0, _characterPos.localPosition.z);
 
+    }
+
+    void DetectAttack()
+    {
+        Node playerNowNode = _tileManager.NodeFromWorldPos(_targetTF.position);
+        Node MonsterNowNode = _tileManager.NodeFromWorldPos(transform.position);
+
+        if (MonsterNowNode == playerNowNode && _isAttack && _playerController._isPlayerAttackable)
+        {
+            StartCoroutine(AttackFrontBack(_path[1]));
+        }
+
+    }
+
+    void AttackPlayer()
+    {
+        Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
+        // TODO: 데미지 처리
+        SoundManager._instance.PlaySFX(SFXName.Skel_attack_melee);
+        _playerController.OnHitting(_strength);
     }
 
     void SetMovementCost(int cost, bool isSet)

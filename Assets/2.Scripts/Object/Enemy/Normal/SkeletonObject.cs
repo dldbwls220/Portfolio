@@ -12,8 +12,6 @@ public class SkeletonObject : MonsterBase
     [SerializeField] Transform _characterPos;
     [SerializeField] GameObject _heartUI;
 
-    BoxCollider2D _attackCollider;
-
     List<Node> _path;
     Node _startNode;
     Node _targetNode;
@@ -43,6 +41,11 @@ public class SkeletonObject : MonsterBase
         
     }
 
+    private void Update()
+    {
+        DetectAttack();
+    }
+
     public void InitMonster(int enemyIndex)
     {
         TableBase table = GameTableManager._instance.Get(TableName.MonsterInfoList);
@@ -57,12 +60,11 @@ public class SkeletonObject : MonsterBase
         _pFinder = GameObject.Find("GridManager").GetComponent<PathFinding>();
         _tileManager = GameObject.Find("GridManager").GetComponent<TileMapGridManager>();
         _targetTF = GameObject.Find("PlayerCharacter").transform;
-        _attackCollider = GetComponent<BoxCollider2D>();
         _healthBarManager = _heartUI.GetComponent<HealthBarManager>();
         _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();
         _anim.speed = (IngameManager._instance._myBPM / 60f);
-        _isAttack = false;
+        
 
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
@@ -71,6 +73,7 @@ public class SkeletonObject : MonsterBase
 
     void InitMonsterStat()
     {
+        _isMoving = false;
         _nowHp = _maxHP;
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
@@ -81,6 +84,7 @@ public class SkeletonObject : MonsterBase
     {
         if (_isMoving || _playerController._isInShop || _playerController._isDead || IngameManager._instance._gameEnd) return;
 
+        _isAttack = true;
         _myBeat += 1;
         if (_myBeat > 4)
             _myBeat = 1;
@@ -101,29 +105,10 @@ public class SkeletonObject : MonsterBase
 
         if (_myBeat == 2 || _myBeat == 4)
         {        
-            if (_path != null && _path.Count == 3)
-            {
-                if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.15f));
-            }
-            else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
-            {
-                if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.13f));
-            }
-            else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-            {
+            StartCoroutine(MoveToNode(_path[1]));
+        }
 
-                _myBeat -= 2;
-                StartCoroutine(MoveJump());
-                Debug.Log("지나가지 못함");
-                return;
-            }
-            else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
-            {
-                StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
-            }        
-        }   
+        Debug.Log(_myBeat);
     }
 
     public void OnHitting(float dmg)
@@ -174,70 +159,34 @@ public class SkeletonObject : MonsterBase
             );
 
             yield return null;
-        }
-        transform.position = targetPos;  
+        }  
         
         _isMoving = false;
     }
 
-    IEnumerator Attack(Node nextNode , float delay)
-    {
-        _isAttack = true;
-
-        Node targetAttackNode = nextNode;
-
-        yield return new WaitForSeconds(delay);
-
-        Node playerNowNode = _tileManager.NodeFromWorldPos(_targetTF.position);
-
-        if (playerNowNode == targetAttackNode)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-            Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
-            // TODO: 데미지 처리
-            SoundManager._instance.PlaySFX(SFXName.Skel_attack_melee);
-            _playerController.OnHitting(_strength);
-        }
-        else if (isOtherReserved(nextNode) && nextNode._walkable)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-        }
-        else
-        {
-            Debug.Log("공격 실패 → 이동");
-            StartCoroutine(MoveToNode(nextNode));
-        }
-
-        _isAttack = false;
-    }
-
     IEnumerator AttackFrontBack(Node nextNode)
     {
-        Vector3 origin = transform.position;
+        _isAttack = false;
+
+        Vector3 origin = _path[0]._worldPosition;
         Vector3 dir = (nextNode._worldPosition - origin).normalized;
-        float jumpHeight = 0;
 
-
-        if (dir == Vector3.down)
-            jumpHeight = 1;
-        else jumpHeight = 0.5f;
-            float t = 0;
+        float t = 0;
         float moveTime = 1 / _moveSpeed;
-        StartCoroutine(MoveJump());
+        AttackPlayer();
 
         while (t < 1f)
         {
             t += Time.deltaTime / moveTime;
 
             float move = Mathf.Sin(t * Mathf.PI);
-            Vector3 offset = dir * move * jumpHeight;
+            Vector3 offset = dir * move /** jumpHeight*/;
 
             transform.position = origin + offset;
 
             yield return null;
         }
 
-        transform.position = origin;
     }
 
     IEnumerator MoveJump()
@@ -256,6 +205,26 @@ public class SkeletonObject : MonsterBase
         }
         _characterPos.localPosition = new Vector3(_characterPos.localPosition.x, 0, _characterPos.localPosition.z);
 
+    }
+
+    void DetectAttack()
+    {
+        Node playerNowNode = _tileManager.NodeFromWorldPos(_targetTF.position);
+        Node MonsterNowNode = _tileManager.NodeFromWorldPos(transform.position);
+
+        if (MonsterNowNode == playerNowNode && _isAttack && _playerController._isPlayerAttackable)
+        {
+            StartCoroutine(AttackFrontBack(_path[1]));            
+        }
+
+    }
+
+    void AttackPlayer()
+    {
+        Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
+        // TODO: 데미지 처리
+        SoundManager._instance.PlaySFX(SFXName.Skel_attack_melee);
+        _playerController.OnHitting(_strength);
     }
 
     void SetMovementCost(int cost, bool isSet)

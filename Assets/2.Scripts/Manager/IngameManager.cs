@@ -23,6 +23,7 @@ public class IngameManager : MonoBehaviour
     int _bossKillCount;
     int _bpm;
     float _gameTime;
+    double _startDSPTime;
     bool _isPlayingBGM;
     bool _isSelected;
     bool _isGameEnd;
@@ -44,14 +45,13 @@ public class IngameManager : MonoBehaviour
     public int _monsterKillCount { get { return _killCount; } }
     public int _myBPM { get { return _bpm; } }
     public int _myMusicIndex { get { return _musicIndex; } }
+    public double _dpsTime { get { return _startDSPTime; } }
 
     public static IngameManager _instance { get { return _uniqueInstance; } }
 
     private void Awake()
     {
         _uniqueInstance = this;
-
-       
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -114,7 +114,7 @@ public class IngameManager : MonoBehaviour
         _isPaused = false;
         _bansheeSound = false;
         _musicSelectBox.InitWnd();
-       
+        _startDSPTime = AudioSettings.dspTime + 0.1f;
 
         _pause.CloseWnd();
         _resultUI.CloseWnd();
@@ -202,8 +202,8 @@ public class IngameManager : MonoBehaviour
     {
         yield return null;
         
-        //SoundManager._instance.PlayLoop((LoopName)(_musicIndex - 1));
-        SoundManager._instance.PlayShop((ShopkeeperName)(_musicIndex - 1));
+        SoundManager._instance.PlayLoop((LoopName)(_musicIndex - 1), _startDSPTime);
+        SoundManager._instance.PlayShop((ShopkeeperName)(_musicIndex - 1), _startDSPTime);
         SoundManager._instance._loopDESC._volum = 0.5f;
         SoundManager._instance._shopkeeperDESC._volum = 0.5f;
         SoundManager._instance.PlayBanshee();

@@ -21,7 +21,6 @@ public class BatObject : MonsterBase
 
     List<Node> _path;
     Node _startNode;
-    Node _targetNode;
     Node _randomNode;
 
 
@@ -58,7 +57,7 @@ public class BatObject : MonsterBase
 
     private void Update()
     {
-        _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
+        DetectAttack();
     }
 
     public void InitMonster(int enemyIndex)
@@ -95,6 +94,7 @@ public class BatObject : MonsterBase
 
     void InitMonsterStat()
     {
+        _isMoving = false;
         _nowHp = _maxHP;
         _heartManager.ClearHeart();
         _heartManager.CreateEmptyHeart(_maxHP);
@@ -103,7 +103,7 @@ public class BatObject : MonsterBase
     void OnBeat()
     {
         if (_isMoving || _playerController._isInShop || _playerController._isDead || IngameManager._instance._gameEnd) return;
-
+        _isAttack = true;
         _myBeat += 1;
         if(_myBeat > 4) _myBeat = 1;
 
@@ -122,34 +122,36 @@ public class BatObject : MonsterBase
             return;
         Node nextNode = _path[1];
 
-        int distance = Mathf.Abs(_startNode._grideX - _targetNode._grideX) + Mathf.Abs(_startNode._grideY - _targetNode._grideY);
+        //int distance = Mathf.Abs(_startNode._grideX - _targetNode._grideX) + Mathf.Abs(_startNode._grideY - _targetNode._grideY);
 
         _animController.SetTrigger(_myBeat + "Beat");
 
         if (_myBeat == 2 || _myBeat == 4)
         {
 
-            if (distance == 2)
-            {
-                if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.15f));
-            }
-            else if (distance == 1)
-            {
-                if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.13f));
+            //if (distance == 2)
+            //{
+            //    if (!_isAttack)
+            //        StartCoroutine(Attack(_path[1], 0.15f));
+            //}
+            //else if (distance == 1)
+            //{
+            //    if (!_isAttack)
+            //        StartCoroutine(Attack(_path[1], 0.13f));
 
-            }
-            else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-            {
-                
-                return;
-            }
-            else
-            {
-                StartCoroutine(MoveToNode(_path[1]));
-            }          
-        }   
+            //}
+            //else if (isOtherReserved(_path[1]) && _path[1]._walkable)
+            //{
+
+            //    return;
+            //}
+            //else
+            //{
+            //    StartCoroutine(MoveToNode(_path[1]));
+            //}
+            StartCoroutine(MoveToNode(_path[1]));
+
+        }
     }
 
     public void OnHitting(float dmg)
@@ -263,29 +265,57 @@ public class BatObject : MonsterBase
         _isAttack = false;
     }
 
+    //IEnumerator AttackFrontBack(Node nextNode)
+    //{
+    //    Vector3 origin = transform.position;
+
+    //    Vector3 dir = (nextNode._worldPosition - origin).normalized;
+    //    float t = 0;
+    //    float moveTime = 1 / _moveSpeed;
+
+    //    while (t < 1f)
+    //    {
+    //        t += Time.deltaTime / moveTime;
+
+            
+    //        float move = Mathf.Sin(t * Mathf.PI);   
+    //        Vector3 offset = dir * move * 0.5f;
+
+    //        transform.position = origin + offset;
+
+    //        yield return null;
+    //    }
+
+        
+    //    transform.position = origin;
+    //}
+
     IEnumerator AttackFrontBack(Node nextNode)
     {
-        Vector3 origin = transform.position;
+        _isAttack = false;
+
+        Vector3 origin = _path[0]._worldPosition;
 
         Vector3 dir = (nextNode._worldPosition - origin).normalized;
         float t = 0;
         float moveTime = 1 / _moveSpeed;
+        AttackPlayer();
+        //StartCoroutine(MoveJump());
 
         while (t < 1f)
         {
             t += Time.deltaTime / moveTime;
 
-            
-            float move = Mathf.Sin(t * Mathf.PI);   
-            Vector3 offset = dir * move * 0.5f;
+            float move = Mathf.Sin(t * Mathf.PI);
+            Vector3 offset = dir * move /** jumpHeight*/;
 
             transform.position = origin + offset;
 
             yield return null;
         }
 
-        
-        transform.position = origin;
+        //transform.position = origin;
+
     }
 
     Node GetRandomNode()
@@ -305,6 +335,26 @@ public class BatObject : MonsterBase
         }
        return rndNode;
 
+    }
+
+    void DetectAttack()
+    {
+        Node playerNowNode = _tileManager.NodeFromWorldPos(_targetTF.position);
+        Node MonsterNowNode = _tileManager.NodeFromWorldPos(transform.position);
+
+        if (MonsterNowNode == playerNowNode && _isAttack && _playerController._isPlayerAttackable)
+        {
+            StartCoroutine(AttackFrontBack(_path[1]));
+        }
+
+    }
+
+    void AttackPlayer()
+    {
+        Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
+        // TODO: 데미지 처리
+        SoundManager._instance.PlaySFX(SFXName.Skel_attack_melee);
+        _playerController.OnHitting(_strength);
     }
 
     void OnTriggerEnter2D(Collider2D collision)

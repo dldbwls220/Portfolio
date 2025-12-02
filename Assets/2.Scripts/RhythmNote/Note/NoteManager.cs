@@ -1,4 +1,3 @@
-using DefineEnum;
 using System;
 using UnityEngine;
 
@@ -12,7 +11,7 @@ public class NoteManager : MonoBehaviour
     double beatInterval;      // 한 박자 시간
     int lastBeat;
 
-    bool _isMusicStart;
+    bool _skipFirstBeat;
 
     [SerializeField] Transform _tfNoteAppearLeft;
     [SerializeField] Transform _tfNoteAppearRight;
@@ -29,15 +28,15 @@ public class NoteManager : MonoBehaviour
 
     public void InitNote(int bpm)
     {
-        _isMusicStart = false;
+        _skipFirstBeat = false;
 
         _bpm = bpm;
         beatInterval = 60.0 / _bpm;
 
         // 음악이 시작되는 DSP 시간
-        startDspTime = AudioSettings.dspTime + 0.1f;
+        startDspTime = IngameManager._instance._dpsTime;
 
-        lastBeat = -1;
+        lastBeat = 0;
     }
 
     void Update()
@@ -50,48 +49,34 @@ public class NoteManager : MonoBehaviour
 
         int currentBeat = (int)(songTime / beatInterval);
 
+        if (!_skipFirstBeat)
+        {
+            lastBeat = currentBeat;
+            _skipFirstBeat = true;
+            return;
+        }
+
         if (currentBeat != lastBeat)
         {
             lastBeat = currentBeat;
 
-            // 4박자 이전 → 노트만 스폰
-            if (currentBeat < 4)
-            {
-                SpawnBeatNotes();
-                return;
-            }
+            SpawnBeatNotes();
+        }      
+    }
 
-            // 딱 4번째 박자 도달 → DSP 음악 재생
-            if (currentBeat >= 4)
-            {
-                double dspMusicStart = startDspTime + beatInterval * 4;
+    void SpawnBeatNotes()
+    {
+        GameObject goLeft = ObjectPool._instance._leftNoteQueue.Dequeue();
+        goLeft.transform.position = _tfNoteAppearLeft.position;
+        goLeft.SetActive(true);
+        TimingManager.Instance._boxNoteListL.Add(goLeft);
 
-                if (!_isMusicStart)
-                {
-                    SoundManager._instance.PlayLoop((LoopName)(IngameManager._instance._myMusicIndex - 1), dspMusicStart);
-                    _isMusicStart=true;
-                }
-               
+        GameObject goRight = ObjectPool._instance._rightNoteQueue.Dequeue();
+        goRight.transform.position = _tfNoteAppearRight.position;
+        goRight.SetActive(true);
+        TimingManager.Instance._boxNoteListR.Add(goRight);
 
-                // 이제부터 노트 스폰 (음악과 정확히 맞아감)
-                SpawnBeatNotes();
-                return;
-            }
-
-            void SpawnBeatNotes()
-            {
-                GameObject goLeft = ObjectPool._instance._leftNoteQueue.Dequeue();
-                goLeft.transform.position = _tfNoteAppearLeft.position;
-                goLeft.SetActive(true);
-                TimingManager.Instance._boxNoteListL.Add(goLeft);
-
-                GameObject goRight = ObjectPool._instance._rightNoteQueue.Dequeue();
-                goRight.transform.position = _tfNoteAppearRight.position;
-                goRight.SetActive(true);
-                TimingManager.Instance._boxNoteListR.Add(goRight);
-
-                OnBeat?.Invoke();
-            }
-        }
+        OnBeat?.Invoke();
     }
 }
+

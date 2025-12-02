@@ -21,7 +21,6 @@ public class SlimeObject : MonsterBase
 
     List<Node> _path;
     Node _startNode;
-    Node _targetNode;
     Node _upDownNode;
     LookDir _myDir;
     int _myBeat;
@@ -55,7 +54,7 @@ public class SlimeObject : MonsterBase
 
     private void Update()
     {
-        _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
+        DetectAttack();
     }
 
     public void InitMonster(int enemyIndex)
@@ -95,12 +94,13 @@ public class SlimeObject : MonsterBase
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
         _healthBarManager.DrawHearts(_nowHp);
+        _isMoving = false;
     }
 
     void OnBeat()
     {
         if (_isMoving || _playerController._isInShop || _playerController._isDead || IngameManager._instance._gameEnd) return;
-
+        _isAttack = true;
         _myBeat += 1;
         if (_myBeat > 4) _myBeat = 1;
 
@@ -122,32 +122,11 @@ public class SlimeObject : MonsterBase
             return;
         Node nextNode = _path[1];
 
-        int distance = Mathf.Abs(_startNode._grideX - _targetNode._grideX) + Mathf.Abs(_startNode._grideY - _targetNode._grideY);
-
         _animController.SetTrigger(_myBeat + "Beat");
 
         if (_myBeat == 2 || _myBeat == 4)
         {
-            if (distance == 2)
-            {
-                if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.15f));
-            }
-            else if (distance == 1)
-            {
-                if (!_isAttack)
-                    StartCoroutine(Attack(_path[1], 0.13f));
-
-            }
-            else if(isOtherReserved(_path[1]) && _path[1]._walkable)
-            {
-                StartCoroutine(MoveJump());
-                return;
-            }
-            else
-            {
-                StartCoroutine(MoveToNode(_path[1]));
-            }
+            StartCoroutine(MoveToNode(_path[1]));
         }       
     }
 
@@ -193,78 +172,35 @@ public class SlimeObject : MonsterBase
             yield return null;
         }
 
-        transform.position = targetPos;
+
 
         _isMoving = false;
     }
 
-    IEnumerator Attack(Node nextNode, float delay)
-    {
-        _isAttack = true;
-
-        Node targetAttackNode = nextNode;
-
-        yield return new WaitForSeconds(delay);
-
-        Node playerNowNode = _tileManager.NodeFromWorldPos(_targetTF.position);
-
-        if (playerNowNode == targetAttackNode)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-            if (_myDir == LookDir.Up)
-            {
-                _myDir = LookDir.Down;
-                _myBeat = 2;
-            }
-            else if (_myDir == LookDir.Down)
-            {
-                _myDir = LookDir.Up;
-                _myBeat = 0;
-            }
-                Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
-            // TODO: 데미지 처리
-            SoundManager._instance.PlaySFX(SFXName.Slime_attack);
-            _playerController.OnHitting(_strength);
-        }
-        else if (isOtherReserved(nextNode) && nextNode._walkable)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-        }
-        else
-        {
-            Debug.Log("공격 실패 → 이동");
-            StartCoroutine(MoveToNode(nextNode));
-        }
-
-        _isAttack = false;
-    }
-
     IEnumerator AttackFrontBack(Node nextNode)
     {
-        Vector3 origin = transform.position;
+        _isAttack = false;
 
+        Vector3 origin = _path[0]._worldPosition;
         Vector3 dir = (nextNode._worldPosition - origin).normalized;
-
-
 
         float t = 0;
         float moveTime = 1 / _moveSpeed;
+        AttackPlayer();
+
 
         while (t < 1f)
         {
             t += Time.deltaTime / moveTime;
 
-
             float move = Mathf.Sin(t * Mathf.PI);
-            Vector3 offset = dir * move * 0.5f;
+            Vector3 offset = dir * move /** jumpHeight*/;
 
             transform.position = origin + offset;
 
             yield return null;
         }
 
-
-        transform.position = origin;
     }
 
     IEnumerator MoveJump()
@@ -307,6 +243,31 @@ public class SlimeObject : MonsterBase
 
         return nextNode;
 
+    }
+
+    void DetectAttack()
+    {
+        Node playerNowNode = _tileManager.NodeFromWorldPos(_targetTF.position);
+        Node MonsterNowNode = _tileManager.NodeFromWorldPos(transform.position);
+
+        if (MonsterNowNode == playerNowNode && _isAttack && _playerController._isPlayerAttackable)
+        {
+            StartCoroutine(AttackFrontBack(_path[1]));
+            if (_myDir == LookDir.Up)
+                _myDir = LookDir.Down;
+            else
+                _myDir = LookDir.Up;
+
+        }
+
+    }
+
+    void AttackPlayer()
+    {
+        Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
+        // TODO: 데미지 처리
+        SoundManager._instance.PlaySFX(SFXName.Skel_attack_melee);
+        _playerController.OnHitting(_strength);
     }
 
     void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)

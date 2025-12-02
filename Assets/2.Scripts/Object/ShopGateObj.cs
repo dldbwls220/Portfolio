@@ -7,7 +7,6 @@ public class ShopGateObj : MonoBehaviour
     ExitGateObj _exitGate;
     GameObject _playerMovePoint;
     GameObject _otherGate;
-    Vector3 _gatePos;
 
     [SerializeField] float _minDistance = 2f;
     [SerializeField] float _maxDistance = 15f;
@@ -18,7 +17,6 @@ public class ShopGateObj : MonoBehaviour
         _playerMovePoint = GameObject.Find("PlayerMovePoint");
         _otherGate = GameObject.Find("OtherGatePos");
         _exitGate = GameObject.Find("ExitGate").GetComponent<ExitGateObj>();
-        _gatePos = transform.position + Vector3.up;
     }
 
     void Update()
@@ -46,7 +44,7 @@ public class ShopGateObj : MonoBehaviour
             _playerMovePoint.transform.position = _otherGate.transform.position;
             _playerController.transform.position = _otherGate.transform.position;
             Camera.main.transform.position = _otherGate.transform.position + new Vector3(0,0,-10);
-            _exitGate.GetVector(_gatePos);
+            _exitGate.GetVector(transform.position + Vector3.up);
             _playerController._isInShop = true;
 
             int rnd = Random.Range((int)SFXName.Cadence_teleport_01, (int)SFXName.Cadence_teleport_05 + 1);

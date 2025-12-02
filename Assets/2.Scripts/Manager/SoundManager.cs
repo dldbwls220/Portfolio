@@ -97,7 +97,7 @@ public class SoundManager : TSingleton<SoundManager>
         _loopPlayer.PlayScheduled(dspStartTime);
     }
 
-    public void PlayShop(ShopkeeperName name)
+    public void PlayShop(ShopkeeperName name, double dspStartTime)
     {
         if (!_shopkeeperClipDoc.ContainsKey(name))
         {
@@ -105,7 +105,7 @@ public class SoundManager : TSingleton<SoundManager>
             return;
         }
         _shopkeeperPlayer.clip = _shopkeeperClipDoc[name];
-        _shopkeeperPlayer.Play();
+        _shopkeeperPlayer.PlayScheduled(dspStartTime);
     }
 
     public void PlaySFX(SFXName name)

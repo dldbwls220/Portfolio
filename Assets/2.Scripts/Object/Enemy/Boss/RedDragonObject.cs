@@ -54,7 +54,7 @@ public class RedDragonObject : MonsterBase
     void Update()
     {
         CheckPlayerinRange();
-
+        DetectAttack();
         if (_path != null)
         {
             Vector3 dir = new Vector3(_path[1]._worldPosition.x - transform.position.x, 0, 0);
@@ -108,6 +108,7 @@ public class RedDragonObject : MonsterBase
 
     void InitMonsterStat()
     {
+        _isMoving = false;
         _nowHp = _maxHP;
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
@@ -116,7 +117,7 @@ public class RedDragonObject : MonsterBase
     void OnBeat()
     {
         if (_isMoving || _playerController._isDead || _playerController._isInShop || IngameManager._instance._gameEnd) return;
-
+        _isAttack = true;
         _myBeat += 1;
         if (_myBeat > 4)
             _myBeat = 1;
@@ -147,7 +148,6 @@ public class RedDragonObject : MonsterBase
                 {
                     _isFire = true;
                     _anim.SetBool("isFire", true);
-                    //InitFireLength();
                     SoundManager._instance.PlaySFX(SFXName.Dragon_attack_prefire);
                 }
                 break;
@@ -157,55 +157,18 @@ public class RedDragonObject : MonsterBase
                 {
                     SoundManager._instance.PlaySFX(SFXName.Dragon_attack_fire);
                     _fireAnim.SetTrigger("Fire");
-                    StartCoroutine(Attack(_path[1], 0.14f));
-                }
-                else if (_path != null && _path.Count == 3)
-                {
-                    if (!_isAttack)
-                        StartCoroutine(Attack(_path[1], 0.15f));
-                }
-                else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
-                {
-                    if (!_isAttack)
-                        StartCoroutine(Attack(_path[1], 0.13f));
-                }
-                else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-                {
-                    _myBeat -= 2;
-                    StartCoroutine(MoveJump());
-                    return;
-                }
-                else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
-                {
-                    StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
-                }
+                    if (_playerController._isPlayerAttackable && _startNode._worldPosition.y == _targetNode._worldPosition.y)
+                        AttackPlayer();
+                }             
+                else
+                    StartCoroutine(MoveToNode(_path[1]));
                 break;
             case 3:
                 _isFire = false;
                 _anim.SetBool("isFire", false);
                 break;
-            case 4:
-
-                if (_path != null && _path.Count == 3)
-                {
-                    if (!_isAttack)
-                        StartCoroutine(Attack(_path[1], 0.15f));
-                }
-                else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
-                {
-                    if (!_isAttack)
-                        StartCoroutine(Attack(_path[1], 0.13f));
-                }
-                else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-                {
-                    _myBeat -= 2;
-                    StartCoroutine(MoveJump());
-                    return;
-                }
-                else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
-                {
-                    StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
-                }
+            case 4:              
+                StartCoroutine(MoveToNode(_path[1]));
                 break;
         }
         
@@ -311,68 +274,29 @@ public class RedDragonObject : MonsterBase
         _isMoving = false;
     }
 
-    IEnumerator Attack(Node nextNode, float delay)
-    {
-        _isAttack = true;
-
-        Node targetAttackNode = nextNode;
-
-        yield return new WaitForSeconds(delay);
-
-        Node playerNowNode = _tileManager.NodeFromWorldPos(_targetTF.position);
-
-        if (playerNowNode == targetAttackNode)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-
-            SoundManager._instance.PlaySFX(SFXName.Dragon_attack_melee);
-            _playerController.OnHitting(_strength);
-        }
-        else if(_startNode._worldPosition.y == playerNowNode._worldPosition.y && _isFire)
-        {
-            _playerController.OnHitting(_strength - 1);
-            Debug.Log("불에 맞음");
-        }
-        else if (isOtherReserved(nextNode) && nextNode._walkable && !_isFire)
-        {
-            Debug.Log("4번");
-            StartCoroutine(AttackFrontBack(nextNode));
-        }
-        else if(!_isFire)
-        {
-            StartCoroutine(MoveToNode(nextNode));
-        }
-
-        _isAttack = false;
-    }
-
     IEnumerator AttackFrontBack(Node nextNode)
     {
-        Vector3 origin = transform.position;
+        _isAttack = false;
+
+        Vector3 origin = _path[0]._worldPosition;
         Vector3 dir = (nextNode._worldPosition - origin).normalized;
-        float jumpHeight = 0;
 
-
-        if (dir == Vector3.down)
-            jumpHeight = 1;
-        else jumpHeight = 0.5f;
         float t = 0;
         float moveTime = 1 / _moveSpeed;
-        StartCoroutine(MoveJump());
+        AttackPlayer();
 
         while (t < 1f)
         {
             t += Time.deltaTime / moveTime;
 
             float move = Mathf.Sin(t * Mathf.PI);
-            Vector3 offset = dir * move * jumpHeight;
+            Vector3 offset = dir * move /** jumpHeight*/;
 
             transform.position = origin + offset;
 
             yield return null;
         }
 
-        transform.position = origin;
     }
 
     IEnumerator MoveJump()
@@ -423,6 +347,26 @@ public class RedDragonObject : MonsterBase
             right._movementCost = 0;
         }
 
+    }
+
+    void DetectAttack()
+    {
+        Node playerNowNode = _tileManager.NodeFromWorldPos(_targetTF.position);
+        Node MonsterNowNode = _tileManager.NodeFromWorldPos(transform.position);
+
+        if (MonsterNowNode == playerNowNode && _isAttack && _playerController._isPlayerAttackable)
+        {
+            StartCoroutine(AttackFrontBack(_path[1]));
+        }
+
+    }
+
+    void AttackPlayer()
+    {
+        Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
+        // TODO: 데미지 처리
+        SoundManager._instance.PlaySFX(SFXName.Skel_attack_melee);
+        _playerController.OnHitting(_strength);
     }
 
     void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
