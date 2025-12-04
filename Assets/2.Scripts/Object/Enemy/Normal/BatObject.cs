@@ -107,14 +107,9 @@ public class BatObject : MonsterBase
         _myBeat += 1;
         if(_myBeat > 4) _myBeat = 1;
 
-        if (_path != null)
-            SetTile(_path[1], true, false, 0);
-
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
         _randomNode = GetRandomNode();
         _path = _pFinder.FindPath(_startNode._worldPosition, _randomNode._worldPosition);
-        
-        SetTile(_path[1], false, true, 5);
         
         _tileManager.SetDebugPath(gameObject.name, _path);
 
@@ -167,7 +162,6 @@ public class BatObject : MonsterBase
             if(_name == "DireBat")
                 IngameManager._instance.BossCount();
 
-            SetTile(_path[1], true, false, 0);
             ObjectPool._instance._batQueue.Enqueue(gameObject);
             gameObject.SetActive(false);
         }
@@ -188,25 +182,6 @@ public class BatObject : MonsterBase
         base.CheckPlayerinRange();
     }
 
-    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
-    {
-        _startNode._walkable = isWalkable;
-
-        nextNode._BatNode = isResrve;
-        nextNode._movementCost = reserveCost;
-    }
-
-    bool isOtherReserved(Node nextNode)
-    {
-        if (nextNode._GolemNode == true ||
-            nextNode._SlimeNode == true ||
-            nextNode._SkeletonNode == true ||
-            nextNode._BansheeNode == true ||
-            nextNode._RedDragonNode == true)
-            return true;
-        else return false;
-    }
-
     IEnumerator MoveToNode(Node nextNode)
     {
         _isMoving = true;
@@ -214,9 +189,6 @@ public class BatObject : MonsterBase
         Vector3 targetPos = nextNode._worldPosition;
         
         Vector3 dir = (nextNode._worldPosition - origin).normalized;
-
-        SetTile(nextNode, true, false, 0);
-
 
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {
@@ -252,10 +224,6 @@ public class BatObject : MonsterBase
             SoundManager._instance.PlaySFX(SFXName.Bat_attack);
             _playerController.OnHitting(_strength);
         }
-        else if(isOtherReserved(nextNode) && nextNode._walkable)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-        }
         else
         {
             //Debug.Log("공격 실패 → 이동");
@@ -264,31 +232,6 @@ public class BatObject : MonsterBase
 
         _isAttack = false;
     }
-
-    //IEnumerator AttackFrontBack(Node nextNode)
-    //{
-    //    Vector3 origin = transform.position;
-
-    //    Vector3 dir = (nextNode._worldPosition - origin).normalized;
-    //    float t = 0;
-    //    float moveTime = 1 / _moveSpeed;
-
-    //    while (t < 1f)
-    //    {
-    //        t += Time.deltaTime / moveTime;
-
-            
-    //        float move = Mathf.Sin(t * Mathf.PI);   
-    //        Vector3 offset = dir * move * 0.5f;
-
-    //        transform.position = origin + offset;
-
-    //        yield return null;
-    //    }
-
-        
-    //    transform.position = origin;
-    //}
 
     IEnumerator AttackFrontBack(Node nextNode)
     {
@@ -300,22 +243,18 @@ public class BatObject : MonsterBase
         float t = 0;
         float moveTime = 1 / _moveSpeed;
         AttackPlayer();
-        //StartCoroutine(MoveJump());
 
         while (t < 1f)
         {
             t += Time.deltaTime / moveTime;
 
             float move = Mathf.Sin(t * Mathf.PI);
-            Vector3 offset = dir * move /** jumpHeight*/;
+            Vector3 offset = dir * move;
 
             transform.position = origin + offset;
 
             yield return null;
         }
-
-        //transform.position = origin;
-
     }
 
     Node GetRandomNode()

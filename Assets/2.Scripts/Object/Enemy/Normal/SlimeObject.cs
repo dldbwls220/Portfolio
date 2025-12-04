@@ -104,17 +104,12 @@ public class SlimeObject : MonsterBase
         _myBeat += 1;
         if (_myBeat > 4) _myBeat = 1;
 
-        if (_path != null)
-            SetTile(_path[1], true, false, 0);
-
         _startNode = _tileManager.NodeFromWorldPos(transform.position);     
 
         if (_myBeat == 1 || _myBeat == 3)
             _upDownNode = GetUpDownNode();
 
         _path = _pFinder.FindPath(_startNode._worldPosition, _upDownNode._worldPosition);
-
-        SetTile(_path[1], false, true, 5);
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
@@ -137,7 +132,6 @@ public class SlimeObject : MonsterBase
             _nowHp = 0;
             IngameManager._instance.KillCount();
             SpawnGold(_gold);
-            SetTile(_path[1], true, false, 0);
             int rnd = Random.Range((int)SFXName.Slime_death_01, (int)SFXName.Slime_death_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
             _dead = true;
@@ -157,8 +151,6 @@ public class SlimeObject : MonsterBase
         _isMoving = true;
 
         Vector3 targetPos = nextNode._worldPosition;
-
-        SetTile(nextNode, true, false, 0);
 
         StartCoroutine(MoveJump());
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
@@ -268,25 +260,6 @@ public class SlimeObject : MonsterBase
         // TODO: 데미지 처리
         SoundManager._instance.PlaySFX(SFXName.Skel_attack_melee);
         _playerController.OnHitting(_strength);
-    }
-
-    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
-    {
-        _startNode._walkable = isWalkable;
-
-        nextNode._SlimeNode = isResrve;
-        nextNode._movementCost = reserveCost;
-    }
-
-    bool isOtherReserved(Node nextNode)
-    {
-        if (nextNode._GolemNode == true ||
-            nextNode._SkeletonNode == true ||
-            nextNode._BatNode == true ||
-             nextNode._BansheeNode == true ||
-            nextNode._RedDragonNode == true)
-            return true;
-        else return false;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

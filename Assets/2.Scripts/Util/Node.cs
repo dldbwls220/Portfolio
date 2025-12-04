@@ -3,15 +3,7 @@ using UnityEngine;
 //수정
 public class Node : IHeapItem<Node>
 //수정(end)
-{
-    #region[MonsterReserves]
-    public bool _BatNode { get; set; } = false;
-    public bool _SkeletonNode { get; set; } = false;
-    public bool _SlimeNode { get; set; } = false;
-    public bool _GolemNode { get; set; } = false;
-    public bool _RedDragonNode { get; set; } = false;
-    public bool _BansheeNode { get; set; } = false;
-    #endregion[MonsterReserves]
+{ 
     public bool _walkable { get; set; }
     public Vector3 _worldPosition { get; set; }
 

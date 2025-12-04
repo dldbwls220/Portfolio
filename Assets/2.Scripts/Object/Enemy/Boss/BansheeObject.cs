@@ -106,17 +106,12 @@ public class BansheeObject : MonsterBase
         if (_myBeat > 4)
             _myBeat = 1;
 
-        if (_path != null)
-            SetTile(_path[1], true, false, 0);
-
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
 
         SetMovementCost(5, true);
 
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
         _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
-
-        SetTile(_path[1], false, true, 5);
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
@@ -136,11 +131,6 @@ public class BansheeObject : MonsterBase
         {
             if (!_isAttack)
                 StartCoroutine(Attack(_path[1], 0.15f));
-        }
-        else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-        {
-            Debug.Log("지나가지 못함");
-            return;
         }
         else if (_path != null && _path.Count > 1)   
         {
@@ -162,7 +152,6 @@ public class BansheeObject : MonsterBase
             
             IngameManager._instance._bansheeSound = false;
             _dead = true;
-            SetTile(_path[1], true, false, 0);
             IngameManager._instance.KillCount();
             SpawnGold(_gold);
             IngameManager._instance.BossCount();
@@ -177,7 +166,6 @@ public class BansheeObject : MonsterBase
             _isDamaged = true;
             StopAllCoroutines();
             StartCoroutine(KnockBack());
-            SetTile(_path[1], true, false, 0);
 
             int rnd = Random.Range((int)SFXName.Banshee_hurt_01, (int)SFXName.Banshee_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
@@ -196,7 +184,6 @@ public class BansheeObject : MonsterBase
 
         Vector3 targetPos = nextNode._worldPosition;
 
-        SetTile(nextNode, true, false, 0);
         SetMovementCost(5, false);
 
         float diffX = nextNode._worldPosition.x - transform.position.x;
@@ -283,10 +270,6 @@ public class BansheeObject : MonsterBase
 
             _playerController.OnHitting(_strength);
         }
-        else if (isOtherReserved(nextNode) && nextNode._walkable)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-        }
         else
         {
             Debug.Log("공격 실패 → 이동");
@@ -357,24 +340,7 @@ public class BansheeObject : MonsterBase
 
     }
 
-    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
-    {
-        _startNode._walkable = isWalkable;
-
-        nextNode._BansheeNode = isResrve;
-        nextNode._movementCost = reserveCost;
-    }
-
-    bool isOtherReserved(Node nextNode)
-    {
-        if (nextNode._GolemNode == true ||
-             nextNode._SlimeNode == true ||
-             nextNode._BatNode == true ||
-             nextNode._SkeletonNode == true ||
-             nextNode._RedDragonNode == true)
-            return true;
-        else return false;
-    }
+   
 
     void OnTriggerEnter2D(Collider2D collision)
     {

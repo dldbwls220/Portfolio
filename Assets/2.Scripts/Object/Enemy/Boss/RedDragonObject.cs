@@ -125,17 +125,12 @@ public class RedDragonObject : MonsterBase
         if (_path != null)
         {
             InitFireLength();
-            SetTile(_path[1], true, false, 0);
         }
 
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
-
-        SetMovementCost(5, true);
         
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
         _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
-
-        SetTile(_path[1], false, true, 5);
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
@@ -184,7 +179,6 @@ public class RedDragonObject : MonsterBase
             _healthBarManager.ClearHeart();
 
             _dead = true;
-            SetTile(_path[1], true, false, 0);
             IngameManager._instance.KillCount();
             SpawnGold(_gold);
             IngameManager._instance.BossCount();
@@ -223,10 +217,6 @@ public class RedDragonObject : MonsterBase
         _isMoving = true;
 
         Vector3 targetPos = nextNode._worldPosition;
-
-        SetTile(nextNode, true, false, 0);
-        SetMovementCost(5, false);
-               
        
         float diffX = nextNode._worldPosition.x - transform.position.x;
 
@@ -325,30 +315,6 @@ public class RedDragonObject : MonsterBase
         SoundManager._instance.PlaySFX((SFXName)rnd);
     }
 
-    void SetMovementCost(int cost, bool isSet)
-    {
-        Node up = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.up);
-        Node down = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.down);
-        Node left = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.left);
-        Node right = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.right);
-
-        if (isSet)
-        {
-            up._movementCost = cost;
-            down._movementCost = cost;
-            left._movementCost = cost;
-            right._movementCost = cost;
-        }
-        else
-        {
-            up._movementCost = 0;
-            down._movementCost = 0;
-            left._movementCost = 0;
-            right._movementCost = 0;
-        }
-
-    }
-
     void DetectAttack()
     {
         Node playerNowNode = _tileManager.NodeFromWorldPos(_targetTF.position);
@@ -367,25 +333,6 @@ public class RedDragonObject : MonsterBase
         // TODO: 데미지 처리
         SoundManager._instance.PlaySFX(SFXName.Skel_attack_melee);
         _playerController.OnHitting(_strength);
-    }
-
-    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
-    {
-        _startNode._walkable = isWalkable;
-
-        nextNode._RedDragonNode = isResrve;
-        nextNode._movementCost = reserveCost;
-    }
-
-    bool isOtherReserved(Node nextNode)
-    {
-        if (nextNode._GolemNode == true ||
-            nextNode._SlimeNode == true ||
-            nextNode._BatNode == true ||
-            nextNode._SkeletonNode == true ||
-            nextNode._BansheeNode == true)
-            return true;
-        else return false;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

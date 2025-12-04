@@ -91,9 +91,6 @@ public class GolemObject : MonsterBase
         if (_myBeat > 4)
             _myBeat = 1;
 
-        if (_path != null)
-            SetTile(_path[1], true, false, 0);
-
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
         
         SetMovementCost(5, true);
@@ -101,33 +98,12 @@ public class GolemObject : MonsterBase
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
         _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
         
-        SetTile(_path[1], false, true, 5);
-        
         _tileManager.SetDebugPath(gameObject.name, _path);
 
         _anim.SetTrigger(_myBeat + "Beat");
 
         if (_myBeat == 4)
         {
-            //if (_path != null && _path.Count == 3)
-            //{
-            //    if (!_isAttack)
-            //        StartCoroutine(Attack(_path[1], 0.15f));
-            //}
-            //else if (_path != null && _path.Count == 2)       //바로 앞에 타겟이 있으면 공격
-            //{
-            //    if (!_isAttack)
-            //        StartCoroutine(Attack(_path[1], 0.13f));
-            //}
-            //else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-            //{
-            //    StartCoroutine(MoveJump());
-            //    return;
-            //}
-            //else if (_path != null && _path.Count > 1)   // 경로가 있고 1칸 이상이라면 다음 칸으로 이동
-            //{
-            //    StartCoroutine(MoveToNode(_path[1]));   // path[0]은 startNode 이므로 path[1]이 다음 칸
-            //}
             StartCoroutine(MoveToNode(_path[1]));
         }
     }
@@ -139,7 +115,6 @@ public class GolemObject : MonsterBase
             _nowHp = 0;
             IngameManager._instance.KillCount();
             SpawnGold(_gold);
-            SetTile(_path[1], true, false, 0);
             SoundManager._instance.PlaySFX(SFXName.Golemstone_death);
             _dead = true;
             ObjectPool._instance._golemQueue.Enqueue(gameObject);
@@ -166,7 +141,6 @@ public class GolemObject : MonsterBase
         Vector3 targetPos = nextNode._worldPosition;
         targetPos.z = transform.position.z;
 
-        SetTile(nextNode, true, false, 0);
         SetMovementCost(5, false);
 
         float diffX = nextNode._worldPosition.x - transform.position.x;
@@ -214,10 +188,6 @@ public class GolemObject : MonsterBase
             // TODO: 데미지 처리
             SoundManager._instance.PlaySFX(SFXName.Golemstone_attack);
             _playerController.OnHitting(_strength);
-        }
-        else if (isOtherReserved(nextNode) && nextNode._walkable)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
         }
         else
         {
@@ -356,25 +326,6 @@ public class GolemObject : MonsterBase
             downright._movementCost = 0;
         }
 
-    }
-
-    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
-    {
-        _startNode._walkable = isWalkable;
-
-        nextNode._GolemNode = isResrve;
-        nextNode._movementCost = reserveCost;
-    }
-
-    bool isOtherReserved(Node nextNode)
-    {
-        if (nextNode._SkeletonNode == true ||
-            nextNode._SlimeNode == true ||
-            nextNode._BatNode == true ||
-            nextNode._BansheeNode == true ||
-            nextNode._RedDragonNode == true)
-            return true;
-        else return false;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

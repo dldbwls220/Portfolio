@@ -89,15 +89,10 @@ public class SkeletonObject : MonsterBase
         if (_myBeat > 4)
             _myBeat = 1;
 
-        if(_path != null)
-            SetTile(_path[1], true, false, 0);
-
         _startNode = _tileManager.NodeFromWorldPos(transform.position);        
 
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
         _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
-        
-        SetTile(_path[1], false, true, 5);
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
@@ -117,7 +112,6 @@ public class SkeletonObject : MonsterBase
         {
             _nowHp = 0;
             SoundManager._instance.PlaySFX(SFXName.Skel_death);
-            SetTile(_path[1], true, false, 0);
             _dead = true;
             IngameManager._instance.KillCount();
             SpawnGold(_gold);
@@ -137,9 +131,6 @@ public class SkeletonObject : MonsterBase
         _isMoving = true;
        
         Vector3 targetPos = nextNode._worldPosition;
-
-        SetTile(nextNode, true, false, 0);
-        SetMovementCost(5, false);
 
         float diffX = nextNode._worldPosition.x - transform.position.x;
 
@@ -225,49 +216,6 @@ public class SkeletonObject : MonsterBase
         // TODO: 데미지 처리
         SoundManager._instance.PlaySFX(SFXName.Skel_attack_melee);
         _playerController.OnHitting(_strength);
-    }
-
-    void SetMovementCost(int cost, bool isSet)
-    {
-        Node up = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.up);
-        Node down = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.down);
-        Node left = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.left);
-        Node right = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.right);
-
-        if (isSet)
-        {
-            up._movementCost = cost;
-            down._movementCost = cost;
-            left._movementCost = cost;
-            right._movementCost = cost;
-        }
-        else
-        {
-            up._movementCost = 0;
-            down._movementCost = 0;
-            left._movementCost = 0;
-            right._movementCost = 0;
-        }
-
-    }
-
-    void SetTile(Node nextNode, bool isWalkable, bool isResrve, int reserveCost)
-    {
-        _startNode._walkable = isWalkable;
-
-        nextNode._SkeletonNode = isResrve;
-        nextNode._movementCost = reserveCost;
-    }
-
-    bool isOtherReserved(Node nextNode)
-    {
-        if(nextNode._GolemNode == true ||
-            nextNode._SlimeNode == true ||
-            nextNode._BatNode == true ||
-             nextNode._BansheeNode == true ||
-            nextNode._RedDragonNode == true)
-            return true;
-        else return false;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
