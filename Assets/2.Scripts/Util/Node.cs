@@ -3,7 +3,8 @@ using UnityEngine;
 //수정
 public class Node : IHeapItem<Node>
 //수정(end)
-{ 
+{
+    public MonsterBase _reservedBy = null;
     public bool _walkable { get; set; }
     public Vector3 _worldPosition { get; set; }
 

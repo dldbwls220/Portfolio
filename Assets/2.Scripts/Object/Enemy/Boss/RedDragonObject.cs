@@ -29,6 +29,7 @@ public class RedDragonObject : MonsterBase
     SpriteRenderer[] _fireSprite;
     HealthBarManager _healthBarManager;
 
+    bool _isKeepFire;
     bool _isFire;
     bool _isAttack;
 
@@ -100,6 +101,8 @@ public class RedDragonObject : MonsterBase
         _anim.speed = (IngameManager._instance._myBPM / 60f);
         _isAttack = false;
         _isFire = false;
+        _isKeepFire = true;
+        _monsterP = MonsterPriority.RedDragon;
 
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
@@ -110,6 +113,7 @@ public class RedDragonObject : MonsterBase
     {
         _isMoving = false;
         _nowHp = _maxHP;
+        _myBeat = 0;
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
         _healthBarManager.DrawHearts(_nowHp);
@@ -121,6 +125,7 @@ public class RedDragonObject : MonsterBase
         _myBeat += 1;
         if (_myBeat > 4)
             _myBeat = 1;
+        _anim.SetTrigger(_myBeat + "Beat");
 
         if (_path != null)
         {
@@ -128,22 +133,58 @@ public class RedDragonObject : MonsterBase
         }
 
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
-        
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
-        _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
+        
+        _startNode._walkable = false;
+
+        _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition, this);
+
+        if (_path == null)
+        {
+            // 예약 무시한 순수 A* 다시 시도
+            _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition, null);
+        }
+
+        if (_path == null || _path.Count < 2)
+            return;
+
+        Node nextNode = _path[1];
+
+        if (!CanReserve(nextNode))
+        {
+            // 우회 경로 재탐색
+            _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition, this);
+
+            if (_path == null || _path.Count < 2)
+                return;
+
+            nextNode = _path[1];
+
+            if (!CanReserve(nextNode))
+                return;
+        }
+
+        nextNode._reservedBy = this;
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
-        _anim.SetTrigger(_myBeat + "Beat");
+        int diff = (int)_startNode._worldPosition.y - (int)_targetNode._worldPosition.y;
 
         switch (_myBeat)
         {
             case 1:
-                if(_startNode._worldPosition.y == _targetNode._worldPosition.y && _path.Count > 2 && _path.Count < 9)
+                if(_startNode._worldPosition.y == _targetNode._worldPosition.y && _path.Count > 1 && _path.Count < 9)
                 {
                     _isFire = true;
                     _anim.SetBool("isFire", true);
                     SoundManager._instance.PlaySFX(SFXName.Dragon_attack_prefire);
+                }
+                else if(Mathf.Abs(diff) == 1 && _path.Count > 2 && _path.Count < 9)
+                {
+                    _isFire = true;
+                    _anim.SetBool("isFire", true);
+                    SoundManager._instance.PlaySFX(SFXName.Dragon_attack_prefire);
+                    StartCoroutine(MoveToNode(_path[1]));
                 }
                 break;
             case 2:
@@ -177,6 +218,12 @@ public class RedDragonObject : MonsterBase
             SoundManager._instance.PlaySFX(SFXName.Dragon_death);
 
             _healthBarManager.ClearHeart();
+
+            if (_path != null && _path.Count > 1)
+            {
+                ReleaseReservation(_path[1]);
+                _startNode._walkable = true;
+            }
 
             _dead = true;
             IngameManager._instance.KillCount();
@@ -217,8 +264,12 @@ public class RedDragonObject : MonsterBase
         _isMoving = true;
 
         Vector3 targetPos = nextNode._worldPosition;
-       
-        float diffX = nextNode._worldPosition.x - transform.position.x;
+
+        Node currentNode = _tileManager.NodeFromWorldPos(transform.position);
+        _startNode._walkable = true;
+        ReleaseReservation(currentNode);
+
+        float diffX = _targetNode._worldPosition.x - transform.position.x;
 
         if (diffX > 0)
         {
@@ -260,6 +311,8 @@ public class RedDragonObject : MonsterBase
             int rnd = Random.Range((int)SFXName.Dragon_walk_01, (int)SFXName.Dragon_walk_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
         }
+
+        ReleaseReservation(nextNode);
 
         _isMoving = false;
     }

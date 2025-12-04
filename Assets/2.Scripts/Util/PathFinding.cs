@@ -1,3 +1,4 @@
+using DefineEnum;
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,7 @@ public class PathFinding : MonoBehaviour
 {
     public TileMapGridManager grid;
 
-    public List<Node> FindPath(Vector3 startPos, Vector3 targetPos)
+    public List<Node> FindPath(Vector3 startPos, Vector3 targetPos, MonsterBase requester = null)
     {
         Node startNode = grid.NodeFromWorldPos(startPos);
         Node targetNode = grid.NodeFromWorldPos(targetPos);
@@ -19,6 +20,10 @@ public class PathFinding : MonoBehaviour
 
         Heap<Node> openSet = new Heap<Node>(grid._gridSizeMax);
         HashSet<Node> closedSet = new HashSet<Node>();
+
+        startNode._gCost = 0;
+        startNode._hCost = GetDistance(startNode, targetNode);
+        startNode._parent = null;
 
         openSet.Add(startNode);
 
@@ -42,7 +47,31 @@ public class PathFinding : MonoBehaviour
                     continue;
                 }
 
-                int newCost = current._gCost + GetDistance(current, neighbor) + neighbor._movementCost;
+                if (requester != null && neighbor._reservedBy != null && neighbor._reservedBy != requester)
+                {
+                    // 만약 requester가 더 우선 순위가 높으면 허용(강탈)
+                    if ((int)requester._monsterP <= (int)neighbor._reservedBy._monsterP)
+                        continue; // requester 우선순위 낮거나 같아서 통과 불가
+                                  // 우선순위 더 높다면 강탈 허용(continue 하지 않음)
+                }
+
+                int dirPenalty = 0;
+
+                if (requester != null && requester._monsterP == MonsterPriority.RedDragon)
+                {
+                    // 세로 이동 → 보너스
+                    if (neighbor._grideX == current._grideX)
+                        dirPenalty = -5;     // 세로 우선
+                    else
+                        dirPenalty = 20;     // 가로 패널티
+                }
+
+                // 실제 비용 계산
+                int newCost = current._gCost
+                            + GetDistance(current, neighbor)
+                            + neighbor._movementCost
+                            + dirPenalty;
+
 
                 if (newCost < neighbor._gCost || !openSet.Contains(neighbor))
                 {

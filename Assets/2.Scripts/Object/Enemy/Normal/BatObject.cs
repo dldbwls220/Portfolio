@@ -87,6 +87,11 @@ public class BatObject : MonsterBase
         _isAttack = false;
         _isMoving = false;
 
+        if (name == "DireBat")
+            _monsterP = MonsterPriority.DireBat;
+        else
+            _monsterP = MonsterPriority.Bat;
+
         _heartManager.ClearHeart();
         _heartManager.CreateEmptyHeart(_maxHP);
         _heartManager.DrawHearts(_nowHp);
@@ -95,6 +100,7 @@ public class BatObject : MonsterBase
     void InitMonsterStat()
     {
         _isMoving = false;
+        _myBeat = 0;
         _nowHp = _maxHP;
         _heartManager.ClearHeart();
         _heartManager.CreateEmptyHeart(_maxHP);
@@ -107,43 +113,37 @@ public class BatObject : MonsterBase
         _myBeat += 1;
         if(_myBeat > 4) _myBeat = 1;
 
+        if (_path != null && _path.Count > 1)
+        {
+            ReleaseReservation(_path[1]);
+        }
+
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
         _randomNode = GetRandomNode();
-        _path = _pFinder.FindPath(_startNode._worldPosition, _randomNode._worldPosition);
-        
-        _tileManager.SetDebugPath(gameObject.name, _path);
 
-        if (_path == null || _path.Count <= 1)
+        _startNode._walkable = false;
+
+        _path = _pFinder.FindPath(_startNode._worldPosition, _randomNode._worldPosition, this);
+
+        if (_path == null)
+        {
+            // 예약 무시한 순수 A* 다시 시도
+            _path = _pFinder.FindPath(_startNode._worldPosition, _randomNode._worldPosition, null);
+        }
+
+        if (_path == null || _path.Count < 2)
             return;
+
         Node nextNode = _path[1];
 
-        //int distance = Mathf.Abs(_startNode._grideX - _targetNode._grideX) + Mathf.Abs(_startNode._grideY - _targetNode._grideY);
+        nextNode._reservedBy = this;
+
+        _tileManager.SetDebugPath(gameObject.name, _path);   
 
         _animController.SetTrigger(_myBeat + "Beat");
 
         if (_myBeat == 2 || _myBeat == 4)
-        {
-
-            //if (distance == 2)
-            //{
-            //    if (!_isAttack)
-            //        StartCoroutine(Attack(_path[1], 0.15f));
-            //}
-            //else if (distance == 1)
-            //{
-            //    if (!_isAttack)
-            //        StartCoroutine(Attack(_path[1], 0.13f));
-
-            //}
-            //else if (isOtherReserved(_path[1]) && _path[1]._walkable)
-            //{
-
-            //    return;
-            //}
-            //else
-            //{
-            //    StartCoroutine(MoveToNode(_path[1]));
-            //}
+        {           
             StartCoroutine(MoveToNode(_path[1]));
 
         }
@@ -155,6 +155,13 @@ public class BatObject : MonsterBase
         {
             _nowHp = 0;
             SoundManager._instance.PlaySFX(SFXName.Bat_death);
+
+            if (_path != null && _path.Count > 1)
+            {
+                ReleaseReservation(_path[1]);
+                _startNode._walkable = true;
+            }
+
             _dead = true;
             IngameManager._instance.KillCount();
             SpawnGold(_gold);
@@ -190,6 +197,10 @@ public class BatObject : MonsterBase
         
         Vector3 dir = (nextNode._worldPosition - origin).normalized;
 
+        Node currentNode = _tileManager.NodeFromWorldPos(transform.position);
+        _startNode._walkable = true;
+        ReleaseReservation(currentNode);
+
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {
             transform.position = Vector3.MoveTowards(
@@ -202,35 +213,9 @@ public class BatObject : MonsterBase
         }
         transform.position = targetPos;
         
+
         
         _isMoving = false;
-    }
-
-    IEnumerator Attack(Node nextNode, float delay)
-    {
-        _isAttack = true;
-
-        Node targetAttackNode = nextNode;
-
-        yield return new WaitForSeconds(delay);
-
-        Node playerNowNode = _tileManager.NodeFromWorldPos(_targetTF.position);
-
-        if (playerNowNode == targetAttackNode)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-            //Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
-            // TODO: 데미지 처리
-            SoundManager._instance.PlaySFX(SFXName.Bat_attack);
-            _playerController.OnHitting(_strength);
-        }
-        else
-        {
-            //Debug.Log("공격 실패 → 이동");
-            StartCoroutine(MoveToNode(nextNode));
-        }
-
-        _isAttack = false;
     }
 
     IEnumerator AttackFrontBack(Node nextNode)
@@ -269,6 +254,8 @@ public class BatObject : MonsterBase
 
             rndNode = _tileManager.NodeFromWorldPos(rndPos);
 
+            if (!CanReserve(rndNode))
+                continue;
             if (rndNode._walkable)
                 break;
         }

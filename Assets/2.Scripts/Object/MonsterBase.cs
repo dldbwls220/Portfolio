@@ -1,8 +1,10 @@
+using DefineEnum;
 using UnityEngine;
 
 public class MonsterBase : CharBase
 {
     protected float _bpm;
+    public MonsterPriority _monsterP;
 
     protected virtual void CheckPlayerinRange()
     {
@@ -36,8 +38,29 @@ public class MonsterBase : CharBase
         _hp += 1;
     }
 
-    public virtual void SetAnimSpeed(float bpm)
+    public bool CanReserve(Node node)
     {
-        _bpm = bpm;
+        if(node == null) return false;
+
+        if(!node._walkable) return false;
+
+        if(node._reservedBy == null) return true;
+
+        if(node._reservedBy == this) return true;
+
+        if ((int)this._monsterP > (int)node._reservedBy._monsterP)
+        {
+            node._reservedBy = this;
+            return true;
+        }
+
+        return false;
+    }
+
+    public void ReleaseReservation(Node node)
+    {
+        if (node == null) return;
+        if (node._reservedBy == this)
+            node._reservedBy = null;
     }
 }

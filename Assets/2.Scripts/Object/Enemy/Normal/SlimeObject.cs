@@ -82,6 +82,7 @@ public class SlimeObject : MonsterBase
         _isAttack = false;
         _isMoving = false;
         _myDir = LookDir.Down;
+        _monsterP = MonsterPriority.Slime;
 
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
@@ -91,6 +92,7 @@ public class SlimeObject : MonsterBase
     void InitMonsterStat()
     {
         _nowHp = _maxHP;
+        _myBeat = 0;
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
         _healthBarManager.DrawHearts(_nowHp);
@@ -104,18 +106,36 @@ public class SlimeObject : MonsterBase
         _myBeat += 1;
         if (_myBeat > 4) _myBeat = 1;
 
+        if (_path != null && _path.Count > 1)
+        {
+            ReleaseReservation(_path[1]);
+        }
+
         _startNode = _tileManager.NodeFromWorldPos(transform.position);     
 
         if (_myBeat == 1 || _myBeat == 3)
             _upDownNode = GetUpDownNode();
 
-        _path = _pFinder.FindPath(_startNode._worldPosition, _upDownNode._worldPosition);
+        _path = _pFinder.FindPath(_startNode._worldPosition, _upDownNode._worldPosition, this);
+
+        if (_path == null)
+        {
+            // 예약 무시한 순수 A* 다시 시도
+            _path = _pFinder.FindPath(_startNode._worldPosition, _upDownNode._worldPosition, null);
+        }
+
+        if (_path == null || _path.Count < 2)
+            return;
+
+
+        Node nextNode = _path[1];
+
+        nextNode._reservedBy = this;
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
         if (_path == null || _path.Count <= 1)
             return;
-        Node nextNode = _path[1];
 
         _animController.SetTrigger(_myBeat + "Beat");
 
@@ -134,6 +154,13 @@ public class SlimeObject : MonsterBase
             SpawnGold(_gold);
             int rnd = Random.Range((int)SFXName.Slime_death_01, (int)SFXName.Slime_death_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
+
+            if (_path != null && _path.Count > 1)
+            {
+                ReleaseReservation(_path[1]);
+                _startNode._walkable = true;
+            }
+            
             _dead = true;
             ObjectPool._instance._slimeQueue.Enqueue(gameObject);
             gameObject.SetActive(false);
@@ -152,6 +179,10 @@ public class SlimeObject : MonsterBase
 
         Vector3 targetPos = nextNode._worldPosition;
 
+        Node currentNode = _tileManager.NodeFromWorldPos(transform.position);
+        _startNode._walkable = true;
+        ReleaseReservation(currentNode);
+
         StartCoroutine(MoveJump());
         while (Vector3.Distance(transform.position, targetPos) > 0.01f)
         {
@@ -164,7 +195,7 @@ public class SlimeObject : MonsterBase
             yield return null;
         }
 
-
+        ReleaseReservation(nextNode);
 
         _isMoving = false;
     }

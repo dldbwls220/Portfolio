@@ -64,7 +64,7 @@ public class SkeletonObject : MonsterBase
         _playerController = _targetTF.GetComponent<PlayerController>();
         _anim = GetComponent<Animator>();
         _anim.speed = (IngameManager._instance._myBPM / 60f);
-        
+        _monsterP = MonsterPriority.Skeleton;
 
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
@@ -75,6 +75,7 @@ public class SkeletonObject : MonsterBase
     {
         _isMoving = false;
         _nowHp = _maxHP;
+        _myBeat = 0;
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
         _healthBarManager.DrawHearts(_currentHp);
@@ -89,20 +90,55 @@ public class SkeletonObject : MonsterBase
         if (_myBeat > 4)
             _myBeat = 1;
 
-        _startNode = _tileManager.NodeFromWorldPos(transform.position);        
+        if (_path != null && _path.Count > 1)
+        {
+            ReleaseReservation(_path[1]);
+        }
 
+        _startNode = _tileManager.NodeFromWorldPos(transform.position);        
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
-        _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
+
+        _startNode._walkable = false;
+
+        _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition, this);
+
+        if (_path == null)
+        {
+            // 예약 무시한 순수 A* 다시 시도
+            _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition, null);
+        }
+
+        if (_path == null || _path.Count < 2)
+            return;
+        
+
+        Node nextNode = _path[1];
+
+        if (!CanReserve(nextNode))
+        {
+            // 우회 경로 재탐색
+            _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition, this);
+
+            if (_path == null || _path.Count < 2)
+                return;
+
+            nextNode = _path[1];
+
+            if (!CanReserve(nextNode))
+                return;
+        }
+
+        nextNode._reservedBy = this;
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
-        _anim.SetTrigger(_myBeat + "Beat");
 
         if (_myBeat == 2 || _myBeat == 4)
         {        
             StartCoroutine(MoveToNode(_path[1]));
         }
 
+        _anim.SetTrigger(_myBeat + "Beat");
         Debug.Log(_myBeat);
     }
 
@@ -112,6 +148,13 @@ public class SkeletonObject : MonsterBase
         {
             _nowHp = 0;
             SoundManager._instance.PlaySFX(SFXName.Skel_death);
+
+            if (_path != null && _path.Count > 1)
+            {
+                ReleaseReservation(_path[1]);
+                _startNode._walkable = true;
+            }
+
             _dead = true;
             IngameManager._instance.KillCount();
             SpawnGold(_gold);
@@ -132,6 +175,10 @@ public class SkeletonObject : MonsterBase
        
         Vector3 targetPos = nextNode._worldPosition;
 
+        Node currentNode = _tileManager.NodeFromWorldPos(transform.position);
+        _startNode._walkable = true;
+        ReleaseReservation(currentNode);
+
         float diffX = nextNode._worldPosition.x - transform.position.x;
 
         if (diffX > 0) 
@@ -150,8 +197,10 @@ public class SkeletonObject : MonsterBase
             );
 
             yield return null;
-        }  
-        
+        }
+
+        ReleaseReservation(nextNode);
+
         _isMoving = false;
     }
 

@@ -69,6 +69,7 @@ public class GolemObject : MonsterBase
         _anim = GetComponent<Animator>();
         _anim.speed = (IngameManager._instance._myBPM / 60f);
         _isAttack = false;
+        _monsterP = MonsterPriority.Golem;
 
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
@@ -79,6 +80,7 @@ public class GolemObject : MonsterBase
     {
         _isMoving = false;
         _nowHp = _maxHP;
+        _myBeat = 0;
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
         _healthBarManager.DrawHearts(_nowHp);
@@ -91,13 +93,46 @@ public class GolemObject : MonsterBase
         if (_myBeat > 4)
             _myBeat = 1;
 
-        _startNode = _tileManager.NodeFromWorldPos(transform.position);
-        
-        SetMovementCost(5, true);
+        if (_path != null && _path.Count > 1)
+        {
+            ReleaseReservation(_path[1]);
+        }
 
+        _startNode = _tileManager.NodeFromWorldPos(transform.position);     
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
-        _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
-        
+
+        _startNode._walkable = false;
+
+        _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition, this);
+
+        if (_path == null)
+        {
+            // 예약 무시한 순수 A* 다시 시도
+            _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition, null);
+        }
+
+        if (_path == null || _path.Count < 2)
+            return;
+
+
+        Node nextNode = _path[1];
+
+        if (!CanReserve(nextNode))
+        {
+            // 우회 경로 재탐색
+            _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition, this);
+
+            if (_path == null || _path.Count < 2)
+                return;
+
+            nextNode = _path[1];
+
+            if (!CanReserve(nextNode))
+                return;
+        }
+
+        nextNode._reservedBy = this;
+
         _tileManager.SetDebugPath(gameObject.name, _path);
 
         _anim.SetTrigger(_myBeat + "Beat");
@@ -116,6 +151,13 @@ public class GolemObject : MonsterBase
             IngameManager._instance.KillCount();
             SpawnGold(_gold);
             SoundManager._instance.PlaySFX(SFXName.Golemstone_death);
+
+            if (_path != null && _path.Count > 1)
+            {
+                ReleaseReservation(_path[1]);
+                _startNode._walkable = true;
+            }
+
             _dead = true;
             ObjectPool._instance._golemQueue.Enqueue(gameObject);
             gameObject.SetActive(false);
@@ -141,7 +183,9 @@ public class GolemObject : MonsterBase
         Vector3 targetPos = nextNode._worldPosition;
         targetPos.z = transform.position.z;
 
-        SetMovementCost(5, false);
+        Node currentNode = _tileManager.NodeFromWorldPos(transform.position);
+        _startNode._walkable = true;
+        ReleaseReservation(currentNode);
 
         float diffX = nextNode._worldPosition.x - transform.position.x;
 
@@ -166,65 +210,11 @@ public class GolemObject : MonsterBase
             yield return null;
         }
         transform.position = targetPos;
-        
+
+        ReleaseReservation(nextNode);
 
         _isMoving = false;
     }
-
-    IEnumerator Attack(Node nextNode, float delay)
-    {
-        _isAttack = true;
-
-        Node targetAttackNode = nextNode;
-
-        yield return new WaitForSeconds(delay);
-
-        Node playerNowNode = _tileManager.NodeFromWorldPos(_targetTF.position);
-
-        if (playerNowNode == targetAttackNode)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-            Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
-            // TODO: 데미지 처리
-            SoundManager._instance.PlaySFX(SFXName.Golemstone_attack);
-            _playerController.OnHitting(_strength);
-        }
-        else
-        {
-            Debug.Log("공격 실패 → 이동");
-            StartCoroutine(MoveToNode(nextNode));
-        }
-
-        _isAttack = false;
-    }
-
-    //IEnumerator AttackFrontBack(Node nextNode)
-    //{
-    //    Vector3 origin = transform.position;
-    //    Vector3 dir = (nextNode._worldPosition - origin).normalized;
-    //    float jumpHeight = 0;
-
-    //    if (dir == Vector3.down)
-    //        jumpHeight = 1;
-    //    else jumpHeight = 0.5f;
-    //    float t = 0;
-    //    float moveTime = 1 / _moveSpeed;
-    //    StartCoroutine(MoveJump());
-
-    //    while (t < 1f)
-    //    {
-    //        t += Time.deltaTime / moveTime;
-
-    //        float move = Mathf.Sin(t * Mathf.PI);
-    //        Vector3 offset = dir * move * jumpHeight;
-
-    //        transform.position = origin + offset;
-
-    //        yield return null;
-    //    }
-
-    //    transform.position = origin;
-    //}
 
     IEnumerator AttackFrontBack(Node nextNode)
     {
@@ -236,7 +226,6 @@ public class GolemObject : MonsterBase
         float t = 0;
         float moveTime = 1 / _moveSpeed;
         AttackPlayer();
-        //StartCoroutine(MoveJump());
 
         while (t < 1f)
         {
@@ -249,9 +238,6 @@ public class GolemObject : MonsterBase
 
             yield return null;
         }
-
-        //transform.position = origin;
-
     }
 
     IEnumerator MoveJump()

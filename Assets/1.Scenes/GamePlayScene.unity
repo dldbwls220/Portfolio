@@ -412,7 +412,7 @@ MonoBehaviour:
     MonsterType: 1
     _tfPoolParent: {fileID: 1416432215}
   - _objPrefab: {fileID: 8447900050747559194, guid: ce00b145c3da48a47bef56fe69b5b02c, type: 3}
-    _count: 2
+    _count: 3
     MonsterType: 2
     _tfPoolParent: {fileID: 1416432215}
   - _objPrefab: {fileID: 2223962498275254399, guid: 800dd5780eea2e44c93f300892e715bc, type: 3}
@@ -428,7 +428,7 @@ MonoBehaviour:
     MonsterType: 5
     _tfPoolParent: {fileID: 1416432215}
   - _objPrefab: {fileID: 2623437532178284439, guid: cc33dca2b21f49243aa5f67220cea859, type: 3}
-    _count: 1
+    _count: 0
     MonsterType: 6
     _tfPoolParent: {fileID: 1416432215}
   _itemInfo:
@@ -2643,7 +2643,7 @@ MonoBehaviour:
   _playerController: {fileID: 1411731530}
   _timeUI: {fileID: 678305348}
   _totalBossToKill: 1
-  _spawnBossTime: 60
+  _spawnBossTime: 90
   _isComboBonus: 0
 --- !u!1 &661968907
 GameObject:
@@ -16321,7 +16321,7 @@ MonoBehaviour:
   _obstacleTilemap: {fileID: 1162395044}
   _tilePenaltyList: []
   _nodeRadius: 0.5
-  _DrawGizzmo: 0
+  _DrawGizzmo: 1
 --- !u!114 &1191632551
 MonoBehaviour:
   m_ObjectHideFlags: 0

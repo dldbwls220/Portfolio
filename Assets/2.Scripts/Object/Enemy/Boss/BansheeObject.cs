@@ -85,6 +85,7 @@ public class BansheeObject : MonsterBase
         _anim.speed = (IngameManager._instance._myBPM / 60f);
         _isAttack = false;
         _isDamaged = false;
+        _monsterP = MonsterPriority.Banshee;
 
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
@@ -94,6 +95,7 @@ public class BansheeObject : MonsterBase
     void InitMonsterStat()
     {
         _nowHp = _maxHP;
+        _myBeat = 0;
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
         _healthBarManager.DrawHearts(_nowHp);
@@ -106,12 +108,45 @@ public class BansheeObject : MonsterBase
         if (_myBeat > 4)
             _myBeat = 1;
 
+        if (_path != null && _path.Count > 1)
+        {
+            ReleaseReservation(_path[1]);
+        }
+
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
-
-        SetMovementCost(5, true);
-
         _targetNode = _tileManager.NodeFromWorldPos(_targetTF.position);
-        _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition);
+
+        _startNode._walkable = false;
+
+        _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition, this);
+
+        if (_path == null)
+        {
+            // 예약 무시한 순수 A* 다시 시도
+            _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition, null);
+        }
+
+        if (_path == null || _path.Count < 2)
+            return;
+
+
+        Node nextNode = _path[1];
+
+        if (!CanReserve(nextNode))
+        {
+            // 우회 경로 재탐색
+            _path = _pFinder.FindPath(_startNode._worldPosition, _targetNode._worldPosition, this);
+
+            if (_path == null || _path.Count < 2)
+                return;
+
+            nextNode = _path[1];
+
+            if (!CanReserve(nextNode))
+                return;
+        }
+
+        nextNode._reservedBy = this;
 
         _tileManager.SetDebugPath(gameObject.name, _path);
 
@@ -151,6 +186,13 @@ public class BansheeObject : MonsterBase
             SoundManager._instance._bansheeDESC._volum = 0;
             
             IngameManager._instance._bansheeSound = false;
+
+            if (_path != null && _path.Count > 1)
+            {
+                ReleaseReservation(_path[1]);
+                _startNode._walkable = true;
+            }
+
             _dead = true;
             IngameManager._instance.KillCount();
             SpawnGold(_gold);
@@ -184,7 +226,9 @@ public class BansheeObject : MonsterBase
 
         Vector3 targetPos = nextNode._worldPosition;
 
-        SetMovementCost(5, false);
+        Node currentNode = _tileManager.NodeFromWorldPos(transform.position);
+        _startNode._walkable = true;
+        ReleaseReservation(currentNode);
 
         float diffX = nextNode._worldPosition.x - transform.position.x;
 
@@ -210,6 +254,8 @@ public class BansheeObject : MonsterBase
             yield return null;
         }
         transform.position = targetPos;
+
+        ReleaseReservation(nextNode);
 
         _isMoving = false;
     }

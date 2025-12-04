@@ -45,6 +45,19 @@ namespace DefineEnum
         Count
     }
 
+    public enum MonsterPriority
+    {
+        Slime = 1,
+        Bat, 
+        Skeleton,
+        Golem,
+        DireBat,
+        Banshee,
+        RedDragon,
+
+        Count
+    }
+
     public enum WeaponName
     {
         DaggerN,
