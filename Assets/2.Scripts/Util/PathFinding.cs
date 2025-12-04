@@ -49,10 +49,9 @@ public class PathFinding : MonoBehaviour
 
                 if (requester != null && neighbor._reservedBy != null && neighbor._reservedBy != requester)
                 {
-                    // 만약 requester가 더 우선 순위가 높으면 허용(강탈)
+                    // 만약 requester가 더 우선 순위가 높으면 허용
                     if ((int)requester._monsterP <= (int)neighbor._reservedBy._monsterP)
-                        continue; // requester 우선순위 낮거나 같아서 통과 불가
-                                  // 우선순위 더 높다면 강탈 허용(continue 하지 않음)
+                        continue; 
                 }
 
                 int dirPenalty = 0;
