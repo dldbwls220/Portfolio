@@ -109,6 +109,8 @@ public class RedDragonObject : MonsterBase
 
     void InitMonsterStat()
     {
+        _fireAnim.Rebind();
+        _fireAnim.Update(0f);
         _isMoving = false;
         _nowHp = _maxHP;
         _myBeat = 0;
