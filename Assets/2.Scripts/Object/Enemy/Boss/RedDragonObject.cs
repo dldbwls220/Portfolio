@@ -29,7 +29,6 @@ public class RedDragonObject : MonsterBase
     SpriteRenderer[] _fireSprite;
     HealthBarManager _healthBarManager;
 
-    bool _isKeepFire;
     bool _isFire;
     bool _isAttack;
 
@@ -101,7 +100,6 @@ public class RedDragonObject : MonsterBase
         _anim.speed = (IngameManager._instance._myBPM / 60f);
         _isAttack = false;
         _isFire = false;
-        _isKeepFire = true;
         _monsterP = MonsterPriority.RedDragon;
 
         _healthBarManager.ClearHeart();

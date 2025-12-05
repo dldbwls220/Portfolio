@@ -119,7 +119,7 @@ public class BatObject : MonsterBase
         }
 
         _startNode = _tileManager.NodeFromWorldPos(transform.position);
-        _randomNode = GetRandomNode();
+        _randomNode = GetRandomNode(null);
 
         _startNode._walkable = false;
 
@@ -135,6 +135,22 @@ public class BatObject : MonsterBase
             return;
 
         Node nextNode = _path[1];
+
+        if (!CanReserve(nextNode))
+        {
+            _randomNode = GetRandomNode(nextNode);
+
+            // 우회 경로 재탐색
+            _path = _pFinder.FindPath(_startNode._worldPosition, _randomNode._worldPosition, this);
+
+            if (_path == null || _path.Count < 2)
+                return;
+
+            nextNode = _path[1];
+
+            if (!CanReserve(nextNode))
+                return;
+        }
 
         nextNode._reservedBy = this;
 
@@ -242,7 +258,7 @@ public class BatObject : MonsterBase
         }
     }
 
-    Node GetRandomNode()
+    Node GetRandomNode(Node reserved)
     {
         Vector2Int[] arr = dir;
         Node rndNode;
@@ -254,9 +270,7 @@ public class BatObject : MonsterBase
 
             rndNode = _tileManager.NodeFromWorldPos(rndPos);
 
-            if (!CanReserve(rndNode))
-                continue;
-            if (rndNode._walkable)
+            if (rndNode._walkable && reserved != rndNode)
                 break;
         }
        return rndNode;

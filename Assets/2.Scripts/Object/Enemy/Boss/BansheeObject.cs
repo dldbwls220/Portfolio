@@ -51,6 +51,8 @@ public class BansheeObject : MonsterBase
 
     private void Update()
     {
+        DetectAttack();
+
         if (IngameManager._instance._bansheeSound)
         {
             _defaultSprite.SetActive(false);
@@ -94,6 +96,7 @@ public class BansheeObject : MonsterBase
 
     void InitMonsterStat()
     {
+        _isMoving = false;
         _nowHp = _maxHP;
         _myBeat = 0;
         _healthBarManager.ClearHeart();
@@ -103,7 +106,8 @@ public class BansheeObject : MonsterBase
     void OnBeat()
     {
         if (_isMoving || _playerController._isDead || _playerController._isInShop || IngameManager._instance._gameEnd) return;
-
+        
+        _isAttack = true;
         _myBeat += 1;
         if (_myBeat > 4)
             _myBeat = 1;
@@ -154,22 +158,13 @@ public class BansheeObject : MonsterBase
 
         if(_isDamaged)
         {
+            _startNode._walkable = true;
             _isDamaged = false;
             return;
         }
-        else if (_path != null && _path.Count == 3)
+        else if (_path != null && _path.Count > 1)
         {
-            if (!_isAttack)
-                StartCoroutine(Attack(_path[1], 0.15f));
-        }
-        else if (_path != null && _path.Count == 2)       
-        {
-            if (!_isAttack)
-                StartCoroutine(Attack(_path[1], 0.15f));
-        }
-        else if (_path != null && _path.Count > 1)   
-        {
-            StartCoroutine(MoveToNode(_path[1]));   
+            StartCoroutine(MoveToNode(_path[1]));
         }
         
     }
@@ -267,6 +262,10 @@ public class BansheeObject : MonsterBase
 
         Vector3 targetPos = Vector3.zero;
 
+        Node currentNode = _tileManager.NodeFromWorldPos(transform.position);
+        _startNode._walkable = true;
+        ReleaseReservation(currentNode);
+
         if (_playerController._checkDir == LookDir.Up)
         {
             targetPos = Vector3.up + origin;
@@ -294,39 +293,16 @@ public class BansheeObject : MonsterBase
 
             yield return null;
         }
+
+        ReleaseReservation(_path[1]);
         transform.position = targetPos;
-        
-    }
-
-    IEnumerator Attack(Node nextNode, float delay)
-    {
-        _isAttack = true;
-
-        Node targetAttackNode = nextNode;
-
-        yield return new WaitForSeconds(delay);
-
-        Node playerNowNode = _tileManager.NodeFromWorldPos(_targetTF.position);
-
-        if (playerNowNode == targetAttackNode)
-        {
-            StartCoroutine(AttackFrontBack(nextNode));
-            Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
-            // TODO: 데미지 처리
-
-            _playerController.OnHitting(_strength);
-        }
-        else
-        {
-            Debug.Log("공격 실패 → 이동");
-            StartCoroutine(MoveToNode(nextNode));
-        }
-
-        _isAttack = false;
+        _isMoving = false;
     }
 
     IEnumerator AttackFrontBack(Node nextNode)
     {
+        _isAttack = false;
+
         Vector3 origin = transform.position;
         Vector3 dir = (nextNode._worldPosition - origin).normalized;
         float jumpHeight = 0;
@@ -337,6 +313,7 @@ public class BansheeObject : MonsterBase
         else jumpHeight = 0.5f;
         float t = 0;
         float moveTime = 1 / _moveSpeed;
+        AttackPlayer();
 
         while (t < 1f)
         {
@@ -360,33 +337,26 @@ public class BansheeObject : MonsterBase
 
         SoundManager._instance.PlaySFX((SFXName)rnd);
     }
-  
 
-    void SetMovementCost(int cost, bool isSet)
+    void DetectAttack()
     {
-        Node up = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.up);
-        Node down = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.down);
-        Node left = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.left);
-        Node right = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.right);
+        Node playerNowNode = _tileManager.NodeFromWorldPos(_targetTF.position);
+        Node MonsterNowNode = _tileManager.NodeFromWorldPos(transform.position);
 
-        if (isSet)
+        if (MonsterNowNode == playerNowNode && _isAttack && _playerController._isPlayerAttackable)
         {
-            up._movementCost = cost;
-            down._movementCost = cost;
-            left._movementCost = cost;
-            right._movementCost = cost;
-        }
-        else
-        {
-            up._movementCost = 0;
-            down._movementCost = 0;
-            left._movementCost = 0;
-            right._movementCost = 0;
+            StartCoroutine(AttackFrontBack(_path[1]));
         }
 
     }
 
-   
+    void AttackPlayer()
+    {
+        Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
+        // TODO: 데미지 처리
+        SoundManager._instance.PlaySFX(SFXName.Skel_attack_melee);
+        _playerController.OnHitting(_strength);
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {

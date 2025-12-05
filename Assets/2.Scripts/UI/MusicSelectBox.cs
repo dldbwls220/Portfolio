@@ -76,7 +76,7 @@ public class MusicSelectBox : MonoBehaviour
 
 
         IngameManager._instance.SetMusic(_selectedIndex, _selectedBPM);
-        //SoundManager._instance._bgmDESC._mute = true;
+        SoundManager._instance._bgmDESC._mute = true;
         CloseWnd();
     }
 }

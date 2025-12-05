@@ -84,7 +84,7 @@ public class SpawnMonsterManager : MonoBehaviour
     {
         int rndBoss = Random.Range(0, 3);
 
-        switch (rndBoss)
+        switch (0)
         {
             case 0:
                 if (ObjectPool._instance._redDragonQueue.Count > 0)

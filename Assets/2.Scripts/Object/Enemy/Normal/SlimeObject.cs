@@ -130,6 +130,15 @@ public class SlimeObject : MonsterBase
 
         Node nextNode = _path[1];
 
+        if (!CanReserve(nextNode))
+        {
+            if (_myDir == LookDir.Up)
+                _myDir = LookDir.Down;
+            else
+                _myDir = LookDir.Up;
+            return;
+        }
+
         nextNode._reservedBy = this;
 
         _tileManager.SetDebugPath(gameObject.name, _path);
