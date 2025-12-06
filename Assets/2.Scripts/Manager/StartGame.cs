@@ -10,6 +10,7 @@ public class StartGame : MonoBehaviour
     {
         GameTableManager._instance.AllLoadTable();
         SoundManager._instance.LoadAllSound();
+        DataManger._instance.LoadData();
         //StartCoroutine(Loading());
     }
 

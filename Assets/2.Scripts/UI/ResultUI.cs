@@ -8,6 +8,10 @@ public class ResultUI : MonoBehaviour
     [SerializeField] Text _timeText;
     [SerializeField] Text _goldText;
     [SerializeField] Text _scoreText;
+    [SerializeField] Text _bestScore;
+    [SerializeField] Text _bestTime;
+    [SerializeField] Text _newRecordK;
+    [SerializeField] Text _newRecordT;
     [SerializeField] Text _reset;
     [SerializeField] Text _Extit;
 
@@ -16,7 +20,7 @@ public class ResultUI : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void SetResult(string result, float time, int gold, int score)
+    public void SetResult(string result, float time, int gold, int score, bool isBestKill = false, bool isBestTime = false)
     {
         gameObject.SetActive (true);
 
@@ -30,6 +34,23 @@ public class ResultUI : MonoBehaviour
         _goldText.text = "GOLD : " + gold.ToString();
 
         _scoreText.text = "Kill : " + score.ToString();
+
+        _bestScore.text = "BEST KILL : " + DataManger._instance.nowPlayer._bestKillCount.ToString();
+
+        int bestMinutes = (int)(DataManger._instance.nowPlayer._bestSurviveTime / 60f);
+        int bestSeconds = (int)(DataManger._instance.nowPlayer._bestSurviveTime % 60f);
+
+        _bestTime.text = $"Best Time : {bestMinutes:00}:{bestSeconds:00}";
+
+        if(!isBestKill)
+            _newRecordK.enabled = false;
+        else
+            _newRecordK.enabled = true;
+
+        if(!isBestTime)
+            _newRecordT.enabled = false;
+        else
+            _newRecordT.enabled = true;
 
         SoundManager._instance._shopkeeperDESC._volum = 0f;
     }
