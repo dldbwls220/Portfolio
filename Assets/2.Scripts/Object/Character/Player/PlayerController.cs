@@ -1,5 +1,6 @@
 using DefineEnum;
 using System.Collections;
+using Unity.Burst.Intrinsics;
 using UnityEngine;
 
 
@@ -17,6 +18,7 @@ public class PlayerController : CharBase
     [SerializeField] GameObject _monsterSlashFX;
     [SerializeField] GameObject _myAttackEffect;
     [SerializeField] GameObject _heartUI;
+    [SerializeField] GameObject _weaponUI;
 
     [SerializeField] BoxCollider2D[] _attackColliders;
 
@@ -38,6 +40,7 @@ public class PlayerController : CharBase
     Animator _slashAnim;
     Animator _monsterSlashAnim;
     HealthBarManager _healthBarManager;
+    WeaponUI _weaponSelectUI;
 
     bool _isFlipY;
     bool _isAttack;
@@ -48,14 +51,15 @@ public class PlayerController : CharBase
     public WeaponName _weaponName;
 
     int _combo;
+    int _bloodKillCount;
     [SerializeField] int _goldCollect;
-    float _originStr;
     float _baseY;
     float _waitAttack;
 
     public LookDir _checkDir { get { return _myDir; } }
-
-    public float _str { get { return _strength; } }
+    public WeaponName _currentWeapon { get { return _weaponName; } }
+    public float _str { get { return _currentStrength; } }
+    public int _bloodKill { get { return _bloodKillCount; } }
     public int _goldContain { get { return _goldCollect; } }
 
     public bool _isInShop { get; set; }
@@ -73,8 +77,6 @@ public class PlayerController : CharBase
 
         gameObject.SetActive(true);
 
-        _originStr = _str;
-
         _isFlipY = false;
         _isAttack = false;
         _isMoving = false;
@@ -88,12 +90,14 @@ public class PlayerController : CharBase
         _myDir = LookDir.Left;
         _weaponName = WeaponName.DaggerN;
         _goldCollect = 0;
+        _bloodKillCount = 10;
 
         _myAttackEffect = Instantiate(_slashAnimPrefab, transform.position, Quaternion.identity, transform);
         _slashAnim = _myAttackEffect.GetComponent<Animator>();
         _slashAnim.speed = _animSpeed;
         _monsterSlashAnim = _monsterSlashFX.GetComponent<Animator>();
         _healthBarManager = _heartUI.GetComponent<HealthBarManager>();
+        _weaponSelectUI = _weaponUI.GetComponent<WeaponUI>();
 
         _myMusicNote = _musicNotePrefab; //Instantiate(_musicNotePrefab, GameObject.Find("Canvas").transform);
         _tm = _myMusicNote.GetComponent<TimingManager>();
@@ -114,7 +118,10 @@ public class PlayerController : CharBase
             _weaponCheck[i].InitSetRange(this);
             _attackColliders[i].enabled = false;
         }
-       
+
+        _weaponSelectUI.InitWeaponUI();
+        _weaponSelectUI.ChangeWeapon(_weaponName);
+        _weaponSelectUI.SetInfoText(_weaponName);
     }
 
     // Update is called once per frame
@@ -186,11 +193,12 @@ public class PlayerController : CharBase
             else if (!Physics2D.OverlapCircle(_movePoint.position + new Vector3(horizontal, 0f, 0f), 0.1f, _stopMovement))
             {
                 _movePoint.position += new Vector3(horizontal, 0f, 0f);
+                StartCoroutine(SetPlayerAttackable());
                 StartCoroutine(MoveJump());
                 initCombo();
             }
 
-            StartCoroutine(SetPlayerAttackable());
+            
             CheckBoardTileMap._instance.ChangTile();
         }
         else if (Mathf.Abs(vertical) == 1f)
@@ -215,11 +223,12 @@ public class PlayerController : CharBase
             else if (!Physics2D.OverlapCircle(_movePoint.position + new Vector3(0f, vertical, 0f), 0.1f, _stopMovement))
             {
                 _movePoint.position += new Vector3(0f, vertical, 0f);
+                StartCoroutine(SetPlayerAttackable());
                 StartCoroutine(MoveJump());
                 initCombo();
             }
 
-            StartCoroutine(SetPlayerAttackable());
+            
             CheckBoardTileMap._instance.ChangTile();
         }
         
@@ -374,7 +383,9 @@ public class PlayerController : CharBase
             case WeaponName.SwordN:
             case WeaponName.SwordB:
             case WeaponName.SwordT:
-            case WeaponName.SwordO:
+            case WeaponName.SwordO1:
+            case WeaponName.SwordO2:
+            case WeaponName.SwordO3:
                 switch (_myDir)
                 {
                     case LookDir.Up:
@@ -440,7 +451,6 @@ public class PlayerController : CharBase
     {
         _goldCollect += gold;
         _numberUI.GoldCountUI(_goldContain);
-        Debug.Log(_goldCollect + "gold");
     }
 
     public void BuyWeapon(int gold, WeaponName weapon)
@@ -448,6 +458,31 @@ public class PlayerController : CharBase
         _goldCollect -= gold;
         _weaponName = weapon;
         _numberUI.GoldCountUI(_goldContain);
+        
+
+        if (weapon == WeaponName.DaggerT || weapon == WeaponName.SwordT)
+        {
+            _weaponSelectUI.ChangeWeapon(_weaponName);
+            TitaniumDmg();
+        }
+        else if (weapon == WeaponName.DaggerN || weapon == WeaponName.SwordN)
+        {
+            _weaponSelectUI.ChangeWeapon(_weaponName);
+            DefaultDmg();
+        }
+        else if (weapon == WeaponName.DaggerB || weapon == WeaponName.SwordB)
+        {
+            _weaponSelectUI.ChangeWeapon(_weaponName);
+            _weaponSelectUI.SetInfoText(_weaponName, _bloodKill);
+            InitDamage();
+        }
+        else
+        {
+            InitDamage();
+            ObsidianDmg(IngameManager._instance._comboNum);
+            _weaponSelectUI.ChangeWeapon(_weaponName);
+            _weaponSelectUI.SetInfoText(_weaponName, IngameManager._instance._comboNum);
+        }
     }
 
     public void BuyFood(int gold, int heal)
@@ -477,8 +512,86 @@ public class PlayerController : CharBase
     public void BuyStrUp(int gold, float strup)
     {
         _goldCollect -= gold;
-        _strength = _originStr += strup;
+        _strength += strup;
+        InitDamage();
         _numberUI.GoldCountUI(_goldContain);
+    }
+
+    public void BloodHeal()
+    {
+        if (_weaponName == WeaponName.DaggerB || _weaponName == WeaponName.SwordB)
+        {
+            _bloodKillCount--;
+
+            if (_bloodKillCount <= 0)
+            {
+                _nowHp += 1;
+                if (_currentHp > _maxHP)
+                    _nowHp = _maxHP;
+                _healthBarManager.DrawHearts(_currentHp);
+                _bloodKillCount = 10;
+            }
+            _weaponSelectUI.SetInfoText(_weaponName, _bloodKill);
+        }      
+        else
+        {
+            _bloodKillCount = 10;
+        }
+
+    }
+
+    void TitaniumDmg()
+    {
+        SetCurrentDmg(1);
+        InitDamage();
+        _weaponSelectUI.SetInfoText(_weaponName, 1);
+    }
+
+    void DefaultDmg()
+    {
+        SetCurrentDmg(0);
+        InitDamage();
+        _weaponSelectUI.SetInfoText(_weaponName);
+    }
+
+    public void ObsidianDmg(int combo)
+    {
+        if (((int)_weaponName >= (int)WeaponName.DaggerO1 && (int)_weaponName <= (int)WeaponName.DaggerO3) || ((int)_weaponName >= (int)WeaponName.SwordO1 && (int)_weaponName <= (int)WeaponName.SwordO3))
+        {
+            switch (combo)
+            {
+                case 0:
+                    if (_weaponName == WeaponName.DaggerO3)
+                        _weaponName = WeaponName.DaggerO1;
+                    else if(_weaponName == WeaponName.SwordO3)
+                        _weaponName = WeaponName.SwordO1;
+
+                    SetCurrentDmg(0);
+                    break;
+                case 2:
+                    if (_weaponName == WeaponName.DaggerO1)
+                        _weaponName = WeaponName.DaggerO2;
+                    else if (_weaponName == WeaponName.SwordO1)
+                        _weaponName = WeaponName.SwordO2;
+
+                    SetCurrentDmg(1);
+                    break;
+                case 3:
+                    if (_weaponName == WeaponName.DaggerO2)
+                        _weaponName = WeaponName.DaggerO3;
+                    else if (_weaponName == WeaponName.SwordO2)
+                        _weaponName = WeaponName.SwordO3;
+
+                    SetCurrentDmg(2);
+                    break;
+            }
+            _weaponSelectUI.ChangeWeapon(_weaponName);
+            _weaponSelectUI.SetInfoText(_weaponName, combo);
+            Debug.Log(combo + "ÄÞº¸");
+            InitDamage();
+        }
+        else
+            SetCurrentDmg(0);
     }
 
     IEnumerator MoveJump()

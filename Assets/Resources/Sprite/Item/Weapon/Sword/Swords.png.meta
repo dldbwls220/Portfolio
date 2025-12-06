@@ -145,7 +145,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Swords_0
+      name: SwordN
       rect:
         serializedVersion: 2
         x: 4
@@ -167,7 +167,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swords_2
+      name: SwordB
       rect:
         serializedVersion: 2
         x: 33
@@ -189,7 +189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swords_8
+      name: SwordT
       rect:
         serializedVersion: 2
         x: 120
@@ -211,7 +211,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swords_10
+      name: SwordO1
       rect:
         serializedVersion: 2
         x: 149
@@ -233,7 +233,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swords_12
+      name: SwordO2
       rect:
         serializedVersion: 2
         x: 175
@@ -255,7 +255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swords_14
+      name: SwordO3
       rect:
         serializedVersion: 2
         x: 201
@@ -290,21 +290,20 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Swords_0: 4942803658038726614
-      Swords_1: 6123003023063038561
-      Swords_10: 1340437603416802206
+      SwordB: 4978276593797209138
+      SwordN: 4942803658038726614
+      SwordO1: 1340437603416802206
+      SwordO2: -1183829936002771988
+      SwordO3: 6364903689134042001
+      SwordT: 7441372264213655823
       Swords_11: -841782673843346218
-      Swords_12: -1183829936002771988
       Swords_13: -993536727369214721
-      Swords_14: 6364903689134042001
       Swords_15: 1857488987712296977
-      Swords_2: 4978276593797209138
       Swords_3: -9004990608046106943
       Swords_4: 8289387723579576647
       Swords_5: -8675077286395491812
       Swords_6: -4470654044548505675
       Swords_7: 788015303910585071
-      Swords_8: 7441372264213655823
       Swords_9: -2689349333746839185
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

@@ -145,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Daggers_0
+      name: DaggerN
       rect:
         serializedVersion: 2
-        x: 5
-        y: 27
-        width: 15
-        height: 15
+        x: 2
+        y: 25
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,13 +167,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daggers_1
+      name: DaggerB
       rect:
         serializedVersion: 2
-        x: 23
-        y: 27
-        width: 15
-        height: 15
+        x: 20
+        y: 25
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,13 +189,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daggers_4
+      name: DaggerT
       rect:
         serializedVersion: 2
-        x: 77
-        y: 27
-        width: 15
-        height: 15
+        x: 74
+        y: 25
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,13 +211,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daggers_5
+      name: DaggerO1
       rect:
         serializedVersion: 2
-        x: 95
-        y: 27
-        width: 15
-        height: 15
+        x: 92
+        y: 25
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,12 +233,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daggers_6
+      name: DaggerO2
       rect:
         serializedVersion: 2
-        x: 115
+        x: 116
         y: 25
-        width: 22
+        width: 20
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -255,13 +255,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daggers_7
+      name: DaggerO3
       rect:
         serializedVersion: 2
         x: 140
-        y: 24
+        y: 25
         width: 20
-        height: 22
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,8 +290,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Daggers_0: -5547001472518929869
-      Daggers_1: 2644375314306874989
+      DaggerB: 2644375314306874989
+      DaggerN: -5547001472518929869
+      DaggerO1: -7305514054261253056
+      DaggerO2: 7168792009687061847
+      DaggerO3: -1040501637144665731
+      DaggerT: -510418961216598087
       Daggers_10: -4325121826390739339
       Daggers_11: 1352329254504377098
       Daggers_12: 8533816231475467079
@@ -300,10 +304,6 @@ TextureImporter:
       Daggers_15: 4741074634957260845
       Daggers_2: -6156153221358273951
       Daggers_3: 6985370066677928332
-      Daggers_4: -510418961216598087
-      Daggers_5: -7305514054261253056
-      Daggers_6: 7168792009687061847
-      Daggers_7: -1040501637144665731
       Daggers_8: -916978052998604118
       Daggers_9: 2468679816157480241
   mipmapLimitGroupName: 

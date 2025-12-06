@@ -70,7 +70,9 @@ namespace DefineEnum
         SwordN,
         SwordB,
         SwordT,
-        SwordO,
+        SwordO1,
+        SwordO2,
+        SwordO3,
 
         SpearN,
         SpearB,

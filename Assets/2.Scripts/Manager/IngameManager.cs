@@ -156,6 +156,8 @@ public class IngameManager : MonoBehaviour
         }
         if( _comboCount > 3)
             _comboCount = 3;
+
+        _playerController.ObsidianDmg(_comboCount);
     }
 
     public void ResetCombo()
@@ -166,13 +168,15 @@ public class IngameManager : MonoBehaviour
             SoundManager._instance.PlaySFX(SFXName.sfx_chain_break_ST);
 
         _comboCount = 0;
-        _isComboBonus = false;       
+        _isComboBonus = false;
+        _playerController.ObsidianDmg(_comboCount);
     }
 
     public void KillCount()
     {
         _killCount++;
         ComboCountUp();
+        _playerController.BloodHeal();
         _numberUI.KillCountUI(_killCount);
     }
 
