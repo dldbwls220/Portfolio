@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
+    [SerializeField] TitleUI _titleUI;
+
     bool _isLoadEnd = false;
 
     private void Awake()
@@ -11,26 +13,32 @@ public class StartGame : MonoBehaviour
         GameTableManager._instance.AllLoadTable();
         SoundManager._instance.LoadAllSound();
         DataManger._instance.LoadData();
-        //StartCoroutine(Loading());
+        StartCoroutine(Loading());
     }
 
     private void Update()
     {
-        if (Input.anyKeyDown)
+        if (_isLoadEnd)
         {
-            SceneManager.LoadSceneAsync("GamePlayScene");
-        }
-       
+            if (Input.anyKeyDown)
+            {
+                SceneManager.LoadSceneAsync("GamePlayScene");
+            }
+        }  
     }
 
     IEnumerator Loading()
     {
         float progress = 0f;
 
-        yield return SoundLoadAsync._instance.LoadAllSound(p =>
+        yield return SoundManager._instance.LoadAllSound(p =>
         {
             progress = p;
             Debug.Log(progress);
         });
+
+        yield return new WaitForSeconds(2);
+        _titleUI.CloseLodingAnim();
+        _isLoadEnd=true;
     }
 }

@@ -52,6 +52,9 @@ public class ResultUI : MonoBehaviour
         else
             _newRecordT.enabled = true;
 
+        Debug.Log(isBestKill);
+        Debug.Log(isBestTime);
+
         SoundManager._instance._shopkeeperDESC._volum = 0f;
     }
 
@@ -60,7 +63,7 @@ public class ResultUI : MonoBehaviour
         SoundManager._instance._loopDESC._stop();
         SoundManager._instance._shopkeeperDESC._stop();
 
-        SceneManager.LoadScene("StartScene");
+        SceneManager.LoadScene("GamePlayScene");
     }
 
     public void EndGame()

@@ -77,7 +77,7 @@ public class PauseGame : MonoBehaviour
         SoundManager._instance._shopkeeperDESC._unpause();
         SoundManager._instance._loopDESC._stop();
         SoundManager._instance._shopkeeperDESC._stop();
-        SceneManager.LoadScene("StartScene");
+        SceneManager.LoadScene("GamePlayScene");
     }
     public void EndGame()
     {

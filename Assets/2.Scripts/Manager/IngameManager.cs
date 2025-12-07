@@ -84,13 +84,13 @@ public class IngameManager : MonoBehaviour
             }
         }
 
-        if (_bossKillCount == _totalBossToKill)
+        if (_bossKillCount == _totalBossToKill && !_isGameEnd)
         {
             _isGameEnd = true;
             SoundManager._instance._bansheeDESC._mute = true;
             StartCoroutine(OpenResult());
         }
-        else if(_playerController._isDead)
+        else if(_playerController._isDead && !_isGameEnd)
         {
             _isGameEnd = true;
             SoundManager._instance._bansheeDESC._mute = true;

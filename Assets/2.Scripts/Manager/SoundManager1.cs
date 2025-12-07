@@ -1,10 +1,9 @@
 using DefineEnum;
 using DefineStructure;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundLoadAsync : TSingleton<SoundLoadAsync>
+public class SoundManager1 : TSingleton<SoundManager1>
 {
     Dictionary<LoopName, AudioClip> _loopClipDoc;
     Dictionary<BGMName, AudioClip> _bgmClipDoc;
@@ -22,7 +21,7 @@ public class SoundLoadAsync : TSingleton<SoundLoadAsync>
     public AudioPlayerDESC _sfxDESC;
     AudioSource _sfxPlayer;
 
-    public IEnumerator LoadAllSound(System.Action<float> onProgress = null)
+    private void Awake()
     {
         _loopClipDoc = new Dictionary<LoopName, AudioClip>();
         _bgmClipDoc = new Dictionary<BGMName, AudioClip>();
@@ -40,62 +39,39 @@ public class SoundLoadAsync : TSingleton<SoundLoadAsync>
         _shopkeeperDESC = new AudioPlayerDESC(_shopkeeperPlayer, 0, false);
         _bansheeDESC = new AudioPlayerDESC(_bansheePlayer, 1, true);
         _sfxDESC = new AudioPlayerDESC(_sfxPlayer, 1, false, false);
+    }
+
+    public void LoadAllSound()
+    {
+        if (_loopClipDoc.Count > 1) return;
 
         string path = "Sound/";
-        int bgmCount = (int)BGMName.Count;
-        int sfxCount = (int)SFXName.Count;
-
-        int totalLoad = bgmCount * 3 + sfxCount; // Loop, BGM, Shopkeeper + SFX
-        int currentLoad = 0;
-
-        for (int i = 0; i < bgmCount; i++)
+        int count = (int)BGMName.Count;
+        for (int i = 0; i < count; i++)
         {
             LoopName name = (LoopName)i;
-
-            ResourceRequest request = Resources.LoadAsync<AudioClip>(path + "BGM/" + name);
-            yield return request;
-            
-            _loopClipDoc.Add(name, request.asset as AudioClip);
-
-            currentLoad++;
-            onProgress?.Invoke((float)currentLoad / totalLoad);
+            AudioClip clip = Resources.Load<AudioClip>(path + "BGM/" + name);
+            _loopClipDoc.Add(name, clip);
         }
-        for (int i = 0; i < bgmCount; i++)
+        for (int i = 0; i < count; i++)
         {
             BGMName name = (BGMName)i;
-            
-            ResourceRequest request = Resources.LoadAsync<AudioClip>(path + "BGM/" + name);
-            yield return request;
-            
-            _bgmClipDoc.Add(name, request.asset as AudioClip);
-
-            currentLoad++;
-            onProgress?.Invoke((float)currentLoad / totalLoad);
+            AudioClip clip = Resources.Load<AudioClip>(path + "BGM/" + name);
+            _bgmClipDoc.Add(name, clip);
         }
-        for (int i = 0; i < bgmCount; i++)
+        for (int i = 0; i < count; i++)
         {
             ShopkeeperName name = (ShopkeeperName)i;
-
-            ResourceRequest request = Resources.LoadAsync<AudioClip>(path + "BGM/" + name);
-            yield return request;
-
-            _shopkeeperClipDoc.Add(name, request.asset as AudioClip);
-
-            currentLoad++;
-            onProgress?.Invoke((float)currentLoad / totalLoad);
+            AudioClip clip = Resources.Load<AudioClip>(path + "BGM/" + name);
+            _shopkeeperClipDoc.Add(name, clip);
         }
 
-        for (int i = 0; i < sfxCount; i++)
+        count = (int)SFXName.Count;
+        for (int i = 0; i < count; i++)
         {
             SFXName name = (SFXName)i;
-
-            ResourceRequest request = Resources.LoadAsync<AudioClip>(path + "SFX/" + name);
-            yield return request;
-
-            _sfxClipDoc.Add(name, request.asset as AudioClip);
-
-            currentLoad++;
-            onProgress?.Invoke((float)currentLoad / totalLoad);
+            AudioClip clip = Resources.Load<AudioClip>(path + "SFX/" + name);
+            _sfxClipDoc.Add(name, clip);
         }
     }
 
@@ -110,7 +86,7 @@ public class SoundLoadAsync : TSingleton<SoundLoadAsync>
         _bgmPlayer.Play();
     }
 
-    public void PlayLoop(LoopName name)
+    public void PlayLoop(LoopName name, double dspStartTime)
     {
         if (!_loopClipDoc.ContainsKey(name))
         {
@@ -118,10 +94,10 @@ public class SoundLoadAsync : TSingleton<SoundLoadAsync>
             return;
         }
         _loopPlayer.clip = _loopClipDoc[name];
-        _loopPlayer.Play();
+        _loopPlayer.PlayScheduled(dspStartTime);
     }
 
-    public void PlayShop(ShopkeeperName name)
+    public void PlayShop(ShopkeeperName name, double dspStartTime)
     {
         if (!_shopkeeperClipDoc.ContainsKey(name))
         {
@@ -129,7 +105,7 @@ public class SoundLoadAsync : TSingleton<SoundLoadAsync>
             return;
         }
         _shopkeeperPlayer.clip = _shopkeeperClipDoc[name];
-        _shopkeeperPlayer.Play();
+        _shopkeeperPlayer.PlayScheduled(dspStartTime);
     }
 
     public void PlaySFX(SFXName name)
@@ -146,6 +122,7 @@ public class SoundLoadAsync : TSingleton<SoundLoadAsync>
     public void PlayBanshee()
     {
         _bansheePlayer.clip = Resources.Load<AudioClip>("Sound/" + "BGM/" + "Banshee_loop");
-        _bansheePlayer.Play();
+        _bansheePlayer.Play();        
     }
+
 }
