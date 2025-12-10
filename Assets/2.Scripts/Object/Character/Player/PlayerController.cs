@@ -1,6 +1,5 @@
 using DefineEnum;
 using System.Collections;
-using Unity.Burst.Intrinsics;
 using UnityEngine;
 
 
@@ -415,7 +414,7 @@ public class PlayerController : CharBase
     public void SetWaitAttackTime(int bpm)
     {
         //60bpm 기준 한박자는 1초 반박자는 0.5초
-        _waitAttack = 0.4f * 60 / bpm;
+        _waitAttack = 0.3f * 60 / bpm;
         Debug.Log(_waitAttack);
     }
 
@@ -479,8 +478,25 @@ public class PlayerController : CharBase
         else
         {
             InitDamage();
+            int obsidianIndex = 0;
+
+            if (_weaponName == WeaponName.DaggerO1)
+            {
+                if (IngameManager._instance._comboNum == 0)
+                    obsidianIndex = (int)WeaponName.DaggerO1;
+                else
+                    obsidianIndex = (int)WeaponName.DaggerO1 + IngameManager._instance._comboNum - 1;
+            }
+            else if (_weaponName == WeaponName.SwordO1)
+            {
+                if (IngameManager._instance._comboNum == 0)
+                    obsidianIndex = (int)WeaponName.SwordO1;
+                else
+                    obsidianIndex = (int)WeaponName.SwordO1 + IngameManager._instance._comboNum - 1;
+            }
+            
+            _weaponSelectUI.ChangeWeapon((WeaponName)obsidianIndex);
             ObsidianDmg(IngameManager._instance._comboNum);
-            _weaponSelectUI.ChangeWeapon(_weaponName);
             _weaponSelectUI.SetInfoText(_weaponName, IngameManager._instance._comboNum);
         }
     }
@@ -564,7 +580,7 @@ public class PlayerController : CharBase
                     if (_weaponName == WeaponName.DaggerO3)
                         _weaponName = WeaponName.DaggerO1;
                     else if(_weaponName == WeaponName.SwordO3)
-                        _weaponName = WeaponName.SwordO1;
+                        _weaponName = WeaponName.SwordO1;                    
 
                     SetCurrentDmg(0);
                     break;
@@ -574,12 +590,16 @@ public class PlayerController : CharBase
                     else if (_weaponName == WeaponName.SwordO1)
                         _weaponName = WeaponName.SwordO2;
 
-                    SetCurrentDmg(1);
+                        SetCurrentDmg(1);
                     break;
                 case 3:
                     if (_weaponName == WeaponName.DaggerO2)
                         _weaponName = WeaponName.DaggerO3;
                     else if (_weaponName == WeaponName.SwordO2)
+                        _weaponName = WeaponName.SwordO3;
+                    else if (_weaponName == WeaponName.DaggerO1)
+                        _weaponName = WeaponName.DaggerO3;
+                    else if (_weaponName == WeaponName.SwordO1)
                         _weaponName = WeaponName.SwordO3;
 
                     SetCurrentDmg(2);
@@ -590,8 +610,6 @@ public class PlayerController : CharBase
             Debug.Log(combo + "콤보");
             InitDamage();
         }
-        else
-            SetCurrentDmg(0);
     }
 
     IEnumerator MoveJump()

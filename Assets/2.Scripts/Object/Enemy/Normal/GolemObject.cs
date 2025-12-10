@@ -24,6 +24,7 @@ public class GolemObject : MonsterBase
     Animator _anim;
 
     bool _isAttack;
+    bool _isHitable;
 
     void OnEnable()
     {
@@ -69,6 +70,7 @@ public class GolemObject : MonsterBase
         _anim = GetComponent<Animator>();
         _anim.speed = (IngameManager._instance._myBPM / 60f);
         _isAttack = false;
+        _isHitable = true;
         _monsterP = MonsterPriority.Golem;
 
         _healthBarManager.ClearHeart();
@@ -89,6 +91,7 @@ public class GolemObject : MonsterBase
     {
         if (_isMoving || _playerController._isInShop || _playerController._isDead || IngameManager._instance._gameEnd) return;
         _isAttack = true;
+        _isHitable = true;
         _myBeat += 1;
         if (_myBeat > 4)
             _myBeat = 1;
@@ -145,6 +148,8 @@ public class GolemObject : MonsterBase
 
     public void OnHitting(float dmg)
     {
+        if (!_isHitable) return;
+
         if ((_nowHp -= dmg) <= 0)
         {
             _nowHp = 0;
@@ -164,6 +169,8 @@ public class GolemObject : MonsterBase
         }
         else
         {
+            _isHitable = false;
+
             int rnd = Random.Range((int)SFXName.Golemstone_hurt_01, (int)SFXName.Golemstone_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
 
@@ -212,7 +219,7 @@ public class GolemObject : MonsterBase
         transform.position = targetPos;
 
         ReleaseReservation(nextNode);
-
+        _isHitable = true;
         _isMoving = false;
     }
 
@@ -276,42 +283,6 @@ public class GolemObject : MonsterBase
         // TODO: 데미지 처리
         SoundManager._instance.PlaySFX(SFXName.Skel_attack_melee);
         _playerController.OnHitting(_strength);
-    }
-
-    void SetMovementCost(int cost, bool isSet)
-    {
-        Node up = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.up);
-        Node upright = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.up + Vector3.right);
-        Node upleft = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.up + Vector3.left);
-        Node down = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.down);
-        Node downright = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.down + Vector3.right);
-        Node downleft = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.down + Vector3.left);
-        Node left = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.left);
-        Node right = _tileManager.NodeFromWorldPos(_startNode._worldPosition + Vector3.right);
-
-        if (isSet)
-        {
-            up._movementCost = cost;
-            down._movementCost = cost;
-            left._movementCost = cost;
-            right._movementCost = cost;
-            upleft._movementCost = cost;
-            upright._movementCost = cost;
-            downleft._movementCost = cost;
-            downright._movementCost = cost;
-        }
-        else
-        {
-            up._movementCost = 0;
-            down._movementCost = 0;
-            left._movementCost = 0;
-            right._movementCost = 0;
-            upleft._movementCost = 0;
-            upright._movementCost = 0;
-            downleft._movementCost = 0;
-            downright._movementCost = 0;
-        }
-
     }
 
     void OnTriggerEnter2D(Collider2D collision)

@@ -109,7 +109,7 @@ public class SpawnMonsterManager : MonoBehaviour
                 {
                     GameObject DireBat = ObjectPool._instance._direBatQueue.Dequeue();
                     DireBat.transform.position = SetPostion();
-                    SoundManager._instance.PlaySFX(SFXName.Bat_hit);
+                    SoundManager._instance.PlaySFX(SFXName.Direbat_cry);
                     DireBat.SetActive(true);
                 }
                 break;

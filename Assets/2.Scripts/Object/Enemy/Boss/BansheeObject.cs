@@ -25,6 +25,7 @@ public class BansheeObject : MonsterBase
 
     bool _isAttack;
     bool _isDamaged;
+    bool _isHitable;
 
 
     PlayerController _playerController;
@@ -87,6 +88,7 @@ public class BansheeObject : MonsterBase
         _anim.speed = (IngameManager._instance._myBPM / 60f);
         _isAttack = false;
         _isDamaged = false;
+        _isHitable = true;
         _monsterP = MonsterPriority.Banshee;
 
         _healthBarManager.ClearHeart();
@@ -106,7 +108,7 @@ public class BansheeObject : MonsterBase
     void OnBeat()
     {
         if (_isMoving || _playerController._isDead || _playerController._isInShop || IngameManager._instance._gameEnd) return;
-        
+        _isHitable = true;
         _isAttack = true;
         _myBeat += 1;
         if (_myBeat > 4)
@@ -171,6 +173,8 @@ public class BansheeObject : MonsterBase
 
     public void OnHitting(float dmg)
     {
+        if (!_isHitable) return;
+
         if ((_nowHp -= dmg) <= 0)
         {
             _nowHp = 0;
@@ -193,7 +197,6 @@ public class BansheeObject : MonsterBase
             SpawnGold(_gold);
             IngameManager._instance.BossCount();
             IngameManager._instance.UpgradeMonster();
-            StartCoroutine(Yeah());
             ObjectPool._instance._bansheeQueue.Enqueue(gameObject);
             gameObject.SetActive(false);
         }
@@ -201,6 +204,7 @@ public class BansheeObject : MonsterBase
         {
             IngameManager._instance._bansheeSound = true;
             _isDamaged = true;
+            _isHitable = false;
             StopAllCoroutines();
             StartCoroutine(KnockBack());
 
@@ -251,7 +255,7 @@ public class BansheeObject : MonsterBase
         transform.position = targetPos;
 
         ReleaseReservation(nextNode);
-
+        _isHitable = true;
         _isMoving = false;
     }
 
@@ -283,16 +287,22 @@ public class BansheeObject : MonsterBase
             targetPos = Vector3.left + origin;
         }
 
-        while (Vector3.Distance(transform.position, targetPos) > 0.01f)
-        {
-            transform.position = Vector3.MoveTowards(
-                transform.position,
-                targetPos,
-                _moveSpeed * Time.deltaTime
-            );
+        Node node = _tileManager.NodeFromWorldPos(targetPos);
 
-            yield return null;
-        }
+        if(!node._walkable) yield return null;
+        else
+        {
+            while (Vector3.Distance(transform.position, targetPos) > 0.01f)
+            {
+                transform.position = Vector3.MoveTowards(
+                    transform.position,
+                    targetPos,
+                    _moveSpeed * Time.deltaTime
+                );
+
+                yield return null;
+            }
+        }      
 
         ReleaseReservation(_path[1]);
         transform.position = targetPos;
@@ -328,14 +338,6 @@ public class BansheeObject : MonsterBase
         }
 
         transform.position = origin;
-    }
-
-    IEnumerator Yeah()
-    {
-        yield return new WaitForSeconds(0.6f);
-        int rnd = Random.Range((int)SFXName.Cadence_yeah_01, (int)SFXName.Cadence_yeah_05 + 1);
-
-        SoundManager._instance.PlaySFX((SFXName)rnd);
     }
 
     void DetectAttack()

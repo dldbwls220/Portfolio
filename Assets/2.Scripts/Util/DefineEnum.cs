@@ -180,6 +180,13 @@ namespace DefineEnum
         Dragon_walk_02,
         Dragon_walk_03,
 
+        Direbat_attack,
+        Direbat_cry,
+        Direbat_death,
+        Direbat_hit_01,
+        Direbat_hit_02,
+        Direbat_hit_03,
+
         Golemstone_attack,
         Golemstone_death,
         Golemstone_hurt_01,

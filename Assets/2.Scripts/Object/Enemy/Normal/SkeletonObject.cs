@@ -23,7 +23,7 @@ public class SkeletonObject : MonsterBase
     HealthBarManager _healthBarManager;
 
     bool _isAttack;
-
+    bool _isHitable;
     void OnEnable()
     {
         NoteManager._instance.OnBeat += OnBeat;
@@ -66,6 +66,8 @@ public class SkeletonObject : MonsterBase
         _anim.speed = (IngameManager._instance._myBPM / 60f);
         _monsterP = MonsterPriority.Skeleton;
 
+        _isHitable = true;
+
         _healthBarManager.ClearHeart();
         _healthBarManager.CreateEmptyHeart(_maxHP);
         _healthBarManager.DrawHearts(_nowHp);
@@ -85,6 +87,7 @@ public class SkeletonObject : MonsterBase
     {
         if (_isMoving || _playerController._isInShop || _playerController._isDead || IngameManager._instance._gameEnd) return;
 
+        _isHitable = true;
         _isAttack = true;
         _myBeat += 1;
         if (_myBeat > 4)
@@ -144,6 +147,8 @@ public class SkeletonObject : MonsterBase
 
     public void OnHitting(float dmg)
     {
+        if(!_isHitable) return;
+
         if ((_nowHp -= dmg) <= 0)
         {
             _nowHp = 0;
@@ -163,6 +168,8 @@ public class SkeletonObject : MonsterBase
         }
         else
         {
+            _isHitable = false;
+
             int rnd = Random.Range((int)SFXName.Skel_hurt_01, (int)SFXName.Skel_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
             _healthBarManager.DrawHearts(_nowHp);
@@ -201,6 +208,7 @@ public class SkeletonObject : MonsterBase
 
         ReleaseReservation(nextNode);
 
+        _isHitable = true;
         _isMoving = false;
     }
 

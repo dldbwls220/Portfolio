@@ -30,7 +30,9 @@ public class RedDragonObject : MonsterBase
     HealthBarManager _healthBarManager;
 
     bool _isFire;
+    bool _fireDamage;
     bool _isAttack;
+    bool _isHitable;
 
     void OnEnable()
     {
@@ -55,20 +57,10 @@ public class RedDragonObject : MonsterBase
     {
         CheckPlayerinRange();
         DetectAttack();
-        if (_path != null)
-        {
-            Vector3 dir = new Vector3(_path[1]._worldPosition.x - transform.position.x, 0, 0);
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, _fireSpriteObj.transform.childCount, _wallDetect);
-            Debug.DrawRay(transform.position, dir * hit.distance, Color.yellow);
-            if (hit.collider != null)
-            {
-                _fireLength = (int)hit.distance;
-            }
-            else
-            {
-                _fireLength = _fireSpriteObj.transform.childCount;
-            }
-        }
+       
+
+        if(_fireDamage)
+            CheckFireDamage();
        
     }
 
@@ -100,6 +92,7 @@ public class RedDragonObject : MonsterBase
         _anim.speed = (IngameManager._instance._myBPM / 60f);
         _isAttack = false;
         _isFire = false;
+        _isHitable = true;
         _monsterP = MonsterPriority.RedDragon;
 
         _healthBarManager.ClearHeart();
@@ -122,6 +115,7 @@ public class RedDragonObject : MonsterBase
     {
         if (_isMoving || _playerController._isDead || _playerController._isInShop || IngameManager._instance._gameEnd) return;
         _isAttack = true;
+        _isHitable = true;
         _myBeat += 1;
         if (_myBeat > 4)
             _myBeat = 1;
@@ -129,6 +123,7 @@ public class RedDragonObject : MonsterBase
 
         if (_path != null)
         {
+            DetectWallDistance();
             InitFireLength();
         }
 
@@ -175,12 +170,14 @@ public class RedDragonObject : MonsterBase
             case 1:
                 if(_startNode._worldPosition.y == _targetNode._worldPosition.y && _path.Count > 1 && _path.Count < 9)
                 {
+                    ChangeDir(_targetTF.position);
                     _isFire = true;
                     _anim.SetBool("isFire", true);
                     SoundManager._instance.PlaySFX(SFXName.Dragon_attack_prefire);
                 }
                 else if(Mathf.Abs(diff) == 1 && _path.Count > 2 && _path.Count < 9)
                 {
+                    ChangeDir(_targetTF.position);
                     _isFire = true;
                     _anim.SetBool("isFire", true);
                     SoundManager._instance.PlaySFX(SFXName.Dragon_attack_prefire);
@@ -191,16 +188,22 @@ public class RedDragonObject : MonsterBase
 
                 if (_isFire)
                 {
+                    DetectWallDistance();
+                    InitFireLength();
+
                     SoundManager._instance.PlaySFX(SFXName.Dragon_attack_fire);
                     _fireAnim.SetTrigger("Fire");
-                    if (_playerController._isPlayerAttackable && _startNode._worldPosition.y == _targetNode._worldPosition.y)
-                        AttackPlayer();
+
+                    _fireDamage = true;
+                    //if (_playerController._isPlayerAttackable && _startNode._worldPosition.y == _targetNode._worldPosition.y)
+                    //    AttackPlayer();
                 }             
                 else
                     StartCoroutine(MoveToNode(_path[1]));
                 break;
             case 3:
                 _isFire = false;
+                _fireDamage = false;
                 _anim.SetBool("isFire", false);
                 break;
             case 4:              
@@ -212,6 +215,8 @@ public class RedDragonObject : MonsterBase
 
     public void OnHitting(float dmg)
     {
+        if (!_isHitable) return;
+
         if ((_nowHp -= dmg) <= 0)
         {
             _nowHp = 0;
@@ -230,16 +235,40 @@ public class RedDragonObject : MonsterBase
             SpawnGold(_gold);
             IngameManager._instance.BossCount();
             IngameManager._instance.UpgradeMonster();
-            StartCoroutine(Yeah());
             ObjectPool._instance._redDragonQueue.Enqueue(gameObject);
             gameObject.SetActive(false);
         }
         else
         {
+            _isHitable = false;
             int rnd = Random.Range((int)SFXName.Dragon_hurt_01, (int)SFXName.Dragon_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
 
             _healthBarManager.DrawHearts(_nowHp);
+        }
+    }
+
+    void DetectWallDistance()
+    {
+        if (_path != null)
+        {
+            Vector3 dir = Vector3.zero;
+
+            if (_targetTF.position.x - transform.position.x > 0)
+                dir = Vector3.right;
+            else
+                dir = Vector3.left;
+
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, _fireSpriteObj.transform.childCount, _wallDetect);
+            Debug.DrawRay(transform.position, dir * hit.distance, Color.yellow);
+            if (hit.collider != null)
+            {
+                _fireLength = (int)hit.distance;
+            }
+            else
+            {
+                _fireLength = _fireSpriteObj.transform.childCount;
+            }
         }
     }
 
@@ -248,7 +277,7 @@ public class RedDragonObject : MonsterBase
         for (int i = 0; i < _fireSprite.Length; i++)
             _fireSprite[i].enabled = false;
 
-        Vector3 dir = new Vector3(_path[1]._worldPosition.x - transform.position.x, 0, 0);
+        //Vector3 dir = new Vector3(_path[1]._worldPosition.x - transform.position.x, 0, 0);
 
         for (int i = 0; i < _fireLength; i++)
             _fireSprite[i].enabled = true;      
@@ -269,7 +298,7 @@ public class RedDragonObject : MonsterBase
         _startNode._walkable = true;
         ReleaseReservation(currentNode);
 
-        float diffX = _targetNode._worldPosition.x - transform.position.x;
+        float diffX = targetPos.x - transform.position.x;
 
         if (diffX > 0)
         {
@@ -313,7 +342,7 @@ public class RedDragonObject : MonsterBase
         }
 
         ReleaseReservation(nextNode);
-
+        _isHitable = true;
         _isMoving = false;
     }
 
@@ -360,12 +389,22 @@ public class RedDragonObject : MonsterBase
 
     }
 
-    IEnumerator Yeah()
+    void CheckFireDamage()
     {
-        yield return new WaitForSeconds(0.6f);
-        int rnd = Random.Range((int)SFXName.Cadence_yeah_01, (int)SFXName.Cadence_yeah_05 + 1);
+        Node playernode = _tileManager.NodeFromWorldPos(_targetTF.position);
+        Node dragonnode = _tileManager.NodeFromWorldPos(transform.position);
 
-        SoundManager._instance.PlaySFX((SFXName)rnd);
+        if (playernode._worldPosition.y != dragonnode._worldPosition.y || !_playerController._isPlayerAttackable)
+            return;
+
+        float diffX = _targetTF.position.x - transform.position.x;
+
+        // 불 길이 안이면 데미지
+        if (Mathf.Abs(diffX) <= _fireLength)
+        {
+            AttackPlayer();
+            _fireDamage = false;
+        }
     }
 
     void DetectAttack()
@@ -382,10 +421,38 @@ public class RedDragonObject : MonsterBase
 
     void AttackPlayer()
     {
-        Debug.Log("공격 성공! 플레이어가 공격 경로로 들어옴");
-        // TODO: 데미지 처리
-        SoundManager._instance.PlaySFX(SFXName.Skel_attack_melee);
         _playerController.OnHitting(_strength);
+    }
+
+    void ChangeDir(Vector3 targetPos)
+    {
+        float diffX = targetPos.x - transform.position.x;
+
+        if (diffX > 0)
+            diffX = 1;
+        else
+            diffX = -1;
+
+        if (diffX > 0)
+        {
+            for (int i = 0; i < _breathObj.transform.GetChild(0).transform.childCount; i++)
+            {
+                _fireSprite[i].flipX = true;
+            }
+            _fireSpriteObj.transform.rotation = Quaternion.Euler(0, 0, 180);
+            _fireSpriteObj.transform.localPosition = new Vector3(1, 0, 0);
+            transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if (diffX < 0)
+        {
+            for (int i = 0; i < _breathObj.transform.GetChild(0).transform.childCount; i++)
+            {
+                _fireSprite[i].flipX = false;
+            }
+            _fireSpriteObj.transform.rotation = Quaternion.Euler(0, 0, 0);
+            _fireSpriteObj.transform.localPosition = new Vector3(-1, 0, 0);
+            transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)

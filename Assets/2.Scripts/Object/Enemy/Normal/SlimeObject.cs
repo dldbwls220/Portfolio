@@ -26,6 +26,7 @@ public class SlimeObject : MonsterBase
     int _myBeat;
     bool _isMoving;
     bool _isAttack;
+    bool _isHitable;
 
     Vector2Int[] dir = new Vector2Int[]
     {
@@ -81,6 +82,7 @@ public class SlimeObject : MonsterBase
         _myBeat = 0;
         _isAttack = false;
         _isMoving = false;
+        _isHitable = true;
         _myDir = LookDir.Down;
         _monsterP = MonsterPriority.Slime;
 
@@ -103,6 +105,8 @@ public class SlimeObject : MonsterBase
     {
         if (_isMoving || _playerController._isInShop || _playerController._isDead || IngameManager._instance._gameEnd) return;
         _isAttack = true;
+        _isHitable = true;
+
         _myBeat += 1;
         if (_myBeat > 4) _myBeat = 1;
 
@@ -156,6 +160,8 @@ public class SlimeObject : MonsterBase
 
     public void OnHitting(float dmg)
     {
+        if (!_isHitable) return;
+
         if ((_nowHp -= dmg) <= 0)
         {
             _nowHp = 0;
@@ -176,6 +182,7 @@ public class SlimeObject : MonsterBase
         }
         else
         {
+            _isHitable = false;
             int rnd = Random.Range((int)SFXName.Slime_hurt_01, (int)SFXName.Slime_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
             _healthBarManager.DrawHearts(_nowHp);

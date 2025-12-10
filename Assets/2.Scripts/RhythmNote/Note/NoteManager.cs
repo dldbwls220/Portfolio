@@ -41,7 +41,7 @@ public class NoteManager : MonoBehaviour
 
     void Update()
     {
-        if (!IngameManager._instance._isStartMusic)
+        if (!IngameManager._instance._isStartMusic || IngameManager._instance._isPaused)
             return;
 
         // 오디오 기반 정확한 시간 계산

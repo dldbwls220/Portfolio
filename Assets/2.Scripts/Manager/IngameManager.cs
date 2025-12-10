@@ -87,12 +87,14 @@ public class IngameManager : MonoBehaviour
         if (_bossKillCount == _totalBossToKill && !_isGameEnd)
         {
             _isGameEnd = true;
+            _bansheeSound = false;
             SoundManager._instance._bansheeDESC._mute = true;
             StartCoroutine(OpenResult());
         }
         else if(_playerController._isDead && !_isGameEnd)
         {
             _isGameEnd = true;
+            _bansheeSound = false;
             SoundManager._instance._bansheeDESC._mute = true;
             StartCoroutine(OpenResult());
         }
@@ -118,7 +120,7 @@ public class IngameManager : MonoBehaviour
 
         _pause.CloseWnd();
         _resultUI.CloseWnd();
-
+        _numberUI.BossCountUI(0, _totalBossToKill);
     }
 
     public void SetMusic(int index, int bpm)
@@ -183,6 +185,8 @@ public class IngameManager : MonoBehaviour
     public void BossCount()
     {
         _bossKillCount++;
+        StartCoroutine(Yeah());
+        _numberUI.BossCountUI(_bossKillCount, _totalBossToKill);
     }
 
     bool SaveKillCount()
@@ -257,5 +261,15 @@ public class IngameManager : MonoBehaviour
             _resultUI.SetResult("Loose...", _gameTime, _playerController._goldContain, _monsterKillCount);
 
         
+    }
+
+    IEnumerator Yeah()
+    {
+        yield return new WaitForSeconds(0.4f);
+        int rnd = Random.Range((int)SFXName.Cadence_yeah_01, (int)SFXName.Cadence_yeah_05 + 1);
+
+        SoundManager._instance.PlaySFX((SFXName)rnd);
+
+        Debug.Log("Yeah");
     }
 }

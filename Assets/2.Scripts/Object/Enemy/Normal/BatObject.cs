@@ -27,6 +27,7 @@ public class BatObject : MonsterBase
     int _myBeat;
     bool _isMoving;
     bool _isAttack;
+    bool _isHitable;
 
     Vector2Int[] dir = new Vector2Int[]
     {
@@ -86,6 +87,7 @@ public class BatObject : MonsterBase
         _myBeat = 0;
         _isAttack = false;
         _isMoving = false;
+        _isHitable = true;
 
         if (name == "DireBat")
             _monsterP = MonsterPriority.DireBat;
@@ -110,6 +112,7 @@ public class BatObject : MonsterBase
     {
         if (_isMoving || _playerController._isInShop || _playerController._isDead || IngameManager._instance._gameEnd) return;
         _isAttack = true;
+        _isHitable = true;
         _myBeat += 1;
         if(_myBeat > 4) _myBeat = 1;
 
@@ -167,10 +170,12 @@ public class BatObject : MonsterBase
 
     public void OnHitting(float dmg)
     {
+        if (!_isHitable) return;
+
         if ((_nowHp -= dmg) <= 0)
         {
             _nowHp = 0;
-            SoundManager._instance.PlaySFX(SFXName.Bat_death);
+           
 
             if (_path != null && _path.Count > 1)
             {
@@ -182,19 +187,31 @@ public class BatObject : MonsterBase
             IngameManager._instance.KillCount();
             SpawnGold(_gold);
 
-            if(_name == "DireBat")
+            if (_name == "DireBat")
+            {
+                SoundManager._instance.PlaySFX(SFXName.Direbat_death);
                 IngameManager._instance.BossCount();
-
-            ObjectPool._instance._batQueue.Enqueue(gameObject);
+                ObjectPool._instance._direBatQueue.Enqueue(gameObject);
+            }
+            else
+            {
+                SoundManager._instance.PlaySFX(SFXName.Bat_death);
+                ObjectPool._instance._batQueue.Enqueue(gameObject);
+            }
+            
+            
             gameObject.SetActive(false);
         }
         else
         {
-            if(_name == "DireBat")
-                SoundManager._instance.PlaySFX(SFXName.Bat_minibpss_hit);
+            if (_name == "DireBat")
+            {
+                int rnd = Random.Range((int)SFXName.Direbat_hit_01, (int)SFXName.Direbat_hit_03 + 1);
+                SoundManager._instance.PlaySFX((SFXName)rnd);
+            }
             else
                 SoundManager._instance.PlaySFX(SFXName.Bat_hit);
-
+            _isHitable = false;
             _heartManager.DrawHearts(_nowHp);
             Debug.Log(_nowHp);
         }
@@ -228,9 +245,9 @@ public class BatObject : MonsterBase
             yield return null;
         }
         transform.position = targetPos;
-        
 
-        
+
+        _isHitable = true;
         _isMoving = false;
     }
 
