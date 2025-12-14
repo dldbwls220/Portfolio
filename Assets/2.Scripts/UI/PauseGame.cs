@@ -17,6 +17,7 @@ public class PauseGame : MonoBehaviour
     public void PauseThisGame()
     {
         gameObject.SetActive(true);
+        ResumeBtnOut();
         Time.timeScale = 0;
         SoundManager._instance._loopDESC._pause();
         SoundManager._instance._shopkeeperDESC._pause();
@@ -25,6 +26,7 @@ public class PauseGame : MonoBehaviour
     public void UnpauseThisGame()
     {
         Time.timeScale = 1;
+        IngameManager._instance.UnpausedspTime();
         SoundManager._instance._loopDESC._unpause();
         SoundManager._instance._shopkeeperDESC._unpause();
         IngameManager._instance._isPaused = false;

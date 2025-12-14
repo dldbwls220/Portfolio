@@ -420,7 +420,7 @@ MonoBehaviour:
     MonsterType: 3
     _tfPoolParent: {fileID: 1416432215}
   - _objPrefab: {fileID: 2862061249864562837, guid: caf2741a49071f14793d23100498ab46, type: 3}
-    _count: 0
+    _count: 1
     MonsterType: 4
     _tfPoolParent: {fileID: 1416432215}
   - _objPrefab: {fileID: 1009239959614061799, guid: 878b09ada06e02749892d548658a6f93, type: 3}
@@ -428,7 +428,7 @@ MonoBehaviour:
     MonsterType: 5
     _tfPoolParent: {fileID: 1416432215}
   - _objPrefab: {fileID: 2623437532178284439, guid: cc33dca2b21f49243aa5f67220cea859, type: 3}
-    _count: 1
+    _count: 0
     MonsterType: 6
     _tfPoolParent: {fileID: 1416432215}
   _itemInfo:
@@ -16714,7 +16714,7 @@ MonoBehaviour:
   _obstacleTilemap: {fileID: 1162395044}
   _tilePenaltyList: []
   _nodeRadius: 0.5
-  _DrawGizzmo: 0
+  _DrawGizzmo: 1
 --- !u!114 &1191632551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18386,7 +18386,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Title
+  m_Text: RESTART
 --- !u!222 &1488471696
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19204,7 +19204,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Title
+  m_Text: RESTART
 --- !u!222 &1690163534
 CanvasRenderer:
   m_ObjectHideFlags: 0

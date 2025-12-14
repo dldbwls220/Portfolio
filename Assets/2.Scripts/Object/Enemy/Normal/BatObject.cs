@@ -102,6 +102,7 @@ public class BatObject : MonsterBase
     void InitMonsterStat()
     {
         _isMoving = false;
+        _isHitable = true;
         _myBeat = 0;
         _nowHp = _maxHP;
         _heartManager.ClearHeart();
@@ -112,7 +113,6 @@ public class BatObject : MonsterBase
     {
         if (_isMoving || _playerController._isInShop || _playerController._isDead || IngameManager._instance._gameEnd) return;
         _isAttack = true;
-        _isHitable = true;
         _myBeat += 1;
         if(_myBeat > 4) _myBeat = 1;
 
@@ -175,7 +175,7 @@ public class BatObject : MonsterBase
         if ((_nowHp -= dmg) <= 0)
         {
             _nowHp = 0;
-           
+            StartCoroutine(HitCoolDown());
 
             if (_path != null && _path.Count > 1)
             {
@@ -190,6 +190,7 @@ public class BatObject : MonsterBase
             if (_name == "DireBat")
             {
                 SoundManager._instance.PlaySFX(SFXName.Direbat_death);
+                IngameManager._instance.UpgradeMonster();
                 IngameManager._instance.BossCount();
                 ObjectPool._instance._direBatQueue.Enqueue(gameObject);
             }
@@ -211,7 +212,7 @@ public class BatObject : MonsterBase
             }
             else
                 SoundManager._instance.PlaySFX(SFXName.Bat_hit);
-            _isHitable = false;
+            StartCoroutine(HitCoolDown());
             _heartManager.DrawHearts(_nowHp);
             Debug.Log(_nowHp);
         }
@@ -246,8 +247,6 @@ public class BatObject : MonsterBase
         }
         transform.position = targetPos;
 
-
-        _isHitable = true;
         _isMoving = false;
     }
 
@@ -292,6 +291,15 @@ public class BatObject : MonsterBase
         }
        return rndNode;
 
+    }
+
+    IEnumerator HitCoolDown()
+    {
+        _isHitable = false;
+
+        yield return new WaitForSeconds(0.15f);
+
+        _isHitable = true;
     }
 
     void DetectAttack()

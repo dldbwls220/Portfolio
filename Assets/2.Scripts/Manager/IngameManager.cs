@@ -24,6 +24,8 @@ public class IngameManager : MonoBehaviour
     int _bpm;
     float _gameTime;
     double _startDSPTime;
+    double _pauseStartDSP;
+    double _totalPausedTime;
     bool _isPlayingBGM;
     bool _isSelected;
     bool _isGameEnd;
@@ -46,6 +48,8 @@ public class IngameManager : MonoBehaviour
     public int _myBPM { get { return _bpm; } }
     public int _myMusicIndex { get { return _musicIndex; } }
     public double _dpsTime { get { return _startDSPTime; } }
+
+    public double _totalPaused { get { return _totalPausedTime; } }
 
     public static IngameManager _instance { get { return _uniqueInstance; } }
 
@@ -75,10 +79,11 @@ public class IngameManager : MonoBehaviour
         {
             if (_isPaused)
             {
-                _pause.UnpauseThisGame();
+                _pause.UnpauseThisGame();             
             }
             else
             {
+                _pauseStartDSP = AudioSettings.dspTime;
                 _pause.PauseThisGame();
                 _isPaused = true;
             }
@@ -187,6 +192,11 @@ public class IngameManager : MonoBehaviour
         _bossKillCount++;
         StartCoroutine(Yeah());
         _numberUI.BossCountUI(_bossKillCount, _totalBossToKill);
+    }
+
+    public void UnpausedspTime()
+    {
+        _totalPausedTime += AudioSettings.dspTime - _pauseStartDSP;
     }
 
     bool SaveKillCount()

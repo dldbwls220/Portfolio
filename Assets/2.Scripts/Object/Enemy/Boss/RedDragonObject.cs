@@ -105,6 +105,7 @@ public class RedDragonObject : MonsterBase
         _fireAnim.Rebind();
         _fireAnim.Update(0f);
         _isMoving = false;
+        _isHitable = true;
         _nowHp = _maxHP;
         _myBeat = 0;
         _healthBarManager.ClearHeart();
@@ -115,7 +116,6 @@ public class RedDragonObject : MonsterBase
     {
         if (_isMoving || _playerController._isDead || _playerController._isInShop || IngameManager._instance._gameEnd) return;
         _isAttack = true;
-        _isHitable = true;
         _myBeat += 1;
         if (_myBeat > 4)
             _myBeat = 1;
@@ -220,6 +220,7 @@ public class RedDragonObject : MonsterBase
         if ((_nowHp -= dmg) <= 0)
         {
             _nowHp = 0;
+            StartCoroutine(HitCoolDown());
             SoundManager._instance.PlaySFX(SFXName.Dragon_death);
 
             _healthBarManager.ClearHeart();
@@ -240,7 +241,7 @@ public class RedDragonObject : MonsterBase
         }
         else
         {
-            _isHitable = false;
+            StartCoroutine(HitCoolDown());
             int rnd = Random.Range((int)SFXName.Dragon_hurt_01, (int)SFXName.Dragon_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
 
@@ -342,7 +343,6 @@ public class RedDragonObject : MonsterBase
         }
 
         ReleaseReservation(nextNode);
-        _isHitable = true;
         _isMoving = false;
     }
 
@@ -387,6 +387,15 @@ public class RedDragonObject : MonsterBase
         }
         _characterPos.localPosition = new Vector3(_characterPos.localPosition.x, 0, _characterPos.localPosition.z);
 
+    }
+
+    IEnumerator HitCoolDown()
+    {
+        _isHitable = false;
+
+        yield return new WaitForSeconds(0.15f);
+
+        _isHitable = true;
     }
 
     void CheckFireDamage()

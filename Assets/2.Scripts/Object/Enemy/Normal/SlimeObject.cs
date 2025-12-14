@@ -99,13 +99,13 @@ public class SlimeObject : MonsterBase
         _healthBarManager.CreateEmptyHeart(_maxHP);
         _healthBarManager.DrawHearts(_nowHp);
         _isMoving = false;
+        _isHitable = true;
     }
 
     void OnBeat()
     {
         if (_isMoving || _playerController._isInShop || _playerController._isDead || IngameManager._instance._gameEnd) return;
         _isAttack = true;
-        _isHitable = true;
 
         _myBeat += 1;
         if (_myBeat > 4) _myBeat = 1;
@@ -165,6 +165,7 @@ public class SlimeObject : MonsterBase
         if ((_nowHp -= dmg) <= 0)
         {
             _nowHp = 0;
+            StartCoroutine(HitCoolDown());
             IngameManager._instance.KillCount();
             SpawnGold(_gold);
             int rnd = Random.Range((int)SFXName.Slime_death_01, (int)SFXName.Slime_death_03 + 1);
@@ -182,7 +183,7 @@ public class SlimeObject : MonsterBase
         }
         else
         {
-            _isHitable = false;
+            StartCoroutine(HitCoolDown());
             int rnd = Random.Range((int)SFXName.Slime_hurt_01, (int)SFXName.Slime_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
             _healthBarManager.DrawHearts(_nowHp);
@@ -282,6 +283,15 @@ public class SlimeObject : MonsterBase
 
         return nextNode;
 
+    }
+
+    IEnumerator HitCoolDown()
+    {
+        _isHitable = false;
+
+        yield return new WaitForSeconds(0.15f);
+
+        _isHitable = true;
     }
 
     void DetectAttack()

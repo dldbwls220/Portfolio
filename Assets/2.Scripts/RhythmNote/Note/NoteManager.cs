@@ -7,9 +7,9 @@ public class NoteManager : MonoBehaviour
     static NoteManager _uniqueInstance;
 
     int _bpm = 0;
-    public double startDspTime;      // DSP 시작 시간
-    double beatInterval;      // 한 박자 시간
-    int lastBeat;
+    public double _startDspTime;      // DSP 시작 시간
+    double _beatInterval;      // 한 박자 시간
+    int _lastBeat;
 
     bool _skipFirstBeat;
 
@@ -31,12 +31,12 @@ public class NoteManager : MonoBehaviour
         _skipFirstBeat = false;
 
         _bpm = bpm;
-        beatInterval = 60.0 / _bpm;
+        _beatInterval = 60.0 / _bpm;
 
         // 음악이 시작되는 DSP 시간
-        startDspTime = IngameManager._instance._dpsTime;
+        _startDspTime = IngameManager._instance._dpsTime;
 
-        lastBeat = 0;
+        _lastBeat = 0;
     }
 
     void Update()
@@ -45,20 +45,20 @@ public class NoteManager : MonoBehaviour
             return;
 
         // 오디오 기반 정확한 시간 계산
-        double songTime = AudioSettings.dspTime - startDspTime;
+        double songTime = (AudioSettings.dspTime - _startDspTime) - IngameManager._instance._totalPaused;
 
-        int currentBeat = (int)(songTime / beatInterval);
+        int currentBeat = (int)(songTime / _beatInterval);
 
         if (!_skipFirstBeat)
         {
-            lastBeat = currentBeat;
+            _lastBeat = currentBeat;
             _skipFirstBeat = true;
             return;
         }
 
-        if (currentBeat != lastBeat)
+        if (currentBeat != _lastBeat)
         {
-            lastBeat = currentBeat;
+            _lastBeat = currentBeat;
 
             SpawnBeatNotes();
         }      

@@ -76,6 +76,7 @@ public class SkeletonObject : MonsterBase
     void InitMonsterStat()
     {
         _isMoving = false;
+        _isHitable = true;
         _nowHp = _maxHP;
         _myBeat = 0;
         _healthBarManager.ClearHeart();
@@ -87,7 +88,6 @@ public class SkeletonObject : MonsterBase
     {
         if (_isMoving || _playerController._isInShop || _playerController._isDead || IngameManager._instance._gameEnd) return;
 
-        _isHitable = true;
         _isAttack = true;
         _myBeat += 1;
         if (_myBeat > 4)
@@ -152,6 +152,7 @@ public class SkeletonObject : MonsterBase
         if ((_nowHp -= dmg) <= 0)
         {
             _nowHp = 0;
+            StartCoroutine(HitCoolDown());
             SoundManager._instance.PlaySFX(SFXName.Skel_death);
 
             if (_path != null && _path.Count > 1)
@@ -168,7 +169,7 @@ public class SkeletonObject : MonsterBase
         }
         else
         {
-            _isHitable = false;
+            StartCoroutine(HitCoolDown());
 
             int rnd = Random.Range((int)SFXName.Skel_hurt_01, (int)SFXName.Skel_hurt_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
@@ -208,7 +209,6 @@ public class SkeletonObject : MonsterBase
 
         ReleaseReservation(nextNode);
 
-        _isHitable = true;
         _isMoving = false;
     }
 
@@ -253,6 +253,15 @@ public class SkeletonObject : MonsterBase
         }
         _characterPos.localPosition = new Vector3(_characterPos.localPosition.x, 0, _characterPos.localPosition.z);
 
+    }
+
+    IEnumerator HitCoolDown()
+    {
+        _isHitable = false;
+
+        yield return new WaitForSeconds(0.15f);
+
+        _isHitable = true;
     }
 
     void DetectAttack()

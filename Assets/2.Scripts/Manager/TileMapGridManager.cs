@@ -91,7 +91,7 @@ public class TileMapGridManager : MonoBehaviour
                 if (obstacleTile != null)
                 {
                     walkable = false;
-                    moveCost += 5; // 완전 막힘
+                    moveCost += 5; 
                 }
 
                 // 일반 타일 패널티 적용
