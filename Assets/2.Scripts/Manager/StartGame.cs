@@ -12,8 +12,12 @@ public class StartGame : MonoBehaviour
     {
         GameTableManager._instance.AllLoadTable();
         SoundManager._instance.LoadAllSound();
+<<<<<<< HEAD
         DataManger._instance.LoadData();
         StartCoroutine(Loading());
+=======
+        //StartCoroutine(Loading());
+>>>>>>> parent of 8e8a425 (JsonSave)
     }
 
     private void Update()

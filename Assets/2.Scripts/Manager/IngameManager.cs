@@ -199,28 +199,6 @@ public class IngameManager : MonoBehaviour
         _totalPausedTime += AudioSettings.dspTime - _pauseStartDSP;
     }
 
-    bool SaveKillCount()
-    {
-        if (DataManger._instance.nowPlayer._bestKillCount < _killCount)
-        {
-            DataManger._instance.nowPlayer._bestKillCount = _killCount;
-            return true;
-        }
-        else
-            return false;
-    }
-
-    bool SaveTime()
-    {
-        if (DataManger._instance.nowPlayer._bestSurviveTime < _gameTime)
-        {
-            DataManger._instance.nowPlayer._bestSurviveTime = _gameTime;
-            return true;
-        }
-        else
-            return false;
-    }
-
     void OnBeat()
     {
         if (!_isSelected) return;
@@ -263,14 +241,10 @@ public class IngameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         if (!_playerController._isDead)
-        {                     
-            _resultUI.SetResult("Clear!!!", _gameTime, _playerController._goldContain, _monsterKillCount, SaveKillCount(), SaveTime());
-            DataManger._instance.SaveData();
-        }
+            _resultUI.SetResult("Clear!!!", _gameTime, _playerController._goldContain, _monsterKillCount);
         else
             _resultUI.SetResult("Loose...", _gameTime, _playerController._goldContain, _monsterKillCount);
 
-        
     }
 
     IEnumerator Yeah()

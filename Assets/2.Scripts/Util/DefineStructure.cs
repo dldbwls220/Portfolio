@@ -67,9 +67,9 @@ namespace DefineStructure
         }
     }
 
-    public class PlayerData 
+    public struct Song
     {
-        public int _bestKillCount;
-        public float _bestSurviveTime;
+        public string _name;
+        public int bpm;
     }
 }
