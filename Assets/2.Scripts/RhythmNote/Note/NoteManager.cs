@@ -15,6 +15,7 @@ public class NoteManager : MonoBehaviour
 
     [SerializeField] Transform _tfNoteAppearLeft;
     [SerializeField] Transform _tfNoteAppearRight;
+<<<<<<< HEAD
 
     public event Action OnBeat;
 
@@ -38,6 +39,10 @@ public class NoteManager : MonoBehaviour
 
         _lastBeat = 0;
     }
+=======
+    [SerializeField] GameObject _goNoteLeft;
+    [SerializeField] GameObject _goNoteRight;
+>>>>>>> parent of 1eae76b (Note Sync and Pool)
 
     void Update()
     {
@@ -52,6 +57,7 @@ public class NoteManager : MonoBehaviour
         if (!_skipFirstBeat)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             _lastBeat = currentBeat;
             _skipFirstBeat = true;
             return;
@@ -61,14 +67,13 @@ public class NoteManager : MonoBehaviour
             goLeft.SetActive(true);
             //GameObject goLeft = Instantiate(_goNoteLeft, _tfNoteAppearLeft.position, Quaternion.identity);
             //goLeft.transform.SetParent(transform);
+=======
+            GameObject goLeft = Instantiate(_goNoteLeft, _tfNoteAppearLeft.position, Quaternion.identity);
+            goLeft.transform.SetParent(transform);
+>>>>>>> parent of 1eae76b (Note Sync and Pool)
             TimingManager.Instance._boxNoteListL.Add(goLeft);
-
-
-            GameObject goRight = ObjectPool._instance._rightNoteQueue.Dequeue();
-            goRight.transform.position = _tfNoteAppearRight.position;
-            goRight.SetActive(true);
-            //GameObject goRight = Instantiate(_goNoteRight, _tfNoteAppearRight.position, Quaternion.identity);
-            //goRight.transform.SetParent(transform);
+            GameObject goRight = Instantiate(_goNoteRight, _tfNoteAppearRight.position, Quaternion.identity);
+            goRight.transform.SetParent(transform);
             TimingManager.Instance._boxNoteListR.Add(goRight);
             _currentTime -= 60d / _bpm;
 >>>>>>> parent of 664fc50 (Update NoteManager.cs)

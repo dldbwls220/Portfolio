@@ -12,9 +12,6 @@ public class TimingManager : MonoBehaviour
     [SerializeField] RectTransform[] timingRect;
     Vector2[] _timingBoxes;
 
-    bool _canJudge;
-    float _judgeCooldown;
-
     private void Awake()
     {
         Instance = this;
@@ -29,9 +26,6 @@ public class TimingManager : MonoBehaviour
     void initManager()
     {
 
-        _canJudge = true;
-        _judgeCooldown = 0.15f;
-
         //타이밍 박스 설정
         _timingBoxes = new Vector2[timingRect.Length];
         _boxNoteListL = new List<GameObject>();
@@ -43,10 +37,8 @@ public class TimingManager : MonoBehaviour
         }
     }
 
-    public bool CheckTiming()
+    public void CheckTiming()
     {
-        if (!_canJudge) return false;
-
         for (int i = 0; i < _boxNoteListL.Count; i++)
         {
             float notePosX = _boxNoteListL[i].transform.localPosition.x;
@@ -57,6 +49,7 @@ public class TimingManager : MonoBehaviour
                 if (_timingBoxes[n].x <= notePosX && notePosX <= _timingBoxes[n].y)
                 {
 
+<<<<<<< HEAD
                     if (_timingBoxes[n] == _timingBoxes[2])
                     {
                         _canJudge = false;
@@ -85,10 +78,19 @@ public class TimingManager : MonoBehaviour
 
                         return true;
                     }                  
+=======
+                    _boxNoteListL[i].GetComponent<Note>().StopSprite();
+                    _boxNoteListL.RemoveAt(i);
+                    _boxNoteListR[i].GetComponent<Note>().StopSprite();
+                    _boxNoteListR.RemoveAt(i);
+                    Debug.Log("Hit" + n);
+                    return;
+>>>>>>> parent of 1eae76b (Note Sync and Pool)
                 }
             }
         }
 
+<<<<<<< HEAD
         IngameManager._instance.ResetCombo();
 
         return false;
@@ -98,5 +100,8 @@ public class TimingManager : MonoBehaviour
     void ResetJudge()
     {
         _canJudge = true;
+=======
+        Debug.Log("Miss");
+>>>>>>> parent of 1eae76b (Note Sync and Pool)
     }
 }

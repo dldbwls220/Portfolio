@@ -51,7 +51,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b732d7de5aa0344b96013c59c072807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   _speed: 280
+=======
+  _speed: 400
+>>>>>>> parent of 1eae76b (Note Sync and Pool)
   _spriteTf: {fileID: 5720729250429163616}
   _musicSPD: 0
 --- !u!50 &337372076559519879

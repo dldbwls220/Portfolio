@@ -11,6 +11,7 @@ public class Note : MonoBehaviour
 
     public bool _isStop { get { return _isSpriteStop; }}
 
+<<<<<<< HEAD
     void OnEnable()
     {
         _isSpriteStop=false;
@@ -19,6 +20,8 @@ public class Note : MonoBehaviour
         _musicSPD = _speed / 60 * IngameManager._instance._myBPM;
     }
 
+=======
+>>>>>>> parent of 1eae76b (Note Sync and Pool)
     // Update is called once per frame
     void Update()
     {
