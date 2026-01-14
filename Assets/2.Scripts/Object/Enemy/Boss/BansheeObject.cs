@@ -54,6 +54,8 @@ public class BansheeObject : MonsterBase
     {
         DetectAttack();
 
+        Debug.Log(_isMoving + "¿òÁ÷ÀÓ");
+
         if (IngameManager._instance._bansheeSound)
         {
             _defaultSprite.SetActive(false);
@@ -158,17 +160,17 @@ public class BansheeObject : MonsterBase
 
         _anim.SetTrigger(_myBeat + "Beat");
 
-        if(_isDamaged)
+        if (_isDamaged)
         {
             _startNode._walkable = true;
             _isDamaged = false;
             return;
         }
-        else if (_path != null && _path.Count > 1)
+        if (_path != null && _path.Count > 1)
         {
             StartCoroutine(MoveToNode(_path[1]));
         }
-        
+
     }
 
     public void OnHitting(float dmg)
@@ -183,7 +185,7 @@ public class BansheeObject : MonsterBase
 
             SoundManager._instance._loopDESC._mute = false;
             SoundManager._instance._shopkeeperDESC._mute = false;
-            SoundManager._instance._bansheeDESC._volum = 0;
+            SoundManager._instance._bansheeDESC._mute = true;
             
             IngameManager._instance._bansheeSound = false;
 
@@ -205,8 +207,10 @@ public class BansheeObject : MonsterBase
         {
             IngameManager._instance._bansheeSound = true;
             _isDamaged = true;
+
+            if (_isMoving)
+                StopAllCoroutines();                 
             StartCoroutine(HitCoolDown());
-            StopAllCoroutines();
             StartCoroutine(KnockBack());
 
             int rnd = Random.Range((int)SFXName.Banshee_hurt_01, (int)SFXName.Banshee_hurt_03 + 1);
@@ -289,30 +293,39 @@ public class BansheeObject : MonsterBase
         }
 
         Node node = _tileManager.NodeFromWorldPos(targetPos);
+        Debug.Log("node available" + node._walkable);
 
-        if (node == null || !node._walkable)
+
+        if (node._walkable)
         {
+            while (Vector3.Distance(transform.position, targetPos) > 0.01f)
+            {
+                transform.position = Vector3.MoveTowards(
+                    transform.position,
+                    targetPos,
+                    _moveSpeed * Time.deltaTime
+                );
+
+                yield return null;
+            }
+
             ReleaseReservation(_path[1]);
             transform.position = targetPos;
-            _isMoving = false;
-            yield break;
         }
-
-
-        while (Vector3.Distance(transform.position, targetPos) > 0.01f)
+        else
         {
-            transform.position = Vector3.MoveTowards(
-                transform.position,
-                targetPos,
-                _moveSpeed * Time.deltaTime
-            );
-
+            transform.position = origin;
             yield return null;
         }
-              
+        
+        if (_isMoving)
+        {
+            float bpmRate = (IngameManager._instance._myBPM / 60f);
 
-        ReleaseReservation(_path[1]);
-        transform.position = targetPos;
+            yield return new WaitForSeconds(0.5f / bpmRate);
+            StartCoroutine(MoveToNode(_tileManager.NodeFromWorldPos(origin)));
+        }
+
         _isMoving = false;
     }
 
@@ -351,7 +364,7 @@ public class BansheeObject : MonsterBase
     {
         _isHitable = false;
 
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(0.1f);
 
         _isHitable = true;
     }
