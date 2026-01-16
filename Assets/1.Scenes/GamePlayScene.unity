@@ -404,23 +404,23 @@ MonoBehaviour:
     _tfPoolParent: {fileID: 899920042}
   _monsterInfo:
   - _objPrefab: {fileID: 3937228665968558841, guid: cae569836d2b6ee4696ceafa0cd0f9e9, type: 3}
-    _count: 0
+    _count: 2
     MonsterType: 0
     _tfPoolParent: {fileID: 1416432215}
   - _objPrefab: {fileID: 7152074447272707043, guid: e2530335a1a99114682f04895db6377d, type: 3}
-    _count: 0
+    _count: 2
     MonsterType: 1
     _tfPoolParent: {fileID: 1416432215}
   - _objPrefab: {fileID: 8447900050747559194, guid: ce00b145c3da48a47bef56fe69b5b02c, type: 3}
-    _count: 0
+    _count: 3
     MonsterType: 2
     _tfPoolParent: {fileID: 1416432215}
   - _objPrefab: {fileID: 2223962498275254399, guid: 800dd5780eea2e44c93f300892e715bc, type: 3}
-    _count: 0
+    _count: 1
     MonsterType: 3
     _tfPoolParent: {fileID: 1416432215}
   - _objPrefab: {fileID: 2862061249864562837, guid: caf2741a49071f14793d23100498ab46, type: 3}
-    _count: 0
+    _count: 1
     MonsterType: 4
     _tfPoolParent: {fileID: 1416432215}
   - _objPrefab: {fileID: 1009239959614061799, guid: 878b09ada06e02749892d548658a6f93, type: 3}
@@ -428,7 +428,7 @@ MonoBehaviour:
     MonsterType: 5
     _tfPoolParent: {fileID: 1416432215}
   - _objPrefab: {fileID: 2623437532178284439, guid: cc33dca2b21f49243aa5f67220cea859, type: 3}
-    _count: 0
+    _count: 1
     MonsterType: 6
     _tfPoolParent: {fileID: 1416432215}
   _itemInfo:
@@ -2878,8 +2878,8 @@ MonoBehaviour:
   _resultUI: {fileID: 1834484209}
   _playerController: {fileID: 1411731530}
   _timeUI: {fileID: 678305348}
-  _totalBossToKill: 1
-  _spawnBossTime: 1
+  _totalBossToKill: 3
+  _spawnBossTime: 120
   _isComboBonus: 0
 --- !u!1 &661968907
 GameObject:
