@@ -577,22 +577,25 @@ public class PlayerController : CharBase
             switch (combo)
             {
                 case 0:
+                    #region
                     if (_weaponName == WeaponName.DaggerO3)
                         _weaponName = WeaponName.DaggerO1;
                     else if(_weaponName == WeaponName.SwordO3)
-                        _weaponName = WeaponName.SwordO1;                    
-
+                        _weaponName = WeaponName.SwordO1;
+                    #endregion
                     SetCurrentDmg(0);
                     break;
                 case 2:
+                    #region
                     if (_weaponName == WeaponName.DaggerO1)
                         _weaponName = WeaponName.DaggerO2;
                     else if (_weaponName == WeaponName.SwordO1)
                         _weaponName = WeaponName.SwordO2;
-
-                        SetCurrentDmg(1);
+                    #endregion
+                    SetCurrentDmg(1);
                     break;
                 case 3:
+                    #region
                     if (_weaponName == WeaponName.DaggerO2)
                         _weaponName = WeaponName.DaggerO3;
                     else if (_weaponName == WeaponName.SwordO2)
@@ -601,7 +604,7 @@ public class PlayerController : CharBase
                         _weaponName = WeaponName.DaggerO3;
                     else if (_weaponName == WeaponName.SwordO1)
                         _weaponName = WeaponName.SwordO3;
-
+                    #endregion
                     SetCurrentDmg(2);
                     break;
             }
