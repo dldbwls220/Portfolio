@@ -43,16 +43,19 @@ public class CheckBoardTileMap : MonoBehaviour
 
     private void Update()
     {
-        if (IngameManager._instance._isCombo)
+        if (IngameManager._instance != null)
         {
-            _target.SetActive(false);
-            _fever.SetActive(true);
-        }
-        else
-        {
-            _target.SetActive(true);
-            _fever.SetActive(false);
-        }
+            if (IngameManager._instance._isCombo)
+            {
+                _target.SetActive(false);
+                _fever.SetActive(true);
+            }
+            else
+            {
+                _target.SetActive(true);
+                _fever.SetActive(false);
+            }
+        }    
     }
 
     void GenerateCheckerboard()
@@ -197,22 +200,25 @@ public class CheckBoardTileMap : MonoBehaviour
             }
         }
 
-        for (int x = 0; x < gridSize.x; x++)
+        if (feverTileA != null)
         {
-            for (int y = 0; y < gridSize.y; y++)
+            for (int x = 0; x < gridSize.x; x++)
             {
-                Vector3Int position = new Vector3Int(x, y, 0);
-
-                // Determine which tile to place based on the sum of coordinates
-                // (x + y) % 2 will alternate between 0 and 1
-
-                if ((x + y) % 2 == 0)
+                for (int y = 0; y < gridSize.y; y++)
                 {
-                    feverTilemap.SetTile(position, changeFeverA);
-                }
-                else
-                {
-                    feverTilemap.SetTile(position, changeFeverB);
+                    Vector3Int position = new Vector3Int(x, y, 0);
+
+                    // Determine which tile to place based on the sum of coordinates
+                    // (x + y) % 2 will alternate between 0 and 1
+
+                    if ((x + y) % 2 == 0)
+                    {
+                        feverTilemap.SetTile(position, changeFeverA);
+                    }
+                    else
+                    {
+                        feverTilemap.SetTile(position, changeFeverB);
+                    }
                 }
             }
         }

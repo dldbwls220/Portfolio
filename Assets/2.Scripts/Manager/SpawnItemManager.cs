@@ -27,7 +27,7 @@ public class SpawnItemManager : MonoBehaviour
             _itemTf[i] = _itemPosObj.transform.GetChild(i).GetComponent<Transform>();
         }
 
-        SetSellingItems();
+        SetSellingItems();       
     }
 
     public void SetSellingItems()

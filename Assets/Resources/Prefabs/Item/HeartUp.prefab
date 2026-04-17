@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _price: 30
   _priceTxt: {fileID: 4198619734091332487}
+  _isUnlocked: 1
   _upgradeType: 1
 --- !u!1 &6967969550056834346
 GameObject:

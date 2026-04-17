@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace DefineEnum
 {
+    #region[GamePlay]
     public enum TableName
     {
         MonsterInfoList,
@@ -44,7 +45,9 @@ namespace DefineEnum
 
         Count
     }
+    #endregion[GamePlay]
 
+    #region[Item]
     public enum MonsterPriority
     {
         Slime = 1,
@@ -94,6 +97,7 @@ namespace DefineEnum
         Cheese,
         Chicken
     }
+    #endregion[Item]
 
     #region[Music]
     public enum BGMName
@@ -228,4 +232,23 @@ namespace DefineEnum
         Count
     }
     #endregion[Music]
+
+    #region[Unlockable]
+
+    public enum UnlockItems
+    {
+        Cheese,
+        Sword,
+        DaggerBlood,
+        DaggerTitanium,
+        Chicken,
+        SwordBlood,
+        SwordTitanium,
+        DaggerObsidium,
+        SwordObsidium,
+
+        Count
+    }
+
+    #endregion[Unlockable]
 }

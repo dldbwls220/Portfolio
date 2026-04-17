@@ -331,4 +331,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _price: 10
   _priceTxt: {fileID: 1089909456749547089}
+  _isUnlocked: 1
   heal: 1

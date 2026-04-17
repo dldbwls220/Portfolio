@@ -5,8 +5,12 @@ using DefineEnum;
 public abstract class ItemBase : MonoBehaviour
 {
     [SerializeField] protected int _price;
+    [SerializeField] protected int _diamondPrice;
     [SerializeField] protected Text _priceTxt;
+    [SerializeField] protected Image _diamond;
     protected PlayerController _playerController;
+
+    public bool _isUnlocked;
 
     private void Start()
     {
