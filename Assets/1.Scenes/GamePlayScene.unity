@@ -2240,7 +2240,7 @@ MonoBehaviour:
   _playerController: {fileID: 1411731530}
   _timeUI: {fileID: 678305348}
   _totalBossToKill: 3
-  _spawnBossTime: 120
+  _spawnBossTime: 60
   _isComboBonus: 0
 --- !u!1 &661968907
 GameObject:
@@ -15677,7 +15677,7 @@ MonoBehaviour:
   _obstacleTilemap: {fileID: 1162395044}
   _tilePenaltyList: []
   _nodeRadius: 0.5
-  _DrawGizzmo: 1
+  _DrawGizzmo: 0
 --- !u!114 &1191632551
 MonoBehaviour:
   m_ObjectHideFlags: 0

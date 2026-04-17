@@ -149,7 +149,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _price: 30
+  _diamondPrice: 0
+  _itemID: upgrade_hp
   _priceTxt: {fileID: 4198619734091332487}
+  _diamond: {fileID: 0}
   _isUnlocked: 1
   _upgradeType: 1
 --- !u!1 &6967969550056834346

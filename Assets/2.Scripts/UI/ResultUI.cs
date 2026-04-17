@@ -35,10 +35,10 @@ public class ResultUI : MonoBehaviour
 
         _scoreText.text = "Kill : " + score.ToString();
 
-        _bestScore.text = "BEST KILL : " + DataManger._instance.nowPlayer._bestKillCount.ToString();
+        _bestScore.text = "BEST KILL : " + DataManger._instance._totalData._playerData._bestKillCount.ToString();
 
-        int bestMinutes = (int)(DataManger._instance.nowPlayer._bestSurviveTime / 60f);
-        int bestSeconds = (int)(DataManger._instance.nowPlayer._bestSurviveTime % 60f);
+        int bestMinutes = (int)(DataManger._instance._totalData._playerData._bestSurviveTime / 60f);
+        int bestSeconds = (int)(DataManger._instance._totalData._playerData._bestSurviveTime % 60f);
 
         _bestTime.text = $"Best Time : {bestMinutes:00}:{bestSeconds:00}";
 

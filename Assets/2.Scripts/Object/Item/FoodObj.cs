@@ -29,6 +29,13 @@ public class FoodObj : ItemBase
         {
             _playerController.BuyFood(_price, heal);
             gameObject.SetActive(false);
-        }      
+        }
+        else if (SceneManager.GetActiveScene().name == "LobbyScene")
+        {
+            _isUnlocked = true;
+            _unlockedI._unlockedItem.Add(_itemID);
+            gameObject.SetActive(false);
+            DataManger._instance.SaveData();
+        }
     }
 }

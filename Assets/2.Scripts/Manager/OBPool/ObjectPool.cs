@@ -1,4 +1,6 @@
 using DefineEnum;
+using DefineStructure;
+using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -103,10 +105,25 @@ public class ObjectPool : MonoBehaviour
         _redDragonQueue = InsertMonsterQueue(_monsterInfo[4]);
         _bansheeQueue = InsertMonsterQueue(_monsterInfo[5]);
         _direBatQueue = InsertMonsterQueue(_monsterInfo[6]);
-        
+
+        UnlockedItem uis = DataManger._instance._totalData._unlockDate;
+
         for (int i = 0; i < 7; i++)
         {
-            InsertWeaponList(_itemInfo[i]);
+            ItemBase ib = _itemInfo[i]._objPrefab.transform.GetComponent<ItemBase>();
+
+            ib._isUnlocked = false;
+
+            if (uis._unlockedItem.Count > 0)
+                for (int n = 0; n < uis._unlockedItem.Count; n++)
+                {
+                    if (uis._unlockedItem[n] == ib._thisItemID)
+                    {
+                        ib._isUnlocked = true;
+                        InsertWeaponList(_itemInfo[i]);
+                    }
+                }
+           
         }
         for (int i = 7; i < 9; i++)
         {
@@ -114,6 +131,18 @@ public class ObjectPool : MonoBehaviour
         }
         for (int i = 9; i < 12; i++)
         {
+            ItemBase ib = _itemInfo[i]._objPrefab.transform.GetComponent<ItemBase>();
+
+            ib._isUnlocked = false;
+
+            if (uis._unlockedItem.Count > 0)
+                for (int n = 0; n < uis._unlockedItem.Count; n++)
+                {
+                    if (uis._unlockedItem[n] == ib._thisItemID)
+                    {
+                        ib._isUnlocked = true;
+                    }
+                }
             InsertFoodList(_itemInfo[i]);
         }
 

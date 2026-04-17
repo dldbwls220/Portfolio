@@ -201,9 +201,9 @@ public class IngameManager : MonoBehaviour
 
     bool SaveKillCount()
     {
-        if (DataManger._instance.nowPlayer._bestKillCount < _killCount)
+        if (DataManger._instance._totalData._playerData._bestKillCount < _killCount)
         {
-            DataManger._instance.nowPlayer._bestKillCount = _killCount;
+            DataManger._instance._totalData._playerData._bestKillCount = _killCount;
             return true;
         }
         else
@@ -212,9 +212,9 @@ public class IngameManager : MonoBehaviour
 
     bool SaveTime()
     {
-        if (DataManger._instance.nowPlayer._bestSurviveTime < _gameTime)
+        if (DataManger._instance._totalData._playerData._bestSurviveTime < _gameTime)
         {
-            DataManger._instance.nowPlayer._bestSurviveTime = _gameTime;
+            DataManger._instance._totalData._playerData._bestSurviveTime = _gameTime;
             return true;
         }
         else

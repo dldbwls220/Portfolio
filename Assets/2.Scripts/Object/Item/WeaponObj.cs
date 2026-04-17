@@ -1,6 +1,7 @@
 using UnityEngine;
 using DefineEnum;
 using UnityEngine.SceneManagement;
+using DefineStructure;
 
 public class WeaponObj : ItemBase
 {
@@ -30,6 +31,16 @@ public class WeaponObj : ItemBase
             _playerController.BuyWeapon(_price, _weapon);
             gameObject.SetActive(false);
             ObjectPool._instance._weaponList.Remove(gameObject);
+        }
+        else if (SceneManager.GetActiveScene().name == "LobbyScene")
+        {
+            _isUnlocked = true;
+
+            if (!DataManger._instance._totalData._unlockDate._unlockedItem.Contains(_itemID))
+                DataManger._instance._totalData._unlockDate._unlockedItem.Add(_itemID);
+
+            gameObject.SetActive(false);
+            DataManger._instance.SaveData();           
         }
     }
         

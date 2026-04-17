@@ -5,7 +5,7 @@ using System.IO;
 
 public class DataManger : TSingleton<DataManger>
 {
-    public PlayerData nowPlayer = new PlayerData();
+    public TotalData _totalData = new TotalData();
 
     string _path;
     string _fileName = "save";
@@ -17,10 +17,11 @@ public class DataManger : TSingleton<DataManger>
 
     public void SaveData()
     {
-        string data = JsonUtility.ToJson(nowPlayer);
+        string data = JsonUtility.ToJson(_totalData);
         File.WriteAllText(_path + _fileName, data);
 
         Debug.Log(_path);
+        Debug.Log("저장 데이터: " + JsonUtility.ToJson(_totalData));
     }
 
     public void LoadData()
@@ -32,7 +33,9 @@ public class DataManger : TSingleton<DataManger>
         }
 
         string data = File.ReadAllText(_path + _fileName);
-        nowPlayer = JsonUtility.FromJson<PlayerData>(data);
+        _totalData = JsonUtility.FromJson<TotalData>(data);
         Debug.Log("파일불러오기");
     }
+
+    
 }

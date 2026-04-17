@@ -330,6 +330,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _price: 10
+  _diamondPrice: 0
+  _itemID: food_apple
   _priceTxt: {fileID: 1089909456749547089}
+  _diamond: {fileID: 0}
   _isUnlocked: 1
   heal: 1

@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace DefineStructure
@@ -66,10 +68,24 @@ namespace DefineStructure
             _player.loop = loop;
         }
     }
-
+    
+    [System.Serializable]
     public class PlayerData 
     {
         public int _bestKillCount;
         public float _bestSurviveTime;
+    }
+
+    [System.Serializable]
+    public class UnlockedItem
+    {
+        public List<string> _unlockedItem = new List<string>();
+    }
+
+    [System.Serializable]
+    public class TotalData
+    {
+        public UnlockedItem _unlockDate = new UnlockedItem();
+        public PlayerData _playerData = new PlayerData();
     }
 }

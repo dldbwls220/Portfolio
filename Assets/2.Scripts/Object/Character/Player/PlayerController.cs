@@ -473,7 +473,7 @@ public class PlayerController : CharBase
         {
             _weaponSelectUI.ChangeWeapon(_weaponName);
             _weaponSelectUI.SetInfoText(_weaponName, _bloodKill);
-            InitDamage();
+            DefaultDmg();
         }
         else
         {

@@ -23,6 +23,7 @@ public class StartGame : MonoBehaviour
             if (Input.anyKeyDown)
             {
                 SceneManager.LoadSceneAsync("GamePlayScene");
+                //SceneManager.LoadSceneAsync("LobbyScene");
             }
         }  
     }

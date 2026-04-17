@@ -1,4 +1,5 @@
 using DefineEnum;
+using DefineStructure;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,6 +15,7 @@ public class LobbyObjectPool : MonoBehaviour
     [SerializeField] Unlock[] _unlockInfo;
 
     public List<GameObject> _unlockList;
+    UnlockedItem _unlockI;
 
     static LobbyObjectPool _uniqueInstance;
 
@@ -35,9 +37,24 @@ public class LobbyObjectPool : MonoBehaviour
     public void InitPool()
     {
         _unlockList = new List<GameObject>();
+        UnlockedItem uis = DataManger._instance._totalData._unlockDate;
+
+        Debug.Log(uis);
 
         for (int i = 0; i < (int)UnlockItems.Count; i++)
         {
+            ItemBase ib = _unlockInfo[i]._objPrefab.transform.GetComponent<ItemBase>();
+
+            ib._isUnlocked = false;
+
+            if (uis._unlockedItem.Count > 0)
+                for (int n = 0; n < uis._unlockedItem.Count; n++)
+                {
+                    if (uis._unlockedItem[n] == ib._thisItemID)
+                    {                      
+                        ib._isUnlocked = true;
+                    }
+                }
             InsertUnlockList(_unlockInfo[i]);
         }
 

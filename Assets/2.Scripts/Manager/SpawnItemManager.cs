@@ -32,11 +32,15 @@ public class SpawnItemManager : MonoBehaviour
 
     public void SetSellingItems()
     {
-        int rndW = Random.Range(0, ObjectPool._instance._weaponList.Count);
-        w = ObjectPool._instance._weaponList[rndW];
-        w.transform.position = _itemTf[0].position;
-        w.SetActive(true);
-
+        if (ObjectPool._instance._weaponList != null && ObjectPool._instance._weaponList.Count > 0)
+        {
+            int rndW = Random.Range(0, ObjectPool._instance._weaponList.Count);
+            w = ObjectPool._instance._weaponList[rndW];
+            ItemBase ib = w.GetComponent<ItemBase>();
+            w.transform.position = _itemTf[0].position;
+            w.SetActive(true);
+        }
+        
         int rndF = Random.Range(0, ObjectPool._instance._foodList.Count);
         f = ObjectPool._instance._foodList[rndF];
         f.transform.position = _itemTf[1].position;
