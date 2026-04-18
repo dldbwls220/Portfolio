@@ -40,11 +40,15 @@ public class SpawnItemManager : MonoBehaviour
             w.transform.position = _itemTf[0].position;
             w.SetActive(true);
         }
-        
-        int rndF = Random.Range(0, ObjectPool._instance._foodList.Count);
-        f = ObjectPool._instance._foodList[rndF];
-        f.transform.position = _itemTf[1].position;
-        f.SetActive(true);
+
+        if (ObjectPool._instance._foodList != null)
+        {
+            int rndF = Random.Range(0, ObjectPool._instance._foodList.Count);
+            f = ObjectPool._instance._foodList[rndF];
+            f.transform.position = _itemTf[1].position;
+            f.SetActive(true);
+        }
+       
 
         GameObject pu = ObjectPool._instance._powerUpList[0];
         pu.transform.position = _itemTf[2].position;

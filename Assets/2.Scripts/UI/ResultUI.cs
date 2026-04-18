@@ -62,6 +62,7 @@ public class ResultUI : MonoBehaviour
     {
         SoundManager._instance._loopDESC._stop();
         SoundManager._instance._shopkeeperDESC._stop();
+        SoundManager._instance._sfxDESC._mute = true;
 
         SceneManager.LoadScene("GamePlayScene");
     }

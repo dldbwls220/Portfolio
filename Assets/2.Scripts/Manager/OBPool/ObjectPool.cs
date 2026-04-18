@@ -141,9 +141,11 @@ public class ObjectPool : MonoBehaviour
                     if (uis._unlockedItem[n] == ib._thisItemID)
                     {
                         ib._isUnlocked = true;
+                        InsertFoodList(_itemInfo[i]);
                     }
                 }
-            InsertFoodList(_itemInfo[i]);
+
+            if (i == 9) InsertFoodList(_itemInfo[i]);
         }
 
         InsertShopList(_shopInfo);

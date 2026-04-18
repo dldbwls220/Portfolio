@@ -13,33 +13,10 @@ public class StartGame : MonoBehaviour
         GameTableManager._instance.AllLoadTable();
         SoundManager._instance.LoadAllSound();
         DataManger._instance.LoadData();
-        StartCoroutine(Loading());
     }
 
-    private void Update()
+    private void Start()
     {
-        if (_isLoadEnd)
-        {
-            if (Input.anyKeyDown)
-            {
-                SceneManager.LoadSceneAsync("GamePlayScene");
-                //SceneManager.LoadSceneAsync("LobbyScene");
-            }
-        }  
-    }
-
-    IEnumerator Loading()
-    {
-        float progress = 0f;
-
-        yield return SoundManager._instance.LoadAllSound(p =>
-        {
-            progress = p;
-            Debug.Log(progress);
-        });
-
-        yield return new WaitForSeconds(2);
-        _titleUI.CloseLodingAnim();
-        _isLoadEnd=true;
+        SceneControlManager._instance.StartInGame();
     }
 }

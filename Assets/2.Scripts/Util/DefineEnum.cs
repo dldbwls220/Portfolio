@@ -45,6 +45,13 @@ namespace DefineEnum
 
         Count
     }
+
+    public enum GameScene
+    {
+        LobbyScene,
+        GamePlayScene
+    }
+
     #endregion[GamePlay]
 
     #region[Item]
@@ -116,6 +123,7 @@ namespace DefineEnum
         Crypt_FamilyJules_Remix_loop,
         Crypteque_loop,
         March_of_the_Profane_loop,
+        Rhythmortis_lobby,
 
         Count
     }

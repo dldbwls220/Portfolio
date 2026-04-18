@@ -58,6 +58,7 @@ public class PlayerLobbyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (SceneControlManager._instance._isBeginning) return;
 
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
@@ -68,6 +69,12 @@ public class PlayerLobbyController : MonoBehaviour
         if (Vector3.Distance(transform.position, _movePoint.position) <= 0.05f)
         {
             Move(horizontal, vertical);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SoundManager._instance._lobbyDESC._stop();
+            SceneControlManager._instance.StartGame();
         }
 
     }

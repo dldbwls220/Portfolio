@@ -21,6 +21,8 @@ public class SoundManager : TSingleton<SoundManager>
     AudioSource _bansheePlayer;
     public AudioPlayerDESC _sfxDESC;
     AudioSource _sfxPlayer;
+    public AudioPlayerDESC _lobbyDESC;
+    AudioSource _lobbyPlayer;
 
     public IEnumerator LoadAllSound(System.Action<float> onProgress = null)
     {
@@ -34,21 +36,24 @@ public class SoundManager : TSingleton<SoundManager>
         _shopkeeperPlayer = gameObject.AddComponent<AudioSource>();
         _bansheePlayer = gameObject.AddComponent<AudioSource>();
         _sfxPlayer = gameObject.AddComponent<AudioSource>();
+        _lobbyPlayer = gameObject.AddComponent<AudioSource>();
 
         _loopDESC = new AudioPlayerDESC(_loopPlayer, 1, false);
         _bgmDESC = new AudioPlayerDESC(_bgmPlayer, 0.6f, false);
         _shopkeeperDESC = new AudioPlayerDESC(_shopkeeperPlayer, 0, false);
         _bansheeDESC = new AudioPlayerDESC(_bansheePlayer, 1, true);
         _sfxDESC = new AudioPlayerDESC(_sfxPlayer, 1, false, false);
+        _lobbyDESC = new AudioPlayerDESC(_lobbyPlayer, 0.6f, false, true);
 
         string path = "Sound/";
         int bgmCount = (int)BGMName.Count;
+        int loopCount = (int)LoopName.Count;
         int sfxCount = (int)SFXName.Count;
 
         int totalLoad = bgmCount * 3 + sfxCount; // Loop, BGM, Shopkeeper + SFX
         int currentLoad = 0;
 
-        for (int i = 0; i < bgmCount; i++)
+        for (int i = 0; i < loopCount; i++)
         {
             LoopName name = (LoopName)i;
 
@@ -108,6 +113,17 @@ public class SoundManager : TSingleton<SoundManager>
         }
         _bgmPlayer.clip = _bgmClipDoc[name];
         _bgmPlayer.Play();
+    }
+
+    public void PlayLobby(LoopName name)
+    {
+        if (!_loopClipDoc.ContainsKey(name))
+        {
+            Debug.LogFormat("{0} AudioClip은 없습니다", name);
+            return;
+        }
+        _lobbyPlayer.clip = _loopClipDoc[name];
+        _lobbyPlayer.Play();
     }
 
     public void PlayLoop(LoopName name, double dspStartTime)
