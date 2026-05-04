@@ -167,7 +167,8 @@ public class SlimeObject : MonsterBase
             _nowHp = 0;
             StartCoroutine(HitCoolDown());
             IngameManager._instance.KillCount();
-            SpawnGold(_gold);
+            GetGoldAndDiamond(_gold);
+            DataManger._instance.AddKillCount(Monsters.Slime);
             int rnd = Random.Range((int)SFXName.Slime_death_01, (int)SFXName.Slime_death_03 + 1);
             SoundManager._instance.PlaySFX((SFXName)rnd);
 

@@ -251,11 +251,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _price: 15
-  _diamondPrice: 0
+  _diamondPrice: 3
   _itemID: sword_n
   _priceTxt: {fileID: 3543382660532396697}
   _diamond: {fileID: 55202467051983447}
-  _isUnlocked: 0
+  _isUnlocked: 1
   _weapon: 6
 --- !u!1 &6351963199457751025
 GameObject:

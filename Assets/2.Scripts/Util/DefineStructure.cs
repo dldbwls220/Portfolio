@@ -83,9 +83,37 @@ namespace DefineStructure
     }
 
     [System.Serializable]
+    public class Diamonds
+    {
+        public int _totalDiamond;
+    }
+
+    [System.Serializable]
+    public class MonsterKillData
+    {
+        public string monsterName;
+        public int count;
+
+        public MonsterKillData(string name, int count)
+        {
+            this.monsterName = name;
+            this.count = count;
+        }
+    }
+
+    [System.Serializable]
+    public class Score
+    {
+        public List<MonsterKillData> _monsterKillCountList = new List<MonsterKillData>();
+        public Dictionary<string, int> _monsterKillCountDic = new Dictionary<string, int>();
+    }
+
+    [System.Serializable]
     public class TotalData
     {
         public UnlockedItem _unlockDate = new UnlockedItem();
         public PlayerData _playerData = new PlayerData();
+        public Diamonds _currentDiamond = new Diamonds();
+        public Score _score = new Score();
     }
 }

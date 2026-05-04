@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _price: 40
-  _diamondPrice: 0
+  _diamondPrice: 5
   _itemID: food_chicken
   _priceTxt: {fileID: 7311116907732316106}
   _diamond: {fileID: 515033984891558472}

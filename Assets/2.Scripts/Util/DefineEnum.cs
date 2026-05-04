@@ -48,6 +48,7 @@ namespace DefineEnum
 
     public enum GameScene
     {
+        LoginScene,
         LobbyScene,
         GamePlayScene
     }

@@ -63,12 +63,17 @@ public class ResultUI : MonoBehaviour
         SoundManager._instance._loopDESC._stop();
         SoundManager._instance._shopkeeperDESC._stop();
         SoundManager._instance._sfxDESC._mute = true;
+        DataManger._instance.SaveData();
+        NetManager._instance.UpdateMonsterNDiamondData();
 
-        SceneManager.LoadScene("GamePlayScene");
+        SceneControlManager._instance.StartGame();
     }
 
     public void EndGame()
     {
+        DataManger._instance.SaveData();
+        NetManager._instance.UpdateMonsterNDiamondData();
+
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else

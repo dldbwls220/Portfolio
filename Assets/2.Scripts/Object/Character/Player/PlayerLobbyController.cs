@@ -73,8 +73,9 @@ public class PlayerLobbyController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SoundManager._instance._lobbyDESC._stop();
-            SceneControlManager._instance.StartGame();
+            DataManger._instance._totalData._currentDiamond._totalDiamond += 1;
+
+            LobbyUI._instance.UpdateDiamondCountUI();
         }
 
     }
@@ -167,16 +168,4 @@ public class PlayerLobbyController : MonoBehaviour
         _isMoving = false;
     }
 
-    IEnumerator CameraShaker(float shakeAmount, float shakeTime)
-    {
-        float time = 0;
-        while (time < shakeTime)
-        {
-            _followCamera.transform.position = (Vector3)Random.insideUnitSphere * shakeAmount + (new Vector3(0, 0, -10) + transform.position);
-            time += Time.deltaTime;
-            yield return null;
-        }
-
-        _followCamera.transform.position = new Vector3(0, 0, -10) + transform.position;
-    }
 }

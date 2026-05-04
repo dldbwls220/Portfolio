@@ -52,6 +52,7 @@ public class PlayerController : CharBase
     int _combo;
     int _bloodKillCount;
     [SerializeField] int _goldCollect;
+    int _diamondCollect;
     float _baseY;
     float _waitAttack;
 
@@ -149,6 +150,8 @@ public class PlayerController : CharBase
         {
             MoveNAttack(horizontal, vertical);
         }
+
+       
 
     }
 
@@ -450,6 +453,13 @@ public class PlayerController : CharBase
     {
         _goldCollect += gold;
         _numberUI.GoldCountUI(_goldContain);
+    }
+
+    public void GetDiamond()
+    {
+        DataManger._instance._totalData._currentDiamond._totalDiamond += 1;
+        _numberUI.UpdateDiamondCountUI();
+        Debug.Log("다이아몬드 : " + DataManger._instance._totalData._currentDiamond._totalDiamond);
     }
 
     public void BuyWeapon(int gold, WeaponName weapon)

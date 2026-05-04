@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/1.Scenes/StartScene.unity
     guid: 756fb6ea0985e5b499e98140baba9938
   - enabled: 1
+    path: Assets/1.Scenes/LoginScene.unity
+    guid: 2d7bc650dcd289743a5810e01659020c
+  - enabled: 1
     path: Assets/1.Scenes/LobbyScene.unity
     guid: c0de6fa9b9bad134b9f87b80a06f8237
   - enabled: 1

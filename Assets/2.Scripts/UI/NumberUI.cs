@@ -6,6 +6,7 @@ public class NumberUI : MonoBehaviour
     [SerializeField] Text _gold;
     [SerializeField] Text _kill;
     [SerializeField] Text _boss;
+    [SerializeField] Text _dia;
 
     public void GoldCountUI(int gold)
     {
@@ -20,5 +21,12 @@ public class NumberUI : MonoBehaviour
     public void BossCountUI(int bossKilled, int bossTotal)
     {
         _boss.text = " X " + bossKilled.ToString() + "/" + bossTotal.ToString();
+    }
+
+    public void UpdateDiamondCountUI()
+    {
+        int dia = DataManger._instance._totalData._currentDiamond._totalDiamond;
+
+        _dia.text = " X " + dia.ToString("D3");
     }
 }

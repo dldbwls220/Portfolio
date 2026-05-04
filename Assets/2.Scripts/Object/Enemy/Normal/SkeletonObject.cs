@@ -163,7 +163,8 @@ public class SkeletonObject : MonsterBase
 
             _dead = true;
             IngameManager._instance.KillCount();
-            SpawnGold(_gold);
+            GetGoldAndDiamond(_gold);
+            DataManger._instance.AddKillCount(Monsters.Skeleton);
             ObjectPool._instance._skeletonQueue.Enqueue(gameObject);
             gameObject.SetActive(false);
         }
@@ -176,6 +177,8 @@ public class SkeletonObject : MonsterBase
             _healthBarManager.DrawHearts(_nowHp);
         }
     }
+
+    
 
     IEnumerator MoveToNode(Node nextNode)
     {

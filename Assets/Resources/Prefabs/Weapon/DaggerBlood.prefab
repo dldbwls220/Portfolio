@@ -406,9 +406,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _price: 10
-  _diamondPrice: 0
+  _diamondPrice: 5
   _itemID: dagger_b
   _priceTxt: {fileID: 4574616982507395568}
   _diamond: {fileID: 4441885422434823210}
-  _isUnlocked: 0
+  _isUnlocked: 1
   _weapon: 1

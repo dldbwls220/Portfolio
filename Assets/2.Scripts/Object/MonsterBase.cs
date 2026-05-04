@@ -33,6 +33,25 @@ public class MonsterBase : CharBase
             co.InitGold(gold * 3); 
     }
 
+    protected void SpawnDiamond()
+    {
+        Vector3 pos = new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y), Mathf.RoundToInt(transform.position.z));
+
+        GameObject diamond = Resources.Load<GameObject>("Prefabs/Item/Diamond");
+        GameObject go = Instantiate(diamond, pos, Quaternion.identity);
+
+    }
+
+    protected void GetGoldAndDiamond(int gold)
+    {
+        if (Random.Range(1, 101) <= 5)
+        {
+            SpawnDiamond();
+        }
+        else
+            SpawnGold(gold);
+    }
+
     public void UpgradeMonster()
     {
         _hp += 1;

@@ -61,6 +61,8 @@ public class SpawnItemManager : MonoBehaviour
 
     public void MakeItemEnable()
     {
+        if (ObjectPool._instance._weaponList != null && ObjectPool._instance._weaponList.Count > 0) return;
+        if (ObjectPool._instance._foodList != null) return;
         w.SetActive(false);
         f.SetActive(false);
     }

@@ -126,6 +126,7 @@ public class IngameManager : MonoBehaviour
         _pause.CloseWnd();
         _resultUI.CloseWnd();
         _numberUI.BossCountUI(0, _totalBossToKill);
+        _numberUI.UpdateDiamondCountUI();
     }
 
     public void SetMusic(int index, int bpm)
@@ -266,6 +267,7 @@ public class IngameManager : MonoBehaviour
         {                     
             _resultUI.SetResult("Clear!!!", _gameTime, _playerController._goldContain, _monsterKillCount, SaveKillCount(), SaveTime());
             DataManger._instance.SaveData();
+            NetManager._instance.UpdateMonsterNDiamondData();
         }
         else
             _resultUI.SetResult("Loose...", _gameTime, _playerController._goldContain, _monsterKillCount);

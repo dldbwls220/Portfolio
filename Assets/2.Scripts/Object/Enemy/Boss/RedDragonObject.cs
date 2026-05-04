@@ -234,6 +234,8 @@ public class RedDragonObject : MonsterBase
             _dead = true;
             IngameManager._instance.KillCount();
             SpawnGold(_gold);
+            _playerController.GetDiamond();
+            DataManger._instance.AddKillCount(Monsters.RedDragon);
             IngameManager._instance.BossCount();
             IngameManager._instance.UpgradeMonster();
             ObjectPool._instance._redDragonQueue.Enqueue(gameObject);

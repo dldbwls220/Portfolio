@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _price: 35
-  _diamondPrice: 0
+  _diamondPrice: 10
   _itemID: sword_t
   _priceTxt: {fileID: 4320167250244561807}
   _diamond: {fileID: 3031418506581439398}

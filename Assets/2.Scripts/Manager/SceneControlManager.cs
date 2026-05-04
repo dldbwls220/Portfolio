@@ -23,17 +23,24 @@ public class SceneControlManager : TSingleton<SceneControlManager>
         {
             if (Input.anyKey)
             {
-                SoundManager._instance.PlayLobby(LoopName.Rhythmortis_lobby);
+                //SoundManager._instance.PlayLobby(LoopName.Rhythmortis_lobby);
                 _titleUI.CloseLoddingWnd();
                 StartCoroutine(StartDelay());
             }
         }
     }
 
+
     public void StartInGame()
     {
         _lodingUIPrefab = Resources.Load("UI/TitleImage") as GameObject;
-        StartLobby();
+        StartLogin();
+    }
+
+    public void StartLogin()
+    {
+        _scene = GameScene.LoginScene;
+        StartCoroutine(LoddingScene(_scene));
     }
 
     public void StartLobby()
@@ -74,6 +81,11 @@ public class SceneControlManager : TSingleton<SceneControlManager>
 
         StartCoroutine(LoadingMusic());
 
+        if (scene == GameScene.LobbyScene)
+        {
+            LobbyManager._instance.InitLobby();
+        }
+
     }
 
     IEnumerator LoadingMusic()
@@ -91,7 +103,7 @@ public class SceneControlManager : TSingleton<SceneControlManager>
             yield return new WaitForSeconds(2);
 
             _isMusicLoadEnd = true;
-
+            NetManager._instance.ConnectServer();
             _titleUI.CloseLodingAnim();
         }
         else

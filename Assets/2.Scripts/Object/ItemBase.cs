@@ -37,7 +37,14 @@ public abstract class ItemBase : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "LobbyScene")
         {
-            GetItem();
+            if (DataManger._instance._totalData._currentDiamond._totalDiamond >= _diamondPrice)
+            {
+                GetItem();
+                LobbyUI._instance.UpdateDiamondCountUI();
+                SoundManager._instance.PlaySFX(SFXName.sfx_pickup_purchase);
+            }
+            else
+                SoundManager._instance.PlaySFX(SFXName.sfx_error_ST);
         }
 
     }

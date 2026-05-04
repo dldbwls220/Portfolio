@@ -37,10 +37,13 @@ public class WeaponObj : ItemBase
             _isUnlocked = true;
 
             if (!DataManger._instance._totalData._unlockDate._unlockedItem.Contains(_itemID))
+            {
                 DataManger._instance._totalData._unlockDate._unlockedItem.Add(_itemID);
+                NetManager._instance.UpdateItemUnlock(_itemID);
+            }
 
+            DataManger._instance._totalData._currentDiamond._totalDiamond -= _diamondPrice;
             gameObject.SetActive(false);
-            DataManger._instance.SaveData();           
         }
     }
         

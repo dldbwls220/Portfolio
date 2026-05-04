@@ -184,11 +184,13 @@ public class BatObject : MonsterBase
             }
 
             _dead = true;
-            IngameManager._instance.KillCount();
-            SpawnGold(_gold);
+            IngameManager._instance.KillCount();           
+            GetGoldAndDiamond(_gold);
 
             if (_name == "DireBat")
             {
+                DataManger._instance.AddKillCount(Monsters.DireBat);
+                _playerController.GetDiamond();
                 SoundManager._instance.PlaySFX(SFXName.Direbat_death);
                 IngameManager._instance.UpgradeMonster();
                 IngameManager._instance.BossCount();
@@ -196,6 +198,7 @@ public class BatObject : MonsterBase
             }
             else
             {
+                DataManger._instance.AddKillCount(Monsters.Bat);
                 SoundManager._instance.PlaySFX(SFXName.Bat_death);
                 ObjectPool._instance._batQueue.Enqueue(gameObject);
             }

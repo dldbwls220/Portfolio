@@ -155,8 +155,9 @@ public class GolemObject : MonsterBase
             _nowHp = 0;
             StartCoroutine(HitCoolDown());
             IngameManager._instance.KillCount();
-            SpawnGold(_gold);
+            GetGoldAndDiamond(_gold);
             SoundManager._instance.PlaySFX(SFXName.Golemstone_death);
+            DataManger._instance.AddKillCount(Monsters.Golem);
 
             if (_path != null && _path.Count > 1)
             {

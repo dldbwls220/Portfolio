@@ -198,6 +198,8 @@ public class BansheeObject : MonsterBase
             _dead = true;
             IngameManager._instance.KillCount();
             SpawnGold(_gold);
+            _playerController.GetDiamond();
+            DataManger._instance.AddKillCount(Monsters.Banshee);
             IngameManager._instance.BossCount();
             IngameManager._instance.UpgradeMonster();
             ObjectPool._instance._bansheeQueue.Enqueue(gameObject);
